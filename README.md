@@ -76,8 +76,10 @@ Una vez completadas todas las secciones, el informe se revisó en conjunto antes
 A continuación, se muestran evidencias gráficas que ilustran la participación de cada miembro:
 
 ### Captura de Commits:
-![Commits grupales](assets/images/prci/)
-
+![Commits grupales](assets/images/team/contributors.jpg)
+<br>
+<br>
+![Commits grupales](assets/images/team/commits.jpg)
 
 <br>
 <br>
@@ -120,6 +122,7 @@ A continuación, se muestran evidencias gráficas que ilustran la participación
 - [2.3. Needfinding](#23-needfinding)
   - [2.3.1. User Personas](#231-user-personas)
   - [2.3.2. User Task Matrix](#232-user-task-matrix)
+  - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
   - [2.3.4. Empathy Mapping](#234-empathy-mapping)
   - [2.3.5. Ubiquitous Language](#235-ubiquitous-language)
 
