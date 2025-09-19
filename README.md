@@ -578,3 +578,844 @@ Profesores de colegios, institutos y universidades que buscan dinamizar el apren
 | **Problema**      | Carecen de una plataforma integrada para colaboración académica, dependiendo de múltiples apps dispersas (WhatsApp, Drive, Zoom). |
 
 ---
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--
+   CAPÍTULO 2
+-->
+
+# 2. Capítulo II: Requirements Elicitation & Analysis
+## 2.1. Competidores
+
+### 2.1.1 Análisis Competitivo
+
+**¿Por qué realizar este análisis?**
+
+El mercado de plataformas digitales para aprendizaje colaborativo está dominado por herramientas generalistas y algunas soluciones educativas con componentes de interacción. Entre los principales competidores de **SkillShare** se identifican: **Discord, Google Classroom y Quizlet**.
+
+<br>
+
+| | Nombre | SkillShare | Discord | Classroom | Quizlet |
+| ------------------------ | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+|                          |                              | <p align="center"><img src="assets/images/common/logo.png" alt="skillshare" width="400"></p>  | <p align="center"><img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="discord" width="400"></p>             | <p align="center"><img src="https://logos-world.net/wp-content/uploads/2021/08/Google-Classroom-Logo-2014-2016.png" alt="classroom" width="400"></p> | <p align="center"><img src="https://logos-world.net/wp-content/uploads/2021/03/Quizlet-Emblem.png" alt="quizlet" width="400"></p> |
+| **Perfil**               | **Overview**                 | Plataforma diseñada para estudiantes que buscan organizar grupos de estudio colaborativos, con chat, videollamadas y recursos compartidos en un solo lugar. | Herramienta de comunicación en tiempo real, diseñada para comunidades, con chat, voz y videollamadas. | Plataforma educativa que facilita la gestión de clases, tareas y evaluaciones.              | Plataforma de estudio basada en flashcards y quizzes interactivos.                        |
+|                          | **Ventaja competitiva**      | Enfoque exclusivo en aprendizaje colaborativo estructurado, integrando chat, videollamadas y recursos en un solo espacio, con un modelo freemium accesible. | Gran comunidad y facilidad de uso; ya es adoptada masivamente por estudiantes.                        | Integración oficial con instituciones educativas y ecosistema de Google.                    | Herramientas efectivas de memorización con amplia base de usuarios.                       |
+| **Plan de Marketing**    | **Mercado objetivo**         | Estudiantes de secundaria, universidad y autodidactas.                                                                                                      | Jóvenes y comunidades online, principalmente gamers y estudiantes.                                    | Instituciones educativas (colegios, universidades, docentes).                               | Estudiantes individuales que buscan memorizar y repasar contenidos.                       |
+|                          | **Estrategias de marketing** | Promoción en redes sociales, convenios con universidades y modelo freemium.                                                                                 | Marketing comunitario y boca a boca, impulsado por gamers.                                            | Integración con ecosistema Google y acuerdos institucionales.                               | Viralidad entre estudiantes y asociaciones con docentes.                                  |
+| **Plan de Producto**     | **Productos y servicios**    | Grupos de estudio, chat en tiempo real, videollamadas, recursos compartidos.                                                                                | Servidores, canales de voz/texto, videollamadas, bots y comunidades temáticas.                        | Gestión de cursos, tareas, evaluaciones, integración con Google Drive.                      | Flashcards digitales, quizzes, juegos interactivos.                                       |
+|                          | **Precios y costos**         | Modelo freemium (gratis + premium educativo \~USD 10/mes).                                                                                                  | Gratis; versión Nitro (USD 9.99/mes).                                                                 | Gratis con cuenta Google; planes pagados en Google Workspace for Education.                 | Gratis con anuncios; Quizlet Plus (\~USD 3/mes).                                          |
+|                          | **Canales de distribución**  | App móvil (Android/iOS), web, redes sociales, alianzas con universidades.                                                                                   | App de escritorio, móvil y web; crecimiento orgánico comunitario.                                     | Integrado en Google Workspace; acceso web y app móvil.                                      | App móvil y web, difusión entre estudiantes y docentes.                                   |
+| **Análisis FODA / SWOT** | **Fortalezas**               | Enfoque 100 % académico, integración de chat + videollamadas + recursos, modelo freemium accesible.                                                         | Comunidad activa, alta personalización, uso masivo entre jóvenes.                                     | Respaldo de Google, integración con Drive, adopción institucional.                          | Herramientas de memorización efectivas, fácil de usar, base de usuarios amplia.           |
+|                          | **Debilidades**              | Marca nueva y poco conocida, riesgo de baja adopción frente a competidores.                                                                                 | No diseñado para educación, exceso de distracciones.                                                  | Experiencia centrada en docentes, poca flexibilidad para grupos autónomos.                  | Enfoque limitado a memorización, funciones colaborativas reducidas.                       |
+|                          | **Oportunidades**            | Crecimiento del e-learning en LATAM, alianzas universitarias, alta dependencia móvil en estudiantes.                                                        | Expansión hacia comunidades educativas y profesionales.                                               | Digitalización acelerada en colegios y universidades.                                       | Mayor demanda de autoestudio online y repaso rápido.                                      |
+|                          | **Amenazas**                 | Preferencia por plataformas ya consolidadas, posible copia de funciones por grandes competidores.                                                           | Saturación con usos no académicos, aparición de apps especializadas en educación.                     | Competencia con plataformas más colaborativas, dependencia de Google.                       | Aparición de herramientas de IA que reemplacen flashcards tradicionales.                  |
+
+<br>
+<br>
+
+### 2.1.2. Estrategias y tácticas frente a competidores
+
+#### 1. Fortaleza de los competidores
+- **Gran comunidad de Discord, respaldo de Google, popularidad de Quizlet**
+
+**Estrategias:** Diferenciar a SkillShare como la única app 100 % enfocada en grupos de estudio colaborativos.
+
+**Táctica:** Campañas en universidades y redes sociales que muestren casos reales de mejora académica con SkillShare.
+
+#### 2. Debilidades de los competidores
+- **Distracciones en Discord, rigidez en Classroom, limitaciones de Quizlet**
+
+**Estrategias:** Posicionar a SkillShare como la opción más práctica y académica.
+
+**Táctica:** Ofrecer onboarding sencillo, pruebas premium gratuitas y recursos gamificados para retención de usuarios.
+
+#### 3. Oportunidades en el mercado
+- **Crecimiento del e-learning, digitalización en la región, uso masivo de celulares**
+
+**Estrategias:** Expandir presencia en Latinoamérica mediante convenios con universidades y asociaciones estudiantiles.
+
+**Táctica:** Programas de embajadores universitarios y licencias institucionales a bajo costo para acelerar la adopción.
+
+#### 4. Amenazas de los competidores
+- **Adopción masiva de WhatsApp/Discord, posibles imitaciones de funciones**
+
+**Estrategias:** Innovación continua y desarrollo de funciones educativas exclusivas
+
+---
+
+## 2.2. Entrevistas
+
+### 2.2.1. Diseño de entrevistas
+
+Con el fin de comprender mejor los hábitos, necesidades y dificultades de nuestros segmentos objetivo, diseñamos entrevistas cualitativas dirigidas a cuatro perfiles:
+
+* Estudiantes de educación superior.
+* Estudiantes de secundaria.
+* Estudiantes autodidactas.
+* Docentes.
+
+El objetivo es recoger insights que permitan construir una aplicación más cercana a las expectativas reales de los usuarios.
+
+---
+
+### Segmento 1: Estudiantes de educación superior (universidad o institutos)
+
+**Preguntas principales**
+
+1. ¿Cuáles son tus principales desafíos cuando estudias en grupo en la universidad?
+2. ¿Qué herramientas usas actualmente para organizar o participar en grupos de estudio? (ejemplo: WhatsApp, Discord, Google Drive, etc.)
+3. ¿Qué te resulta incómodo o poco práctico de esas herramientas?
+4. ¿Qué características valoras más en una aplicación que apoye tu aprendizaje en grupo?
+5. ¿Con qué frecuencia estudias en grupo y para qué materias lo haces más seguido?
+6. ¿Qué tan cómodo te resulta estudiar usando solo una aplicación móvil?
+7. ¿Qué tan importante sería para ti contar con recordatorios o agendas de estudio integradas en la aplicación?
+8. Si tuvieras que elegir, ¿qué sería más importante: mejor comunicación, más recursos compartidos o motivación (gamificación)?
+9. ¿Has pagado o pagarías por un servicio digital que mejore tu rendimiento académico?
+
+**Preguntas secundarias**
+
+1. ¿Qué dispositivos usas con mayor frecuencia para estudiar (PC, laptop, celular, tablet)?
+2. ¿Qué tanto influye la compatibilidad con tu dispositivo en la decisión de usar una aplicación?
+3. ¿Qué esperas en cuanto a diseño visual y facilidad de uso en una app de estudio?
+4. ¿Hay marcas, aplicaciones o plataformas educativas que admires y que te gustaría que SkillShare se parezca a ellas?
+
+---
+
+### Segmento 2: Estudiantes de secundaria (o preparatoria)
+
+**Preguntas principales**
+
+1. ¿Con qué frecuencia estudias en grupo para tareas o exámenes?
+2. ¿Qué problemas tienes cuando intentas organizar un grupo de estudio con tus compañeros?
+3. ¿Qué aplicaciones o redes sociales usas más para estudiar en grupo?
+4. ¿Qué cosas te gustaría que una aplicación de estudio en grupo te facilitara?
+5. ¿Usarías una aplicación solo desde el celular o preferirías también acceso en computadora?
+6. ¿Te motivaría más estudiar si una aplicación te diera recompensas o logros por participar?
+7. ¿Qué tan importante es para ti que la aplicación sea gratuita o tenga bajo costo?
+8. ¿Crees que tus padres o profesores apoyarían el uso de una aplicación como esta?
+
+**Preguntas secundarias**
+
+1. ¿Qué tan seguido compartes materiales digitales (PDF, links, videos) con tus compañeros?
+2. ¿Qué tanto influye la velocidad y facilidad de uso de una aplicación en tu decisión de seguir utilizándola?
+3. ¿Qué tipo de diseño prefieres: más juvenil/divertido o más serio/profesional?
+4. ¿Qué canal prefieres para recibir notificaciones importantes: dentro de la aplicación, correo o mensajes?
+
+---
+
+### Segmento 3: Estudiantes autodidactas
+
+**Preguntas principales**
+
+1. ¿Qué métodos utilizas actualmente para aprender de forma autodidacta?
+2. ¿Qué tan importante es para ti conectarte con otras personas que estudian lo mismo?
+3. ¿Qué problemas encuentras cuando buscas materiales o tratas de mantener una rutina de estudio?
+4. ¿Qué funcionalidades te ayudarían más: recordatorios, agenda de estudio, foros, chat en tiempo real?
+5. ¿Usarías una aplicación 100% móvil para organizar tu aprendizaje? ¿O prefieres computadora?
+6. ¿Qué tan cómodo te resulta compartir tus avances o proyectos en un grupo?
+7. ¿Qué te motivaría más: acceso a recursos, contacto con otros autodidactas, o medir tu progreso?
+8. ¿Estarías dispuesto a pagar por una versión premium si ofrece mejores recursos o conexiones con expertos?
+
+**Preguntas secundarias**
+
+1. ¿Qué tan relevante es para ti el diseño visual (limpio, minimalista vs. atractivo, dinámico)?
+2. ¿Qué tipo de notificaciones valoras más para mantener la constancia?
+3. ¿Qué marcas, influencers o aplicaciones te inspiran en tu camino de aprendizaje?
+4. ¿Qué tan importante es que la aplicación consuma poco espacio y funcione en celulares de gama baja?
+
+---
+
+### Segmento 4: Docentes
+
+**Preguntas principales**
+
+1. ¿Qué dificultades enfrentas al organizar y dar seguimiento a los grupos de estudio de tus estudiantes?
+2. ¿Qué herramientas digitales usas actualmente para coordinar actividades académicas (ejemplo: WhatsApp, Classroom, Zoom, Drive)?
+3. ¿Qué limitaciones encuentras en esas herramientas al momento de fomentar el trabajo colaborativo?
+4. ¿Qué funcionalidades valoras más en una aplicación que te permita apoyar a tus estudiantes (ejemplo: gestión de grupos, seguimiento de participación, recursos compartidos)?
+5. ¿Qué tan importante es para ti poder monitorear el progreso y la constancia de tus estudiantes dentro de la aplicación?
+6. ¿Qué opinas sobre integrar chats y videollamadas directamente en una aplicación de estudio en grupo?
+7. ¿Qué tan cómodo te resultaría usar una aplicación móvil para coordinar con tus estudiantes? ¿Preferirías también acceso desde computadora?
+
+**Preguntas secundarias**
+
+1. ¿Qué tipo de dispositivos usas más para tu labor docente digital (celular, laptop, PC, tablet)?
+2. ¿Qué tipo de diseño visual prefieres en una aplicación educativa dirigida a estudiantes: más juvenil/divertido o más formal/profesional?
+3. ¿Qué tanto influiría la seguridad y privacidad de datos (chats, videollamadas, materiales) en tu decisión de recomendar la aplicación?
+4. ¿Qué tanto valoras que la aplicación te permita diferenciar entre tu rol como docente y el rol de estudiante dentro de los grupos?
+
+---
+
+## 2.2.2. Registro de entrevistas
+
+### Segmento 1: Estudiantes de Educación Superior
+
+#### Entrevista 1
+
+| **Campo** | **Detalle** |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Entrevista 1](assets/images/C2/interviews/s1-e1.png) | Enlace: [Video](https://youtu.be/nsrOvXc6Tcs)  |
+| **Entrevistada**      | Rivera Quispe, Allison Milagros |
+| **Edad**              | 21 años  |
+| **Rubro**             | Estudiante de Administración |
+| **Ubicación**         | Lima, San Martín de Porres |
+| **Medio**             | Discord  |
+| **Entrevistador**     | Julca Cruz, Renso Anthony  |
+| **Instante inicio**   | 00:00:05   |
+| **Duración**          | 04 min 01 seg |
+| **Resumen**           | Allison señaló que sus principales desafíos al estudiar en grupo son coordinar horarios, mantener el enfoque y lidiar con compañeros poco preparados. Usa WhatsApp, Google Drive, Discord y Meet, pero encuentra desorden en archivos y distracciones. Considera clave una app que brinde comunicación clara, materiales organizados y recordatorios. Prefiere laptop, estudia en grupo en cursos exigentes (finanzas, estadística) y pagaría por una app útil y accesible. |
+
+#### Entrevista 2
+
+| **Campo** | **Detalle**  |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ![Entrevista 1](assets/images/C2/interviews/s1-e2.png) | Enlace: [Video](https://youtu.be/YWwc3DlUQVs)|
+| **Entrevistado**      | Hanco, Keyner |
+| **Edad**              | 20 años  |
+| **Rubro**             | Estudiante universitario |
+| **Ubicación**         | Lima, Magdalena del Mar |
+| **Medio**             | Meet |
+| **Entrevistador**     | Ramírez Tello, Sebastián |
+| **Instante inicio**   | 00:00:45  |
+| **Duración**          | 04 min 24 seg |
+| **Resumen**           | Keyner indicó que las diferencias en ritmo de aprendizaje y distracciones con amigos dificultan el estudio en grupo. Usa Discord por practicidad, pero no está pensado para educación. Valora notas compartidas, PDFs, videos, recordatorios y agenda. Prefiere celular por comodidad, estudia en grupo sobre todo en exámenes. Considera esenciales comunicación y recursos, y pagaría por una app que mejore su rendimiento. |
+
+---
+
+### Segmento 2: Estudiantes de Secundaria
+
+#### Entrevista 1
+
+| **Campo**  | **Detalle**  |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ![Entrevista 1](assets/images/C2/interviews/s2-e1.png) | Enlace: [Video](https://drive.google.com/file/d/1FuK5_IBT6OWCcFcUV1BB2kZx4zTx04GY/view?usp=drive_link)  |
+| **Entrevistada**      | DoCampo, Luciana  |
+| **Edad**              | 14 años  |
+| **Rubro**             | Estudiante colegio, 3er grado |
+| **Ubicación**         | Lima, San Isidro  |
+| **Medio**             | Zoom  |
+| **Entrevistador**     | Andrés García  |
+| **Instante inicio**   | 00:05  |
+| **Duración**          | 07 min 43 seg   |
+| **Resumen**           | Luciana comentó que enfrenta problemas porque no todos colaboran igual en proyectos escolares. Usa WhatsApp, pero considera que no es suficiente. Quiere una app que motive y se adapte a diferentes estilos de aprendizaje. Prefiere laptop, aunque usa celular. Desea recompensas y un diseño juvenil, con notificaciones al celular o correo. |
+
+#### Entrevista 2
+
+| **Campo**  | **Detalle**  |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Entrevista 1](assets/images/C2/interviews/s2-e2.png) | Enlace: [Video](https://drive.google.com/file/d/1Ler1MximkUI4TBXodpxHMTDuBSM2J7ZF/view?usp=drive_link)  |
+| **Entrevistada**      | Lozano, Mariana |
+| **Edad**              | 15 años  |
+| **Rubro**             | Estudiante colegio, 4to grado  |
+| **Ubicación**         | Bogotá, Colombia  |
+| **Medio**             | Zoom |
+| **Entrevistador**     | Andrés García  |
+| **Instante inicio**   | 00:05 |
+| **Duración**          | 06 min 12 seg   |
+| **Resumen**           | Mariana señaló que estudia en grupo en trabajos largos, pero algunos no cumplen. Usan WhatsApp, pero quiere una app que integre chat, calendario, recordatorios y espacios para ideas. Prefiere celular, con opción de PC. Le gustaría que sea gratuita o de bajo costo, con recompensas y diseño juvenil. Sus padres/profesores apoyarían su uso. |
+
+---
+
+### Segmento 3: Estudiantes Autodidactas
+
+#### Entrevista 1
+
+| **Campo**  | **Detalle**  |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Entrevista 1](assets/images/C2/interviews/s3-e1.png) | Enlace: [Video](https://youtu.be/Yi41aLH-Zzs)  |
+| **Entrevistada**      | Vilca Valverde, Fiorella Angela  |
+| **Edad**              | 22 años  |
+| **Rubro**             | Estudiante autodidacta |
+| **Ubicación**         | Lima, San Martín de Porres  |
+| **Medio**             | Discord  |
+| **Entrevistador**     | Julca Cruz, Renso Anthony   |
+| **Instante inicio**   | 00:00:05   |
+| **Duración**          | 04 min 00 seg   |
+| **Resumen**           | Fiorella estudia con YouTube, blogs y PDFs. Busca conectar con otros para motivarse y resolver dudas. Dificultades: exceso de información, falta de constancia y horarios. Quiere recordatorios, agenda y chat en tiempo real. Prefiere celular, se siente cómoda compartiendo avances. Le motiva medir progreso y estaría dispuesta a pagar por una versión premium con expertos. |
+
+#### Entrevista 2
+
+| **Campo**             | **Detalle**   |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ![Entrevista 1](assets/images/C2/interviews/s3-e2.png) | Enlace: [Video](https://drive.google.com/file/d/11-2en9KWlYKJZ-ya2PDRXrReMPWwj3ms/view?usp=drive_link) |
+| **Entrevistada**      | Sol, Lily  |
+| **Edad**              | 24 años  |
+| **Rubro**             | Viajera  |
+| **Ubicación**         | Lima, Miraflores |
+| **Medio**             | Zoom   |
+| **Entrevistador**     | Andrés García  |
+| **Instante inicio**   | 00:05   |
+| **Duración**          | 04 min 54 seg     |
+| **Resumen**           | Lily estudia de forma autodidacta con YouTube, artículos y cursos cortos. Problemas: filtrar información y mantener constancia. Valora agenda con recordatorios y chat en tiempo real. Quiere diseño limpio y que funcione en celulares gama media/baja. Pagará premium si incluye expertos o contenido exclusivo. |
+
+#### Entrevista 3
+
+| **Campo**  | **Detalle**  |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Entrevista 1](assets/images/C2/interviews/s3-e3.png) | Enlace: [Video](https://drive.google.com/file/d/1D-maDUL9Pzv_XaV8RW3GaaU8Q52LEZ-t/view?usp=drive_link)  |
+| **Entrevistado**      | Wolf, Carlos  |
+| **Edad**              | 21 años   |
+| **Rubro**             | Viajero, trabajador hotelero    |
+| **Ubicación**         | Lima, Jesús María  |
+| **Medio**             | Zoom  |
+| **Entrevistador**     | Andrés García  |
+| **Instante inicio**   | 00:05  |
+| **Duración**          | 05 min 24 seg  |
+| **Resumen**           | Carlos estudia con cursos online y apps móviles. Problemas: falta de tiempo y exceso de información. Prefiere app 100% móvil, ligera y minimalista. Valora agenda con recordatorios y seguimiento de progreso. No prioriza compartir avances, pero sí conversar con alguien con experiencia. Pagará premium si ofrece contenido aplicable profesionalmente. |
+
+---
+
+### Segmento 4: Docentes
+
+#### Entrevista 1
+
+| **Campo**| **Detalle** |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ![Entrevista 1](assets/images/C2/interviews/s4-e1.png) | Enlace: [Video](https://youtu.be/0608y_ujm0A)  |
+| **Entrevistado**      | Villareal, José Manuel |
+| **Edad**              | 27 años  |
+| **Rubro**             | Docente secundaria   |
+| **Ubicación**         | Monsefú, Lambayeque   |
+| **Medio**             | Zoom    |
+| **Entrevistador**     | González Custodio, Carlos Alberto  |
+| **Instante inicio**   | 00:01:00  |
+| **Duración**          | 05 min 27 seg    |
+| **Resumen**           | José Manuel señaló dificultades por baja participación y coordinación de horarios. Usa Classroom y Meet, pero no fomentan colaboración. Quiere una app con materiales compartidos, retroalimentación y reportes de progreso. Prefiere diseño formal-amigable con seguridad y diferenciación de roles docente-estudiante. |
+
+#### Entrevista 2
+
+| **Campo**  | **Detalle**   |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Entrevista 1](assets/images/C2/interviews/s4-e2.png) | Enlace: [Video](https://youtu.be/J2UVr4sQtAs) |
+| **Entrevistada**      | Salon, Merly  |
+| **Edad**              | 25 años  |
+| **Rubro**             | Docente secundaria   |
+| **Ubicación**         | Lima, San Martín de Porres   |
+| **Medio**             | Meet   |
+| **Entrevistador**     | González Custodio, Carlos Alberto   |
+| **Instante inicio**   | 00:01:01   |
+| **Duración**          | 06 min 14 seg   |
+| **Resumen**           | Merly señaló que la dispersión de alumnos en varias plataformas dificulta el seguimiento. Usa Classroom, Drive y WhatsApp, pero no integran funciones. Quiere app que centralice materiales, organice grupos y muestre estadísticas claras. Valora integración de chat/videollamadas, diseño juvenil-profesional y alta seguridad. Insiste en diferenciar rol docente-estudiante. |
+
+---
+<br>
+
+## 2.2.3. Análisis de entrevistas
+
+### Segmento 1: Estudiantes de educación superior (universidad o institutos)  
+**Tamaño de la Muestra (n):** 2 entrevistas  
+**Base de Cálculo:** Todas las estadísticas y porcentajes se calculan sobre la base de las 2 entrevistas realizadas. Cada entrevistado representa el 50% del segmento analizado.
+
+---
+
+### 1. Análisis de Características Objetivas (Datos Demográficos y Observables)
+
+| Característica             | Allison (50%)                  | Keyner (50%)               | Análisis y Sustento                                                                 |
+|-----------------------------|--------------------------------|----------------------------|-------------------------------------------------------------------------------------|
+| Edad                        | 21 años                        | 22 años                    | Ambos entrevistados se encuentran en el rango etario típico de estudiantes universitarios de pregrado. |
+| Nivel de estudio            | Universidad                    | Universidad                | El segmento está compuesto exclusivamente por estudiantes universitarios.           |
+| Carrera                     | Administración                 | Ingeniería de Sistemas     | Muestra una diversidad de áreas de estudio (negocios y tecnología), lo que sugiere que las necesidades son transversales. |
+| Dispositivo principal       | Laptop                         | Celular                    | Existe una división clara en la preferencia del dispositivo, indicando la necesidad de una aplicación multiplataforma (web y móvil) para cubrir ambos usos. |
+| Frecuencia de estudio grupal| Antes de exámenes y en cursos difíciles | En épocas de exámenes | Ambos coinciden en que la modalidad grupal se intensifica en periodos de alta demanda académica (exámenes, cursos complejos). |
+
+---
+
+### 2. Análisis de Características Subjetivas (Necesidades, Dolores y Motivaciones)
+
+**a. Desafíos y Dolores Principales en el Estudio Grupal (¿Qué problemas enfrentan?)**
+
+| Dolor                      | Manifestación en las Entrevistas                                                                 |
+|----------------------------|--------------------------------------------------------------------------------------------------|
+| Coordinación y Logística   | "Coordinar horarios" (Allison), "Agendas de estudio integradas" (Keyner).                        |
+| Falta de Enfoque y Distracciones | "Mantener el enfoque", "lidiar con compañeros poco preparados" (Allison), "falta de concentración... se distraen" (Keyner). |
+| Problemas con Herramientas Actuales | "Mezcla de mensajes personales, desorden en archivos" (Allison), "no diseñado para el aprendizaje" (Keyner). |
+| Diferencias en el Compromiso | "Compañeros poco preparados" (Allison), "diferencias en el ritmo de aprendizaje" (Keyner). |
+
+**Sustento:** El 100% de los entrevistados identificó problemas de coordinación, distracción y las limitaciones de las aplicaciones genéricas (como WhatsApp o Discord) como sus principales obstáculos. Esto indica que estos no son problemas aislados, sino dolores universales para el segmento.
+
+---
+
+**b. Comportamiento Actual y Herramientas Utilizadas (¿Qué usan ahora?)**
+
+| Herramienta/Comportamiento | Manifestación en las Entrevistas                                                                 |
+|-----------------------------|--------------------------------------------------------------------------------------------------|
+| Uso de Múltiples Apps       | WhatsApp, Drive, Discord, Meet (Allison); Discord (Keyner).                                      |
+| Discord como Herramienta Principal | "Actualmente usa Discord" (Allison), "Utiliza Discord" (Keyner).                        |
+| Reconocimiento de Limitaciones | Ambas entrevistas critican la falta de enfoque específico para el estudio de las herramientas que usan. |
+
+**Sustento:** Hay una coincidencia del 100% en el uso de Discord por su practicidad en comunicación y compartición de pantalla. Sin embargo, también hay un consenso total (100%) en que estas herramientas no están optimizadas para su caso de uso, creando una oportunidad clara para una solución especializada.
+
+---
+
+**c. Necesidades y Expectativas Deseadas (¿Qué solución buscan?)**
+
+| Necesidad                  | Manifestación en las Entrevistas                                                                 |
+|-----------------------------|--------------------------------------------------------------------------------------------------|
+| Organización Centralizada   | "Materiales organizados por temas" (Allison), "compartir materiales... tomar notas" (Keyner).   |
+| Comunicación Clara y Enfocada | "Comunicación clara" (Allison), "buena comunicación dentro de la app" (Keyner).               |
+| Funciones de Planificación  | "Recordatorios de reuniones" (Allison), "recordatorios y agendas de estudio" (Keyner).          |
+| Disponibilidad Multiplataforma | Prefiere laptop (Allison), prefiere celular (Keyner).                                        |
+
+**Sustento:** Las necesidades clave son universales (100%): un espacio organizado, comunicación dedicada al estudio y herramientas integradas de planificación. La divergencia en el dispositivo preferido refuerza la necesidad de que la solución funcione perfectamente en ambos.
+
+---
+
+**d. Disposición al Pago (¿Invertirían en una solución?)**
+
+| Aspecto                    | Manifestación en las Entrevistas                                                                 |
+|-----------------------------|--------------------------------------------------------------------------------------------------|
+| Nunca han pagado            | "Nunca ha pagado por aplicaciones de estudio" (Allison). Se infiere lo mismo para Keyner.       |
+| Disposición Condicional     | Ambas expresaron que pagarían si la aplicación demuestra valor tangible.                        |
+| Condiciones para pagar      | "Costo accesible" (Allison), "mejora su rendimiento académico" (Keyner).                       |
+
+**Sustento:** El segmento es 100% sensible al precio y al valor. No están acostumbrados a pagar, pero están abiertos a hacerlo si la aplicación resuelve sus problemas principales (organización, ahorro de tiempo, mejora de rendimiento) de manera evidente y a un costo que se ajuste a su presupuesto como estudiantes.
+
+---
+
+### Conclusión para la Construcción del Arquetipo
+El análisis estadístico de las entrevistas revela un perfil de segmento muy coherente y con necesidades claramente identificadas:
+- El Arquetipo Principal es un estudiante universitario de 20-21 años que forma grupos de estudio para preparar exámenes y cursos difíciles.  
+- Sus mayores frustraciones (100% de coincidencia) son la logística, las distracciones y el desorden que generan las herramientas de comunicación generalistas.  
+- Valoran profundamente (100% de coincidencia) la organización, la comunicación enfocada y la planificación integrada.  
+- Su disposición al pago no es nula, pero es pragmática: necesitan ver resultados claros (ahorro de tiempo, menos estrés, mejores notas) a un precio muy competitivo.  
+
+<br>
+<br>
+
+### Segmento 2: Estudiantes de secundaria o preparatoria
+**Tamaño de la Muestra (n):** 2 entrevistas  
+**Base de Cálculo:** Todas las estadísticas y porcentajes se calculan sobre la base de las 2 entrevistas realizadas. Cada entrevistado representa el 50% del segmento analizado.
+
+---
+
+#### 1. Análisis de Características Objetivas (Datos Demográficos y Observables)
+
+| Característica              | Luciana (50%) | Mariana (50%) | Análisis y Sustento |
+|-----------------------------|---------------|---------------|---------------------|
+| Edad                        | 15 años       | 14 años       | Ambos entrevistados se encuentran en el rango etario típico de estudiantes de secundaria. |
+| Nivel de estudio            | Secundaria    | Secundaria    | El segmento está definido por su nivel educativo, lo que implica dinámicas de trabajo y supervisión específicas. |
+| Frecuencia de estudio grupal| Proyectos escolares | Trabajos extensos | La formación de grupos es reactiva, impulsada por requisitos específicos de sus tareas y proyectos académicos. |
+| Dispositivo principal       | Laptop        | Celular       | Prefieren la multifuncionalidad. El celular es práctico y siempre a mano, mientras que el computador/laptop se prefiere para trabajos más profundos. |
+| Herramienta actual principal| WhatsApp      | WhatsApp      | Coincidencia total en el uso de WhatsApp como herramienta principal de coordinación, a pesar de reconocer sus limitaciones. |
+
+---
+
+#### 2. Análisis de Características Subjetivas (Necesidades, Dolores y Motivaciones)
+
+**a. Desafíos y Dolores Principales en el Estudio Grupal (¿Qué problemas enfrentan?)**
+
+| Dolor                        | Manifestación en las Entrevistas |
+|------------------------------|----------------------------------|
+| Desigualdad en la Colaboración | "No todos los compañeros colaboran de la misma forma" (L), "algunos compañeros se distraen o no cumplen" (M). |
+| Limitaciones de las Herramientas Actuales | "WhatsApp no siempre es clara ni suficiente para organizarse" (L), "debería integrar todo en un mismo lugar" (M). |
+| Problemas de Distracción y Enfoque | Implícito en la falta de colaboración (L), "algunos compañeros se distraen" (M). |
+
+**Sustento:** Las dificultades de colaboración y las limitaciones de WhatsApp son dolores universales (100%) para este segmento. La dinámica de grupo desigual es su principal desafío interpersonal.
+
+---
+
+**b. Comportamiento Actual y Herramientas Utilizadas (¿Qué usan ahora?)**
+
+| Herramienta/Comportamiento | Manifestación en las Entrevistas |
+|-----------------------------|----------------------------------|
+| Uso de WhatsApp como Eje   | Usan WhatsApp para coordinar (L, M). |
+| Reconocimiento de su Insuficiencia | Ambas critican abiertamente a WhatsApp por no ser una herramienta adecuada para la organización del trabajo estudiantil. |
+
+**Sustento:** Existe una coincidencia del 100% en el uso de una herramienta que reconocen como insuficiente. Esto indica una necesidad no satisfecha y una oportunidad clara para una solución diseñada para su contexto.
+
+---
+
+**c. Necesidades y Expectativas Deseadas (¿Qué solución buscan?)**
+
+| Necesidad                 | Manifestación en las Entrevistas |
+|----------------------------|----------------------------------|
+| Integración y Centralización | "Integrar todo en un mismo lugar: chat, calendario, recordatorios" (M). "Diferentes métodos de aprendizaje" (L). |
+| Motivación y Gamificación   | "Ofrecer motivación... recompensas o logros" (L), "recompensas por participación" (M). |
+| Diseño Juvenil y Atractivo  | "Diseño juvenil y divertido" (L), "diseño juvenil y atractivo" (M). |
+| Funciones de Organización   | "Recordatorios" (M), "organizarse" (L). |
+| Aprobación Adulta           | "Sus padres y profesores apoyarían el uso..." (M). |
+
+**Sustento:** Las necesidades son absolutamente unánimes (100%) en los aspectos clave: quieren una herramienta integrada, que los motive mediante gamificación y que tenga un diseño que les hable directamente (juvenil). La mención a la aprobación adulta (50%) sugiere que la validación de figuras de autoridad es un factor positivo para al menos una parte del segmento.
+
+---
+
+**d. Disposición al Pago (¿Invertirían en una solución?)**
+
+| Aspecto                   | Manifestación en las Entrevistas |
+|----------------------------|----------------------------------|
+| Preferencia por Gratuidad  | "Le gustaría que la aplicación sea gratuita" (L), "debería ser gratuita o de bajo costo" (M). |
+| Modelo Aceptable: Freemium con Gamificación | "Recompensas o logros" (L), "recompensas por participación" (M). |
+
+**Sustento:** Existe una preferencia universal (100%) por aplicaciones gratuitas. Su disposición a interactuar con mecanismos de recompensas y logros (100%) indica que un modelo freemium (gratuito con funcionalidades premium o sistemas de recompensas integrados) sería el camino más efectivo para este segmento, que probablemente depende de subsidios de padres o la institución educativa.
+
+---
+
+### Conclusión para la Construcción del Arquetipo
+El análisis estadístico de las entrevistas revela un perfil de segmento muy claro y consistente:  
+- El Arquetipo Principal es una estudiante de secundaria/preparatoria que se agrupa obligatoriamente por proyectos escolares y sufre por la desigual participación de sus compañeros.  
+- Sus mayores frustraciones (100% de coincidencia) son la falta de colaboración y el uso de herramientas inadecuadas (WhatsApp) que no resuelven sus necesidades de organización.  
+- Valoran enormemente (100% de coincidencia) una solución que sea integral (todo-en-uno), motivadora (gamificación) y con un diseño atractivo y juvenil que se diferencie de las herramientas "aburridas" de los adultos.  
+- Su disposición al pago es nula o muy baja. El modelo de negocio debe girar en torno a la gratuidad, potencialmente con publicidad contextual, o un modelo freemium donde la escuela o los padres paguen por una licencia grupal o funcionalidades avanzadas de seguimiento para los docentes.
+
+<br>
+<br>
+
+### Segmento 3: Estudiantes autodidactas
+**Tamaño de la Muestra (n):** 3 entrevistas  
+**Base de Cálculo:** Todas las estadísticas y porcentajes se calculan sobre la base de las 3 entrevistas realizadas. Cada entrevistado representa aproximadamente el 33.3% del segmento analizado.
+
+---
+
+#### 1. Análisis de Características Objetivas (Datos Demográficos y Observables)
+
+| Característica        | Fiorella (33.3%) | Lily (33.3%) | Carlos (33.3%) | Análisis y Sustento |
+|-----------------------|------------------|--------------|----------------|---------------------|
+| Modalidad de Aprendizaje | Autodidacta | Autodidacta | Autodidacta | La característica definitoria del segmento es el aprendizaje auto-gestionado y no formal. |
+| Dispositivo Principal | Celular | Celular | Celular | Coincidencia total en la preferencia y practicidad del dispositivo móvil para estudiar en cualquier momento y lugar. |
+| Fuentes de Estudio    | YouTube, blogs, PDF | YouTube, artículos web | Cursos online, artículos | Todos utilizan predominantemente recursos gratuitos y disponibles en internet (videos, artículos, cursos). |
+
+---
+
+#### 2. Análisis de Características Subjetivas (Necesidades, Dolores y Motivaciones)
+
+**a. Desafíos y Dolores Principales (¿Qué problemas enfrentan?)**
+
+| Dolor                    | Manifestación en las Entrevistas |
+|---------------------------|----------------------------------|
+| Sobrecarga de Información | "Exceso de información disponible" (F), "dificultad para filtrar información útil" (L), "sobrecarga de información" (C). |
+| Falta de Constancia y Rutina | "Falta de constancia", "ausencia de un horario fijo" (F), "constancia en la rutina" (L), "falta de tiempo... rutina estable" (C). |
+| Aislamiento y Necesidad de Comunidad | "Importante conectarse con otras personas" (F), "importancia de la comunidad" (L). |
+| Falta de Tiempo          | "Falta de tiempo" (Carlos). |
+
+**Sustento:** Los dolores son muy consistentes. La sobrecarga de información y la dificultad para mantener una rutina son problemas universales (100%) para este segmento. La necesidad de comunidad es mayoritaria (66.7%), pero no unánime, lo que sugiere la existencia de sub-perfiles dentro del segmento.
+
+---
+
+**b. Comportamiento Actual y Herramientas Utilizadas (¿Qué usan ahora?)**
+
+| Herramienta/Comportamiento | Manifestación en las Entrevistas |
+|-----------------------------|----------------------------------|
+| Uso de Plataformas de Contenido Gratuito | YouTube, blogs (F, L, C) |
+| Búsqueda de Organización   | "Aplicaciones para tomar notas y organizarse" (L), "resúmenes organizados" (F). |
+| Valoración de la Aplicabilidad | "Contenido... aplicable profesionalmente" (C). |
+
+**Sustento:** El segmento es 100% dependiente de contenido online gratuito. Además, una mayoría significativa (66.7%) actively busca métodos y herramientas para organizar su aprendizaje de manera efectiva.
+
+---
+
+**c. Necesidades y Expectativas Deseadas (¿Qué solución buscan?)**
+
+| Necesidad                 | Manifestación en las Entrevistas |
+|----------------------------|----------------------------------|
+| Planificación y Recordatorios | "Recordatorios, una agenda organizada" (F), "agenda con recordatorios" (L), "agendas de estudio con recordatorios" (C). |
+| Comunidad y Chat en Tiempo Real | "Chat en tiempo real" (F), "chat en tiempo real para conectarse" (L). |
+| Seguimiento de Progreso   | "Medir su progreso" (F), "seguimiento de progreso" (C). |
+| Conexión con Expertos     | "Acceso a expertos" (F, L), "conversar con alguien con más experiencia" (C). |
+
+**Sustento:** La necesidad de herramientas de planificación (agenda/recordatorios) y la valoración del acceso a expertos son universales (100%). Otras necesidades como la comunidad, el seguimiento de progreso y un diseño simple son mayoritarias (66.7%), lo que las convierte en críticas.
+
+---
+
+**d. Disposición al Pago (¿Invertirían en una solución?)**
+
+| Aspecto                   | Manifestación en las Entrevistas |
+|----------------------------|----------------------------------|
+| Disposición Condicional    | Los tres expresaron que pagarían bajo condiciones específicas. |
+| Razón Principal para Pagar: Acceso a Expertos/Contenido Premium | "Acceso a expertos" (F, L), "contenido de calidad y aplicable" (C). |
+| Condición: Precio Razonable | "A un precio razonable" (F), implícito en L y C. |
+
+**Sustento:** Existe una disposición unánime (100%) a considerar una versión premium, pero está supeditada a que la aplicación entregue valor tangible en forma de contenido exclusivo de calidad y acceso a orientación experta. Son sensibles al precio, pero priorizan la calidad.
+
+---
+
+### Conclusión para la Construcción del Arquetipo
+El análisis estadístico de las entrevistas revela dos sub-perfiles o arquetipos dentro del segmento autodidacta:  
+
+- **El Autodidacta Social (66.7%)**: Representado por Fiorella y Lily. Su motivación y aprendizaje se ven fuertemente potenciados por la comunidad. Necesita sentirse parte de un grupo, compartir dudas y avances para mantenerse motivado y superar bloqueos.  
+- **El Autodidacta Pragmático (33.3%)**: Representado por Carlos. Su foco principal es la eficiencia y la aplicabilidad del conocimiento. Aunque puede ver valor en contactar con expertos, la interacción grupal no es una prioridad. Valora el contenido de calidad y las herramientas que se adaptan a su limitado tiempo.  
+
+<br>
+<br>
+
+## Segmento 4: Docentes
+
+**Tamaño de la Muestra (n):** 2 entrevistas
+**Base de Cálculo:** Todas las estadísticas y porcentajes se calculan sobre la base de las 2 entrevistas realizadas. Cada entrevistado representa el **50% del segmento**.
+
+---
+
+### 1. Análisis de Características Objetivas (Datos Demográficos y Observables)
+
+| Característica        | JM (50%)            | M (50%)                    | Análisis y Sustento                                                                                   |
+| --------------------- | ------------------- | -------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Nivel Educativo       | Secundaria          | Secundaria                 | Ambos ejercen en el mismo nivel, lo que genera un contexto de uso muy específico.                     |
+| Rol                   | Docente             | Docente                    | El segmento está definido por su rol de facilitadores del aprendizaje.                                |
+| Contexto Geográfico   | Monsefú (Provincia) | Lima (Capital)             | Incluyen realidades socioeconómicas distintas, pero con necesidades comunes.                          |
+| Herramientas Actuales | Classroom, Meet     | Classroom, Drive, WhatsApp | Coincidencia total en el uso de Google Classroom, pero complementado con apps externas no integradas. |
+
+---
+
+### 2. Análisis de Características Subjetivas (Necesidades, Dolores y Motivaciones)
+
+**a. Desafíos y Dolores Principales**
+
+| Dolor                                     | Manifestación en las Entrevistas                                                              |
+| ----------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Falta de Colaboración e Integración       | “No fomentan del todo el trabajo colaborativo” (JM); “dispersos en varias plataformas” (M).   |
+| Dificultad de Seguimiento y Monitoreo     | “Monitorear el progreso” (JM); “dificulta el seguimiento de la participación” (M).            |
+| Problemas de Coordinación y Participación | “Baja participación, complejidad de coordinar horarios” (JM); implícito en la dispersión (M). |
+
+**Sustento:** Los dolores son universales (100%). Todos refieren a fragmentación y baja colaboración.
+
+---
+
+**b. Comportamiento Actual y Herramientas Utilizadas**
+
+| Herramienta/Comportamiento                 | Manifestación en las Entrevistas                                            |
+| ------------------------------------------ | --------------------------------------------------------------------------- |
+| Uso de Múltiples Plataformas no Integradas | Classroom + Meet (JM); Classroom + Drive + WhatsApp (M).                    |
+| Reconocimiento de Limitaciones             | Ambos señalan la falta de colaboración e integración como problema crítico. |
+
+**Sustento:** Coincidencia total (100%) en que el ecosistema actual es un “parche” poco funcional.
+
+---
+
+**c. Necesidades y Expectativas Deseadas**
+
+| Necesidad                      | Manifestación en las Entrevistas                                                                |
+| ------------------------------ | ----------------------------------------------------------------------------------------------- |
+| Centralización y Organización  | “Compartir materiales” (JM); “centralice materiales, organice grupos” (M).                      |
+| Monitoreo y Reportes           | “Monitorear progreso mediante reportes” (JM); “estadísticas claras de progreso” (M).            |
+| Diferenciación de Roles        | “Roles docente-estudiante” (JM); “diferenciar el rol docente” (M).                              |
+| Comunicación Integrada         | “Retroalimentación” (JM); “integración de chat y videollamadas” (M).                            |
+| Seguridad, Privacidad y Diseño | “Diseño amigable, altos estándares de seguridad” (JM); “juvenil pero profesional y seguro” (M). |
+
+**Sustento:** Necesidades unánimes (100%). Buscan una **plataforma integral, segura y con diferenciación de roles**.
+
+---
+
+**d. Modelo de Negocio y Disposición al Pago**
+
+| Aspecto                    | Manifestación en las Entrevistas                                   |
+| -------------------------- | ------------------------------------------------------------------ |
+| Valor Percibido            | Todas las funcionalidades clave (centralización, reportes, roles). |
+| Experiencia del Estudiante | “Diseño amigable” (JM); “diseño que motive a estudiantes” (M).     |
+
+**Sustento:** Aunque no se declara explícitamente el pago, el **valor percibido es muy alto (100%)**. La adopción dependerá de que la solución sea robusta para el docente y atractiva para el alumno.
+
+---
+
+### Conclusión para la Construcción del Arquetipo
+
+* **Arquetipo Principal:** Docente de secundaria que busca fomentar la colaboración y monitorear el progreso en un ecosistema fragmentado.
+* **Dolores universales (100%):** dispersión de plataformas, baja colaboración, dificultad de seguimiento.
+* **Valoran (100%):** una plataforma **todo-en-uno**, con **centralización, roles diferenciados, comunicación integrada, reportes y seguridad confiable**.
+* **Criterio de adopción:** robustez para el docente y facilidad/atractivo para el estudiante.
+
+---
+
+<br>
+<br>
+
+## 2.3. Needfinding
+
+### 2.3.1. User Personas
+
+Los artefactos de **User Persona** presentados a continuación sintetizan los hallazgos clave obtenidos del análisis de entrevistas y del benchmarking competitivo. Su propósito es transformar los datos crudos en representaciones empáticas y tangibles de nuestros usuarios objetivo, sirviendo como referentes constantes para la toma de decisiones de diseño y estrategia.
+
+**Características consideradas en su construcción:**
+
+* **Pain Points y Necesidades:** Se priorizaron los desafíos recurrentes, como la desorganización, la dificultad de coordinación y las distracciones en herramientas actuales.
+* **Comportamiento y Contexto de Uso:** Se analizó cómo, cuándo y por qué los estudiantes forman grupos de estudio, identificando patrones como el uso intensivo antes de exámenes y en cursos específicos.
+* **Herramientas y Brechas:** Se mapeó el ecosistema de aplicaciones actualmente utilizadas (WhatsApp, Drive, etc.) y las deficiencias detectadas, que definen la oportunidad para nuestra solución.
+* **Sensibilidad al Precio y Valor Percibido:** Se incluyó la disposición condicional a pagar por una solución que demuestre valor claro en **ahorro de tiempo y reducción de estrés**, siempre que sea accesible económicamente.
+
+**Enlace:** [Clic aquí](https://www.canva.com/design/DAGP0hCxEz8/Pn2qn9YD-xUK92feuYKBMA/edit?utm_content=DAGP0hCxEz8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+---
+
+## Segmento 1: Estudiantes universitarios o de instituto
+
+![User Persona 1](assets/images/C2/user_personas/up1.jpg)
+
+## Segmento 2: Estudiantes de secundaria o preparatoria
+
+![User Persona 2](assets/images/C2/user_personas/up2.jpg)
+
+## Segmento 3: Estudiantes autodidactas
+
+![User Persona 3](assets/images/C2/user_personas/up3.jpg)
+
+## Segmento 4: Docentes
+
+![User Persona 4](assets/images/C2/user_personas/up4.jpg)
+
+<br>
+<br>
+
+## 2.3.2. User Task Matrix
+
+| User Task                                                                             | Segmento 1 <br> (Frecuencia / Importancia) | Segmento 2 <br> (Frecuencia / Importancia) | Segmento 3 <br> (Frecuencia / Importancia) | Segmento 4 <br> (Frecuencia / Importancia) |
+| ------------------------------------------------------------------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
+| Coordinar horarios y reuniones de estudio/trabajo. | Alta / Alta | Media / Media | Baja / Baja | Media / Media |
+| Compartir y organizar materiales de estudio (apuntes, links, archivos).               | Alta / Alta | Alta / Alta | Alta / Alta | Alta / Alta  |
+| Realizar seguimiento del progreso y cumplimiento de tareas individuales.              | Media / Alta | Media / Alta  | Alta / Alta  | Alta / Alta  |
+| Comunicarse de forma síncrona (videollamadas) o asíncrona (chat) con el grupo/mentor. | Alta / Media | Alta / Media | Baja / Media | Media / Media  |
+| Establecer y dar seguimiento a metas y plazos de aprendizaje personal/grupal.         | Media / Media | Baja / Baja  | Alta / Alta  | Alta / Alta  |
+| Mantener la motivación y el engagement con el estudio o el proyecto.                  | Media / Media  | Alta / Alta  | Alta / Alta  | Alta / Alta  |
+| Evaluar la contribución y participación de los miembros de un grupo.                  | Alta / Alta | Alta / Alta  | N/A  | Alta / Alta    |
+| Buscar y curar contenido de estudio confiable y de calidad.                           | Media / Media   | Baja / Baja | Alta / Alta  | Alta / Alta   |
+| Garantizar un entorno seguro y con roles claros para la colaboración.                 | Media / Baja | Baja / Baja  | Baja / Baja  | Alta / Alta  |
+
+---
+
+### Análisis del User Task Matrix
+
+El análisis revela coincidencias cruciales y diferencias notorias entre los segmentos, lo que guiará el diseño de las **funcionalidades core** y **secundarias** de la aplicación.
+
+**Tareas Críticas (Alta Frecuencia & Alta Importancia):**
+
+* **Task #2 (Compartir y organizar materiales):** Es la tarea más crítica y universal en todos los segmentos. Nuestra solución debe ofrecer un **repositorio centralizado, robusto e intuitivo**.
+* **Task #7 (Evaluar contribución):** Vital para universitarios, escolares y docentes. Implica la necesidad de **analíticas de participación** o herramientas de seguimiento de contribuciones.
+* **Task #3 (Seguimiento de progreso) y Task #5 (Establecer metas):** De alta importancia para autodidactas y docentes; media para universitarios. Esto sugiere que la **planificación y tracking** deben ser adaptativas según el contexto (individual vs. grupal).
+* **Task #6 (Mantener motivación):** Alta en tres segmentos, aunque con motivaciones distintas (gamificación para escolares, progreso tangible para autodidactas, engagement grupal para docentes).
+
+**Principales Diferencias:**
+
+* **Coordinar (Task #1):** Crítico en universidad, menos relevante en secundaria y casi irrelevante para autodidactas.
+* **Comunicación (Task #4):** Frecuente pero de importancia media; debe integrarse pero no ser el eje central.
+* **Curar contenido (Task #8):** Core para autodidactas y docentes, no prioritario para estudiantes tradicionales.
+* **Seguridad y roles (Task #9):** Casi exclusivo de docentes, quienes necesitan mantener **control y autoridad** en el entorno digital.
+
+<br>
+<br>
+
+### 2.3.3. User Journey Mapping
+
+**Enlace:** [Clic aquí](https://www.canva.com/design/DAGQAPY8rrQ/c860ppQIoPP1z4IgUXKyrQ/edit?utm_content=DAGQAPY8rrQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+Esta sección ilustra la experiencia end-to-end actual (As-Is) de nuestros User Personas al intentar formar y gestionar grupos de estudio sin la existencia de nuestra solución, SkillShare. El propósito de estos mapas es visualizar de manera clara y empática las interacciones, puntos de dolor, emociones y oportunidades de mejora que surgen a lo largo de todo el proceso, desde que identifican la necesidad de estudiar en grupo hasta que concluyen su proyecto. Estos journey maps validan los pain points identificados y sirven como base fundamental para diseñar la experiencia futura (To-Be).
+
+---
+
+#### Primer segmento: Allison Rivera – Estudiantes universitarios o de instituto
+
+![User Journey Mapping 1](assets/images/C2/user_journey_mapping/ujm1.jpg)
+
+**Explicación**
+El journey de María García refleja los desafíos de los estudiantes universitarios al buscar colaboración académica. Actualmente, enfrenta procesos desorganizados y dependientes del azar, como redes sociales y conversaciones informales.
+
+* **Reconocimiento:** se da cuenta de que estudiar sola no es suficiente para temas complejos, especialmente en materias densas.
+* **Investigación:** enfrenta la falta de canales estructurados para encontrar compañeros compatibles, con métodos ineficientes que no garantizan calidad.
+* **Decisión:** se arriesga al unirse a grupos sin conocer el compromiso o la compatibilidad, lo que genera frustración.
+* **Uso Continuo:** revela problemas como dificultades para coordinar horarios, falta de herramientas colaborativas y ausencia de estructura que mantenga el enfoque.
+* **Logros y Mantenimiento:** aunque obtiene beneficios académicos, carece de herramientas de evaluación para optimizar la experiencia y mantener grupos efectivos.
+
+Este journey resalta oportunidades clave para SkillShare, como identificación automatizada de necesidades, herramientas colaborativas avanzadas y sistemas de evaluación continua.
+
+---
+
+#### Segundo segmento: Luciana DoCampo – Estudiantes de secundaria
+
+![User Journey Mapping 2](assets/images/C2/user_journey_mapping/ujm2.jpg)
+
+**Explicación**
+El journey de Luciana DoCampo refleja los retos de los estudiantes de secundaria de la Generación Z al trasladar sus habilidades sociales al ámbito académico colaborativo.
+
+* **Reconocimiento:** Luciana reacciona negativamente a los trabajos grupales debido a experiencias frustrantes, compartiendo su frustración con sus amigas.
+* **Investigación:** usa herramientas digitales como Instagram y conversaciones cara a cara, pero estas no son efectivas para encontrar colaboradores académicos, lo que la lleva a elegir grupos por afinidad social, no por compatibilidad académica.
+* **Decisión:** toma decisiones rápidas basadas en factores sociales, creando grupos cómodos pero desorganizados, sin conocer los estilos de trabajo de sus compañeros.
+* **Uso Continuo:** la incompatibilidad entre las herramientas sociales que usa y las necesidades académicas genera distracción, desorganización e inequidad en la carga de trabajo.
+* **Logros y Mantenimiento:** aunque obtiene buenos resultados, el proceso le causa estrés y fatiga, y la falta de reconocimiento dificulta mejorar en futuras colaboraciones.
+
+Este journey resalta oportunidades para SkillShare: gamificación, reconocimiento visual, herramientas organizacionales adaptadas a sus hábitos digitales y sistemas que aseguren un trabajo colaborativo justo.
+
+---
+
+#### Tercer segmento: Carlos Wolf – Profesionales autodidactas
+
+![User Journey Mapping 1](assets/images/C2/user_journey_mapping/ujm3.jpg)
+
+**Explicación**
+El journey de Carlos Wolf muestra los desafíos de los profesionales autodidactas en un entorno laboral competitivo, con limitaciones de tiempo y atención.
+
+* **Reconocimiento:** su motivación es práctica, impulsada por necesidades profesionales, lo que genera presión sobre su aprendizaje.
+* **Investigación:** la abundancia de recursos lo sobrecarga, gastando demasiado tiempo evaluando opciones en lugar de aprender.
+* **Decisión:** toma decisiones basadas en criterios prácticos, pero la falta de información lo lleva a elegir múltiples recursos, aumentando la dispersión.
+* **Uso Continuo:** la falta de un sistema unificado para gestionar su aprendizaje genera frustración y dificulta medir su progreso.
+* **Logros y Mantenimiento:** aunque adquiere conocimientos, la falta de estructura y métricas claras limita la aplicación práctica y el impacto de su esfuerzo.
+
+Este journey resalta oportunidades para SkillShare: curaduría inteligente, gestión móvil-first, microlearning y métricas que conecten el aprendizaje con resultados profesionales.
+
+---
+
+#### Cuarto segmento: Merly Salón – Docentes emprendedores
+
+![User Journey Mapping 1](assets/images/C2/user_journey_mapping/ujm4.jpg)
+
+**Explicación**
+El journey de Merly Salón refleja los desafíos de los docentes emprendedores que buscan monetizar su experiencia educativa a través de grupos de estudio pagados.
+
+* **Reconocimiento:** Merly experimenta una tensión entre su vocación educativa y la necesidad de generar ingresos, lo que genera conflicto sobre la comercialización de la educación.
+* **Investigación:** enfrenta la falta de recursos específicos para docentes emprendedores, lo que crea incertidumbre y lleva a decisiones subóptimas.
+* **Decisión:** toma decisiones empresariales sin experiencia, lo que complica la gestión de precios, contenido, plataformas y marketing.
+* **Uso Continuo:** revela la sobrecarga de roles: educadora, administradora y gestora tecnológica. Esto reduce la calidad educativa y la viabilidad económica debido a la falta de herramientas integradas y la gestión manual de tareas.
+* **Logros y Mantenimiento:** aunque obtiene ingresos, la falta de métricas claras y herramientas de escalamiento dificulta el crecimiento sostenible.
+
+<br>
+<br>
+
+### 2.3.4. Empathy Mapping
+
+**Enlace:** [Clic aquí](https://www.canva.com/design/DAGQBbdACcc/WlnrXEAvgDj_dwFa25M9Kg/edit?utm_content=DAGQBbdACcc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+---
+
+**Segmento 1: Estudiantes universitarios o de instituto**
+
+![Empathy Mapping 1](assets/images/C2/empathy_mapping/em1.jpg)
+
+**Segmento 2: Estudiantes de secundaria o preparatoria**
+
+![Empathy Mapping 1](assets/images/C2/empathy_mapping/em2.jpg)
+
+**Segmento 3: Estudiantes autodidactas**
+
+![Empathy Mapping 1](assets/images/C2/empathy_mapping/em3.jpg)
+
+**Segmento 4: Docentes**
+
+![Empathy Mapping 1](assets/images/C2/empathy_mapping/em4.jpg)
+
+<br>
+<br>
+
+### 2.3.5. Ubiquitous Language
+
+| **Término (Inglés)** | **Definición** |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Study Group (Grupo de Estudio)**                  | Conjunto organizado de estudiantes o aprendices que se reúnen regularmente para estudiar temas específicos, intercambiar conocimientos y apoyarse mutuamente en su proceso de aprendizaje.     |
+| **Facilitator (Facilitador)**   | Persona que guía y coordina las actividades de aprendizaje dentro de un grupo de estudio, proporcionando estructura, contenido educativo y orientación metodológica. Puede ser un docente, tutor o experto en la materia. |
+| **Learner (Aprendiz)**                              | Individuo que participa activamente en un proceso de aprendizaje, ya sea como estudiante formal, autodidacta o profesional en desarrollo continuo.                                                                        |
+| **Study Session (Sesión de Estudio)**               | Período estructurado de tiempo dedicado al aprendizaje colaborativo donde los miembros de un grupo trabajan juntos en temas específicos, realizan actividades educativas o resuelven problemas académicos.     |
+| **Learning Path (Ruta de Aprendizaje)**             | Secuencia organizada y progresiva de contenidos, actividades y objetivos de aprendizaje diseñada para guiar a los participantes desde un nivel inicial hasta el dominio de un tema específico.                            |
+| **Peer Learning (Aprendizaje entre Pares)**         | Proceso educativo donde individuos del mismo nivel académico o profesional se enseñan y aprenden mutuamente, compartiendo experiencias y conocimientos de manera horizontal.    |
+| **Learning Analytics (Analíticas de Aprendizaje)**  | Medición, recopilación y análisis de datos sobre el progreso, participación y rendimiento de los aprendices para optimizar la experiencia educativa y tomar decisiones informadas.                                        |
+| **Educational Content (Contenido Educativo)**       | Material didáctico, recursos de aprendizaje, ejercicios, lecturas y cualquier información estructurada utilizada para facilitar el proceso de enseñanza-aprendizaje dentro de los grupos de estudio. |
+| **Learning Objective (Objetivo de Aprendizaje)**    | Meta específica y medible que define qué conocimientos, habilidades o competencias deben adquirir los participantes al completar una actividad, sesión o programa de aprendizaje.                                         |
+| **Study Schedule (Cronograma de Estudio)**          | Planificación temporal que organiza las sesiones de estudio, establece fechas límite y coordina la disponibilidad de los miembros del grupo para maximizar la participación y efectividad. |
+| **Learning Progress (Progreso de Aprendizaje)**     | Avance medible de un aprendiz hacia el cumplimiento de sus objetivos educativos, evaluado a través de métricas como completación de actividades, mejora en evaluaciones y desarrollo de competencias.                     |
+| **Study Material (Material de Estudio)**            | Recursos educativos específicos utilizados durante las sesiones de aprendizaje colaborativo, incluyendo documentos, presentaciones, ejercicios, videos y cualquier contenido relevante para los temas de estudio. |
+| **Group Dynamics (Dinámicas Grupales)**             | Patrones de interacción, comunicación y colaboración que emergen entre los miembros de un grupo de estudio, incluyendo roles, liderazgo, participación y resolución de conflictos.  |
+| **Learning Engagement (Compromiso de Aprendizaje)** | Nivel de participación activa, motivación y dedicación que demuestra un aprendiz en sus actividades educativas y interacciones grupales.  |
+| **Skill Development (Desarrollo de Habilidades)**   | Proceso mediante el cual los participantes adquieren, mejoran y aplican competencias específicas a través de la práctica colaborativa y el aprendizaje estructurado.  |
+| **Educational Assessment (Evaluación Educativa)**   | Proceso sistemático de medición y valoración del aprendizaje, progreso y desempeño de los participantes en relación con los objetivos educativos establecidos. |
+| **Learning Community (Comunidad de Aprendizaje)**   | Red de individuos unidos por intereses educativos comunes que comparten conocimientos, experiencias y recursos para el beneficio mutuo y el crecimiento colectivo. |
+
+---
