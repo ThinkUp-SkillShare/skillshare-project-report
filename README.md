@@ -1867,3 +1867,66 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | Title       | Sistema de Notificaciones Push |
 | Descripción | Como developer necesito un servicio de notificaciones push para avisar a los usuarios sobre nuevos mensajes, recursos, o eventos. |
 | Criterios de aceptación | Given que un evento relevante ocurre en un grupo (nuevo recurso, mensaje, videollamada programada)<br>When se dispara el evento<br>Then el sistema envía una notificación push a todos los miembros suscritos.<br><br>Given se envía request POST /api/notifications/test<br>When el token del dispositivo es válido<br>Then retorna 200 confirmando la entrega. |
+
+<br>
+<br>
+
+## 3.3. Impact Mapping
+
+![Impact Mapping](assets/images/C2/impact_mapping.jpg)
+
+<br>
+<br>
+
+## 3.4. Product Backlog
+| Orden | User Story ID | Título                         | Story Points |
+|-------|---------------|--------------------------------|-------------|
+| 1     | HU-01         | Registro de Usuario            | 8           |
+| 2     | HU-12         | Sección de Precios y Planes    | 8           |
+| 3     | HU-14         | Búsqueda de grupos de estudio  | 8           |
+| 4     | HU-15         | Creación de grupos de estudios | 8           |
+| 5     | HU-21         | Gestión de grupos pagados      | 8           |
+| 6     | HU-24         | Chat integrado                 | 8           |
+| 7     | HU-26         | Compartir recursos             | 8           |
+| 8     | HU-13         | Personalización de perfil      | 5           |
+| 9     | HU-20         | Métricas de progreso de estudio | 5          |
+| 10    | HU-22         | Herramientas de enseñanza      | 5           |
+| 11    | HU-25         | Videollamadas grupales         | 5           |
+| 12    | HU-28         | Calendario de Sesiones         | 5           |
+| 13    | HU-29         | Notificaciones push            | 5           |
+| 14    | HU-02         | Banner "Cómo funciona"         | 5           |
+| 15    | HU-04         | Lista de Funcionalidades       | 5           |
+| 16    | HU-06         | Demostración del Buscador      | 5           |
+| 17    | HU-18         | Chat grupal organizado         | 5           |
+| 18    | HU-16         | Interfaz intuitiva             | 3           |
+| 19    | HU-19         | Sincronización Offline         | 3           |
+| 20    | HU-23         | Analytics de Negocio           | 3           |
+| 21    | HU-27         | Sistema de Quizzes             | 3           |
+| 22    | HU-03         | Video Demostrativo             | 3           |
+| 23    | HU-05         | Testimonios y Casos de Éxito   | 3           |
+| 24    | HU-07         | Formulario de Contacto         | 3           |
+| 25    | HU-08         | FAQ Interactiva                | 3           |
+| 26    | HU-17         | Sistema de logos mediante insignias | 2      |
+| 27    | HU-10         | Política de Privacidad         | 2           |
+| 28    | HU-09         | Página del Equipo              | 1           |
+| 29    | HU-11         | Footer Completo                | 1           |
+
+<br>
+<br>
+
+| Orden | TS-ID  | Título                         | Story Points |
+|-------|--------|--------------------------------|-------------|
+| 1     | TS-01  | API de Autenticación           | 8           |
+| 2     | TS-02  | API de Gestión de Grupos       | 5           |
+| 3     | TS-04  | API de Gestión de Recursos     | 5           |
+| 4     | TS-03  | API de chat                    | 5           |
+| 5     | TS-06  | API de Perfil de Docente       | 5           |
+| 6     | TS-05  | API de Quizzes                 | 3           |
+| 7     | TS-07  | Sistema de Notificaciones Push | 3           |
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
