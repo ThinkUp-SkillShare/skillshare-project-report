@@ -1932,6 +1932,284 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 <br>
 
 
+<!--  
+   CAPÍTULO 4: SOLUTION SOFTWARE DESING
+-->
+
+# Capítulo IV: Solution Software Design
+## 4.1. Strategic-Level Domain-Driven Design
+### 4.1.1. EventStorming
+Con el objetivo de comprender y modelar el dominio de SkillShare, realizamos una sesión de EventStorming. Esta dinámica permitió al equipo visualizar los eventos más relevantes, los actores involucrados, las reglas de negocio y los sistemas externos relacionados, logrando así una primera aproximación estructurada al funcionamiento de la aplicación.
+La sesión se llevó a cabo en la herramienta digital Miro, con una duración aproximada de 1 hora y 30 minutos. Durante el proceso seguimos los 9 pasos propuestos en la metodología.
+
+**Step 1: Unstructured Exploration** <br>
+En esta primera etapa, el equipo se centró en identificar y registrar todos los eventos que ocurren en la aplicación, sin ningún orden ni restricción. La dinámica consistió en que cada miembro del equipo propusiera eventos en forma de post-its naranjas en Miro, generando un panorama amplio de lo que sucede en el dominio de SkillShare.  
+
+<div align="center">>
+
+![step-01](assets/images/C4/step-01.png)
+
+</div>
+
+**Step 2: Timelines** <br>
+En este paso ya no listamos eventos de manera desordenada (como en Step 1), sino que los ordenamos cronológicamente siguiendo el flujo natural que tendría un estudiante al usar la plataforma.
+
+<div align="center">
+
+![step-02](assets/images/C4/step-02.png)
+
+</div>
+
+**Step 3: Pain Points** <br>
+En este paso identificamos los problemas, fricciones o dificultades que pueden surgir en el flujo que vimos en el Step 2 (Timelines). Los pain points sirven para descubrir áreas críticas que necesitan mejoras en diseño, funcionalidad o experiencia de usuario.
+
+<div align="center">
+
+![step-03](assets/images/C4/step-03.png)
+
+</div>
+
+**Step 4: Pain Points** <br>
+Identificación de eventos comerciales importantes que indiquen un cambio en el contexto o la fase, se marcan con una barra vertical que face los eventos antes y después del evento fundamental.
+
+<div align="center">
+
+![step-04](assets/images/C4/step-04.png)
+
+</div>
+
+**Step 5: Commands** <br>
+Son las acciones explícitas que un usuario o actor envía al sistema para provocar un evento.
+
+<div align="center">
+
+![step-05-01](assets/images/C4/step-05-01.png)
+![step-05-02](assets/images/C4/step-05-02.png)
+
+</div>
+
+#### 4.1.1.1. Candidate Context Discovery
+
+A partir del dominio previamente modelado mediante EventStorming, llevamos a cabo la sesión de Candidate Context Discovery con el propósito de identificar los bounded contexts de nuestro dominio.
+A continuación, se presentan las imágenes de los cambios progresivos realizados sobre el EventStorming y la identificación de los contextos candidatos:
+
+1. **Contexto de Gestión de Usuarios:** Incluye todo lo relacionado con el registro, autenticación y manejo de perfiles de los estudiantes
+
+<div align="center">
+<img src="assets/images/C4/contexto-gestion_usuarios.png" alt="Contexto de Comunicación" width="500">
+</div>
+
+2. **Contexto de Grupos de Estudio:** Se centra en la creación, administración y participación en grupos académicos.
+
+<div align="center">
+<img src="assets/images/C4/contexto-gestion_grupo.png" alt="Contexto de Grupos de Estudio" width="500">
+</div>
+
+3. **Contexto de Recursos Compartidos:** Gestiona el almacenamiento y acceso a materiales de estudio (apuntes, PDFs, presentaciones, links, etc.).
+
+<div align="center">
+<img src="assets/images/C4/contexto-gestion_recursos_compartidos.png" alt="Contexto de Recursos Compartidos" width="500">
+</div>
+
+4. **Contexto de Comunicación (chat):** Abarca los mensajes y la interacción en tiempo real entre los miembros de un grupo.
+
+<div align="center">
+
+<img src="assets/images/C4/contexto-comunicacion.png" alt="Contexto de Comunicación" width="500">
+
+</div>
+
+5. **Contexto de Evaluaciones (quizzes):** Permite la creación y resolución de cuestionarios dentro de los grupos.
+
+<div align="center">
+
+<img src="assets/images/C4/contexto-gestion_quizz.png" alt="Contexto de Evaluciones" width="500">
+
+</div>
+
+**Resultado de la identificación de Bounded Context** <br>
+Contextos resultados del análisis y realización de cambios cambios progresivos en los resultados del EventStorm.
+
+<div align="center">
+<img src="assets/images/C4/resultado_identificacion_bounded_context.png" alt="Resultado de la identificación de Bounded Context" width="500">
+</div>
+
+#### 4.1.1.2. Domain Message Flows Modeling
+
+En esta sección se presenta de manera gráfica la definición de los bounded contexts de nuestro dominio, con el objetivo de resolver los casos de uso que se presentan en el negocio para los usuarios del sistema. Para ello, se ha aplicado la técnica de Domain Storytelling. A continuación, se describen algunos de los principales flujos identificados.
+
+**Escenario: Registro de estudiantes y creación de grupos** <br>
+**Actores** <br>
+En este proceso intervienen principalmente dos tipos de usuarios:
+  - **Estudiante:** usuario que accede a la plataforma por primera vez y busca crear o unirse a comunidades de estudio.
+  - **Administrador de grupo:** inicialmente también es un estudiante, pero adquiere permisos adicionales al crear un grupo.
+
+**Explicación del proceso y definición de los eventos**
+- El estudiante accede a la aplicación SkillShare desde su dispositivo y es dirigido a la sección de registro.
+- Completa sus datos personales básicos (nombre, correo electrónico, contraseña, intereses académicos).
+- El sistema valida la información ingresada y confirma el registro exitoso del estudiante.
+- Una vez registrado, el estudiante tiene la posibilidad de crear un nuevo grupo de estudio.
+- El sistema recibe la solicitud, genera el evento **“Grupo creado”** y asigna automáticamente al creador como **administrador del grupo.**
+- Posteriormente, el grupo queda disponible para que otros estudiantes puedan visualizarlo y unirse.
+- Finalmente, el contexto de **Comunicación** emite una notificación en el chat grupal: **“Se ha creado un nuevo grupo de estudio”.**
+
+**Relación entre usuario con bounded contexts y reglas de negocio**
+
+- En el **Contexto de Gestión de Usuarios**, se garantiza la validación y autenticación de los datos personales del estudiante para mantener la seguridad en el acceso.
+- En el **Contexto de Grupos de Estudio**, se definen las reglas de negocio relacionadas con la creación de grupos, asignación automática de roles (administrador del grupo) y visibilidad del nuevo grupo para otros usuarios.
+- En el **Contexto de Comunicación**, se manejan las notificaciones que informan a los demás estudiantes sobre la creación del grupo, asegurando la colaboración y dinamismo en la plataforma
+
+**Visualización del flujo**
+
+<div align="center">
+<img src="assets/images/C4/flujo.png" alt="Registro de usuario">
+</div>
+
+<br>
+<br>
+
+**Escenario: Unión de estudiantes a un grupo de estudio**
+
+**Actores**
+
+En este proceso participan principalmente dos actores:
+- **Estudiante**: usuario que busca integrarse a un grupo de estudio existente.
+- **Administrador de grupo**: responsable de aprobar o rechazar solicitudes de ingreso.
+
+**Explicación del proceso y definición de los eventos**
+
+- El estudiante navega por la sección de grupos disponibles en SkillShare y selecciona uno que coincide con sus intereses académicos.
+
+- Envía una solicitud de unión al grupo elegido.
+
+- El sistema registra la solicitud y la asocia al grupo correspondiente.
+
+- El administrador del grupo recibe la notificación de la nueva solicitud y procede a revisarla.
+
+- El administrador aprueba la solicitud, lo cual genera el evento **“Estudiante agregado al grupo”**.
+
+- El sistema actualiza la lista de miembros del grupo y asigna al nuevo integrante los permisos básicos de participación.
+
+- Finalmente, el **Contexto de Comunicación** emite un mensaje en el chat grupal notificando: **“Un nuevo miembro se ha unido al grupo”.**
+
+**Relación entre usuario con bounded contexts y reglas de negocio**
+
+- En el **Contexto de Grupos de Estudio**, se gestionan las reglas de aceptación de miembros, garantizando que solo los estudiantes aprobados por el administrador puedan ingresar.
+
+- En el **Contexto de Gestión de Usuarios**, se mantiene la identidad y datos del estudiante para vincularlos correctamente al grupo.
+
+- En el **Contexto de Comunicación**, se generan los avisos que mantienen informados a los miembros activos del grupo sobre nuevas incorporaciones.
+
+**Visualización del flujo**
+
+<div align="center">
+<img src="assets/images/C4/flujo-01.png" alt="Unión de estudiante a grupo de estudio">
+</div>
+
+<br>
+<br>
+
+**Escenario: Compartir recurso académico en un grupo de estudio**
+
+**Actores**
+
+En este proceso participan principalmente dos actores:
+- **Estudiante:** miembro de un grupo que desea compartir un recurso académico (apuntes, PDF, enlace, presentación).
+- **Miembros del grupo:** estudiantes que reciben y pueden interactuar con el recurso compartido.
+
+**Explicación del proceso y definición de los eventos**
+
+- El estudiante accede a la sección de su grupo de estudio dentro de SkillShare.
+
+- Selecciona la opción **“Compartir recurso”** e indica el tipo de material (documento, enlace, video, etc.).
+
+- El sistema valida el recurso (formato, tamaño, permisos de acceso).
+
+- Se registra el recurso en el grupo y se asocia al perfil del estudiante que lo compartió.
+
+- El sistema genera el evento **“Recurso compartido en grupo”.**
+
+- El **Contexto de Comunicación** envía una notificación a todos los miembros: **“Un nuevo recurso ha sido compartido en el grupo”.**
+
+- Los demás miembros pueden visualizar, descargar o comentar el recurso compartido.
+
+**Relación entre usuario con bounded contexts y reglas de negocio**
+
+- En el **Contexto de Grupos de Estudio**, se mantiene la asociación del recurso al grupo y se gestiona quién puede compartir contenido (solo miembros activos)
+
+- En el **Contexto de Gestión de Usuarios**, se relaciona el recurso con el perfil del estudiante que lo publica.
+
+- En el **Contexto de Comunicación**, se garantiza que todos los integrantes reciban la notificación correspondiente.
+
+- Reglas de negocio:
+  - Solo miembros activos pueden compartir recursos.
+  - El recurso debe cumplir con validaciones de formato y tamaño.
+  - Los recursos se almacenan con trazabilidad para saber quién los compartió.
+
+**Visualización del flujo**
+
+<div align="center">
+
+![flujo-02](assets/images/C4/flujo-02.png)
+
+</div>
+
+#### 4.1.1.3. Bounded Context Canvases
+
+<div align="center">
+
+<img src="assets/images/C4/profile.png" alt="Profile" width="600">
+<br>
+<br>
+<img src="assets/images/C4/comunicacion.png" alt="Comunicación" width="600">
+<br>
+<br>
+<img src="assets/images/C4/evaluaciones.png" alt="Evaluaciones" width="600">
+<br>
+<br>
+<img src="assets/images/C4/recursos-compartidos.png" alt="Recursos Compartidos" width="600">
+<br>
+<br>
+<img src="assets/images/C4/grupos-de-estudio.png" alt="Grupos de Estudio" width="600">
+
+</div
+
+<br>
+<br>
+
+
+### 4.1.3. Software Architecture
+
+En esta sección, se presentan los diagramas C4 que describen la arquitectura del sistema de estudio colaborativo. Estos diagramas permiten comprender de manera clara cómo se organiza la solución, cómo interactúan los usuarios y sistemas externos con la aplicación, cómo se estructuran los principales contenedores de software y, finalmente, cómo se despliegan los componentes en el entorno de ejecución.
+
+#### 4.1.3.1. Software Architecture Context Level Diagrams
+
+El Diagrama de Contexto muestra la interacción de la aplicación de estudio colaborativo con los actores externos, principalmente docentes y estudiantes, quienes son los usuarios principales del sistema. Este diagrama ofrece una visión de alto nivel de cómo la aplicación se conecta con su entorno, facilitando la comprensión de su papel dentro del ecosistema educativo digital.
+
+<div align="center">
+<img src="assets/images/C4/software_architecture_context_level_diagrams.png" alt="Profile" width="600">
+</div>
+
+#### 4.1.3.2. Software Architecture Container Level Diagrams
+
+El Diagrama de Contenedores ofrece una visión más detallada de la arquitectura de la aplicación de estudio colaborativo.
+Este nivel describe los principales contenedores que conforman el sistema y cómo interactúan entre sí, así como con los sistemas externos.
+
+<div align="center">
+<img src="assets/images/C4/software_architecture_container_level_diagrams.png" alt="Profile" width="600">
+</div>
+
+#### 4.1.3.3. Software Architecture Deployment Diagrams
+
+Los Diagramas de Despliegue (Deployment Diagrams) permiten visualizar cómo la aplicación se distribuye en la infraestructura tecnológica que soporta su funcionamiento. Estos diagramas muestran la relación entre los diferentes artefactos de software y los nodos físicos o virtuales en los que se ejecutan.
+
+<div align="center">
+<img src="assets/images/C4/software_architecture_deployment_diagrams.png" alt="Profile" width="600">
+</div>
+
+<br>
+<br>
+
 ## 4.2. Tactical-Level Domain-Driven Design
 ### 4.2.1. Bounded Context
 
