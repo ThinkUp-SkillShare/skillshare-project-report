@@ -1930,3 +1930,134 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 <br>
 <br>
 <br>
+
+
+## 4.2. Tactical-Level Domain-Driven Design
+### 4.2.1. Bounded Context
+
+Este contexto abarca todo lo relacionado con el registro, autenticación y gestión de usuarios, así como la creación, administración y participación en grupos de estudio. Es un núcleo del dominio, ya que sin estas funcionalidades no existe la dinámica principal de SkillShare.
+
+#### 4.2.1.1. Domain Layer
+
+El Domain Layer define la lógica central del negocio relacionada a la gestión de usuarios, grupos de estudio y recursos compartidos.
+En esta capa se modelan los conceptos fundamentales como usuarios, grupos, membresías y recursos académicos, así como las reglas y comportamientos que regulan su funcionamiento.
+
+Este nivel captura la esencia del dominio de manera independiente a la tecnología, asegurando coherencia, reutilización y alineación con los objetivos del negocio.
+
+**Entidades Principales**
+
+| Clase | Tipo     | Propósito   | Atributos  |
+|---------------|----------|---------------------------------------------------------------------------|-------------------------------|
+| Usuario       | Entity   | Representa a un estudiante dentro de la red social académica. Puede crear o unirse a grupos de estudio y compartir recursos. | id, nombre, email, contraseña hash, rol, intereses académicos |
+| GrupoEstudio  | Entity   | Representa un grupo de estudio creado por usuarios en torno a una materia o tema específico. | Id, nombre, descripción, materia, fecha de creación, estado |
+| Membresía     | Entity   | Relaciona a un usuario con un grupo de estudio, definiendo su rol dentro de este. | Usuario_id, grupo_id, rol en el grupo (admin/miembro) |
+| Recurso       | Entity   | Representa materiales compartidos dentro de un grupo de estudio (apuntes, notas, quizzes, enlaces). | id, grupoId, usuarioId, tipo (pdf, link, quiz, imagen), título, contenido, fechaSubida |
+
+**Value Objects**
+
+| Clase  | Tipo | Propósito   | Atributos        |
+|-----------|--------------|---------------------------------------------------|------------------|
+| Email     | Value Object | Garantiza el formato válido y único de correo electrónico. | dirección        |
+| Password  | Value Object | Asegura que la contraseña cumpla con reglas de seguridad (mínima longitud, caracteres especiales, hash). | valorHasheado    |
+
+**Agregados**
+
+| Agregado  | Entidades Asociadas        | Propósito |
+|------------------|----------------------------|---------------------------------------------------------------------------|
+| Usuario          | Usuario, Perfil            | Centraliza la gestión de identidad, intereses y autenticación de usuarios. |
+| Grupo de Estudio | GrupoEstudio, Membresías, recursos | Coordina las entidades relacionadas con un grupo: creación, invitación de miembros, asignación de roles y manejo de recursos compartidos. |
+
+**Servicios de Dominio**
+
+| Servicio  | Propósito    | Métodos principales  |
+|---------------------|-------------------------------------------------------|-----------------------------------|
+| GrupoEstudioService | Encargado de validar las reglas al momento de crear y gestionar grupos. | validarNombreUnico, asignarAdministrador, cerrarGrupo |
+| RecursoService      | Administra la validación y publicación de recursos compartidos dentro de los grupos. | validarFormato, publicarRecurso  |
+| MembresíaService    | Gestiona la relación entre usuarios y grupos.         | agregarMiembro, cambiarRol, removerMiembro |
+
+#### 4.2.1.2. Interface Layer
+
+Expone las funcionalidades a través de APIs o pantallas en Flutter.
+
+**Componentes principales**
+
+| Clase  | Tipo | Propósito  | Atributos             |
+|-----------------|------|-----------------------------------------------|-----------------------|
+| Login           | UI   | Permite que el usuario ingrese sus credenciales y se autentique. | email, password       |
+| Register        | UI   | Pantalla para registrar nuevos usuarios.      | nombre, email, password |
+| GroupsScreen    | UI   | Lista los grupos de estudio disponibles para explorar y unirse. | listGroup             |
+| GroupDetail     | UI   | Muestra detalles de un grupo (miembros, recursos, chat). | Miembros, recurso     |
+| FilesScreen     | UI   | Visualiza los recursos compartidos.           | recursos              |
+| ProfileScreen   | UI   | Permite gestionar la información del perfil del usuario. | Id, nombre, descripción |
+
+**APIs REST / GraphQL**
+
+| Endpoint                  | Propósito                              |
+|---------------------------|----------------------------------------|
+| POST /usuarios/registrar  | Crear un nuevo usuario con datos validados. |
+| POST /usuarios/login      | Autenticar y generar sesión/token.     |
+| GET /grupos               | Obtener lista de grupos disponibles    |
+| POST /grupos              | Crear un nuevo grupo de estudio.       |
+| GET /grupos/{id}          | Obtener información detallada de un grupo específico. |
+| POST /grupos/{id}/unirse  | Solicitar unirse a un grupo            |
+| POST /grupos/{id}/recursos | Subir un recurso (archivo, link, quiz). |
+| GET /grupos/{id}/recursos | Listar recursos del grupo.             |
+
+#### 4.2.1.3. Application Layer
+
+Orquesta los casos de uso y coordina dominio e infraestructura.
+
+| Clase               | Tipo           | Propósito                              |
+|---------------------|----------------|----------------------------------------|
+| Registrar usuario   | Command        | Representa la intención de registrar un usuario |
+| Iniciar sesion      | Command        | Solicitud de autenticación de usuario  |
+| Crear grupo de estudio | Command     | Encapsula la creación de un grupo de estudio |
+| Unirse a grupo      | Command        | Representa la intención de unirse a un grupo |
+| Asignar roles       | Command        | Cambiar el rol de un miembro dentro de un grupo |
+| Compartir recursos  | Command        | Acción de compartir un recurso académico |
+| Notifica al usuario | Domain Event   | Notifica que un usuario fue registrado |
+| Grupo creado        | Domain Event   | Indica que un grupo fue creado         |
+| Recurso compartido  | Domain Event   | Señala que un recurso fue compartido   |
+
+#### 4.2.1.4. Infrastructure Layer
+
+Implementa persistencia, integración y frameworks.
+
+| Clase                    | Tipo               | Propósito   |
+|--------------------------|--------------------|----------------------------------------|
+| UserRepositorylmpl       | Repository lmpl    | userId, nombre, email, passwordHash    |
+| GroupRepositoryImpl      | Repository lmpl    | groupId, nombre, descripción, materia, creadorId |
+| MembershipRepositoryImpl | Repository lmpl    | membershipId, usuarioId, groupId, rol  |
+| AuthService              | External Service   | provider, token, refreshToken          |
+| FirestoreService         | External Service   | colección, documentoId, payload        |
+| NotificationService      | External Service   | userId, mensaje, canal                 |
+| EventBusImpl             | External Service   | eventId, tipoEvento, payload           |
+| FileStorageService       | External Service   | Manejo de archivos compartidos en grupos |
+| FlutterFramework         | Framework          | Soporte para la interfaz de usuario multiplataforma |
+
+#### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+El Component Level Diagrams representa los principales componentes de SkillShare. Permite visualizar la interacción entre la aplicación móvil, el backend, la base de datos y los servicios externos.
+
+<div align="center">
+<img src="assets/images/C4/diagrama_components.png" alt="Bounded Context Software Architecture Component Level Diagrams" width="600">
+</div>
+
+#### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+Este diagrama de clases representa los elementos principales del Domain Layer en SkillShare.
+
+<div align="center">
+<img src="assets/images/C4/bounded_context_domain_layer_class_diagrams.png" alt="Bounded Context Domain Layer Class Diagrams" width="600">
+</div>
+
+##### 4.2.1.6.2. Bounded Context Database Design Diagram
+
+El Database Design Diagram representa la estructura de la base de datos para el contexto de SkillShare. Este diseño asegura la persistencia de los datos de acuerdo con la lógica del dominio, permitiendo mantener la integridad, consistencia y eficiencia en las operaciones de la plataforma, desde la gestión de usuarios hasta la interacción en grupos y el intercambio de recursos.
+
+<div align="center">
+<img src="assets/images/C4/bounded_context_database_design_diagram.png" alt="Bounded Context Database Design Diagram" width="600">
+</div>
+
