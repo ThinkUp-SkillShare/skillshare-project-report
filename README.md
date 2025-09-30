@@ -2161,19 +2161,19 @@ En este proceso participan principalmente dos actores:
 
 <div align="center">
 
-<img src="assets/images/C4/profile.png" alt="Profile" width="600">
+<img src="assets/images/C4/profile.jpg" alt="Profile" width="600">
 <br>
 <br>
-<img src="assets/images/C4/comunicacion.png" alt="Comunicación" width="600">
+<img src="assets/images/C4/chat.jpg" alt="Chat" width="600">
 <br>
 <br>
-<img src="assets/images/C4/evaluaciones.png" alt="Evaluaciones" width="600">
+<img src="assets/images/C4/quizzes.jpg" alt="Quizzes" width="600">
 <br>
 <br>
-<img src="assets/images/C4/recursos-compartidos.png" alt="Recursos Compartidos" width="600">
+<img src="assets/images/C4/shared-resources.jpg" alt="Shared Resources" width="600">
 <br>
 <br>
-<img src="assets/images/C4/grupos-de-estudio.png" alt="Grupos de Estudio" width="600">
+<img src="assets/images/C4/study-groups.jpg" alt="Study Groups" width="600">
 
 </div
 
