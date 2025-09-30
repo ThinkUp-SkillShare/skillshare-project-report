@@ -942,6 +942,8 @@ El objetivo es recoger insights que permitan construir una aplicación más cerc
 
 **Sustento:** El 100% de los entrevistados identificó problemas de coordinación, distracción y las limitaciones de las aplicaciones genéricas (como WhatsApp o Discord) como sus principales obstáculos. Esto indica que estos no son problemas aislados, sino dolores universales para el segmento.
 
+**Insight**: Los problemas de organización y distracciones no son casos aislados: son estructurales y afectan a todo el segmento, lo que revela una oportunidad de diseño clara.
+
 ---
 
 **b. Comportamiento Actual y Herramientas Utilizadas (¿Qué usan ahora?)**
@@ -953,6 +955,8 @@ El objetivo es recoger insights que permitan construir una aplicación más cerc
 | Reconocimiento de Limitaciones | Ambas entrevistas critican la falta de enfoque específico para el estudio de las herramientas que usan. |
 
 **Sustento:** Hay una coincidencia del 100% en el uso de Discord por su practicidad en comunicación y compartición de pantalla. Sin embargo, también hay un consenso total (100%) en que estas herramientas no están optimizadas para su caso de uso, creando una oportunidad clara para una solución especializada.
+
+**Insight**: Aunque recurren a Discord como solución “parche”, no satisface sus necesidades reales. Esto confirma la brecha de mercado para una herramienta académica especializada.
 
 ---
 
@@ -967,6 +971,8 @@ El objetivo es recoger insights que permitan construir una aplicación más cerc
 
 **Sustento:** Las necesidades clave son universales (100%): un espacio organizado, comunicación dedicada al estudio y herramientas integradas de planificación. La divergencia en el dispositivo preferido refuerza la necesidad de que la solución funcione perfectamente en ambos.
 
+**Insight**: El estudiante universitario no busca solo comunicarse: necesita un “hub (centro) académico digital” que integre organización, planificación y colaboración.
+
 ---
 
 **d. Disposición al Pago (¿Invertirían en una solución?)**
@@ -978,6 +984,8 @@ El objetivo es recoger insights que permitan construir una aplicación más cerc
 | Condiciones para pagar      | "Costo accesible" (Allison), "mejora su rendimiento académico" (Keyner).                       |
 
 **Sustento:** El segmento es 100% sensible al precio y al valor. No están acostumbrados a pagar, pero están abiertos a hacerlo si la aplicación resuelve sus problemas principales (organización, ahorro de tiempo, mejora de rendimiento) de manera evidente y a un costo que se ajuste a su presupuesto como estudiantes.
+
+**Insight**: Aunque su disposición a pagar es baja, los estudiantes reconocen el valor si la herramienta reduce estrés y mejora notas. Esto habilita un modelo freemium con bajo costo o beneficios premium.
 
 ---
 
@@ -1021,6 +1029,8 @@ El análisis estadístico de las entrevistas revela un perfil de segmento muy co
 
 **Sustento:** Las dificultades de colaboración y las limitaciones de WhatsApp son dolores universales (100%) para este segmento. La dinámica de grupo desigual es su principal desafío interpersonal.
 
+**Insight:** Los estudiantes de secundaria necesitan un espacio controlado que limite distracciones y organice automáticamente el contenido académico.
+
 ---
 
 **b. Comportamiento Actual y Herramientas Utilizadas (¿Qué usan ahora?)**
@@ -1031,6 +1041,8 @@ El análisis estadístico de las entrevistas revela un perfil de segmento muy co
 | Reconocimiento de su Insuficiencia | Ambas critican abiertamente a WhatsApp por no ser una herramienta adecuada para la organización del trabajo estudiantil. |
 
 **Sustento:** Existe una coincidencia del 100% en el uso de una herramienta que reconocen como insuficiente. Esto indica una necesidad no satisfecha y una oportunidad clara para una solución diseñada para su contexto.
+
+**Insight:** La dependencia de una sola herramienta informal muestra que no han explorado alternativas; esto abre la oportunidad de introducir una plataforma sencilla pero académicamente enfocada.
 
 ---
 
@@ -1046,6 +1058,8 @@ El análisis estadístico de las entrevistas revela un perfil de segmento muy co
 
 **Sustento:** Las necesidades son absolutamente unánimes (100%) en los aspectos clave: quieren una herramienta integrada, que los motive mediante gamificación y que tenga un diseño que les hable directamente (juvenil). La mención a la aprobación adulta (50%) sugiere que la validación de figuras de autoridad es un factor positivo para al menos una parte del segmento.
 
+**Insight:** Los estudiantes de secundaria buscan una solución práctica que los ayude a organizarse y mantenerse enfocados sin sentirlo como “otra carga escolar”.
+
 ---
 
 **d. Disposición al Pago (¿Invertirían en una solución?)**
@@ -1056,6 +1070,8 @@ El análisis estadístico de las entrevistas revela un perfil de segmento muy co
 | Modelo Aceptable: Freemium con Gamificación | "Recompensas o logros" (L), "recompensas por participación" (M). |
 
 **Sustento:** Existe una preferencia universal (100%) por aplicaciones gratuitas. Su disposición a interactuar con mecanismos de recompensas y logros (100%) indica que un modelo freemium (gratuito con funcionalidades premium o sistemas de recompensas integrados) sería el camino más efectivo para este segmento, que probablemente depende de subsidios de padres o la institución educativa.
+
+**Insight:** Para este segmento, el modelo gratuito es esencial; un esquema freemium puede funcionar solo si el plan base cubre sus necesidades básicas.
 
 ---
 
@@ -1098,6 +1114,8 @@ El análisis estadístico de las entrevistas revela un perfil de segmento muy cl
 
 **Sustento:** Los dolores son muy consistentes. La sobrecarga de información y la dificultad para mantener una rutina son problemas universales (100%) para este segmento. La necesidad de comunidad es mayoritaria (66.7%), pero no unánime, lo que sugiere la existencia de sub-perfiles dentro del segmento.
 
+**Insight:** Los autodidactas no fracasan por falta de recursos, sino por exceso de ellos y por falta de estructura. Una solución que organice y filtre puede ser más valiosa que más contenido.
+
 ---
 
 **b. Comportamiento Actual y Herramientas Utilizadas (¿Qué usan ahora?)**
@@ -1109,6 +1127,8 @@ El análisis estadístico de las entrevistas revela un perfil de segmento muy cl
 | Valoración de la Aplicabilidad | "Contenido... aplicable profesionalmente" (C). |
 
 **Sustento:** El segmento es 100% dependiente de contenido online gratuito. Además, una mayoría significativa (66.7%) actively busca métodos y herramientas para organizar su aprendizaje de manera efectiva.
+
+**Insight:** Su principal reto no es el acceso al contenido, sino cómo darle continuidad. Necesitan una plataforma que transforme consumo desordenado en aprendizaje planificado.
 
 ---
 
@@ -1123,6 +1143,8 @@ El análisis estadístico de las entrevistas revela un perfil de segmento muy cl
 
 **Sustento:** La necesidad de herramientas de planificación (agenda/recordatorios) y la valoración del acceso a expertos son universales (100%). Otras necesidades como la comunidad, el seguimiento de progreso y un diseño simple son mayoritarias (66.7%), lo que las convierte en críticas.
 
+**Insight:** Más allá de estudiar solos, buscan sentirse acompañados y guiados. Una herramienta que combine agenda + comunidad + mentoría tiene alto potencial de adopción.
+
 ---
 
 **d. Disposición al Pago (¿Invertirían en una solución?)**
@@ -1134,6 +1156,8 @@ El análisis estadístico de las entrevistas revela un perfil de segmento muy cl
 | Condición: Precio Razonable | "A un precio razonable" (F), implícito en L y C. |
 
 **Sustento:** Existe una disposición unánime (100%) a considerar una versión premium, pero está supeditada a que la aplicación entregue valor tangible en forma de contenido exclusivo de calidad y acceso a orientación experta. Son sensibles al precio, pero priorizan la calidad.
+
+**Insight:** Para este segmento, el valor no está en la plataforma en sí, sino en el capital humano y el contenido exclusivo. Están dispuestos a pagar si sienten que acceden a algo que no consiguen gratis.
 
 ---
 
@@ -1176,6 +1200,8 @@ El análisis estadístico de las entrevistas revela dos sub-perfiles o arquetipo
 
 **Sustento:** Los dolores son universales (100%). Todos refieren a fragmentación y baja colaboración.
 
+**Insight:** El verdadero dolor del docente no es la enseñanza en sí, sino la logística digital. Necesitan una herramienta que reduzca complejidad y devuelva tiempo para enseñar.
+
 ---
 
 **b. Comportamiento Actual y Herramientas Utilizadas**
@@ -1186,6 +1212,8 @@ El análisis estadístico de las entrevistas revela dos sub-perfiles o arquetipo
 | Reconocimiento de Limitaciones             | Ambos señalan la falta de colaboración e integración como problema crítico. |
 
 **Sustento:** Coincidencia total (100%) en que el ecosistema actual es un “parche” poco funcional.
+
+**Insight:** No es que falten herramientas, es que ninguna está pensada integralmente para educación. Aquí hay una oportunidad de diferenciarse con centralización real.
 
 ---
 
@@ -1201,6 +1229,8 @@ El análisis estadístico de las entrevistas revela dos sub-perfiles o arquetipo
 
 **Sustento:** Necesidades unánimes (100%). Buscan una **plataforma integral, segura y con diferenciación de roles**.
 
+**Insight:** El docente busca una plataforma que funcione como “aula digital completa”: un espacio que organice, mida y facilite, más que otro repositorio de tareas.
+
 ---
 
 **d. Modelo de Negocio y Disposición al Pago**
@@ -1211,6 +1241,8 @@ El análisis estadístico de las entrevistas revela dos sub-perfiles o arquetipo
 | Experiencia del Estudiante | “Diseño amigable” (JM); “diseño que motive a estudiantes” (M).     |
 
 **Sustento:** Aunque no se declara explícitamente el pago, el **valor percibido es muy alto (100%)**. La adopción dependerá de que la solución sea robusta para el docente y atractiva para el alumno.
+
+**Insight:** Aunque no declaran disposición clara al pago, si la plataforma resuelve su dolor crítico y mejora la experiencia del estudiante, las instituciones podrían adoptarla sin resistencia.
 
 ---
 
