@@ -452,7 +452,7 @@ El proyecto debe considerar limitaciones como la conectividad desigual entre est
 
 ## 1.2.2.3. Lean UX Hypothesis Statements  
 
-1. Creemos que los usuarios valoran la posibilidad de unirse y colaborar en grupos de estudio temáticos. Sabremos que estamos bien cuando veamos los siguientes comentarios del mercado:
+1. Creemos que la posibilidad de unirse y colaborar en grupos de estudio temáticos permitirá a los estudiantes organizar mejor su aprendizaje y encontrar compañeros con intereses similares.Sabremos que estamos bien cuando veamos los siguientes comentarios del mercado:
 
    - **Cualitativo:** usuarios expresan que la función de grupos les facilita organizar su aprendizaje y encontrar compañeros con intereses similares.
 
@@ -462,7 +462,7 @@ El proyecto debe considerar limitaciones como la conectividad desigual entre est
 
 <br>
 
-2. Creemos que una interfaz intuitiva y fácil de usar mejorará la adopción de la aplicación por estudiantes de diferentes edades y niveles tecnológicos. Sabremos que estamos bien cuando veamos los siguientes comentarios del mercado:
+2. Creemos que una interfaz intuitiva y fácil de usar facilitará la adopción de la aplicación por estudiantes de diferentes edades y niveles tecnológicos. Sabremos que estamos bien cuando veamos los siguientes comentarios del mercado:
 
    - **Cualitativo:** usuarios reportan que la app es clara y no requiere tutorial extenso.
 
@@ -482,13 +482,13 @@ El proyecto debe considerar limitaciones como la conectividad desigual entre est
 
 <br>
 
-4. Creemos que ofrecer un espacio centralizado para compartir materiales de estudio (PDF, apuntes, links, videos) incrementará la utilidad de la aplicación. Sabremos que estamos bien cuando veamos los siguientes comentarios del mercado:
+4. Creemos que incorporar un sistema de recomendación de grupos y materiales basados en intereses mejorará la personalización y el engagement del usuario. Sabremos que estamos bien cuando veamos los siguientes comentarios del mercado:
 
-   - **Cualitativo:** los usuarios destacan la biblioteca como una de las funciones más útiles.
+   - **Cualitativo:** usuarios expresan que las recomendaciones son relevantes y útiles
 
-   - **Cuantitativo:** al menos el 60% de los grupos creen o suban un recurso en su primer mes.
+   - **Cuantitativo:** al menos el 50% de los usuarios interactúen con una recomendación sugerida.
 
-   - **Indicador clave:** incremento en descargas y consultas de materiales compartidos.
+   - **Indicador clave:** incremento en el tiempo promedio de sesión dentro de la app.
 
 <br>
 
@@ -1472,307 +1472,307 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 ## 3.1. User Stories
 
 
-| HU-ID       | HU-01               |
+| USID        | US-01               |
 |-------------|---------------------|
 | Epic ID     | EP-01               |
 | Priority    | 8                   |
 | User        | Visitante (Cliente potencial) |
-| Title       | Registro de Usuario |
+| Title       | Registrar usuario |
 | Descripción | Como visitante quiero registrarme desde la landing page para crear mi cuenta en la plataforma SkillShare |
 | Criterios de aceptación | Given el visitante está en la landing page<br>When hace clic en el botón "Registrarse"<br>Then es redirigido al formulario de registro<br><br>Given el visitante completa el formulario con datos válidos<br>When envía el formulario<br>Then recibe confirmación de cuenta creada y un email de verificación<br><br>Given el visitante ingresa datos inválidos o incompletos<br>When intenta registrarse<br>Then recibe mensajes de error específicos por campo |
 
 <br>
 <br>
 
-| HU-ID       | HU-02               |
+| USID        | US-02               |
 |-------------|---------------------|
 | Epic ID     | EP-07               |
 | Prioridad   | 5                   |
 | User        | Visitante (Cliente potencial) |
-| Title       | Banner "Cómo funciona" |
+| Title       | Ver banner "Cómo funciona" |
 | Descripción | Como visitante quiero ver en la landing page un resumen visual en 3 pasos de cómo usar SkillShare para entender rápidamente el flujo de la aplicación |
 | Criterios de aceptación | Given el visitante accede a la landing page<br>When ve la sección "Cómo funciona"<br>Then observa 3 pasos claramente ilustrados con íconos y texto explicativo<br><br>Given el visitante lee los 3 pasos<br>When desea más información<br>Then puede hacer clic en "Ver demo" o "Registrarse ahora"<br><br>Given el visitante está en dispositivo móvil<br>When visualiza esta sección<br>Then los pasos se adaptan correctamente a pantalla pequeña |
 
 <br>
 <br>
 
-| HU-ID       | HU-03               |
+| USID        | US-03               |
 |-------------|---------------------|
 | Epic ID     | EP-07               |
 | Prioridad   | 3                   |
-| User        | Visitante (Cliente potencial)  |
-| Title       | Video Demostrativo  |
+| User        | Reproducir video demostrativo  |
+| Title       | Reproducir video demostrativo  |
 | Descripción | Como visitante quiero reproducir un video demo en la landing page para visualizar las funciones clave como grupos de estudio, chat y recursos compartidos |
 | Criterios de aceptación | Given el visitante está en la sección de video demo<br>When hace clic en el botón de reproducir<br>Then el video se reproduce correctamente sin necesidad de plugins adicionales<br><br>Given el video está reproduciéndose<br>When el visitante pausa o adelanta<br>Then los controles responden adecuadamente<br><br>Given el visitante completa el video<br>When termina la reproducción<br>Then aparecen botones de acción como "Probar gratis" o "Ver más funciones" |
 
 <br>
 <br>
 
-| HU-ID       | HU-04               |
+| USID       | US-04               |
 |-------------|---------------------|
 | Epic ID     | EP-07               |
 | Prioridad   | 5                   |
 | User        | Visitante (Cliente potencial)  |
-| Title       | Lista de Funcionalidades |
+| Title       | Visualizar lista de funcionalidades  |
 | Descripción | Como visitante quiero ver las funcionalidades principales organizadas visualmente para evaluar si el producto satisface mis necesidades de estudio colaborativo |
 | Criterios de aceptación | Given el visitante navega por la landing page<br>When llega a la sección de funcionalidades<br>Then ve íconos y descripciones claras de chat, videollamadas, recursos y calendario<br><br>Given el visitante hace clic en una funcionalidad específica<br>When desea más detalles<br>Then se expande información adicional o muestra capturas de pantalla<br><br>Given el visitante revisa todas las funcionalidades<br>When está interesado<br>Then encuentra fácilmente el call-to-action para registrarse |
 
 <br>
 <br>
 
-| HU-ID       | HU-05               |
+| USID        | US-05               |
 |-------------|---------------------|
 | Epic ID     | EP-07               |
 | Prioridad   | 3                   |
 | User        | Visitante (Cliente potencial)  |
-| Title       | Testimonios y Casos de Éxito |
+| Title       | Leer testimonios y casos de éxito |
 | Descripción | Como visitante quiero leer testimonios de usuarios reales y ver estadísticas de éxito para generar confianza en la efectividad de la plataforma |
 | Criterios de aceptación | Given el visitante está en la sección de testimonios<br>When lee los testimonios<br>Then ve nombres, fotos e instituciones de usuarios reales<br><br>Given el visitante revisa las estadísticas<br>When observa los números de éxito<br>Then ve métricas como "95% mejora en calificaciones" con fuentes creíbles<br><br>Given el visitante quiere verificar autenticidad<br>When hace clic en un testimonio<br>Then puede ver más detalles del caso de éxito |
 
 <br>
 <br>
 
-| HU-ID       | HU-06               |
+| USID        | US-06               |
 |-------------|---------------------|
 | Epic ID     | EP-07               |
 | Prioridad   | 5                   |
 | User        | Visitante (Cliente potencial)  |
-| Title       | Demostración del Buscador |
+| Title       | Probar buscador |
 | Descripción | Como visitante quiero ver cómo funciona la búsqueda de compañeros y grupos para entender la facilidad de conexión en la plataforma |
 | Criterios de aceptación | Given el visitante lee la sección del buscador<br>When busca más información visual<br>Then ve una captura de pantalla o demo interactiva del buscador<br><br>Given el visitante interactúa con el demo del buscador<br>When simula una búsqueda<br>Then ve resultados de ejemplo organizados por relevancia<br><br>Given el visitante entiende la funcionalidad<br>When desea probarla realmente<br>Then encuentra un call-to-action claro para registrarse |
 
 <br>
 <br>
 
-| HU-ID       | HU-07               |
+| USID        | US-07               |
 |-------------|---------------------|
 | Epic ID     | EP-07               |
 | Prioridad   | 3                   |
 | User        | Visitante (Cliente potencial)   |
-| Title       | Formulario de Contacto |
+| Title       | Enviar formulario de contacto |
 | Descripción | Como visitante quiero usar un formulario de contacto intuitivo para enviar consultas específicas al equipo de SkillShare |
 | Criterios de aceptación | Given el visitante accede al formulario de contacto<br>When completa nombre, email y mensaje<br>Then todos los campos se validan en tiempo real<br><br>Given el visitante envía el formulario con datos válidos<br>When confirma el envío<br>Then recibe confirmación en pantalla y email automático de recepción<br><br>Given el visitante envía datos incompletos o inválidos<br>When intenta enviar<br>Then recibe mensajes de error específicos para cada campo problemático |
 
 <br>
 <br>
 
-| HU-ID       | HU-08               |
+| USID        | US-08               |
 |-------------|---------------------|
 | Epic ID     | EP-07               |
 | Prioridad   | 3                   |
 | User        | Visitante (Cliente potencial)   |
-| Title       | FAQ Interactiva     |
+| Title       | Consultar FAQ interactiva     |
 | Descripción | Como visitante quiero acceder a preguntas frecuentes organizadas para resolver dudas comunes sin necesidad de contactar soporte |
 | Criterios de aceptación | Given el visitante abre la sección FAQ<br>When hace clic en una pregunta<br>Then la respuesta se expande suavemente mostrar información completa<br><br>Given el visitante busca una respuesta específica<br>When utiliza el buscador interno del FAQ<br>Then encuentra preguntas relevantes filtradas por palabras clave<br><br>Given el visitante no encuentra su pregunta<br>When llega al final de la lista<br>Then ve un call-to-action claro para contactar soporte |
 
 <br>
 <br>
 
-| HU-ID       | HU-09               |
+| USID        | US-09               |
 |-------------|---------------------|
 | Epic ID     | EP-07               |
 | Prioridad   | 1                   |
 | User        | Visitante (Cliente potencial)   |
-| Title       | Página del Equipo   |
+| Title       | Conocer al equipo   |
 | Descripción | Como visitante quiero conocer al equipo fundador para generar confianza en las personas responsables del proyecto |
 | Criterios de aceptación | Given el visitante accede a la página "Nuestro Equipo"<br>When revisa los perfiles<br>Then ve fotos, nombres, roles y breves biografías de cada miembro<br><br>Given el visitante valora la transparencia<br>When revisa toda la información<br>Then encuentra enlaces a LinkedIn o portfolios profesionales verificables |
 
 <br>
 <br>
 
-| HU-ID       | HU-10               |
+| USID        | US-10               |
 |-------------|---------------------|
 | Epic ID     | EP-07               |
 | Prioridad   | 2                   |
 | User        | Visitante (Cliente potencial)   |
-| Title       | Política de Privacidad |
+| Title       | Revisar política de privacidad |
 | Descripción | Como visitante quiero acceder fácilmente a la política de privacidad para entender cómo se manejarán mis datos personales |
 | Criterios de aceptación | Given el visitante busca información sobre privacidad<br>When hace clic en "Política de Privacidad"<br>Then accede a un documento claro y actualizado con fecha de última modificación<br><br>Given el visitante lee la política<br>When busca información específica<br>Then encuentra secciones organizadas con índice navegable<br><br>Given el visitante tiene dudas específicas<br>When termina de leer<br>Then encuentra información de contacto para consultas sobre privacidad |
 
 <br>
 <br>
 
-| HU-ID       | HU-11               |
+| USID        | US-11               |
 |-------------|---------------------|
 | Epic ID     | EP-07               |
 | Prioridad   | 1                   |
 | User        | Visitante (Cliente potencial)   |
-| Title       | Footer Completo     |
+| Title       | Navegar footer completo     |
 | Descripción | Como visitante quiero un footer organizado con todos los enlaces importantes para navegar fácilmente a información relevante |
 | Criterios de aceptación | Given el visitante llega al footer de cualquier página<br>When busca enlaces importantes<br>Then encuentra organizados: términos, privacidad, contacto, redes sociales y mapa del sitio<br><br>Given el visitante hace clic en cualquier enlace del footer<br>When navega<br>Then los enlaces funcionan correctamente y abren en la ventana apropiada<br><br>Given el visitante está en dispositivo móvil<br>When ve el footer<br>Then todos los enlaces son fácilmente accesibles y están bien organizados |
 
 <br>
 <br>
 
-| HU-ID       | HU-12               |
+| USID        | US-12               |
 |-------------|---------------------|
 | Epic ID     | EP-07               |
 | Prioridad   | 8                   |
 | User        | Visitante (Cliente potencial)  |
-| Title       | Sección de Precios y Planes |
+| Title       | Comparar precios y planes |
 | Descripción | Como visitante quiero ver claramente los diferentes planes disponibles para tomar una decisión informada sobre qué opción elegir |
 | Criterios de aceptación | Given el visitante accede a la sección de precios<br>When compara los planes<br>Then ve claramente freemium, premium e institucional con características destacadas<br><br>Given el visitante revisa un plan específico<br>When hace clic en "Ver detalles"<br>Then obtiene información completa sobre límites, funcionalidades y beneficios<br><br>Given el visitante decide elegir un plan<br>When hace clic en "Elegir plan"<br>Then es dirigido al proceso de registro o pago correspondiente |
 
 <br>
 <br>
 
-| HU-ID       | HU-13               |
+| USID        | US-13               |
 |-------------|---------------------|
 | Epic ID     | EP-01               |
 | Prioridad   | 5                   |
 | User        | Estudiante universitario |
-| Title       | Personalización de perfil de estudiante universitario |
+| Title       | Personalizar perfil de estudiante universitario |
 | Descripción | COMO estudiante universitario QUIERO crear y configurar mi perfil académico PARA QUE otros usuarios puedan conocer mis intereses de estudio y nivel académico |
 | Criterios de aceptación | Given el usuario accede a la sección de registro<br>When completa los campos obligatorios (nombre, universidad, carrera, semestre)<br>Then el sistema crea su perfil y lo redirige al dashboard principal<br><br>Given el usuario tiene un perfil creado<br>When accede a configuración de perfil<br>Then puede editar su información académica y preferencias de estudio |
 
 <br>
 <br>
 
-| HU-ID       | HU-14               |
+| USID        | US-14               |
 |-------------|---------------------|
 | Epic ID     | EP-02               |
 | Prioridad   | 8                   |
 | User        | Estudiante universitario |
-| Title       | Búsqueda de grupos de estudio |
+| Title       | Buscar grupos de estudio |
 | Descripción | COMO estudiante universitario QUIERO buscar grupos de estudio por materia y universidad PARA encontrar compañeros compatibles con mi nivel académico |
 | Criterios de aceptación | Given el usuario está en la pantalla principal<br>When utiliza los filtros de búsqueda (materia, universidad)<br>Then el sistema muestra grupos que coinciden con los criterios seleccionados<br><br>Given existen grupos disponibles<br>When el usuario selecciona un grupo<br>Then puede ver información detallada del grupo y sus miembros |
 
 <br>
 <br>
 
-| HU-ID       | HU-15               |
+| USID        | US-15               |
 |-------------|---------------------|
 | Epic ID     | EP-02               |
 | Prioridad   | 8                   |
 | User        | Estudiante universitario |
-| Title       | Creación de grupos de estudios (universitarios) |
+| Title       | Crear grupos de estudio |
 | Descripción | COMO estudiante universitario QUIERO crear un grupo de estudio especificando materia, objetivos y horarios PARA organizar sesiones colaborativas |
 | Criterios de aceptación | Given el usuario selecciona "Crear Grupo"<br>When completa la información requerida (nombre, materia, descripción, horarios)<br>Then el sistema crea el grupo y lo establece como administrador<br><br>Given el grupo está creado<br>When otros usuarios solicitan unirse<br>Then el creador recibe notificaciones para aprobar o rechazar solicitudes |
 
 <br>
 <br>
 
-| HU-ID       | HU-16               |
+| USID        | US-16               |
 |-------------|---------------------|
 | Epic ID     | EP-04               |
 | Prioridad   | 3                   |
 | User        | Estudiante secundaria |
-| Title       | Interfaz intuitiva con colores distintivos |
+| Title       | Explorar interfaz intuitiva |
 | Descripción | COMO estudiante de secundaria QUIERO una interfaz con elementos lúdicos y coloridos PARA mantenerme motivada durante el uso de la aplicación |
 | Criterios de aceptación | Given el usuario accede a la aplicación<br>When navega por las diferentes secciones<br>Then la interfaz muestra elementos visuales atractivos con colores vibrantes y animaciones<br><br>Given el usuario completa actividades de estudio<br>When alcanza objetivos o metas<br>Then recibe badges, puntos o recompensas visuales |
 
 <br>
 <br>
 
-| HU-ID       | HU-17               |
+| USID        | US-17               |
 |-------------|---------------------|
 | Epic ID     | EP-04               |
 | Prioridad   | 2                   |
 | User        | Estudiante secundaria |
-| Title       | Sistema de logos mediante insignias |
+| Title       | Ganar badges |
 | Descripción | Como estudiante de secundaria quiero ganar badges por mi participación para sentir reconocimiento por mis contribuciones al grupo |
 | Criterios de aceptación | Given el usuario participa en actividades grupales<br>When completa tareas, asiste a sesiones o ayuda a compañeros<br>Then acumula puntos en su perfil<br><br>Given el usuario alcanza ciertos hitos<br>When cumple criterios específicos de participación<br>Then desbloquea badges especiales visibles en su perfil |
 
 <br>
 <br>
 
-| HU-ID       | HU-18               |
+| USID        | US-18               |
 |-------------|---------------------|
 | Epic ID     | EP-03               |
 | Prioridad   | 5                   |
 | User        | Estudiante secundaria |
-| Title       | Chat grupal organizado |
+| Title       | Usar chat grupal organizado |
 | Descripción | Como estudiante de secundaria quiero un sistema de chat que separe contenido académico de social para evitar que se pierda información importante |
 | Criterios de aceptación | Given el usuario está en un grupo de estudio<br>When accede al chat grupal<br>Then puede alternar entre el canal académico y el canal social<br><br>Given un miembro envía un mensaje académico importante<br>When utiliza la función de mensaje destacado<br>Then el mensaje se fija en la parte superior del canal académico |
 
 <br>
 <br>
 
-| HU-ID       | HU-19               |
+| USID        | US-19               |
 |-------------|---------------------|
 | Epic ID     | EP-05               |
 | Prioridad   | 3                   |
 | User        | Estudiante autodidacta |
-| Title       | Sincronización Offline de archivos |
+| Title       | Sincronizar archivos offline |
 | Descripción | Como autodidacta quiero acceder a contenido sin conexión durante mis viajes para estudiar en cualquier momento y lugar |
 | Criterios de aceptación | Given el usuario tiene conexión a internet<br>When descarga contenido para acceso offline<br>Then el material queda disponible sin conexión<br><br>Given el usuario estudia en modo offline<br>When regresa la conexión a internet<br>Then el progreso se sincroniza automáticamente con su cuenta |
 
 <br>
 <br>
 
-| HU-ID       | HU-20               |
+| USID        | US-20               |
 |-------------|---------------------|
 | Epic ID     | EP-05               |
 | Prioridad   | 5                   |
 | User        | Estudiante autodidacta |
-| Title       | Métricas de progreso de estudio |
+| Title       | Visualizar métricas de progreso |
 | Descripción | Como autodidacta quiero ver métricas detalladas de mi progreso para medir tangiblemente mi desarrollo profesional |
 | Criterios de aceptación | Given el usuario ha completado actividades de aprendizaje<br>When accede a la sección de estadísticas<br>Then ve gráficos de tiempo invertido, temas completados y nivel de progreso<br><br>Given el usuario establece objetivos de aprendizaje<br>When revisa su progreso semanal<br>Then recibe recomendaciones para mantener el ritmo de estudio |
 
 <br>
 <br>
 
-| HU-ID       | HU-21               |
+| USID        | US-21               |
 |-------------|---------------------|
 | Epic ID     | EP-02               |
 | Prioridad   | 8                   |
 | User        | Docente             |
-| Title       | Gestión de grupos pagados |
+| Title       | Gestionar grupos pagados |
 | Descripción | Como docente quiero crear y gestionar grupos de estudio con tarifas personalizadas para monetizar mi expertise educativa |
 | Criterios de aceptación | Given el usuario tiene perfil verificado de docente<br>When crea un grupo de estudio<br>Then puede establecer precio, duración y número máximo de participantes<br><br>Given estudiantes se inscriben al grupo pagado<br>When se procesa el pago<br>Then el sistema confirma la inscripción y notifica al docente |
 
 <br>
 <br>
 
-| HU-ID       | HU-22               |
+| USID        | US-22               |
 |-------------|---------------------|
 | Epic ID     | EP-06               |
 | Prioridad   | 5                   |
 | User        | Docente             |
-| Title       | Herramientas de enseñanza |
+| Title       | Compartir materiales educativos |
 | Descripción | Como docente quiero compartir materiales educativos y realizar sesiones en vivo para brindar valor educativo a mis estudiantes |
 | Criterios de aceptación | Given el docente está en su grupo pagado<br>When sube material educativo<br>Then todos los miembros suscritos pueden acceder al contenido<br><br>Given el docente programa una sesión en vivo<br>When inicia la videollamada<br>Then los participantes reciben una notificación y pueden unirse |
 
 <br>
 <br>
 
-| HU-ID       | HU-23               |
+| USID        | US-23               |
 |-------------|---------------------|
 | Epic ID     | EP-06               |
 | Prioridad   | 3                   |
 | User        | Docente             |
-| Title       | Analytics de Negocio |
+| Title       | Revisar analytics de negocio |
 | Descripción | Como docente quiero ver estadísticas de mis grupos para optimizar mis servicios educativos y aumentar mis ingresos |
 | Criterios de aceptación | Given el docente tiene grupos activos<br>When accede al panel de analytics<br>Then puede ver métricas de ingresos, retención de estudiantes y satisfacción<br><br>Given ha transcurrido un período de tiempo<br>When el docente revisa los reportes mensuales<br>Then recibe insights sobre tendencias y recomendaciones de mejora |
 
 <br>
 <br>
 
-| HU-ID       | HU-24               |
+| USID        | US-24               |
 |-------------|---------------------|
 | Epic ID     | EP-03               |
 | Prioridad   | 8                   |
 | User        | Usuario general     |
-| Title       | Chat integrado      |
+| Title       | Comunicar mediante chat integrado      |
 | Descripción | Como usuario quiero comunicarme con los miembros de mi grupo a través de chat en tiempo real para coordinar actividades de estudio |
 | Criterios de aceptación | Given el usuario pertenece a un grupo<br>When accede al chat grupal<br>Then puede enviar y recibir mensajes en tiempo real<br><br>Given el usuario recibe un mensaje<br>When no está activo en la aplicación<br>Then recibe una notificación push |
 
 <br>
 <br>
 
-| HU-ID       | HU-25               |
+| USID        | US-25               |
 |-------------|---------------------|
 | Epic ID     | EP-03               |
 | Prioridad   | 5                   |
 | User        | Usuario general     |
-| Title       | Videollamadas grupales |
+| Title       | Realizar videollamadas grupales |
 | Descripción | Como usuario quiero realizar videollamadas con mi grupo de estudio para tener sesiones de aprendizaje cara a cara |
 | Criterios de aceptación | Given el usuario está en un grupo activo<br>When inicia una videollamada<br>Then los demás miembros reciben una invitación para unirse<br><br>Given varios usuarios están en una videollamada<br>When uno de ellos comparte pantalla<br>Then todos los participantes pueden ver el contenido compartido |
 
 <br>
 <br>
 
-| HU-ID       | HU-26               |
+| USID        | US-26               |
 |-------------|---------------------|
 | Epic ID     | EP-03               |
 | Prioridad   | 8                   |
@@ -1784,36 +1784,36 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 <br>
 <br>
 
-| HU-ID       | HU-27               |
+| USID        | US-27               |
 |-------------|---------------------|
 | Epic ID     | EP-03               |
 | Prioridad   | 3                   |
 | User        | Usuario general     |
-| Title       | Sistema de Quizzes  |
+| Title       | Crear y responder quizzes  |
 | Descripción | Como usuario quiero crear y responder quizzes sobre los temas de estudio para evaluar mi comprensión y la del grupo |
 | Criterios de aceptación | Given el usuario está en un grupo de estudio<br>When crea un quiz sobre el tema actual<br>Then otros miembros pueden responderlo y ver los resultados<br><br>Given el usuario responde un quiz<br>When completa todas las preguntas<br>Then recibe retroalimentación inmediata sobre su desempeño |
 
 <br>
 <br>
 
-| HU-ID       | HU-28               |
+| USID        | US-28               |
 |-------------|---------------------|
 | Epic ID     | EP-03               |
 | Prioridad   | 5                   |
 | User        | Usuario general     |
-| Title       | Calendario de Sesiones |
+| Title       | Programar calendario de sesiones |
 | Descripción | Como usuario quiero programar y gestionar sesiones de estudio para coordinar horarios con los miembros del grupo |
 | Criterios de aceptación | Given el usuario tiene grupos activos<br>When propone una sesión de estudio<br>Then otros miembros pueden confirmar su participación o sugerir horarios alternativos<br><br>Given una sesión está programada<br>When se acerca la hora de la sesión<br>Then todos los participantes reciben recordatorios de la sesión |
 
 <br>
 <br>
 
-| HU-ID       | HU-29               |
+| USID        | US-29               |
 |-------------|---------------------|
 | Epic ID     | EP-03               |
 | Prioridad   | 5                   |
 | User        | Usuario general     |
-| Title       | Notificaciones push |
+| Title       | Recibir notificaciones push |
 | Descripción | Como usuario quiero recibir notificaciones relevantes para mantenerme actualizado sobre actividades de mis grupos |
 | Criterios de aceptación | Given el usuario tiene grupos activos<br>When ocurre actividad relevante<br>Then recibe notificación push personalizada<br><br>Given el usuario configura preferencias<br>When ajusta tipos de notificaciones<br>Then solo recibe las notificaciones seleccionadas |
 
@@ -1916,35 +1916,35 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 ## 3.4. Product Backlog
 | Orden | User Story ID | Título                         | Story Points |
 |-------|---------------|--------------------------------|-------------|
-| 1     | HU-01         | Registro de Usuario            | 8           |
-| 2     | HU-12         | Sección de Precios y Planes    | 8           |
-| 3     | HU-14         | Búsqueda de grupos de estudio  | 8           |
-| 4     | HU-15         | Creación de grupos de estudios | 8           |
-| 5     | HU-21         | Gestión de grupos pagados      | 8           |
-| 6     | HU-24         | Chat integrado                 | 8           |
-| 7     | HU-26         | Compartir recursos             | 8           |
-| 8     | HU-13         | Personalización de perfil      | 5           |
-| 9     | HU-20         | Métricas de progreso de estudio | 5          |
-| 10    | HU-22         | Herramientas de enseñanza      | 5           |
-| 11    | HU-25         | Videollamadas grupales         | 5           |
-| 12    | HU-28         | Calendario de Sesiones         | 5           |
-| 13    | HU-29         | Notificaciones push            | 5           |
-| 14    | HU-02         | Banner "Cómo funciona"         | 5           |
-| 15    | HU-04         | Lista de Funcionalidades       | 5           |
-| 16    | HU-06         | Demostración del Buscador      | 5           |
-| 17    | HU-18         | Chat grupal organizado         | 5           |
-| 18    | HU-16         | Interfaz intuitiva             | 3           |
-| 19    | HU-19         | Sincronización Offline         | 3           |
-| 20    | HU-23         | Analytics de Negocio           | 3           |
-| 21    | HU-27         | Sistema de Quizzes             | 3           |
-| 22    | HU-03         | Video Demostrativo             | 3           |
-| 23    | HU-05         | Testimonios y Casos de Éxito   | 3           |
-| 24    | HU-07         | Formulario de Contacto         | 3           |
-| 25    | HU-08         | FAQ Interactiva                | 3           |
-| 26    | HU-17         | Sistema de logos mediante insignias | 2      |
-| 27    | HU-10         | Política de Privacidad         | 2           |
-| 28    | HU-09         | Página del Equipo              | 1           |
-| 29    | HU-11         | Footer Completo                | 1           |
+| 1     | USID-01         | Registro de Usuario            | 8           |
+| 2     | USID-12         | Sección de Precios y Planes    | 8           |
+| 3     | USID-14         | Búsqueda de grupos de estudio  | 8           |
+| 4     | USID-15         | Creación de grupos de estudios | 8           |
+| 5     | USID-21         | Gestión de grupos pagados      | 8           |
+| 6     | USID-24         | Chat integrado                 | 8           |
+| 7     | USID-26         | Compartir recursos             | 8           |
+| 8     | USID-13         | Personalización de perfil      | 5           |
+| 9     | USID-20         | Métricas de progreso de estudio | 5          |
+| 10    | USID-22         | Herramientas de enseñanza      | 5           |
+| 11    | USID-25         | Videollamadas grupales         | 5           |
+| 12    | USID-28         | Calendario de Sesiones         | 5           |
+| 13    | USID-29         | Notificaciones push            | 5           |
+| 14    | USID-02         | Banner "Cómo funciona"         | 5           |
+| 15    | USID-04         | Lista de Funcionalidades       | 5           |
+| 16    | USID-06         | Demostración del Buscador      | 5           |
+| 17    | USID-18         | Chat grupal organizado         | 5           |
+| 18    | USID-16         | Interfaz intuitiva             | 3           |
+| 19    | USID-19         | Sincronización Offline         | 3           |
+| 20    | USID-23         | Analytics de Negocio           | 3           |
+| 21    | USID-27         | Sistema de Quizzes             | 3           |
+| 22    | USID-03         | Video Demostrativo             | 3           |
+| 23    | USID-05         | Testimonios y Casos de Éxito   | 3           |
+| 24    | USID-07         | Formulario de Contacto         | 3           |
+| 25    | USID-08         | FAQ Interactiva                | 3           |
+| 26    | USID-17         | Sistema de logos mediante insignias | 2      |
+| 27    | USID-10         | Política de Privacidad         | 2           |
+| 28    | USID-09         | Página del Equipo              | 1           |
+| 29    | USID-11         | Footer Completo                | 1           |
 
 <br>
 <br>
