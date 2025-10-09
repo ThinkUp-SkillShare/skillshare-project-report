@@ -1820,6 +1820,62 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 <br>
 <br>
 
+### Spike Stories – Integración de Chat y Videollamadas
+#### Spike Story 1 — Investigación de Integración de Chat en Android y Backend C#
+
+La aplicación móvil SkillShare está siendo desarrollada de forma nativa en Android Studio, con código en Kotlin. 
+El backend se está desarrollando en C# (ASP.NET Core) con servicios RESTful y base de datos MySQL. 
+El equipo desea implementar un chat grupal en tiempo real que permita la comunicación entre miembros de un grupo de estudio. 
+Para ello, se evaluarán diferentes soluciones tecnológicas como Firebase Realtime Database, Firebase Firestore, SignalR (para C#), o WebSockets nativos, 
+considerando compatibilidad, escalabilidad, facilidad de integración y sincronización en tiempo real.
+
+##### Spike Story
+
+Como equipo de desarrollo móvil y backend, quiero investigar y prototipar la integración de un chat grupal en tiempo real entre la app Android y el backend en C#, 
+para determinar la mejor solución técnica, los requerimientos de integración, riesgos y esfuerzo estimado para su implementación completa.
+
+##### Criterios de Aceptación (Given–When–Then) <br>
+• Revisar tecnologías disponibles: Documentar ventajas, desventajas, costos y compatibilidad con Android + backend C#.<br>
+• Evaluar la integración con Android: Documentar configuración, dependencias y manejo del ciclo de vida del chat.<br>
+• Evaluar la integración con backend C#: Documentar requisitos de implementación, autenticación y sincronización de mensajes.<br>
+• Prototipo de prueba funcional (PoC): Implementar envío/recepción de mensajes en tiempo real entre dos usuarios simulados.<br>
+• Evaluar seguridad y persistencia: Analizar autenticación segura, cifrado y almacenamiento de datos.<br>
+• Estimar esfuerzo de implementación: Desglosar tareas y estimar tiempo o puntos de historia.<br>
+• Documentar hallazgos: Incluir resultados, comparación de tecnologías y recomendación final.
+
+##### Definition of Done (DoD)
+
+- Documento técnico con hallazgos, ventajas y desventajas de las opciones evaluadas.
+- PoC funcional de chat entre dos usuarios en Android y backend C#.
+- Resumen de riesgos, costos, tiempos estimados y arquitectura recomendada.
+- Spike completado en máximo 24–48 horas dentro del sprint.
+
+#### Spike Story 2 — Investigación de Integración de Videollamadas Grupales
+
+El equipo busca implementar videollamadas grupales dentro de la aplicación Android SkillShare para sesiones de estudio colaborativas. 
+El backend en C# debe gestionar la autenticación, creación de salas y registro de sesiones. 
+Se evaluarán servicios de terceros y SDKs como WebRTC (open source), Agora.io, Twilio Video, o Daily.co,  considerando facilidad de integración, costo, escalabilidad, calidad de audio/video y compatibilidad con backend C#.
+
+##### Spike Story
+
+Como equipo de desarrollo móvil y backend, quiero investigar y prototipar la integración de videollamadas grupales usando Android y backend C#, 
+para determinar la viabilidad técnica, librerías más adecuadas y el esfuerzo necesario para la implementación completa.
+
+##### Criterios de Aceptación (Given–When–Then)
+• Analizar SDKs y APIs disponibles: Documentar requerimientos técnicos, compatibilidad y costos.<br>
+• Evaluar integración Android: Documentar configuración, permisos (micrófono, cámara) y rendimiento.<br>
+• Evaluar integración backend C#: Documentar endpoints requeridos y flujos de autorización.<br>
+• Prototipo funcional (PoC): Implementar videollamada entre dos usuarios con audio y video funcionales.<br>
+• Evaluar seguridad y rendimiento: Registrar métricas y medidas de protección como cifrado TLS.<br>
+• Documentar hallazgos y recomendaciones: Incluir opción recomendada, riesgos, costos y propuesta técnica.
+
+##### Definition of Done (DoD)
+
+- Informe técnico con comparación entre SDKs de videollamada (WebRTC, Agora, Twilio, etc.).
+- PoC funcional con conexión básica entre dos usuarios desde Android.
+- Análisis de seguridad, rendimiento y estimación de esfuerzo incluidos.
+- Spike completado en 24–48 horas dentro del sprint.
+
 ## 3.2. Technical Stories
 
 | HU-ID       | TS-01               |
