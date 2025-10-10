@@ -2968,6 +2968,1960 @@ Como usuario, quiero poder cambiar entre el chat y las llamadas dentro de la apl
 
 
 <!--
+   CAP VI
+-->
+
+# Capítulo VI: Product Implementation, Validation & Deployment
+## 6.1. Software Configuration Management
+### 6.1.1. Software Development Environment Configuration
+
+**1. Project Management**
+
+La gestión de proyectos es fundamental en el desarrollo de software, ya que permite la organización y estructuración de las tareas necesarias para completar un proyecto. Las herramientas de gestión de proyectos permiten planificar, asignar y realizar un seguimiento de tareas, así como mejorar la colaboración en equipo y la comunicación.
+
+| **Campo** | **Valor** |
+|-----------|-----------|
+| **Categoría** | Project Management |
+| **Herramienta** | Jira (SaaS) |
+| **Logo** | <img src="https://logolook.net/wp-content/uploads/2023/04/Jira-Logo-2017.png" width="150"> |
+| **Descripción** | Jira es una plataforma de gestión de proyectos ampliamente utilizada, especialmente en proyectos de desarrollo de software que siguen metodologías ágiles como Scrum o Kanban. Esta herramienta permite la planificación de sprints, seguimiento de tareas en tiempo real, y la creación de reportes de rendimiento, facilitando la organización y optimización del trabajo en equipo. |
+| **URL** | <a href="https://www.atlassian.com/es/software/jira" target="_blank">https://www.atlassian.com/es/software/jira</a> |
+
+<br>
+
+**2. Product UX/UI Design**
+
+El diseño de interfaces de usuario (UI) y experiencia de usuario (UX) es esencial para crear aplicaciones y software intuitivos, estéticamente agradables y funcionales. Las herramientas de diseño UX/UI permiten la creación de prototipos visuales, wireframes y diseños interactivos, que pueden validarse con usuarios antes de la implementación. 
+
+| **Campo** | **Valor** |
+|-----------|-----------|
+| **Categoría** | Product UX/UI Design |
+| **Herramienta** | Figma |
+| **Logo** | <img src="https://vectorseek.com/wp-content/uploads/2023/07/Figma-Logo-Png-Vector.svg-.png" width="60"> |
+| **Descripción** | Figma es una herramienta de diseño colaborativo basada en la nube, ideal para la creación de prototipos de interfaces y diseños interactivos. Al estar en línea, permite la edición y revisión en tiempo real, facilitando la colaboración entre miembros del equipo desde cualquier lugar. Es especialmente útil en entornos ágiles donde el diseño y el desarrollo avanzan de manera simultánea. |
+| **URL** | <a href="https://www.figma.com/es-la/" target="_blank">https://www.figma.com/es-la/</a> |
+
+<br>
+
+**3. Software Development**
+
+El desarrollo de aplicaciones móviles requiere entornos y editores de código donde los desarrolladores puedan escribir, depurar y probar el código para diversas plataformas. Android Studio es la herramienta principal para el desarrollo de aplicaciones nativas de Android, mientras que Flutter, un framework de Google, permite crear aplicaciones multiplataforma con un solo código base. Visual Studio Code es utilizado para la creación de la landing page debido a su ligereza y capacidad para personalizar el entorno de desarrollo con extensiones específicas.
+
+| **Campo** | **Valor** |
+|-----------|-----------|
+| **Categoría** | Desarrollo de Software Móvil |
+| **Herramienta** | Android Studio |
+| **Logo** | <img src="https://keycheck.dev/app-icons/android-studio.png" width="100"> |
+| **Descripción** | Android Studio es el entorno de desarrollo integrado (IDE) oficial para el desarrollo de aplicaciones Android. Permite la creación de interfaces nativas usando Kotlin, y también es compatible con Flutter para el desarrollo multiplataforma con Dart. Android Studio incluye herramientas avanzadas de depuración, simuladores de dispositivos y análisis de rendimiento. |
+| **Lenguajes** | Kotlin (para interfaces Android), Dart (para Flutter) |
+| **URL** | <a href="https://developer.android.com/studio" target="_blank">https://developer.android.com/studio</a> |
+
+<br>
+
+| **Campo** | **Valor** |
+|-----------|-----------|
+| **Herramienta** | Visual Studio Code (VS Code) |
+| **Logo** | <img src="https://i.pinimg.com/originals/24/42/f8/2442f8e6dbd772f0cf1dad8d803399bc.png" width="100"> |
+| **Descripción** | Visual Studio Code es un editor de código ligero y potente, ideal para la creación de landing pages y aplicaciones web. Ofrece soporte para HTML, CSS, JavaScript y frameworks como React. Cuenta con integraciones para depuración, control de versiones y extensiones personalizadas, facilitando el trabajo en el desarrollo de la parte front-end de un proyecto. |
+| **Usos** | Creación de landing page (HTML, CSS, JavaScript) |
+| **URL** | <a href="https://code.visualstudio.com/Download" target="_blank"> https://code.visualstudio.com/Download</a> |
+
+<br>
+
+**4. Version Control**
+
+El control de versiones es un componente esencial en el desarrollo de software, ya que permite gestionar y realizar un seguimiento de los cambios en el código fuente. Facilita la colaboración entre desarrolladores, ya que cada miembro del equipo puede trabajar en una copia del código y posteriormente fusionar los cambios. Esto es especialmente importante en proyectos con múltiples colaboradores, evitando conflictos y manteniendo un historial completo de modificaciones.
+
+| **Campo** | **Valor** |
+|-----------|-----------|
+| **Categoría** | Version Control |
+| **Herramienta** | Git (CLI/GUI) |
+| **Logo** | <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3253808/git-icon-icon-md.png" width="100"> |
+| **Descripción** | Git es un sistema de control de versiones es distribuido que permite gestionar el código localmente y compartirlo en repositorios remotos. Ofrece la posibilidad de crear ramas para trabajar en diferentes funcionalidades de manera simultánea, y posteriormente unirlas mediante operaciones como merge o rebase. |
+| **URL** | <a href="https://git-scm.com/downloads" target="_blank">https://git-scm.com/downloads</a> |
+
+<br>
+
+| **Campo** | **Valor** |
+|-----------|-----------|
+| **Categoría** | Version Control |
+| **Herramienta** | GitHub |
+| **Logo** | <img src="https://th.bing.com/th/id/R.d3c974f05804e0b1e6eb7ff2564944e8?rik=xjfUeUs1lMo8FA&pid=ImgRaw&r=0" width="100"> |
+| **Descripción** | GitHub es una plataforma basada en la nube que utiliza Git para la gestión de repositorios y facilita la colaboración entre equipos de desarrollo. Además de su funcionalidad de control de versiones, GitHub ofrece herramientas adicionales para la revisión de código, seguimiento de problemas y proyectos, e integración continua. |
+| **URL** | <a href="https://github.com/" target="_blank">https://github.com/</a> |
+
+<br>
+
+### 6.1.2. Source Code Management
+
+La gestión del código fuente es fundamental para el desarrollo colaborativo de cualquier proyecto de software. En esta sección, se establecerá un esquema claro de organización y control de versiones utilizando GitHub y el modelo de GitFlow. Esto garantizará una estructura organizada, controlada y accesible del código, con pautas para el seguimiento y manejo de cambios. Además, se definirán las convenciones para nombres de ramas, mensajes de commits, y se utilizará Semantic Versioning para las versiones del proyecto.
+
+## 1. Establecimiento de repositorios en GitHub
+
+Para organizar el código y pruebas de manera eficiente, se crearán repositorios específicos en GitHub, cada uno con una función concreta en el desarrollo y control de calidad del proyecto:
+
+| **Repositorio** | **Descripción** | **URL** |
+|-----------------|-----------------|---------|
+| **Landing Page** | Este repositorio estará destinado exclusivamente al código de la página de aterrizaje (Landing Page), donde se registrará todo el desarrollo de la interfaz y los recursos Front-End. | https://github.com/ThinkUp-SkillShare/skillshare.github.io |
+| **Pruebas de Aceptación** | En este repositorio se almacenarán los archivos .feature, que definen las pruebas de aceptación en formato Gherkin, permitiendo validar que las funcionalidades desarrolladas cumplen con los requisitos especificados. | https://github.com/ThinkUp-SkillShare/acceptance-tests |
+| **Backend Mobile Application** | Este repositorio contendrá el código del backend de la aplicación móvil, implementado en Java y utilizando APIs RESTful. Incluirá la lógica de negocio, el procesamiento de datos y la comunicación con la base de datos necesaria para la interacción con los servicios móviles. | https://github.com/ThinkUp-SkillShare/backend-mobile-application |
+| **Kotlin Mobile Application** | Este repositorio albergará el código de la aplicación móvil desarrollada en Kotlin. Se centrará en la interfaz de usuario, funcionalidades específicas para Android y la integración con los servicios backend a través de APIs RESTful. | https://github.com/ThinkUp-SkillShare/kotlin-mobile-application |
+| **Flutter Mobile Application** | Este repositorio almacenará el código de la aplicación móvil desarrollada en Flutter. Contendrá la lógica de interfaz de usuario y la integración de la aplicación con los servicios backend, ofreciendo soporte tanto para Android como para iOS. | https://github.com/ThinkUp-SkillShare/flutter-mobile-application |
+| **Project Report** | Este repositorio centralizará toda la documentación del proyecto, incluyendo el modelo de negocio, Lean UX, definición de la problemática, entrevistas a usuarios, hipótesis, validaciones y demás artefactos de diseño. Su objetivo es mantener un registro formal del proceso de ideación y definición del producto. | https://github.com/ThinkUp-SkillShare/skillshare-project-report |
+
+<br>
+
+## 2. Workflow de control de versiones
+
+Para garantizar que el flujo de trabajo y la integración de cambios sean efectivos y organizados, se implementará el modelo GitFlow. Este modelo establece una estructura de ramas específica que facilita el desarrollo paralelo y la administración de versiones.
+
+### Estructura de ramas en GitFlow:
+
+| **Nombre de la rama** | **Descripción** |
+|-----------------------|-----------------|
+| **Main Branch (master)** | Es la rama principal que contiene el código en estado de producción. Solo los cambios completamente probados y listos para ser liberados en producción se integrarán aquí. |
+| **Develop Branch (develop)** | En esta rama se integran las funcionalidades en desarrollo. Sirve como base para el trabajo en curso antes de ser incorporado a la master. |
+| **Feature Branches (feature/\*)** | Para cada nueva funcionalidad o cambio importante, se debe crear una rama de funcionalidad derivada de develop. Esto permite que las funcionalidades se desarrollen de forma aislada. Ejemplo: feature/nueva-funcionalidad |
+| **Release Branches (release/\*)** | Estas ramas se crean para preparar versiones próximas a lanzarse. Facilitan la corrección de errores menores y las pruebas antes de liberar la versión en master. Ejemplo: release/v1.0.0 |
+| **Hotfix Branches (hotfix/\*)** | Ramas utilizadas para aplicar correcciones urgentes en el código de producción. Se crean a partir de master y se integran de vuelta en main y develop. Ejemplo: hotfix/urgent-fix |
+
+### Convenciones para nombres de ramas
+
+| **Tipo de Rama** | **Formato** | **Ejemplo** |
+|------------------|-------------|-------------|
+| **Feature Branches** | feature/nombre-descriptivo | feature/user-authentication |
+| **Release Branches** | release/x.y.z | release/v1.0.0 |
+| **Hotfix Branches** | hotfix/nombre-descriptivo | hotfix/login-error |
+
+<br>
+
+## 3. Versionado semántico (Semantic Versioning)
+
+Para mantener un control claro y estructurado de las versiones liberadas, se empleará Semantic Versioning 2.0.0. Esta convención de nomenclatura consiste en tres números: Major.Minor.Patch:
+
+| **Componente** | **Descripción** |
+|----------------|-----------------|
+| **Major** | Indica una versión con cambios que pueden ser incompatibles con versiones anteriores. |
+| **Minor** | Utilizado para nuevas funcionalidades que sean compatibles con versiones previas. |
+| **Patch** | Para modificaciones menores o correcciones de errores que no alteran la funcionalidad. |
+
+**Ejemplos:**
+- v1.0.0 – Primera versión estable lanzada al público
+- v1.1.0 – Nueva funcionalidad añadida
+- v1.1.1 – Pequeña corrección de errores
+
+<br>
+
+## 4. Convenciones de commits (Conventional Commits)
+
+Para mantener claridad y consistencia en los mensajes de commit, se utilizará el estándar Conventional Commits. Este sistema ayuda a identificar fácilmente el tipo de cambio realizado en cada commit, lo cual facilita la revisión del historial de cambios y la integración continua.
+
+| **Tipo de Cambio** | **Descripción** | **Ejemplo** |
+|--------------------|-----------------|-------------|
+| **feat** | Indica la implementación de una nueva funcionalidad. | `feat: agregar barra de navegación a la página de inicio` |
+| **fix** | Para resolver un error. | `fix: corregir error de validación en formulario de contacto` |
+| **docs** | Modificaciones en la documentación. | `docs: actualizar guía de instalación` |
+| **style** | Cambios de estilo que no afectan el código funcional. | `style: mejorar el formato de los archivos CSS` |
+| **refactor** | Cambios de código que no agregan funcionalidades nuevas ni corrigen errores. | `refactor: optimizar la lógica de la función de búsqueda` |
+| **test** | Añadir o modificar pruebas. | `test: añadir pruebas unitarias para la función de autenticación` |
+
+<br><br>
+
+### 6.1.3. Source Code Style Guide & Conventions
+
+En nuestro proyecto SkillShare, hemos adoptado un stack tecnológico moderno y robusto que incluye tecnologías para el backend, la aplicación móvil y el desarrollo de la landing page. La organización y estandarización del código aseguran que el desarrollo sea consistente, fácil de mantener y comprensible para cualquier miembro del equipo que trabaje en el proyecto.
+
+## Stack Tecnológico
+
+| **Área** | **Tecnologías** | **Propósito** |
+|----------|-----------------|---------------|
+| **Backend - API RESTful** | Java, Spring Boot, Spring Security, Spring Data JPA | Servicios backend para gestión de usuarios, grupos de estudio, chat y recursos compartidos |
+| **Aplicación Móvil - Android** | Kotlin, Jetpack Compose, Retrofit, Room | Aplicación nativa Android con interfaz moderna y eficiente |
+| **Aplicación Móvil - Multiplataforma** | Flutter, Dart, Provider/Bloc | Aplicación multiplataforma para iOS y Android con UI consistente |
+| **Landing Page** | HTML5, CSS3, JavaScript | Página de aterrizaje estática con diseño responsive e interactividad |
+
+<br>
+
+## Convenciones para Java Spring Boot (Backend)
+
+### Estructura de Proyecto Spring Boot
+
+| **Paquete** | **Propósito** |
+|-------------|---------------|
+| `com.thinkup.skillshare.config/` | Configuraciones de la aplicación |
+| `com.thinkup.skillshare.controller/` | Controladores REST |
+| `com.thinkup.skillshare.service/` | Lógica de negocio |
+| `com.thinkup.skillshare.repository/` | Acceso a datos |
+| `com.thinkup.skillshare.model/` | Entidades JPA |
+| `com.thinkup.skillshare.dto/` | Data Transfer Objects |
+| `com.thinkup.skillshare.exception/` | Manejo de excepciones |
+| `com.thinkup.skillshare.security/` | Configuración de seguridad |
+| `com.thinkup.skillshare.util/` | Utilidades |
+
+### Nomenclatura Java Spring Boot
+
+| **Tipo** | **Convención** | **Ejemplo** |
+|----------|----------------|-------------|
+| **Controladores** | PascalCase con sufijo Controller | `StudyGroupController` |
+| **Servicios** | PascalCase con sufijo Service | `StudyGroupService` |
+| **Entidades** | PascalCase | `StudyGroup`, `User`, `Resource` |
+| **Repositorios** | PascalCase con sufijo Repository | `StudyGroupRepository` |
+| **DTOs** | PascalCase con sufijo Dto | `CreateStudyGroupRequestDto` |
+| **Métodos** | camelCase descriptivo | `findGroupsBySubject()` |
+
+#### Ejemplo
+
+*Controladores*
+```java
+@RestController
+@RequestMapping("/api/v1/study-groups")
+@Validated
+public class StudyGroupController {
+    
+    private final StudyGroupService studyGroupService;
+    
+    @Autowired
+    public StudyGroupController(StudyGroupService studyGroupService) {
+        this.studyGroupService = studyGroupService;
+    }
+    
+    @GetMapping
+    public ResponseEntity<List<StudyGroupDto>> getAllStudyGroups(
+            @RequestParam(required = false) String subject) {
+        List<StudyGroupDto> groups = studyGroupService.findGroupsBySubject(subject);
+        return ResponseEntity.ok(groups);
+    }
+    
+    @PostMapping
+    public ResponseEntity<StudyGroupDto> createStudyGroup(
+            @Valid @RequestBody CreateStudyGroupRequestDto request,
+            @AuthenticationPrincipal UserDetails userDetails) {
+        StudyGroupDto created = studyGroupService.createStudyGroup(request, userDetails.getUsername());
+        return ResponseEntity.status(HttpStatus.CREATED).body(created);
+    }
+}
+```
+
+*Servicios*
+```java
+@Service
+@Transactional
+public class StudyGroupService {
+    
+    private final StudyGroupRepository studyGroupRepository;
+    private final UserService userService;
+    
+    @Autowired
+    public StudyGroupService(StudyGroupRepository studyGroupRepository, 
+                            UserService userService) {
+        this.studyGroupRepository = studyGroupRepository;
+        this.userService = userService;
+    }
+    
+    public List<StudyGroupDto> findGroupsBySubject(String subject) {
+        if (subject != null && !subject.isEmpty()) {
+            return studyGroupRepository.findBySubjectAndActiveTrue(subject)
+                    .stream()
+                    .map(this::convertToDto)
+                    .collect(Collectors.toList());
+        }
+        return studyGroupRepository.findAllByActiveTrue()
+                .stream()
+                .map(this::convertToDto)
+                .collect(Collectors.toList());
+    }
+    
+    @Transactional
+    public StudyGroupDto createStudyGroup(CreateStudyGroupRequestDto request, String username) {
+        User creator = userService.findByUsername(username);
+        StudyGroup studyGroup = new StudyGroup();
+        studyGroup.setName(request.getName());
+        studyGroup.setSubject(request.getSubject());
+        studyGroup.setCreator(creator);
+        studyGroup.setActive(true);
+        
+        StudyGroup saved = studyGroupRepository.save(studyGroup);
+        return convertToDto(saved);
+    }
+    
+    private StudyGroupDto convertToDto(StudyGroup studyGroup) {
+        // Implementation
+        return new StudyGroupDto();
+    }
+}
+```
+
+*Entidades*
+```java
+@Entity
+@Table(name = "study_groups")
+public class StudyGroup {
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    
+    @Column(nullable = false, length = 100)
+    private String name;
+    
+    @Column(nullable = false, length = 50)
+    private String subject;
+    
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "creator_id", nullable = false)
+    private User creator;
+    
+    @ManyToMany
+    @JoinTable(
+        name = "study_group_members",
+        joinColumns = @JoinColumn(name = "study_group_id"),
+        inverseJoinColumns = @JoinColumn(name = "user_id")
+    )
+    private Set<User> members = new HashSet<>();
+    
+    @Column(nullable = false)
+    private Boolean active = true;
+    
+    @CreatedDate
+    @Column(nullable = false, updatable = false)
+    private LocalDateTime createdAt;
+    
+    // Getters and Setters
+}
+```
+
+### Anotaciones Spring Boot
+
+| **Anotación** | **Propósito** |
+|---------------|---------------|
+| `@RestController` | Define controladores REST |
+| `@Service` | Define servicios de negocio |
+| `@Repository` | Define repositorios de datos |
+| `@Entity` | Define entidades JPA |
+| `@Transactional` | Manejo de transacciones |
+| `@Validated` | Validación de parámetros |
+| `@AuthenticationPrincipal` | Inyectar usuario autenticado |
+
+### Convenciones de Código Java
+
+| **Aspecto** | **Convención** |
+|-------------|----------------|
+| **Inyección de Dependencias** | Constructor injection preferido |
+| **Manejo de Excepciones** | Usar `@ControllerAdvice` para manejo global |
+| **Logging** | Usar SLF4J con niveles apropiados |
+| **Validación** | Usar Bean Validation (Jakarta) |
+
+<br>
+
+## Convenciones para Kotlin (Aplicación Android)
+
+### Estructura de Proyecto Kotlin
+
+| **Paquete** | **Propósito** |
+|-------------|---------------|
+| `com.thinkup.skillshare.ui/` | Componentes de UI (Activities, Fragments, Composables) |
+| `com.thinkup.skillshare.viewmodel/` | ViewModels para arquitectura MVVM |
+| `com.thinkup.skillshare.data/` | Capa de datos (repositories, data sources) |
+| `com.thinkup.skillshare.domain/` | Casos de uso y lógica de dominio |
+| `com.thinkup.skillshare.model/` | Modelos de datos |
+| `com.thinkup.skillshare.network/` | Cliente API y servicios de red |
+| `com.thinkup.skillshare.database/` | Base de datos local (Room) |
+| `com.thinkup.skillshare.util/` | Utilidades y extensiones |
+
+### Nomenclatura Kotlin
+
+| **Tipo** | **Convención** | **Ejemplo** |
+|----------|----------------|-------------|
+| **Activities** | PascalCase con sufijo Activity | `StudyGroupListActivity` |
+| **Fragments** | PascalCase con sufijo Fragment | `GroupDetailFragment` |
+| **Composables** | PascalCase sin sufijo | `StudyGroupCard`, `ChatScreen` |
+| **ViewModels** | PascalCase con sufijo ViewModel | `StudyGroupViewModel` |
+| **Repositorios** | PascalCase con sufijo Repository | `StudyGroupRepository` |
+| **Clases** | PascalCase | `StudyGroup`, `Message` |
+| **Funciones** | camelCase descriptivo | `loadStudyGroups()`, `sendMessage()` |
+| **Propiedades** | camelCase | `studyGroups`, `isLoading` |
+| **Constantes** | UPPER_SNAKE_CASE | `MAX_GROUP_SIZE` |
+
+<br>
+
+#### Ejemplo
+
+*Composables (Jetpack Compose)*
+```kotlin
+@Composable
+fun StudyGroupCard(
+    studyGroup: StudyGroup,
+    onCardClick: (StudyGroup) -> Unit,
+    modifier: Modifier = Modifier
+) {
+    Card(
+        modifier = modifier
+            .fillMaxWidth()
+            .clickable { onCardClick(studyGroup) }
+            .padding(8.dp),
+        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
+    ) {
+        Column(
+            modifier = Modifier.padding(16.dp)
+        ) {
+            Text(
+                text = studyGroup.name,
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.Bold
+            )
+            
+            Spacer(modifier = Modifier.height(4.dp))
+            
+            Text(
+                text = studyGroup.subject,
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.secondary
+            )
+            
+            Spacer(modifier = Modifier.height(8.dp))
+            
+            Row(
+                horizontalArrangement = Arrangement.SpaceBetween,
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text(
+                    text = "${studyGroup.members.size} miembros",
+                    style = MaterialTheme.typography.bodySmall
+                )
+                Text(
+                    text = studyGroup.createdAt.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")),
+                    style = MaterialTheme.typography.bodySmall
+                )
+            }
+        }
+    }
+}
+```
+
+*ViewModels*
+```kotlin
+@HiltViewModel
+class StudyGroupViewModel @Inject constructor(
+    private val studyGroupRepository: StudyGroupRepository,
+    private val savedStateHandle: SavedStateHandle
+) : ViewModel() {
+    
+    private val _studyGroups = MutableStateFlow<List<StudyGroup>>(emptyList())
+    val studyGroups: StateFlow<List<StudyGroup>> = _studyGroups.asStateFlow()
+    
+    private val _isLoading = MutableStateFlow(false)
+    val isLoading: StateFlow<Boolean> = _isLoading.asStateFlow()
+    
+    private val _error = MutableStateFlow<String?>(null)
+    val error: StateFlow<String?> = _error.asStateFlow()
+    
+    init {
+        loadStudyGroups()
+    }
+    
+    fun loadStudyGroups(subject: String? = null) {
+        viewModelScope.launch {
+            _isLoading.value = true
+            try {
+                studyGroupRepository.getStudyGroups(subject)
+                    .collect { result ->
+                        when (result) {
+                            is Result.Success -> {
+                                _studyGroups.value = result.data
+                                _error.value = null
+                            }
+                            is Result.Error -> {
+                                _error.value = result.exception.message
+                            }
+                        }
+                    }
+            } catch (e: Exception) {
+                _error.value = e.message
+            } finally {
+                _isLoading.value = false
+            }
+        }
+    }
+    
+    fun joinStudyGroup(groupId: Long) {
+        viewModelScope.launch {
+            try {
+                studyGroupRepository.joinGroup(groupId)
+                loadStudyGroups()
+            } catch (e: Exception) {
+                _error.value = "Error al unirse al grupo: ${e.message}"
+            }
+        }
+    }
+}
+```
+
+*Repositorios*
+```kotlin
+class StudyGroupRepository @Inject constructor(
+    private val apiService: StudyGroupApiService,
+    private val studyGroupDao: StudyGroupDao
+) {
+    
+    fun getStudyGroups(subject: String? = null): Flow<Result<List<StudyGroup>>> = flow {
+        try {
+            // Try to get from local database first
+            val localGroups = studyGroupDao.getGroups(subject).first()
+            emit(Result.Success(localGroups))
+            
+            // Fetch from API
+            val response = if (subject != null) {
+                apiService.getStudyGroupsBySubject(subject)
+            } else {
+                apiService.getAllStudyGroups()
+            }
+            
+            if (response.isSuccessful) {
+                response.body()?.let { groups ->
+                    studyGroupDao.insertAll(groups)
+                    emit(Result.Success(groups))
+                }
+            }
+        } catch (e: Exception) {
+            emit(Result.Error(e))
+        }
+    }
+    
+    suspend fun joinGroup(groupId: Long) {
+        val response = apiService.joinStudyGroup(groupId)
+        if (!response.isSuccessful) {
+            throw Exception("Error al unirse al grupo")
+        }
+    }
+}
+```
+
+<br>
+
+### Convenciones de Código Kotlin
+
+| **Aspecto** | **Convención** |
+|-------------|----------------|
+| **Null Safety** | Usar operadores `?.`, `?:`, y `!!` apropiadamente |
+| **Data Classes** | Preferir para modelos simples |
+| **Extension Functions** | Usar para funcionalidad reutilizable |
+| **Coroutines** | Usar para operaciones asíncronas |
+| **StateFlow/SharedFlow** | Preferir sobre LiveData en nuevos proyectos |
+
+<br>
+
+## Convenciones para Flutter (Aplicación Multiplataforma)
+
+### Estructura de Proyecto Flutter
+
+| **Directorio** | **Propósito** |
+|----------------|---------------|
+| `lib/main.dart` | Punto de entrada de la aplicación |
+| `lib/screens/` | Pantallas principales de la aplicación |
+| `lib/widgets/` | Widgets reutilizables |
+| `lib/models/` | Modelos de datos |
+| `lib/providers/` | Providers para gestión de estado |
+| `lib/services/` | Servicios (API, local storage) |
+| `lib/utils/` | Utilidades y constantes |
+| `lib/theme/` | Configuración de tema y estilos |
+| `assets/` | Recursos estáticos |
+
+<br>
+
+### Nomenclatura Flutter/Dart
+
+| **Tipo** | **Convención** | **Ejemplo** |
+|----------|----------------|-------------|
+| **Archivos** | snake_case | `study_group_screen.dart` |
+| **Clases** | PascalCase | `StudyGroupScreen`, `GroupCard` |
+| **Funciones/Métodos** | camelCase | `loadStudyGroups()`, `onGroupSelected()` |
+| **Variables** | camelCase | `studyGroups`, `isLoading` |
+| **Constantes** | lowerCamelCase | `primaryColor`, `apiBaseUrl` |
+| **Privados** | Prefijo `_` | `_loadData()`, `_controller` |
+
+<br>
+
+#### Ejemplo
+
+*Screens*
+```dart
+class StudyGroupListScreen extends StatefulWidget {
+  const StudyGroupListScreen({Key? key}) : super(key: key);
+
+  @override
+  State<StudyGroupListScreen> createState() => _StudyGroupListScreenState();
+}
+
+class _StudyGroupListScreenState extends State<StudyGroupListScreen> {
+  late final StudyGroupProvider _studyGroupProvider;
+  bool _isLoading = false;
+  String? _errorMessage;
+
+  @override
+  void initState() {
+    super.initState();
+    _studyGroupProvider = Provider.of<StudyGroupProvider>(context, listen: false);
+    _loadStudyGroups();
+  }
+
+  Future<void> _loadStudyGroups() async {
+    setState(() {
+      _isLoading = true;
+      _errorMessage = null;
+    });
+
+    try {
+      await _studyGroupProvider.fetchStudyGroups();
+    } catch (e) {
+      setState(() {
+        _errorMessage = 'Error al cargar grupos: $e';
+      });
+    } finally {
+      setState(() {
+        _isLoading = false;
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Grupos de Estudio'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.filter_list),
+            onPressed: _showFilterDialog,
+          ),
+        ],
+      ),
+      body: _buildBody(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _navigateToCreateGroup,
+        child: const Icon(Icons.add),
+      ),
+    );
+  }
+
+  Widget _buildBody() {
+    if (_isLoading) {
+      return const Center(child: CircularProgressIndicator());
+    }
+
+    if (_errorMessage != null) {
+      return Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(_errorMessage!),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: _loadStudyGroups,
+              child: const Text('Reintentar'),
+            ),
+          ],
+        ),
+      );
+    }
+
+    return Consumer<StudyGroupProvider>(
+      builder: (context, provider, child) {
+        final studyGroups = provider.studyGroups;
+
+        if (studyGroups.isEmpty) {
+          return const Center(
+            child: Text('No hay grupos disponibles'),
+          );
+        }
+
+        return RefreshIndicator(
+          onRefresh: _loadStudyGroups,
+          child: ListView.builder(
+            padding: const EdgeInsets.all(8),
+            itemCount: studyGroups.length,
+            itemBuilder: (context, index) {
+              return StudyGroupCard(
+                studyGroup: studyGroups[index],
+                onTap: () => _navigateToGroupDetail(studyGroups[index]),
+              );
+            },
+          ),
+        );
+      },
+    );
+  }
+
+  void _showFilterDialog() {
+    // Implementation
+  }
+
+  void _navigateToCreateGroup() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const CreateStudyGroupScreen()),
+    );
+  }
+
+  void _navigateToGroupDetail(StudyGroup group) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => StudyGroupDetailScreen(studyGroup: group),
+      ),
+    );
+  }
+}
+```
+
+*Widgets*
+```dart
+class StudyGroupCard extends StatelessWidget {
+  final StudyGroup studyGroup;
+  final VoidCallback onTap;
+
+  const StudyGroupCard({
+    Key? key,
+    required this.studyGroup,
+    required this.onTap,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      margin: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+      elevation: 2,
+      child: InkWell(
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                studyGroup.name,
+                style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+              ),
+              const SizedBox(height: 4),
+              Text(
+                studyGroup.subject,
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      color: Theme.of(context).colorScheme.secondary,
+                    ),
+              ),
+              const SizedBox(height: 12),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    children: [
+                      const Icon(Icons.people, size: 16),
+                      const SizedBox(width: 4),
+                      Text(
+                        '${studyGroup.memberCount} miembros',
+                        style: Theme.of(context).textTheme.bodySmall,
+                      ),
+                    ],
+                  ),
+                  Text(
+                    _formatDate(studyGroup.createdAt),
+                    style: Theme.of(context).textTheme.bodySmall,
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  String _formatDate(DateTime date) {
+    return '${date.day}/${date.month}/${date.year}';
+  }
+}
+```
+
+*Providers*
+```dart
+class StudyGroupProvider with ChangeNotifier {
+  final StudyGroupService _studyGroupService;
+  
+  List<StudyGroup> _studyGroups = [];
+  bool _isLoading = false;
+  String? _error;
+  
+  StudyGroupProvider(this._studyGroupService);
+  
+  List<StudyGroup> get studyGroups => List.unmodifiable(_studyGroups);
+  bool get isLoading => _isLoading;
+  String? get error => _error;
+  
+  Future<void> fetchStudyGroups({String? subject}) async {
+    _isLoading = true;
+    _error = null;
+    notifyListeners();
+    
+    try {
+      _studyGroups = await _studyGroupService.getStudyGroups(subject: subject);
+      _error = null;
+    } catch (e) {
+      _error = e.toString();
+      _studyGroups = [];
+    } finally {
+      _isLoading = false;
+      notifyListeners();
+    }
+  }
+  
+  Future<void> createStudyGroup(CreateStudyGroupRequest request) async {
+    try {
+      final newGroup = await _studyGroupService.createStudyGroup(request);
+      _studyGroups.add(newGroup);
+      notifyListeners();
+    } catch (e) {
+      _error = e.toString();
+      notifyListeners();
+      rethrow;
+    }
+  }
+  
+  Future<void> joinStudyGroup(int groupId) async {
+    try {
+      await _studyGroupService.joinGroup(groupId);
+      await fetchStudyGroups();
+    } catch (e) {
+      _error = e.toString();
+      notifyListeners();
+      rethrow;
+    }
+  }
+}
+```
+
+<br>
+
+### Convenciones de Código Flutter
+
+| **Aspecto** | **Convención** |
+|-------------|----------------|
+| **Widget Keys** | Usar `Key` para identificar widgets cuando sea necesario |
+| **Const Constructors** | Usar `const` para widgets inmutables |
+| **BuildContext** | No guardar referencias, pasar como parámetro |
+| **State Management** | Usar Provider, Bloc o Riverpod consistentemente |
+| **Async Operations** | Usar `async`/`await` y `Future`/`Stream` |
+
+<br>
+
+## Convenciones para Landing Page
+
+### Estructuración HTML
+
+| **Elemento** | **Convención** |
+|--------------|----------------|
+| **Etiquetas Semánticas** | Usar `<header>`, `<main>`, `<nav>`, `<footer>`, `<section>` |
+| **Atributos ARIA** | Implementar `role`, `aria-label`, `aria-expanded` |
+| **Encabezados** | Jerarquía adecuada H1-H6 |
+| **Formularios** | Etiquetas `label` asociadas a inputs |
+
+#### Ejemplo
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SkillShare - Red social para estudiantes que facilita el aprendizaje colaborativo y la formación de grupos de estudio">
+    <title>SkillShare - Conecta, Aprende, Colabora</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav" role="navigation" aria-label="Navegación Principal">
+            <div class="nav-container">
+                <a href="#" class="logo">
+                    <img src="assets/logo.svg" alt="SkillShare Logo">
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="#features">Características</a></li>
+                    <li><a href="#how-it-works">Cómo Funciona</a></li>
+                    <li><a href="#testimonials">Testimonios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <section class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-container">
+                <h1 id="hero-title">Aprende Mejor en Comunidad</h1>
+                <p class="hero-subtitle">
+                    Únete a grupos de estudio, comparte recursos y alcanza tus metas académicas con SkillShare
+                </p>
+                <div class="hero-cta">
+                    <a href="#download" class="cta-button cta-button--primary">Descargar App</a>
+                    <a href="#how-it-works" class="cta-button cta-button--secondary">Conocer Más</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="features-section" id="features" aria-labelledby="features-title">
+            <div class="section-container">
+                <h2 id="features-title">Características de SkillShare</h2>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-card__icon">
+                            <img src="assets/icons/groups.svg" alt="">
+                        </div>
+                        <h3 class="feature-card__title">Grupos de Estudio</h3>
+                        <p class="feature-card__description">
+                            Crea o únete a grupos según tus materias de interés
+                        </p>
+                    </article>
+                    
+                    <article class="feature-card">
+                        <div class="feature-card__icon">
+                            <img src="assets/icons/video.svg" alt="">
+                        </div>
+                        <h3 class="feature-card__title">Videollamadas Integradas</h3>
+                        <p class="feature-card__description">
+                            Estudia en tiempo real con tus compañeros
+                        </p>
+                    </article>
+                    
+                    <article class="feature-card">
+                        <div class="feature-card__icon">
+                            <img src="assets/icons/resources.svg" alt="">
+                        </div>
+                        <h3 class="feature-card__title">Recursos Compartidos</h3>
+                        <p class="feature-card__description">
+                            Accede a apuntes, quizzes y materiales de estudio
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="main-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>SkillShare</h3>
+                <p>by ThinkUp</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#features">Características</a></li>
+                    <li><a href="#download">Descargar</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <p>&copy; 2025 ThinkUp. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="scripts/main.js"></script>
+</body>
+</html>
+```
+
+<br>
+
+### Convenciones CSS
+
+| **Aspecto** | **Convención** |
+|-------------|----------------|
+| **Metodología** | BEM (Block Element Modifier) |
+| **Variables CSS** | Definir en `:root` |
+| **Responsive Design** | Mobile-first approach |
+| **Organización** | Modular por componentes |
+
+<br>
+
+#### Ejemplo
+```css
+/* CSS Variables */
+:root {
+  /* Colors */
+  --primary-color: #6366F1;
+  --secondary-color: #8B5CF6;
+  --accent-color: #EC4899;
+  --text-primary: #1F2937;
+  --text-secondary: #6B7280;
+  --background-light: #F9FAFB;
+  --background-white: #FFFFFF;
+  
+  /* Spacing */
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 48px;
+  
+  /* Typography */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 32px;
+  --font-size-3xl: 48px;
+  
+  /* Effects */
+  --border-radius: 8px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+/* BEM Methodology for Naming Convention */
+.hero-section {
+  padding: var(--spacing-xl) var(--spacing-md);
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: var(--background-white);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section__title {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+
+.hero-section__subtitle {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+  opacity: 0.9;
+}
+
+.hero-section__cta {
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Feature Cards */
+.feature-card {
+  background-color: var(--background-white);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card__icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-light);
+  border-radius: 50%;
+}
+
+.feature-card__title {
+  font-size: var(--font-size-xl);
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.feature-card__description {
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* CTA Buttons */
+.cta-button {
+  display: inline-block;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.cta-button--primary {
+  background-color: var(--accent-color);
+  color: var(--background-white);
+}
+
+.cta-button--primary:hover {
+  background-color: #DB2777;
+  transform: scale(1.05);
+}
+
+.cta-button--primary:focus {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.cta-button--secondary {
+  background-color: transparent;
+  color: var(--background-white);
+  border-color: var(--background-white);
+}
+
+.cta-button--secondary:hover {
+  background-color: var(--background-white);
+  color: var(--primary-color);
+}
+
+/* Responsive Design - Mobile First */
+@media (min-width: 768px) {
+  .hero-section__title {
+    font-size: 56px;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .hero-section {
+    padding: var(--spacing-xl) var(--spacing-xl);
+  }
+}
+```
+
+<br>
+
+### Convenciones JavaScript
+
+| **Aspecto** | **Convención** |
+|-------------|----------------|
+| **Variables** | `const` para valores fijos, `let` para variables |
+| **Funciones** | Nombres descriptivos en camelCase |
+| **Event Listeners** | Usar event delegation cuando sea posible |
+| **Módulos** | Organizar funcionalidad en módulos |
+| **Comentarios** | JSDoc para funciones principales |
+
+<br>
+
+#### Ejemplo
+```js
+// Application Configuration
+const APP_CONFIG = {
+  selectors: {
+    navigationToggle: '.nav-toggle',
+    mobileMenu: '.nav-menu',
+    ctaButtons: '.cta-button',
+    contactForm: '#contact-form',
+    featureCards: '.feature-card',
+    heroSection: '.hero-section'
+  },
+  classes: {
+    active: 'active',
+    hidden: 'hidden',
+    loading: 'loading',
+    visible: 'visible'
+  },
+  breakpoints: {
+    mobile: 768,
+    tablet: 1024,
+    desktop: 1280
+  }
+};
+
+/**
+ * Navigation Module
+ * Handles mobile menu toggle and navigation interactions
+ */
+const NavigationModule = {
+  /**
+   * Initialize the navigation module
+   */
+  init() {
+    this.bindEvents();
+    this.setupSmoothScroll();
+  },
+
+  /**
+   * Bind event listeners for navigation
+   */
+  bindEvents() {
+    const toggleButton = document.querySelector(APP_CONFIG.selectors.navigationToggle);
+    const mobileMenu = document.querySelector(APP_CONFIG.selectors.mobileMenu);
+
+    if (toggleButton && mobileMenu) {
+      toggleButton.addEventListener('click', () => {
+        this.toggleMobileMenu(toggleButton, mobileMenu);
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', (event) => {
+        if (!event.target.closest('.main-nav')) {
+          this.closeMobileMenu(toggleButton, mobileMenu);
+        }
+      });
+
+      // Close menu on window resize
+      window.addEventListener('resize', () => {
+        if (window.innerWidth >= APP_CONFIG.breakpoints.mobile) {
+          this.closeMobileMenu(toggleButton, mobileMenu);
+        }
+      });
+    }
+  },
+
+  /**
+   * Toggle mobile menu visibility
+   * @param {HTMLElement} button - Toggle button element
+   * @param {HTMLElement} menu - Menu element
+   */
+  toggleMobileMenu(button, menu) {
+    const isActive = menu.classList.toggle(APP_CONFIG.classes.active);
+    button.classList.toggle(APP_CONFIG.classes.active);
+    
+    // Update ARIA attributes for accessibility
+    button.setAttribute('aria-expanded', isActive.toString());
+    menu.setAttribute('aria-hidden', (!isActive).toString());
+  },
+
+  /**
+   * Close mobile menu
+   * @param {HTMLElement} button - Toggle button element
+   * @param {HTMLElement} menu - Menu element
+   */
+  closeMobileMenu(button, menu) {
+    menu.classList.remove(APP_CONFIG.classes.active);
+    button.classList.remove(APP_CONFIG.classes.active);
+    button.setAttribute('aria-expanded', 'false');
+    menu.setAttribute('aria-hidden', 'true');
+  },
+
+  /**
+   * Setup smooth scrolling for anchor links
+   */
+  setupSmoothScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  }
+};
+
+/**
+ * Form Module
+ * Handles form submissions and validation
+ */
+const FormModule = {
+  /**
+   * Initialize the form module
+   */
+  init() {
+    this.bindEvents();
+  },
+
+  /**
+   * Bind event listeners for forms
+   */
+  bindEvents() {
+    const contactForm = document.querySelector(APP_CONFIG.selectors.contactForm);
+    
+    if (contactForm) {
+      contactForm.addEventListener('submit', (event) => {
+        this.handleFormSubmission(event);
+      });
+    }
+  },
+
+  /**
+   * Handle form submission
+   * @param {Event} event - Form submit event
+   */
+  async handleFormSubmission(event) {
+    event.preventDefault();
+    
+    const form = event.target;
+    const formData = new FormData(form);
+    
+    // Validate form
+    if (!this.validateForm(form)) {
+      this.showErrorMessage('Por favor completa todos los campos requeridos');
+      return;
+    }
+    
+    try {
+      form.classList.add(APP_CONFIG.classes.loading);
+      
+      const response = await this.submitForm(formData);
+      
+      if (response.ok) {
+        this.showSuccessMessage('¡Mensaje enviado exitosamente!');
+        form.reset();
+      } else {
+        this.showErrorMessage('Error al enviar el mensaje. Intenta nuevamente.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      this.showErrorMessage('Error de conexión. Verifica tu internet.');
+    } finally {
+      form.classList.remove(APP_CONFIG.classes.loading);
+    }
+  },
+
+  /**
+   * Validate form fields
+   * @param {HTMLFormElement} form - Form to validate
+   * @returns {boolean} - Validation result
+   */
+  validateForm(form) {
+    const requiredFields = form.querySelectorAll('[required]');
+    let isValid = true;
+    
+    requiredFields.forEach(field => {
+      if (!field.value.trim()) {
+        field.classList.add('error');
+        isValid = false;
+      } else {
+        field.classList.remove('error');
+      }
+    });
+    
+    return isValid;
+  },
+
+  /**
+   * Submit form data to API
+   * @param {FormData} formData - Form data to submit
+   * @returns {Promise<Response>} - Fetch response
+   */
+  async submitForm(formData) {
+    return fetch('/api/contact', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+  },
+
+  /**
+   * Show success notification
+   * @param {string} message - Success message
+   */
+  showSuccessMessage(message) {
+    this.showNotification(message, 'success');
+  },
+
+  /**
+   * Show error notification
+   * @param {string} message - Error message
+   */
+  showErrorMessage(message) {
+    this.showNotification(message, 'error');
+  },
+
+  /**
+   * Show notification to user
+   * @param {string} message - Notification message
+   * @param {string} type - Notification type (success, error)
+   */
+  showNotification(message, type) {
+    const notification = document.createElement('div');
+    notification.className = `notification notification--${type}`;
+    notification.textContent = message;
+    notification.setAttribute('role', 'alert');
+    
+    document.body.appendChild(notification);
+    
+    // Show notification
+    setTimeout(() => {
+      notification.classList.add(APP_CONFIG.classes.visible);
+    }, 100);
+    
+    // Remove notification after 5 seconds
+    setTimeout(() => {
+      notification.classList.remove(APP_CONFIG.classes.visible);
+      setTimeout(() => {
+        notification.remove();
+      }, 300);
+    }, 5000);
+  }
+};
+
+/**
+ * Animation Module
+ * Handles scroll-based animations and interactions
+ */
+const AnimationModule = {
+  /**
+   * Initialize the animation module
+   */
+  init() {
+    this.setupIntersectionObserver();
+  },
+
+  /**
+   * Setup Intersection Observer for scroll animations
+   */
+  setupIntersectionObserver() {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Observe feature cards
+    const featureCards = document.querySelectorAll(APP_CONFIG.selectors.featureCards);
+    featureCards.forEach(card => {
+      observer.observe(card);
+    });
+  }
+};
+```
+
+<br>
+
+## Formato del Código General
+
+| **Lenguaje** | **Sangría** | **Límite Línea** | **Comillas** | **Puntos y Coma** |
+|--------------|-------------|------------------|--------------|-------------------|
+| **Java** | 4 espacios | 120 caracteres | Doble (`"`) | Obligatorio |
+| **Kotlin** | 4 espacios | 120 caracteres | Doble (`"`) | Opcional (no usar) |
+| **Dart/Flutter** | 2 espacios | 80 caracteres | Simple (`'`) | Obligatorio |
+| **HTML/CSS/JS** | 2 espacios | 80 caracteres | HTML: Doble, JS: Simple | JS: Obligatorio |
+
+<br>
+
+## Organización de Archivos
+
+### Estructura General del Proyecto
+
+| **Directorio** | **Contenido** |
+|----------------|---------------|
+| `backend/` | API Spring Boot (Java) |
+| `mobile-android/` | Aplicación Android (Kotlin) |
+| `mobile-flutter/` | Aplicación multiplataforma (Flutter) |
+| `landing-page/` | Landing page estática |
+| `docs/` | Documentación del proyecto |
+
+<br>
+
+### Nomenclatura de Archivos
+
+| **Tecnología** | **Convención** | **Ejemplo** |
+|----------------|----------------|-------------|
+| **Java** | PascalCase | `StudyGroupController.java` |
+| **Kotlin** | PascalCase | `StudyGroupViewModel.kt` |
+| **Dart/Flutter** | snake_case | `study_group_screen.dart` |
+| **HTML/CSS/JS** | kebab-case | `main-styles.css`, `navigation.js` |
+
+<br>
+
+## Accesibilidad y SEO
+
+| **Área** | **Requisitos** |
+|----------|----------------|
+| **Accesibilidad** | Contraste 4.5:1, ARIA labels, navegación por teclado, soporte para lectores de pantalla |
+| **SEO** | Meta tags descriptivos, estructura semántica HTML5, Open Graph tags |
+| **Performance** | Optimización de imágenes (WebP), lazy loading, minificación de recursos |
+| **Mobile** | Diseño responsive, touch-friendly (mínimo 44x44px para botones) |
+| **Internacionalización** | Soporte para múltiples idiomas (es, en) |
+
+<br>
+
+## Gestión de Estado
+
+| **Plataforma** | **Herramienta** | **Uso** |
+|----------------|-----------------|---------|
+| **Kotlin (Android)** | StateFlow, ViewModel | Gestión de estado en arquitectura MVVM |
+| **Flutter** | Provider, Bloc, Riverpod | Gestión centralizada de estado |
+| **Backend** | Spring Context, JPA | Gestión de sesiones y transacciones |
+
+<br>
+
+## Manejo de Errores
+
+| **Plataforma** | **Estrategia** |
+|----------------|----------------|
+| **Backend** | `@ControllerAdvice`, excepciones personalizadas, logging con SLF4J |
+| **Kotlin** | Try-catch, Result sealed class, error states en ViewModel |
+| **Flutter** | Try-catch, Either pattern, error widgets |
+| **Landing Page** | Try-catch, user-friendly error messages, fallback UI |
+
+<br>
+
+## Uso de Gherkin
+
+### Convenciones Gherkin
+
+| **Aspecto** | **Convención** |
+|-------------|----------------|
+| **Idioma** | Español para todos los escenarios |
+| **Palabras Clave** | `Given`, `When`, `Then`, `And`, `But` |
+| **Estructura** | Background para configuración común |
+| **Datos** | Tablas para múltiples datos de entrada |
+| **Claridad** | Descripciones simples y directas |
+| **Enfoque** | Centrado en el comportamiento del usuario |
+
+<br>
+
+### Ejemplo de Escenario Gherkin
+
+```gherkin
+Feature: Gestión de Grupos de Estudio
+  Como estudiante registrado en SkillShare
+  Quiero poder crear y unirme a grupos de estudio
+  Para colaborar con otros estudiantes en mis materias
+
+  Background:
+    Given el usuario "juan@student.com" está autenticado en SkillShare
+    And está en la pantalla principal de grupos de estudio
+
+  Scenario: Crear nuevo grupo de estudio exitosamente
+    Given el estudiante está en la página de gestión de grupos
+    When selecciona la opción "Crear Grupo"
+    And completa el formulario con los siguientes datos:
+      | Campo     | Valor                    |
+      | Nombre    | Cálculo I - Grupo Tarde  |
+      | Materia   | Matemáticas              |
+      | Horario   | Lunes y Miércoles 4-6pm  |
+    And hace clic en "Crear Grupo"
+    Then el sistema debe mostrar el mensaje "Grupo creado exitosamente"
+    And el nuevo grupo debe aparecer en la lista de grupos
+    And el estudiante debe ser el administrador del grupo
+
+  Scenario: Unirse a un grupo de estudio existente
+    Given existe un grupo de estudio llamado "Programación Web - Proyecto Final"
+    And el grupo tiene 5 miembros activos
+    When el estudiante busca "Programación Web"
+    And selecciona el grupo "Programación Web - Proyecto Final"
+    And hace clic en "Unirse al Grupo"
+    Then el sistema debe mostrar "Te has unido al grupo exitosamente"
+    And el estudiante debe aparecer en la lista de miembros del grupo
+    And debe recibir una notificación de bienvenida
+
+  Scenario: Filtrar grupos por materia
+    Given existen los siguientes grupos de estudio:
+      | Nombre              | Materia       |
+      | Álgebra Avanzada    | Matemáticas   |
+      | Física Cuántica     | Física        |
+      | Química Orgánica    | Química       |
+    When el estudiante selecciona el filtro de materia "Matemáticas"
+    Then solo debe ver el grupo "Álgebra Avanzada"
+    And no debe ver los grupos de otras materias
+
+  Scenario: Intentar crear grupo sin completar campos obligatorios
+    Given el estudiante está en el formulario de crear grupo
+    When intenta crear un grupo sin completar el campo "Nombre"
+    And hace clic en "Crear Grupo"
+    Then el sistema debe mostrar el mensaje "El nombre del grupo es obligatorio"
+    And el grupo no debe ser creado
+```
+
+<br><br>
+
+### 6.1.4. Software Deployment Configuration
+
+
+<br><br>
+
+## 6.2. Landing Page & Mobile Application Implementation
+### 6.2.1. Sprint 1
+#### 6.2.1.1. Sprint Planning 1
+Claro, aquí tienes la sección completa con el **Sprint Review** y la **Retrospectiva** redactadas como si el Sprint 1 ya se hubiera completado.
+
+---
+
+**5.2. Landing Page, Services & Applications Implementation**
+
+**5.2.1. Sprint 1**
+
+**5.2.1.1. Sprint Planning**
+
+El Sprint Planning es la reunión que da inicio al sprint y define qué se va a construir y cómo se logrará. Reúne al equipo Scrum para establecer un objetivo claro (Sprint Goal), seleccionar las historias de usuario más relevantes y descomponerlas en tareas concretas. Esta planificación asegura un enfoque común, organiza el trabajo de forma eficiente y alinea al equipo con la entrega de valor al usuario.
+
+A continuación se mostrará la tabla del Sprint Planning:
+
+| **Sprint #** | Sprint 1 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| **Date** | 2025-10-04 |
+| **Hour** | 10:30 a. m. |
+| **Location** | Virtual |
+| **Prepared By** | Jhosep Jamil Argomedo Camacho |
+| **Attendees (to planning meeting)** | Jhosep Jamil Argomedo Camacho, Carlos Alberto González Custodio, Renso Anthony Julca Cruz, Sebastian Ramirez Tello |
+| **Sprint n - 1 Review Summary** | Durante el Sprint 1, el equipo logró con éxito la implementación de los cimientos de la plataforma SkillShare. Se desarrolló y desplegó completamente la Landing Page, incluyendo todas las secciones planificadas (Hero, How it works?, Features, Pricing, About us, Testimonials, Contact us y Footer). En el backend, se implementaron con éxito los módulos de IAM (Login y Registro) y las entidades base (Teacher, Student, File, Group), estableciendo una base de código sólida y segura. En el frontend móvil, se completaron las pantallas core de Login, Register, Profile, Groups, Group Details y Chat para el segmento Docente, cumpliendo con los criterios de aceptación definidos. El equipo de desarrollo destacó la eficacia de la arquitectura inicial para facilitar la integración entre frontend y backend. |
+| **Sprint n - 1 Retrospective Summary** | El equipo identificó varios aspectos positivos durante la retrospectiva del Sprint 1. Se destacó la excelente comunicación y colaboración en la resolución de bloqueos técnicos, particularmente durante la integración entre el backend y el frontend móvil. La definición clara de las historias de usuario y la utilización de herramientas de gestión como Jira fueron clave para mantener el flujo de trabajo. Como áreas de mejora, se señaló que la estimación inicial para la configuración del entorno de desarrollo backend fue demasiado optimista, lo que generó una pequeña demora inicial. Además, se acordó incrementar la frecuencia de los commits al repositorio para evitar conflictos de integración grandes y se propuso crear una guía de estilos de código más detallada para el frontend móvil para agilizar las revisiones de código en los próximos sprints. |
+| **Sprint Goal & User Stories** | |
+| **Sprint Goal** | Nuestro objetivo es establecer los cimientos técnicos y de presentación de SkillShare. Esto incluye el desarrollo de una Landing Page atractiva e informativa que comunique nuestro valor, junto con la implementación del sistema central de autenticación (IAM) y las pantallas móviles core para el segmento Docente. Creemos que esto proporciona una base sólida para la plataforma, permitiendo a los usuarios entender el servicio y a los docentes comenzar a interactuar con el sistema. <br><br> Esto se confirmará cuando: <br> 1. Un usuario visitante pueda navegar por la Landing Page y comprender los servicios de SkillShare a través de las secciones Hero, How it works?, Features, Pricing, About us, Testimonials, Contact us y Footer. <br> 2. Un usuario docente pueda registrarse e iniciar sesión de forma segura en la aplicación móvil. <br> 3. El backend exponga de manera segura y eficiente los endpoints críticos para el IAM (Login, Registro) y la gestión de entidades base (Teacher, Student, File, Group). |
+| **Sprint Velocity** |  |
+| **Sum of Story Points** |  |
+
+<br>
+
+#### 6.2.1.2. Sprint Backlog 1
+
+Durante el Sprint 1, el objetivo principal fue sentar las bases técnicas y de presentación de SkillShare. Esto incluyó el desarrollo de una Landing Page atractiva e informativa para comunicar el valor de la plataforma a los visitantes, junto con la implementación del sistema central de autenticación (IAM) y las pantallas móviles core para el segmento Docente. Este trabajo establece una base sólida para el desarrollo futuro, permitiendo a los usuarios entender el servicio y a los docentes comenzar a interactuar con el sistema.
+
+A continuación, se detalla la tabla de control de estado para el Sprint 1:
+
+| User Story ID | Id | Title | Description | Estimation (Hours) | Assigned To | Status (To-do / In-Process / To-Review / Done) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **US-01** | **T-101** | **Desarrollar Formulario de Registro Frontend** | Implementar la interfaz de usuario del formulario de registro en la Landing Page con validaciones en tiempo real. | 5 | Frontend Dev | **Done** |
+| | **T-102** | **Implementar Endpoint de Registro Backend** | Crear el endpoint POST `/api/auth/register` para recibir y validar datos del usuario, y crear la cuenta en la base de datos. | 6 | Backend Dev | **Done** |
+| **US-02** | **T-104** | **Maquetar Sección "Cómo Funciona"** | Crear la estructura HTML y CSS para la sección con 3 pasos ilustrados, asegurando que sea responsive. | 4 | UX/UI Designer | **Done** |
+| **US-04** | **T-105** | **Implementar Sección de Funcionalidades** | Desarrollar la sección que muestra íconos y descripciones de las funcionalidades principales (chat, videollamadas, etc.). | 5 | Frontend Dev | **Done** |
+| **US-07** | **T-106** | **Desarrollar Formulario de Contacto** | Implementar el formulario de contacto frontend con validación y el endpoint backend para el envío de emails. | 4 | Full-Stack Dev | **Done** |
+| **US-12** | **T-107** | **Construir Sección de Planes y Precios** | Maquetar y desarrollar la sección de precios con los planes Freemium, Premium e Institucional. | 6 | Frontend Dev | **Done** |
+| **US-11** | **T-108** | **Implementar Footer Completo** | Desarrollar el footer con todos los enlaces organizados (Términos, Privacidad, Contacto, Redes Sociales). | 3 | Frontend Dev | **Done** |
+| **EP-01 (Backend)** | **T-109** | **Modelar e Implementar Entidad 'User'** | Diseñar el esquema de base de datos y crear el modelo para la entidad 'User' (docente/estudiante). | 4 | Backend Dev | **Done** |
+| | **T-110** | **Implementar Endpoint de Login** | Crear el endpoint POST `/api/auth/login` para autenticar usuarios y generar un token JWT. | 5 | Backend Dev | **Done** |
+| | **T-111** | **Modelar e Implementar Entidad 'Group'** | Diseñar el esquema y crear el modelo para la entidad 'Group', incluyendo sus relaciones. | 5 | Backend Dev | **Done** |
+| **US-21** | **T-112** | **Desarrollar Pantalla de Login (Móvil Docente)** | Implementar la pantalla de inicio de sesión para la app móvil del segmento docente. | 4 | Mobile Dev | **Done** |
+| | **T-113** | **Desarrollar Pantalla de Registro (Móvil Docente)** | Implementar la pantalla de registro para la app móvil del segmento docente. | 5 | Mobile Dev | **Done** |
+| **US-13** | **T-114** | **Desarrollar Pantalla de Perfil (Móvil Docente)** | Crear la pantalla donde el docente puede ver y editar la información de su perfil. | 6 | Mobile Dev | **Done** |
+| **US-14** | **T-115** | **Desarrollar Pantalla de Lista de Grupos (Móvil Docente)** | Implementar la pantalla principal que lista los grupos a los que pertenece el docente. | 5 | Mobile Dev | **Done** |
+| **US-15** | **T-116** | **Desarrollar Pantalla de Detalles de Grupo (Móvil Docente)** | Crear la pantalla que muestra la información detallada de un grupo específico y sus miembros. | 7 | Mobile Dev | **Done** |
+| **US-24** | **T-117** | **Desarrollar Pantalla de Chat (Móvil Docente)** | Implementar la interfaz del chat integrado para que los docentes se comuniquen con sus grupos. | 8 | Mobile Dev | **Done** |
+
+<br>
+
+#### 6.2.1.3. Development Evidence for Sprint Review
+
+He aquí la sección "Development Evidence for Sprint Review" con una presentación de los avances y un ejemplo de commit, siguiendo la estructura solicitada.
+
+---
+
+### **3.2. Development Evidence for Sprint Review**
+
+Esta sección documenta la evidencia tangible de los avances de implementación logrados durante el Sprint 1. Los principales avances incluyen la finalización de una Landing Page completamente funcional y receptiva que presenta los servicios de SkillShare, la implementación de los endpoints críticos del backend para la autenticación de usuarios (IAM) y la gestión de grupos, y el desarrollo de las pantallas móviles core para el segmento docente, incluyendo flujos de autenticación, gestión de perfil y navegación principal. El trabajo se gestionó a través de múltiples ramas de características en los repositorios correspondientes, integrándose finalmente a la rama principal tras su revisión y aprobación.
+
+A continuación, se presenta una tabla con los commits representativos de esta implementación:
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| https://github.com/ThinkUp-SkillShare/skillshare.github.io | feature/add-core-sections | 43d49b5 | docs: add project documentation and license | --- | 06-10-25 |
+| https://github.com/ThinkUp-SkillShare/skillshare.github.io | feature/add-core-sections | ec23d1a | feat: add navbar, hero and how-it-works sections | --- | 06-10-25 |
+| https://github.com/ThinkUp-SkillShare/skillshare.github.io | feature/add-core-sections | 119cbb9 | feat: add features and pricing sections | --- | 07-10-25 |
+| https://github.com/ThinkUp-SkillShare/skillshare.github.io | feature/add-core-sections | e8e8f23 | feat: add about us and testimonials section | --- | 08-10-25 |
+| https://github.com/ThinkUp-SkillShare/skillshare.github.io | feature/add-core-sections | 999bf2d | feat: add contact form and footer | --- | 08-10-25 |
+| https://github.com/ThinkUp-SkillShare/skillshare.github.io | feature/add-core-sections | 7ccabfb | feat: add language functionality and bug fixes | --- | 08-10-25 |
+| https://github.com/ThinkUp-SkillShare/backend-mobile-application | main | 77a595a | feat: add the first version of the backend with core business endpoints | important endpoints: <br> ->  IAM <br> ->  Login <br> ->  Register <br> ->  Teacher <br> ->  Student | 10-10-25 |
+| https://github.com/ThinkUp-SkillShare/kotlin-mobile-application | main | a244059 | feat: add core screens for the fourth segment (teachers) | Important screens: <br> log in <br> register <br> profile <br> edit <br> profile <br> groups <br> group details <br> chat | 10-10-25 |
+
+<br>
+
+#### 6.2.1.4. Execution Evidence for Sprint Review
+
+He aquí la presentación para la sección "Execution Evidence for Sprint Review" del informe, lista para ser incluida como un capítulo.
+
+---
+
+### **3.3. Execution Evidence for Sprint Review**
+
+El Sprint 1 culminó con éxito, logrando la implementación y entrega de los componentes fundamentales de la plataforma SkillShare. Se alcanzó el **Sprint Goal** al establecer una base sólida que incluye una **Landing Page completamente funcional**, el **sistema de autenticación (IAM)** en el backend y las **pantallas móviles core para el segmento docente**.
+
+Como evidencia concreta de la ejecución, se han implementado y probado las siguientes vistas y funcionalidades:
+
+*   **Landing Page de SkillShare:** Se desarrollaron todas las secciones clave, incluyendo Hero, How it works?, Features, Pricing, About us, Testimonials, Contact us y un Footer completo, ofreciendo una experiencia informativa y atractiva para el usuario visitante.
+*   **Autenticación de Usuarios:** Se implementaron los endpoints de Login y Registro, permitiendo la creación segura de cuentas y el acceso a la plataforma.
+*   **Aplicación Móvil Docente:** Se construyeron las pantallas esenciales para el flujo principal de un docente: Login, Registro, Perfil, Lista de Grupos, Detalles de Grupo y Chat integrado.
+
+A continuación, se presentan capturas de pantalla que demuestran estos avances:
+
+**Landing Page - Sección Hero y Navegación**
+
+![Hero Section](assets/images/C6/landing_page-hero.png)
+
+**Landing Page - Sección Download**
+
+![Download Section](assets/images/C6/landing_page-download.png)
+
+**Landing Page - Sección How it Works**
+
+![How it works Section](assets/images/C6/landing_page-how_it_works.png)
+
+**Landing Page - Sección Features**
+
+![Features Section](assets/images/C6/landing_page-features.png)
+
+**Landing Page - Sección Pricing**
+
+![Pricing Section](assets/images/C6/landing_page-pricing.png)
+
+**Landing Page - Sección About us**
+
+![About us Section](assets/images/C6/landing_page-about_us.png)
+
+**Landing Page - Sección Testimonials**
+
+![Testimonials Section](assets/images/C6/landing_page-testimonials.png)
+
+**Landing Page - Sección Contact us**
+
+![Contact us Section](assets/images/C6/landing_page-contact_us.png)
+
+**Landing Page - Sección Footer**
+
+![Footer Section](assets/images/C6/landing_page-footer.png)
+
+<br>
+
+**Backend de los bounded context de SkillShare:**
+
+![Backend 1](assets/images/C6/backend_1.png)
+![Backend 2](assets/images/C6/backend_2.png)
+
+<br>
+
+**Mobile Application - Login**
+
+<div align="center">
+  <img src="assets/images/C6/mobile_application-login.png" width="350">
+</div>
+
+<br>
+
+**Mobile Application - Register**
+
+<div align="center">
+  <img src="assets/images/C6/mobile_application-register-welcome.png" width="350">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="assets/images/C6/mobile_application-register-about_yourself.png" width="350">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="assets/images/C6/mobile_application-register-academic_world.png" width="350">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="assets/images/C6/mobile_application-register-verification_profession.png" width="350">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="assets/images/C6/mobile_application-register-university_document.png" width="350">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="assets/images/C6/mobile_application-register-university_email.png" width="350">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="assets/images/C6/mobile_application-register-validation_successful.png" width="350">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="assets/images/C6/mobile_application-register-personal_identity.png" width="350">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="assets/images/C6/mobile_application-register-all_done.png" width="350">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="assets/images/C6/mobile_application-profile_1.png" width="350">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="assets/images/C6/mobile_application-profile_2.png" width="350">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="assets/images/C6/mobile_application-profile-edit_profile.png" width="350">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="assets/images/C6/mobile_application-groups-groups_list.png" width="350">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="assets/images/C6/mobile_application-groups-groups_list.png" width="350">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="assets/images/C6/mobile_application-register-chat.png" width="350">
+</div>
+
+<br> 
+
+#### **3.4. Services Documentation Evidence for Sprint Review**
+
+Durante el Sprint 1, se implementaron y documentaron los servicios web fundamentales para el funcionamiento de SkillShare, estableciendo los cimientos del sistema de autenticación, gestión de usuarios, perfiles académicos y grupos de estudio. La documentación se ha elaborado utilizando la especificación OpenAPI, proporcionando una referencia clara y estandarizada para el consumo de los servicios por parte del frontend y las aplicaciones móviles.
+
+A continuación se detallan los endpoints principales implementados en este sprint:
+
+## **Endpoints de Autenticación (Auth)**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis | Parámetros | Request Body | Response | Explicación |
+|----------|--------|------------|----------|------------|---------------|----------|-------------|
+| `/api/Auth/register` | Registrar nuevo usuario | POST | `POST /api/Auth/register` | Ninguno | `{ "name": "string", "email": "string", "passwordHash": "string", "studentProfile": {...} }` | `200 OK` | Endpoint para registro de nuevos usuarios con perfil de estudiante integrado |
+| `/api/Auth/login` | Iniciar sesión | POST | `POST /api/Auth/login` | Ninguno | `{ "email": "string", "passwordHash": "string" }` | `200 OK` | Autenticación de usuarios existentes en la plataforma |
+
+## **Endpoints de Gestión de Grupos**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis | Parámetros | Request Body | Response | Explicación |
+|----------|--------|------------|----------|------------|---------------|----------|-------------|
+| `/api/Group` | Obtener todos los grupos | GET | `GET /api/Group` | Ninguno | - | `[{"id": 0, "name": "string", "tag": "string", ...}]` | Lista todos los grupos disponibles en el sistema |
+| `/api/Group` | Crear nuevo grupo | POST | `POST /api/Group` | Ninguno | `{"name": "string", "tag": "string", ...}` | `{"id": 0, "name": "string", ...}` | Crea un nuevo grupo de estudio |
+| `/api/Group/{id}` | Obtener grupo específico | GET | `GET /api/Group/{id}` | `id` (entero) | - | `{"id": 0, "name": "string", ...}` | Obtiene detalles de un grupo específico por ID |
+| `/api/Group/{id}` | Actualizar grupo | PUT | `PUT /api/Group/{id}` | `id` (entero) | `{"name": "string", "tag": "string", ...}` | `200 OK` | Actualiza la información de un grupo existente |
+| `/api/Group/{id}` | Eliminar grupo | DELETE | `DELETE /api/Group/{id}` | `id` (entero) | - | `200 OK` | Elimina un grupo del sistema |
+
+## **Endpoints de Gestión de Archivos**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis | Parámetros | Request Body | Response | Explicación |
+|----------|--------|------------|----------|------------|---------------|----------|-------------|
+| `/api/File` | Obtener archivos | GET | `GET /api/File` | Ninguno | - | `200 OK` | Lista los archivos disponibles |
+| `/api/File/upload` | Subir archivo | POST | `POST /api/File/upload` | Ninguno | `multipart/form-data` | `200 OK` | Endpoint para subir archivos a la plataforma |
+| `/api/File/{id}` | Obtener archivo | GET | `GET /api/File/{id}` | `id` (UUID) | - | `200 OK` | Descarga un archivo específico |
+| `/api/File/{id}` | Eliminar archivo | DELETE | `DELETE /api/File/{id}` | `id` (UUID) | - | `200 OK` | Elimina un archivo del sistema |
+
+## **Endpoints de Perfiles Académicos**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis | Parámetros | Request Body | Response | Explicación |
+|----------|--------|------------|----------|------------|---------------|----------|-------------|
+| `/api/Student` | Obtener estudiantes | GET | `GET /api/Student` | Ninguno | - | `[{"id": 0, "name": "string", ...}]` | Lista todos los perfiles de estudiantes |
+| `/api/Student` | Crear perfil estudiante | POST | `POST /api/Student` | Ninguno | `{"name": "string", "university": "string", ...}` | `{"id": 0, "name": "string", ...}` | Crea un perfil de estudiante |
+| `/api/Student/{id}` | Obtener estudiante | GET | `GET /api/Student/{id}` | `id` (entero) | - | `{"id": 0, "name": "string", ...}` | Obtiene perfil específico de estudiante |
+| `/api/Teaching` | Obtener docentes | GET | `GET /api/Teaching` | Ninguno | - | `[{"id": 0, "firstName": "string", ...}]` | Lista todos los perfiles de docentes |
+| `/api/Teaching` | Crear perfil docente | POST | `POST /api/Teaching` | Ninguno | `{"firstName": "string", "institution": "string", ...}` | `{"id": 0, "firstName": "string", ...}` | Crea un perfil de docente verificado |
+
+<br>
+
+#### 6.2.1.6. Team Collaboration Insights during Sprint
+
+Durante el Sprint 1, el equipo se enfocó en el desarrollo paralelo de tres componentes fundamentales: la Landing Page, los Web Services del backend y la aplicación móvil para el segmento docente. Utilizando GitHub como plataforma de control de versiones y colaboración, se logró mantener un flujo de trabajo organizado mediante el uso de branches de características y revisiones de código (pull requests).
+
+## **Actividades de Implementación:**
+
+### **Landing Page Development**
+El equipo frontend implementó una landing page completa y responsive utilizando tecnologías web modernas. Se desarrollaron todas las secciones críticas incluyendo:
+- **Hero Section** con llamado a la acción principal
+- **How it Works** con los 3 pasos fundamentales de la plataforma
+- **Features** mostrando las funcionalidades principales
+- **Pricing** con los planes Freemium, Premium e Institucional
+- Secciones de **About Us, Testimonials, Contact Us y Footer**
+
+### **Backend Web Services**
+El equipo backend construyó los servicios fundamentales utilizando .NET y Entity Framework:
+- **Sistema de Autenticación (IAM)**: Endpoints de registro y login seguros
+- **Gestión de Grupos**: CRUD completo para grupos de estudio
+- **Gestión de Archivos**: Upload, download y eliminación de recursos
+- **Perfiles Académicos**: Entidades para estudiantes y docentes
+- **Documentación OpenAPI**: Especificación completa con Swagger UI
+
+### **Aplicación Móvil Docente**
+El equipo móvil desarrolló las pantallas core para el segmento docente:
+- **Autenticación**: Pantallas de login y registro
+- **Perfil**: Gestión de información del docente
+- **Grupos**: Lista y detalles de grupos de estudio
+- **Chat**: Interfaz de mensajería integrada
+
+<br>
+
+## **Analítica de Colaboración en GitHub:**
+
+### Landing Page
+
+**Comits**
+
+![Landing Page](assets/images/C6/landing_page-commits.png)
+
+**Colaboradores**
+
+![Landing Page](assets/images/C6/landing_page-contributors.png)
+
+### Backend
+
+**Comits**
+
+![Backend evidence](assets/images/C6/backend-commits.png)
+
+**Colaboradores**
+
+![Backend evidence](assets/images/C6/backend-contributors.png)
+
+### Kotlin Mobile Application
+
+**Comits**
+
+![Mobile Application evidence](assets/images/C6/mobile_application-commits.png)
+
+**Colaboradores**
+
+![Mobile Application evidence](assets/images/C6/mobile_application-contributors.png)
+
+<!--
    CONCLUSIONES
 -->
 
