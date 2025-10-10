@@ -942,7 +942,7 @@ El objetivo es recoger insights que permitan construir una aplicación más cerc
 
 **Sustento:** El 100% de los entrevistados identificó problemas de coordinación, distracción y las limitaciones de las aplicaciones genéricas (como WhatsApp o Discord) como sus principales obstáculos. Esto indica que estos no son problemas aislados, sino dolores universales para el segmento.
 
-**Insight**: Los problemas de organización y distracciones no son casos aislados: son estructurales y afectan a todo el segmento, lo que revela una oportunidad de diseño clara.
+**Insight**: Los problemas de organización y las constantes distracciones no son situaciones puntuales ni excepcionales; forman parte de una realidad estructural que atraviesa a todo el segmento analizado. Esta falta de enfoque y planificación no solo dificulta el cumplimiento de metas personales o académicas, sino que también genera una sensación continua de estrés, pérdida de tiempo y baja productividad. El hecho de que este patrón se repita de forma consistente entre distintos usuarios indica que no se trata de un problema individual, sino de una necesidad colectiva no satisfecha. En consecuencia, se evidencia una oportunidad clara de diseño para crear soluciones que ayuden a gestionar el tiempo, priorizar tareas y reducir la dispersión, promoviendo hábitos más eficientes y sostenibles en la rutina diaria.
 
 ---
 
@@ -956,7 +956,7 @@ El objetivo es recoger insights que permitan construir una aplicación más cerc
 
 **Sustento:** Hay una coincidencia del 100% en el uso de Discord por su practicidad en comunicación y compartición de pantalla. Sin embargo, también hay un consenso total (100%) en que estas herramientas no están optimizadas para su caso de uso, creando una oportunidad clara para una solución especializada.
 
-**Insight**: Aunque recurren a Discord como solución “parche”, no satisface sus necesidades reales. Esto confirma la brecha de mercado para una herramienta académica especializada.
+**Insight**: Si bien los usuarios recurren a plataformas como Discord como una solución “parche” para coordinar actividades académicas y comunicarse en grupo, esta herramienta no logra cubrir de manera efectiva sus necesidades reales. Su uso responde más a la falta de alternativas adecuadas que a una verdadera satisfacción con la experiencia que ofrece. Discord, al estar diseñado principalmente para comunidades de entretenimiento o gaming, carece de funciones orientadas a la gestión de tareas, organización de proyectos o seguimiento académico. Esta adaptación forzada revela una brecha clara en el mercado: la ausencia de una plataforma especializada que combine la interacción social con herramientas de productividad educativa. Por tanto, existe una oportunidad significativa para diseñar una solución que se alinee con las dinámicas y requerimientos específicos del entorno académico.
 
 ---
 
@@ -971,7 +971,7 @@ El objetivo es recoger insights que permitan construir una aplicación más cerc
 
 **Sustento:** Las necesidades clave son universales (100%): un espacio organizado, comunicación dedicada al estudio y herramientas integradas de planificación. La divergencia en el dispositivo preferido refuerza la necesidad de que la solución funcione perfectamente en ambos.
 
-**Insight**: El estudiante universitario no busca solo comunicarse: necesita un “hub (centro) académico digital” que integre organización, planificación y colaboración.
+**Insight**: El estudiante universitario actual no se conforma únicamente con tener canales de comunicación; su necesidad va mucho más allá del simple intercambio de mensajes. Busca un espacio integral, un verdadero “hub académico digital” que concentre en un solo lugar herramientas para organizar sus tareas, planificar actividades y colaborar de manera efectiva con sus compañeros. Esta necesidad surge de la fragmentación que experimentan al utilizar múltiples aplicaciones con fines distintos —una para comunicarse, otra para gestionar proyectos y otra para almacenar materiales— lo que genera dispersión, pérdida de tiempo y falta de cohesión en el trabajo académico. Por ello, el diseño de una plataforma centralizada que unifique comunicación, planificación y productividad se presenta como una oportunidad clave para optimizar la experiencia del estudiante y responder a las dinámicas reales de su entorno universitario.
 
 ---
 
@@ -985,7 +985,7 @@ El objetivo es recoger insights que permitan construir una aplicación más cerc
 
 **Sustento:** El segmento es 100% sensible al precio y al valor. No están acostumbrados a pagar, pero están abiertos a hacerlo si la aplicación resuelve sus problemas principales (organización, ahorro de tiempo, mejora de rendimiento) de manera evidente y a un costo que se ajuste a su presupuesto como estudiantes.
 
-**Insight**: Aunque su disposición a pagar es baja, los estudiantes reconocen el valor si la herramienta reduce estrés y mejora notas. Esto habilita un modelo freemium con bajo costo o beneficios premium.
+**Insight**: Aunque los estudiantes universitarios muestran una baja disposición inicial a pagar por herramientas académicas, sí reconocen el valor tangible que tendría una solución capaz de reducir su nivel de estrés, optimizar su tiempo y contribuir a mejorar su rendimiento académico. Esta percepción indica que su decisión de pago no está condicionada únicamente por el precio, sino por el impacto real que la herramienta pueda generar en su bienestar y resultados. En ese sentido, se evidencia una oportunidad estratégica para implementar un modelo freemium, en el que las funciones básicas sean accesibles de forma gratuita, mientras que los beneficios avanzados —como estadísticas personalizadas, recordatorios inteligentes o integración con otras plataformas— puedan ofrecerse a bajo costo. Este enfoque permite captar a un público amplio, generar confianza y luego incentivar la conversión hacia planes premium a través del valor percibido.
 
 ---
 
@@ -1878,7 +1878,7 @@ para determinar la viabilidad técnica, librerías más adecuadas y el esfuerzo 
 
 ## 3.2. Technical Stories
 
-| HU-ID       | TS-01               |
+| USID        | TS-01               |
 |-------------|---------------------|
 | Epic ID     | EP-08               |
 | Prioridad   | 8                   |
@@ -1890,7 +1890,7 @@ para determinar la viabilidad técnica, librerías más adecuadas y el esfuerzo 
 <br>
 <br>
 
-| HU-ID       | TS-02               |
+| USID        | TS-02               |
 |-------------|---------------------|
 | Epic ID     | EP-09               |
 | Prioridad   | 5                   |
@@ -1902,7 +1902,7 @@ para determinar la viabilidad técnica, librerías más adecuadas y el esfuerzo 
 <br>
 <br>
 
-| HU-ID       | TS-03               |
+| USID        | TS-03               |
 |-------------|---------------------|
 | Epic ID     | EP-10               |
 | Prioridad   | 5                   |
@@ -1914,7 +1914,7 @@ para determinar la viabilidad técnica, librerías más adecuadas y el esfuerzo 
 <br>
 <br>
 
-| HU-ID       | TS-04               |
+| USID        | TS-04               |
 |-------------|---------------------|
 | Epic ID     | EP-11               |
 | Prioridad   | 5                   |
@@ -1926,7 +1926,7 @@ para determinar la viabilidad técnica, librerías más adecuadas y el esfuerzo 
 <br>
 <br>
 
-| HU-ID       | TS-05               |
+| USID        | TS-05               |
 |-------------|---------------------|
 | Epic ID     | EP-12               |
 | Prioridad   | 3                   |
@@ -1938,7 +1938,7 @@ para determinar la viabilidad técnica, librerías más adecuadas y el esfuerzo 
 <br>
 <br>
 
-| HU-ID       | TS-06               |
+| USID        | TS-06               |
 |-------------|---------------------|
 | Epic ID     | EP-13               |
 | Prioridad   | 5                   |
@@ -1950,7 +1950,7 @@ para determinar la viabilidad técnica, librerías más adecuadas y el esfuerzo 
 <br>
 <br>
 
-| HU-ID       | TS-07               |
+| USID        | TS-07               |
 |-------------|---------------------|
 | Epic ID     | EP-14               |
 | Prioridad   | 3                   |
