@@ -2439,6 +2439,535 @@ El Database Design Diagram representa la estructura de la base de datos para el 
 <br>
 
 <!--
+   CAP V
+-->
+
+# Capítulo V: Solution UI/UX Design
+
+## 5.1. Product Design
+
+### 5.1.1. Style Guidelines
+
+En esta sección se definirán las guías visuales clave para el diseño de SkillShare, incluyendo colores, tipografía, logotipo y tono de comunicación. Estos lineamentos asegurarán una identidad coherente y profesional que refleje los valores de confianza e innovación de la marca.
+
+#### 5.1.1.1. General Style Guidelines
+
+[**Dar clic aquí (Figma)**](https://www.figma.com/design/sAUImMuHosMP8dkamF4UP6/General-Style-Guidelines-%7C-SkillShare?node-id=0-1&t=HGpVgCSldWQVk4rr-1)
+
+**Branding:**
+Nuestra marca busca transmitir confianza, accesibilidad y modernidad, reflejando un espacio de aprendizaje digital en el que estudiantes universitarios, escolares y autodidactas puedan desarrollarse.
+
+El branding se enfoca en tres pilares:
+1. **Cercanía:** una app que no se siente rígida ni académica en exceso, sino amigable y fácil de usar.
+2. **Confianza:** un diseño claro y organizado que genere credibilidad en los usuarios.
+3. **Inspiración:** una marca que motive a los usuarios a superarse, reflejando energía y entusiasmo.
+
+<br>
+
+**Logo:**
+
+<p align="center">
+<img src="assets/images/C5/logo.png">
+</p>
+
+Nuestro logo consiste en un círculo con degradado en los tres tonos de azul, dentro del cual se ubican tres nodos blancos conectados entre sí.
+
+1. **Forma circular:** Representa la unidad, continuidad y colaboración entre los estudiantes, reflejando que el aprendizaje es un proceso en comunidad.
+2. **Degradado en azules:** Transmite profundidad, dinamismo y confianza, simbolizando la transición natural del aprendizaje individual hacia el colectivo.
+3. **Nodos interconectados en blanco:** Evocan la relación entre estudiantes, el intercambio de conocimientos y la construcción de una red de apoyo académico.
+
+*Este logo es un reflejo de nuestra misión: conectar personas para potenciar su aprendizaje.*
+
+**Favicon:**
+El favicon es una representación simplificada de nuestro logo, manteniendo la esencia de la conexión y colaboración entre los estudiantes. En este diseño minimalista, se conservan únicamente los tres nodos interconectados en color blanco, eliminando el degradado de azules y la forma circular para garantizar una visualización clara y eficiente a pequeña escala.
+
+Para asegurar una visualización óptima en diferentes entornos, hemos creado dos versiones del favicon: una para navegadores con tema claro y otra para aquellos con tema oscuro. En ambas, los nodos destacan sobre el fondo correspondiente, garantizando que el ícono sea siempre visible y representativo de nuestra misión, sin importar el entorno de visualización.
+
+<br>
+
+**Tipografía: Sarabun**
+
+<p align="center">
+<img src="assets/images/C5/typografhy-sarabun.png">
+</p>
+
+La tipografía seleccionada para nuestra marca es Sarabun. Esta fuente fue elegida por su legibilidad, versatilidad y estilo moderno, lo que la hace ideal para una aplicación orientada a estudiantes de distintos niveles (secundaria, universitarios y autodidactas).
+
+Su diseño limpio y equilibrado permite diferenciar jerarquías de información con facilidad, asegurando una experiencia de lectura clara en pantallas pequeñas de dispositivos móviles. 
+
+Sarabun combina un estilo moderno y accesible que se adapta tanto a títulos llamativos como a cuerpos de texto explicativos, lo que facilita la comunicación en contextos académicos y colaborativos. Además, refuerza la percepción de confianza y profesionalismo, sin perder la cercanía con los usuarios jóvenes y diversos que forman parte de nuestra comunidad.
+
+<br>
+
+**Colores:**
+
+<p align="center">
+<img src="assets/images/C5/color-palette.png">
+</p>
+
+Nuestra paleta de colores está conformada por tres tonos principales de azul y dos neutros, que juntos construyen una identidad visual coherente, confiable y moderna:
+
+1. **#182438 – Azul profundo:** Representa la seriedad, concentración y estabilidad, transmitiendo confianza y un ambiente propicio para el estudio.
+2. **#1E2F50 – Azul intermedio:** Simboliza la colaboración y el conocimiento compartido, siendo el tono que equilibra la seriedad con la cercanía.
+3. **#324779 – Azul claro:** Refleja la dinámica, la motivación y el entusiasmo de los estudiantes que participan en grupos de aprendizaje.
+4. **#FAFAFA – Blanco cálido:** Actúa como color base, transmitiendo claridad, limpieza y accesibilidad. Facilita la lectura y contrasta con los tonos azules.
+5.**#FFFFFF – Blanco puro:** Complementa el diseño con una sensación de espacio, simplicidad y modernidad, evitando la sobrecarga visual.
+
+<br>
+
+**Tonos de comunicación:**
+Para comunicarnos con nuestra audiencia, hemos definido un tono que equilibra profesionalismo con cercanía, tomando en cuenta que nuestros usuarios principales son estudiantes jóvenes:
+
+1. **Divertido, pero no infantil:** Buscamos transmitir dinamismo y energía, evitando un tono demasiado formal, pero sin caer en la informalidad excesiva.
+2. **Casual y accesible:** El lenguaje debe ser fácil de entender, cercano y natural, conectando con estudiantes de secundaria, universitarios y autodidactas.
+3. **Respetuoso y motivador:** Siempre mostraremos respeto por las metas académicas de los usuarios, brindando un tono alentador que refuerce la idea de que aprender en comunidad es posible.
+4. **Entusiasta y positivo:** Queremos transmitir la sensación de que la aplicación es un espacio donde el aprendizaje es colaborativo, enriquecedor y hasta divertido, alejándonos de la idea de que estudiar es aburrido o solitario.
+
+<br>
+
+### 5.1.2. Information Architecture
+
+#### 5.1.2.1. Organization Systems
+
+Para el sistema de organización de contenido en nuestra aplicación de gestión de grupos de estudio universitarios, se aplicarán diferentes enfoques de organización visual y categorización, en función de la naturaleza de la información y la interacción esperada de los usuarios.
+
+**Organización visual (Visual hierarchy)**
+
+- **Jerárquica:**
+    Será utilizada en la estructura principal de la aplicación. Desde la pantalla inicial, los usuarios podrán navegar entre las secciones clave:
+    1. Explorar grupos de estudio.
+    2. Mis grupos.
+    3. Recursos compartidos.
+    4. Perfil y configuración.
+
+    Este enfoque jerárquico permitirá que los estudiantes ubiquen fácilmente las funcionalidades principales y prioricen su interacción.
+    
+<br>
+
+- **Secuencial (Step-by-step):**
+    Aplicado en los procesos que requieren un flujo guiado, como:
+    1. **Registro y creación de perfil:** paso a paso para completar información personal y académica.
+    2. **Creación de un grupo de estudio:** desde definir el tema, establecer objetivos, invitar participantes, hasta programar la primera reunión.
+
+<br>
+
+- **Matricial:**
+    Este sistema se aplicará en secciones que necesiten comparación y cruce de información. Por ejemplo:
+    1. Visualizar diferentes grupos disponibles, organizados por materia en filas y nivel de avance académico en columnas.
+    2. Comparación de recursos o materiales compartidos en los grupos, según tipo de documento (PDF, video, link, apuntes).
+
+<br>
+
+**Sistemas de categorización de contenido**
+
+- **Alfabético:**
+    Aplicado en glosarios de términos académicos, listas de autores o materiales compartidos con títulos largos. Esto ayudará a los estudiantes a encontrar rápidamente información puntual.
+
+- **Por tópicos:**
+    Se aplicará para organizar los grupos de estudio y los recursos académicos compartidos. Por ejemplo, un grupo puede clasificarse por asignatura ("Cálculo", "Programación", "Literatura"), y los materiales estarán categorizados por tipo de tema.
+
+- **Según audiencia:**
+    Este esquema será clave para diferenciar el contenido de acuerdo a los usuarios:
+    1. **Estudiantes:** acceso a grupos, recursos y actividades.
+    2. **Moderadores/Administradores de grupo:** herramientas para gestionar participantes, asignar tareas, y moderar discusiones.
+    3. **Docentes o mentores invitados:** acceso restringido a grupos con posibilidad de compartir recursos y evaluar avances.
+
+<br>
+
+#### 5.1.2.2. Labeling Systems
+
+En nuestra aplicación de grupos de estudio universitarios, los datos y funcionalidades se representarán con etiquetas cortas, consistentes y familiares para el usuario, evitando tecnicismos innecesarios. El diseño busca transmitir con una sola palabra (o frase breve) el contenido o acción disponible, reduciendo la confusión y mejorando la experiencia de navegación.
+
+**Principios de etiquetado:**
+- **Claridad:** usar términos simples y directos.
+- **Consistencia:** las mismas acciones tendrán siempre la misma etiqueta en toda la aplicación.
+- **Brevedad:** se limitarán a una o dos palabras por etiqueta.
+- **Asociación:** cada etiqueta estará ligada a un conjunto de datos o acciones que el usuario asocia de manera intuitiva.
+
+<br>
+
+**Etiquetas principales y asociaciones:**
+- **Inicio:** Acceso al panel principal con accesos directos a grupos, recursos y calendario.
+- **Explorar:** Buscar y descubrir nuevos grupos de estudio por tema o nivel.
+- **Mis grupos:** Sección con los grupos en los que el usuario participa.
+- **Recursos:** Archivos, enlaces y materiales compartidos dentro de los grupos.
+- **Chat:** Comunicación directa entre miembros de un grupo.
+- **Perfil:** Información personal, académica y de configuración del usuario.
+- **Config. (Configuración):** Preferencias de la aplicación: notificaciones, privacidad, idioma.
+- **Ayuda:** Preguntas frecuentes, tutoriales y contacto con soporte.
+
+<br>
+
+**Ejemplos de micro-etiquetas contextuales:**
+- **Botón "Unirse":** Asociado a la acción de integrarse a un grupo de estudio.
+- **Botón "Crear":** Asociado a iniciar un nuevo grupo.
+- **Etiqueta "Activo":** Indica grupos en funcionamiento.
+- **Etiqueta "Finalizado":** Asociada a grupos que ya completaron sus actividades.
+- **Etiqueta "Nuevo":** Marca recursos o grupos recién creados.
+
+<br>
+
+#### 5.1.2.3. SEO Tags and Meta Tags
+
+Para garantizar la visibilidad de la aplicación en buscadores y plataformas digitales, se han definido los siguientes elementos de SEO (para la web) y ASO (para la aplicación móvil).
+
+**Landing Page (sitio estático de presentación)**
+- **Title (HTML ```<title>```):** SkillShare – Conecta con tu grupo de estudio fácilmente
+- **Meta Description (```<meta name="description"```>):** SkillShare es la red social educativa que conecta a estudiantes universitarios, de secundaria y autodidactas en grupos de estudio. Comparte materiales, organiza reuniones y aprende colaborativamente desde tu móvil o navegador.
+- **Meta Keywords (```<meta name="keywords">```):** grupos de estudio, red social educativa, estudiantes universitarios, secundaria, autodidactas, colaboración, aprendizaje en línea, app de estudio
+- **Meta Author (```<meta name="author">```):** Equipo SkillShare
+- **Meta Robots:** index, follow
+
+<br>
+
+**Mobile App (ASO – App Store Optimization)**
+- **App Title:** SkillShare – Grupos de estudio
+- **App Subtitle (iOS):** Aprende en comunidad, comparte y colabora
+- **App Description:** SkillShare es una red social educativa que conecta a estudiantes universitarios, de secundaria y autodidactas. Únete a grupos de estudio, comparte recursos, chatea con tus compañeros y organiza tu aprendizaje de forma sencilla y práctica. Disponible en iOS y Android.
+- **App Keywords (para iOS y Play Store tags):** grupos de estudio, app de aprendizaje, estudiantes, chat académico, red social educativa, recursos educativos, autodidactas
+- **Developer / Author:** SkillShare Team
+- **Category:** Education
+- **App Icon & Screenshots:** (Diseñados con estilo juvenil y académico para captar la atención del segmento objetivo).
+
+<br>
+
+#### 5.1.2.4. Searching Systems
+
+Para garantizar que los estudiantes encuentren de manera rápida y sencilla la información que necesitan, el producto digital contará con los siguientes sistemas de búsqueda y filtrado:
+
+**1. Barra de Búsqueda Global**
+- **Ubicación:** En la parte superior de la aplicación.
+- **Funcionalidad:** Permite al usuario introducir palabras clave (ejemplo: "matemáticas cálculo", "programación Java", "grupo de ciencias sociales").
+- **Resultados mostrados:** Listado jerárquico dividido en:
+    - **Grupos de Estudio** (nombre del grupo, breve descripción, cantidad de miembros).
+    - **Usuarios** (nombre, nickname, universidad o nivel educativo).
+    - **Recursos** (documentos compartidos, enlaces, materiales).
+- **Representación visual:** Resultados agrupados por categoría con etiquetas claras ("Grupos", "Usuarios", "Recursos"), evitando confusión.
+
+<br>
+
+**2. Búsqueda con Filtros Específicos**
+Los usuarios podrán refinar su búsqueda mediante filtros contextuales:
+- **Por Tipo de Usuario:** Universitario, Secundaria, Autodidacta.
+- **Por Área de Conocimiento:** Ciencias, Ingeniería, Humanidades, Lenguas, Artes, etc.
+- **Por País / Centro Educativo:** Para encontrar compañeros cercanos o del mismo entorno.
+- **Por Popularidad:** Grupos con más actividad, usuarios con más interacciones.
+- **Por Fecha:** Recursos compartidos recientemente (orden cronológico).
+
+<br>
+
+**3. Exploración Temática (sin búsqueda manual)**
+Además de búsqueda textual, la aplicación ofrecerá un sistema de exploración por categorías:
+- **Tópicos predefinidos:** Matemáticas, Programación, Literatura, Biología, Idiomas.
+- **Organización visual matricial:** Íconos con colores diferenciados para cada tema.
+- **Navegación secuencial:** Dentro de cada tema, el usuario puede acceder a grupos activos, recursos compartidos y eventos relacionados.
+
+<br>
+
+**4. Presentación de Resultados**
+- **Grupos:** Tarjetas con nombre, foto de portada, descripción corta, cantidad de miembros, botón "Unirse".
+- **Usuarios:** Tarjetas con nombre completo, nickname, universidad/escuela, botón "Conectar".
+- **Recursos:** Lista con título, autor que lo compartió, tipo de archivo (PDF, link, imagen), botón "Ver/Descargar".
+
+<br>
+
+#### 5.1.2.5. Navigation Systems
+
+El sistema de navegación de SkillShareApp se diseña bajo principios de simplicidad, consistencia y orientación clara, permitiendo a los usuarios recorrer la plataforma sin fricción y alcanzar sus metas (crear grupos, compartir materiales, conectar con otros estudiantes).
+
+**1. Navegación en la Landing Page**
+-  Menú principal (Top Navigation Bar): fijo en la parte superior con accesos directos a:
+    - Inicio
+    - Cómo Funciona
+    - Características
+    - Costo
+    - Sobre Nosotros
+    - Testimonios
+    - Contáctanos
+    - Obtener la aplicación
+
+- **Call-to-Action destacado:** Botón "Empieza Ahora" ubicado en el hero banner, guiando a los usuarios a registrarse.
+-  **Navegación secuencial (scroll):** Contenido dispuesto en orden jerárquico descendente (qué es la app → beneficios → pasos de uso → registro).
+-  **Footer con navegación secundaria:** incluye enlaces a Contacto, Preguntas Frecuentes, Políticas de Privacidad, Redes Sociales.
+
+<br>
+
+**2. Navegación en la Web Application / App Móvil**
+Se usarán tres técnicas de navegación principales:
+
+**1. Navegación Jerárquica (Menú Principal)**
+- Menú persistente con los apartados clave:
+    - Inicio (feed con actividades recientes).
+    - Grupos (Ingresar a tus grupos).
+    - Buscar (Explorar, crear, unirse)
+    - Recursos (biblioteca compartida).
+    - Perfil (configuración del usuario).
+    
+- Íconos reconocibles + etiquetas de texto (ejemplo: un ícono de chat acompañado de la palabra Mensajes).
+
+<br>
+
+**2. Navegación Secuencial (Flujos de Usuario)**
+- Para procesos que requieren pasos, como:
+    - Registro → Completar perfil → Unirse a un grupo → Publicar/Compartir.
+- Se guiará con indicadores visuales (paso 1 de 4, check verde al completar cada etapa).
+
+<br>
+
+**3. Navegación Contextual (Deep Links y Atajos)**
+- Botones de acción rápida dentro del contenido:
+    - "Unirse al grupo" desde la tarjeta de grupo.
+    - "Descargar" directamente desde la vista previa de un recurso.
+    - "Enviar mensaje" desde el perfil de un usuario.
+
+- Uso de enlaces contextuales dentro de notificaciones push o correos electrónicos, llevando al usuario directamente a la sección relevante (ejemplo: "Alguien te mencionó en Grupo de Matemáticas → botón Ver ahora").
+
+<br>
+
+**4. Elementos de Orientación**
+- **Breadcrumbs (migas de pan):** en vistas profundas de recursos y grupos, para volver fácilmente al nivel anterior.
+- **Highlight del ítem activo:** el menú principal resalta la sección donde se encuentra el usuario.
+- **Búsqueda accesible desde cualquier pantalla:** refuerzo de navegación interna.
+
+<br>
+<br>
+
+### 5.1.3. Landing Page UI Design
+
+#### 5.1.3.1. Landing Page Wireframe
+Para la creación del wireframe de nuestra landing page, utilizamos Figma y diversos complementos que agilizaron el proceso de diseño. Esta combinación de herramientas facilitó una producción rápida y precisa del esquema inicial.
+
+[**Dar clic aquí (Figma)**](https://www.figma.com/design/EbuU8tEUQMAOkmI9ajlICX/Landing-Page-%7C-SkillShare?node-id=0-1&t=Sh0jbwJxMCACKE8h-1)
+
+<br>
+
+**Landing Page (Desktop)**
+
+
+
+<br>
+
+**Landing Page (Mobile web)**
+
+
+<br>
+
+#### 5.1.3.2. Landing Page Mock-up
+
+Los mockups de la landing page de SkillShare muestran una mayor fidelización de la interfaz final del sitio, integrando los elementos visuales definidos en la guía de estilo. Esta representación busca validar la propuesta estética y funcional de los wireframes en una experiencia clara y atractiva para el usuario.
+
+#### **Pantalla: Home**
+
+La pantalla de inicio del mockup de la Landing Page de SkillShare presenta un encabezado con las secciones principales del sitio y un bloque introductorio con la propuesta de valor. Incluye imágenes sobre la app, mostrando grupos, materias populares y archivos organizados, todo en una paleta de colores moderna.
+
+<div align="center">
+<img src="assets/images/C6/mock_up-home.png">
+</div>
+
+#### **Pantalla: Cómo funciona**
+
+La pantalla muestra el proceso de cómo funciona SkillShare en tres pasos: crear un perfil personalizado, unirse o formar un grupo, y compartir recursos. A la izquierda, se ve un perfil de usuario con estadísticas de grupos, documentos y amigos. A la derecha, se detallan los pasos con íconos y texto explicativo, todo en una interfaz limpia y moderna.
+
+<div align="center">
+<img src="assets/images/C6/mock_up-how_it_works.png">
+</div>
+
+#### **Pantalla: Funcionalidades**
+
+La pantalla destaca las principales funcionalidades de SkillShare, enfocándose en los **Study Groups** o grupos de estudio personalizados. Los usuarios pueden unirse o crear grupos según sus intereses, con características como colaboración en tiempo real, gestión de miembros y horarios flexibles. A la izquierda, iconos representan funciones adicionales como seguimiento de progreso, videollamadas, compartir documentos y más.
+
+<div align="center">
+<img src="assets/images/C6/mock_up-features.png">
+</div>
+
+#### **Pantalla: Planes**
+
+La pantalla del mockup muestra dos bloques diferenciados por color: el plan gratuito a la izquierda y el premium a la derecha. El bloque premium tiene un fondo más oscuro y una etiqueta de **"Más popular"**. Ambos incluyen iconos y un botón para descargar la app.
+
+<div align="center">
+<img src="assets/images/C6/mock_up-pricing.png">
+</div>
+
+#### **Pantalla: Sobre nosotros**
+
+La pantalla de "Sobre nosotros" tiene una imagen a la izquierda y un bloque de texto a la derecha. En la parte superior, hay botones de colores para navegar entre las secciones. El fondo es oscuro y los botones destacan con colores vibrantes.
+
+<div align="center">
+<img src="assets/images/C6/mock_up-about_us.png">
+</div>
+
+#### **Pantalla: Testimonios**
+
+La pantalla de "Testimonios" presenta un testimonio destacado con la foto del usuario, su valoración y una breve descripción. Además, incluye un carrusel de imágenes para mostrar otros testimonios.
+
+<div align="center">
+<img src="assets/images/C6/mock_up-testimonials.png">
+</div>
+
+#### **Pantalla: Contáctanos**
+
+El mockup de la pantalla muestra, en la sección de "Contáctanos", un formulario con campos para nombre, correo y mensaje, acompañado de botones para enviar la información. En el pie de página se incluyen los accesos a Navegación, Legal y Soporte en color azul, junto con los logos de las redes sociales.
+
+<div align="center">
+<img src="assets/images/C6/mock_up-contact_us.png">
+</div>
+
+
+### 5.1.4. Mobile Applications UX/UI Design
+#### 5.1.4.1. Mobile Applications Wireframes
+
+Los wireframes de skillshare representan una primera aproximación estructural al diseño de la plataforma, enfocándose en la organización del contenido y la disposición de los elementos clave en cada pantalla. Esta etapa busca definir cómo interactuarán los usuarios con las principales funcionalidades del sistema sin distraer con aspectos estéticos aún no definidos. Al priorizar la usabilidad y claridad en esta fase inicial, los wireframes permiten optimizar la experiencia del usuario y sentar las bases para el desarrollo de un diseño visual coherente y funcional.
+
+#### **Pantalla: Login y Registro**
+
+<div align="center">
+<img src="assets\images\C5\LoginRegistro.png">
+</div>
+
+Las primeras pantallas del wireframe corresponden a las secciones de login y registro del usuario. Se muestran los elementos básicos para el proceso de registro, como campos para nombre, apellido y fecha de nacimiento. El diseño es simple y funcional, sin detalles visuales finales, enfocado en la disposición y estructura de los elementos clave para una fácil navegación.
+
+#### **Pantalla: Registro**
+
+<div align="center">
+<img src="assets\images\C5\Registro.png">
+</div>
+
+Las siguientes pantallas del wireframe corresponden a la continuación del proceso de registro, donde el usuario ingresa datos más personales, como país, centro educativo y correo universitario. También se incluye un paso de verificación para asegurar la autenticidad de la información. El diseño sigue siendo limpio y funcional, con una disposición clara de los campos para facilitar el proceso de registro sin distracciones.
+
+#### **Pantalla: Pantalla principal y grupos**
+
+<div align="center">
+<img src="assets\images\C5\PantallaPrincipal.png">
+</div>
+
+A continuación, se muestran los wireframes de la pantalla principal de la aplicación. En ella, se disponen elementos clave como los grupos destacados y los cursos populares en posiciones estratégicas. También se incluye una sección donde el usuario puede ver sus grupos actuales, en un diseño minimalista que destaca los grupos a los que pertenece. Además, se presenta una sección para contenido patrocinado, visible de manera clara pero sin sobrecargar la interfaz, manteniendo la estructura funcional y fácil de navegar.
+
+#### **Pantalla: Perfil y configuracion**
+
+<div align="center">
+<img src="assets\images\C5\PerfilConfig.png">
+</div>
+
+A continuación, se muestran los wireframes para la visualización del perfil, donde el usuario puede ver información relevante como la cantidad de grupos, publicaciones y amigos. También se incluyen las insignias obtenidas y los grupos a los que pertenece. La siguiente pantalla corresponde a la edición de perfil, donde el usuario puede modificar sus datos personales, como nombre, usuario, fecha de nacimiento, centro educativo, teléfono, país y sexo, todo en un diseño claro y fácil de usar.
+
+#### **Pantalla: Creación grupo y Grupos**
+
+<div align="center">
+<img src="assets\images\C5\CreacionGrupo.png">
+</div>
+
+A continuación, se muestran los wireframes para la creación de un grupo. En el primero, se detalla el formulario para crear un grupo, con campos como nombre, curso, tema, descripción y privacidad del grupo. En el segundo, se muestra cómo se visualizará un grupo dentro de la aplicación, con la foto del grupo, su descripción y otros elementos visuales, proporcionando una vista clara de la estructura del grupo una vez creado.
+
+#### **Pantalla: Chats y llamadas**
+
+<div align="center">
+<img src="assets\images\C5\ChatsLlamadas.png">
+</div>
+
+Finalmente, se muestran los wireframes de las pantallas de chats y llamadas. En ellos, se puede ver la disposición de los elementos clave, como las conversaciones en los chats y las opciones para realizar o recibir llamadas, todo en un diseño simple y accesible para facilitar la interacción del usuario.
+
+#### 5.1.4.2. Mobile Applications Wireflow Diagrams
+
+### **User goal para Segmento: Docentes**
+Como docente, quiero contar con un método de registro diferenciado del resto de los usuarios, que solicite información específica relacionada con mi rol, como institución educativa, área de enseñanza, nivel académico, etc.
+
+<div align="center">
+<img src="assets\images\C5\Diagram1.png">
+</div>
+
+Para que un docente pueda registrarse en la aplicación, se debe seguir una secuencia de pasos específicos diseñados para su rol. En primer lugar, al iniciar el proceso desde la pantalla de bienvenida, el usuario debe presionar el botón Start para comenzar el registro. A continuación, se le solicita completar información básica personal, como su nombre, apellido y fecha de nacimiento.
+Luego, se accede a una sección donde el docente debe ingresar el nombre de su centro educativo, seguido de una pantalla destinada a la verificación de su profesión, permitiendo seleccionar el tipo de documento a presentar. Después de esto, se le solicita su correo institucional o universitario, el cual servirá para validar su pertenencia a una entidad académica.
+Posteriormente, el docente debe subir un documento que acredite su rol educativo, como una constancia de trabajo o credencial docente. Luego, se completa el perfil con información adicional, como el nombre de usuario y el género.
+Una vez completados todos los pasos, se muestra una pantalla final de confirmación indicando que el perfil ha sido configurado exitosamente, y se ofrece la opción de ir a la pantalla principal de la aplicación.
+
+### **User goal para Segmento: Estudiantes**
+
+Como estudiante, quiero contar con la opción de modificar mi perfil dentro de la aplicación, para poder editar datos personales como mi nombre, nombre de usuario, fecha de nacimiento, centro educativo, número de teléfono, país y género, en caso de que necesite actualizar o corregir mi información en cualquier momento.
+
+<div align="center">
+<img src="assets\images\C5\Diagram2.png">
+</div>
+
+Para que el estudiante pueda modificar su perfil, primero debe acceder a la pantalla principal de la aplicación. Desde ahí, debe seleccionar el ícono de configuración ubicado en la parte superior derecha, lo que lo llevará a la pantalla de su perfil. En esta pantalla, el estudiante podrá visualizar su información actual, como su nombre de usuario, los grupos a los que pertenece, sus publicaciones y sus insignias.
+A continuación, debe presionar el ícono de editar perfil (el lápiz) para ingresar a la pantalla de edición. En esta pantalla, podrá modificar sus datos personales, tales como su nombre, apellido, fecha de nacimiento, centro educativo, teléfono, país y sexo. Una vez realizados los cambios deseados, el estudiante deberá presionar el botón Guardar Cambios para actualizar su perfil con la nueva información.
+Este flujo permite al estudiante gestionar y actualizar su información de manera sencilla y clara.
+
+
+#### 5.1.4.3. Mobile Applications Mock-ups
+
+<div align="center">
+<img src="assets\images\C5\Mockup1.png">
+</div>
+
+Este mockup muestra el proceso de registro en la plataforma SkillShare. En la primera pantalla, se presenta un formulario donde el usuario debe ingresar su correo electrónico, contraseña y confirmación de la contraseña. También ofrece la opción de registrarse con Google a través de un botón accesible.
+En la siguiente pantalla, se solicita al usuario completar su perfil personal proporcionando su nombre, apellido, fecha de nacimiento y país. Esto permite personalizar la experiencia según la información del usuario.
+En la tercera pantalla, el usuario debe configurar su nombre de usuario o apodo y seleccionar su género, para establecer su identidad en la plataforma.
+Finalmente, en la última pantalla, el proceso se completa y se le notifica al usuario que su perfil ha sido creado con éxito. Se le invita a explorar la plataforma y unirse a grupos de estudio o compartir materiales con la comunidad.
+
+<div align="center">
+<img src="assets\images\C5\Mockup2.png">
+</div>
+
+<div align="center">
+<img src="assets\images\C5\Mockup3.png">
+</div>
+
+Este mockup muestra el proceso de registro de un docente en SkillShare. Comienza con la solicitud de datos básicos como nombre, apellido, fecha de nacimiento y país. Luego, el docente completa su información académica, indicando su centro educativo y país. A continuación, se valida su profesión docente, permitiendo la verificación a través de un correo universitario o documento. Si opta por el correo, se valida con una confirmación de éxito.
+El siguiente paso requiere cargar un documento universitario adicional para completar la validación profesional. Finalmente, el docente crea un nombre de usuario y selecciona su género, terminando el registro con un mensaje de éxito que confirma la creación de su perfil.
+
+<div align="center">
+<img src="assets\images\C5\Mockup4.png">
+</div>
+
+Este mockup muestra la página de inicio de SkillShare, enfocándose en la visualización de grupos y materias. En la parte superior, se destacan los "Featured Groups" (Grupos Destacados), donde se muestra la categoría, número de miembros y su fecha de inicio. Abajo, están los "Popular Subjects" (Materias Populares), con el número de estudiantes por materia.
+En la siguiente pantalla, la sección "My Groups" (Mis Grupos) permite ver los grupos a los que el usuario está suscrito, con opciones para explorar más detalles. También incluye contenido patrocinado en un área separada. La interfaz está diseñada para facilitar la navegación y participación en grupos relacionados con el interés del usuario.
+
+<div align="center">
+<img src="assets\images\C5\Mockup5.png">
+</div>
+
+Este mockup muestra el perfil de usuario en SkillShare. A la izquierda, se presenta el nombre de usuario, foto de perfil, y estadísticas sobre los grupos a los que pertenece, publicaciones y amigos. También se destacan las insignias del usuario. Abajo, se muestran los grupos a los que el usuario está unido.
+El siguiente es la interfaz permite editar el perfil, donde el usuario puede actualizar su información personal como nombre, apellidos, apodo, fecha de cumpleaños, centro educativo, teléfono, país y sexo. Al finalizar los cambios, puede guardarlos con el botón "Guardar Cambios".
+
+<div align="center">
+<img src="assets\images\C5\Mockup6.png">
+</div>
+
+Este mockup muestra el proceso para crear y gestionar un grupo de estudio en una aplicación. En la pantalla izquierda, el usuario llena los campos requeridos para crear un grupo: nombre, asignatura, tema y descripción. También se selecciona la privacidad del grupo, eligiendo entre "Público" o "Privado". Una vez completados estos pasos, el usuario puede hacer clic en "Crear Grupo".
+El siguiente mockup se muestra el perfil del grupo ya creado. Incluye el nombre del grupo, una breve descripción del propósito, y los miembros activos. En la parte inferior, se encuentran los accesos a diferentes secciones del grupo: "Chat", "Recursos", "Quizzes" y "Llamadas", permitiendo gestionar la interacción y el contenido del grupo. Este flujo facilita la creación y administración de grupos de estudio dentro de la aplicación.
+
+<div align="center">
+<img src="assets\images\C5\Mockup7.png">
+</div>
+
+Este mockup muestra la interacción dentro de un grupo de estudio en la aplicación. A la izquierda, el chat de grupo permite a los miembros compartir mensajes.
+El siguiente se muestra la sección de llamadas, donde los usuarios pueden iniciar una videollamada o una llamada de audio. También se incluyen las llamadas programadas, lo que permite a los miembros ver y unirse a sesiones de estudio o discusiones futuras. Este flujo facilita tanto la colaboración en tiempo real como la planificación de sesiones de estudio.
+
+
+#### 5.1.4.4. Mobile Applications User Flow Diagrams
+
+#### **Segmento 1: Estudiantes de educación superior**
+
+Como usuario, quiero poder crear un grupo de estudio especificando la asignatura, el tema, la descripción y la privacidad del grupo para poder organizar sesiones de estudio con otros estudiantes.
+
+
+<div align="center">
+<img src="assets\images\C5\Diagram3.png">
+</div>
+
+
+#### **Segmento 2: Estudiantes de secundaria**
+
+Como usuario, quiero poder cambiar entre el chat y las llamadas dentro de la aplicación para poder interactuar con mis amigos o compañeros de estudio de manera más dinámica.
+
+<div align="center">
+<img src="assets\images\C5\Diagram4.png">
+</div>
+
+<br><br><br><br><br><br>
+
+
+<!--
    CONCLUSIONES
 -->
 
