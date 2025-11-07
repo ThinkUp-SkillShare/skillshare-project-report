@@ -7,28 +7,28 @@
 <strong><h4>Universidad Peruana de Ciencias Aplicadas</h4></strong> </div>
 <div align="center"> <strong>Ingeniería de Software</strong> </div>
 <br>
-<div align="center"> <strong>SEXTO CICLO</strong> </div>
+<div align="center"> <strong>Periodo: 202520</strong> </div>
 
-<div align="center"> Aplicaciones Para Dispositivos Móviles – CC238 </div><div align="center"> 12614 </div>
+<div align="center">1ACC0238 | Aplicaciones Para Dispositivos Móviles</div><div align="center">NRC: 12614</div>
 
 <br>
 <div align="center"> <strong>Docente:</strong> Quevedo Velasco, David Gerardo </div>
 <br>
 
-<div align="center"> <strong>INFORME TB1</strong> </div>
+<div align="center"> <strong>Informe de Trabajo Final</strong> </div>
 <br>
-<div align="center"> <strong>ThinkUp</strong> </div><div align="center"> <strong>SkillShare</strong> </div>
+<div align="center"> <strong>StartUp:</strong> <strong>ThinkUp</strong>  </div><div align="center"></div>
+<div align="center"> <strong>Producto:</strong> <strong>SkillShare</strong>  </div><div align="center"></div>
 
 <br>
-<div align="center"> Argomedo Camacho, Jhosep Jamil (U20231D978) </div>
-<div align="center"> García Salamanca, Andrés Felipe (U202523463) </div>
-<div align="center"> González Custodio, Carlos Alberto (U202020230) </div>
-<div align="center"> Julca Cruz, Renso Anthony (U202121579) </div>
-<div align="center"> Ramírez Tello, Sebastian (U202316122) </div>
+<div align="center">U20231D978 - Argomedo Camacho, Jhosep Jamil</div>
+<div align="center">U202020230 - González Custodio, Carlos Alberto</div>
+<div align="center">U202121579 - Julca Cruz, Renso Anthony</div>
+<div align="center">U202316122 - Ramírez Tello, Sebastian</div>
 
 <br>
 <br>
-<div align="center"> <strong>Septiembre, 2025</strong> </div>
+<div align="center"> <strong>Noviembre, 2025</strong> </div>
 
 <br>
 <br>
@@ -1970,50 +1970,50 @@ para determinar la viabilidad técnica, librerías más adecuadas y el esfuerzo 
 <br>
 
 ## 3.4. Product Backlog
-| Orden | User Story ID | Título                         | Story Points |
-|-------|---------------|--------------------------------|-------------|
-| 1     | USID-01         | Registro de Usuario            | 8           |
-| 2     | USID-12         | Sección de Precios y Planes    | 8           |
-| 3     | USID-14         | Búsqueda de grupos de estudio  | 8           |
-| 4     | USID-15         | Creación de grupos de estudios | 8           |
-| 5     | USID-21         | Gestión de grupos pagados      | 8           |
-| 6     | USID-24         | Chat integrado                 | 8           |
-| 7     | USID-26         | Compartir recursos             | 8           |
-| 8     | USID-13         | Personalización de perfil      | 5           |
-| 9     | USID-20         | Métricas de progreso de estudio | 5          |
-| 10    | USID-22         | Herramientas de enseñanza      | 5           |
-| 11    | USID-25         | Videollamadas grupales         | 5           |
-| 12    | USID-28         | Calendario de Sesiones         | 5           |
-| 13    | USID-29         | Notificaciones push            | 5           |
-| 14    | USID-02         | Banner "Cómo funciona"         | 5           |
-| 15    | USID-04         | Lista de Funcionalidades       | 5           |
-| 16    | USID-06         | Demostración del Buscador      | 5           |
-| 17    | USID-18         | Chat grupal organizado         | 5           |
-| 18    | USID-16         | Interfaz intuitiva             | 3           |
-| 19    | USID-19         | Sincronización Offline         | 3           |
-| 20    | USID-23         | Analytics de Negocio           | 3           |
-| 21    | USID-27         | Sistema de Quizzes             | 3           |
-| 22    | USID-03         | Video Demostrativo             | 3           |
-| 23    | USID-05         | Testimonios y Casos de Éxito   | 3           |
-| 24    | USID-07         | Formulario de Contacto         | 3           |
-| 25    | USID-08         | FAQ Interactiva                | 3           |
-| 26    | USID-17         | Sistema de logos mediante insignias | 2      |
-| 27    | USID-10         | Política de Privacidad         | 2           |
-| 28    | USID-09         | Página del Equipo              | 1           |
-| 29    | USID-11         | Footer Completo                | 1           |
+| Orden | User Story ID |                Título                   | Story Points |
+|-------|---------------|-----------------------------------------|--------------|
+| 1     | USID-01       | Registrar usuario                       |      8       |
+| 2     | USID-12       | Mostrar sección de precios y planes     |      8       |
+| 3     | USID-14       | Buscar grupos de estudio                |      8       |
+| 4     | USID-15       | Crear grupos de estudio                 |      8       |
+| 5     | USID-21       | Gestionar grupos pagados                |      8       |
+| 6     | USID-24       | Integrar chat                           |      8       |
+| 7     | USID-26       | Compartir recursos                      |      8       |
+| 8     | USID-13       | Personalizar perfil                     |      5       |
+| 9     | USID-20       | Mostrar métricas de progreso de estudio |      5       |
+| 10    | USID-22       | Proporcionar herramientas de enseñanza  |      5       |
+| 11    | USID-25       | Realizar videollamadas grupales         |      5       |
+| 12    | USID-28       | Gestionar calendario de sesiones        |      5       |
+| 13    | USID-29       | Enviar notificaciones push              |      5       |
+| 14    | USID-02       | Mostrar banner "Cómo funciona"          |      5       |
+| 15    | USID-04       | Listar funcionalidades                  |      5       |
+| 16    | USID-06       | Demostrar buscador                      |      5       |
+| 17    | USID-18       | Organizar chat grupal                   |      5       |
+| 18    | USID-16       | Diseñar interfaz intuitiva              |      3       |
+| 19    | USID-19       | Sincronizar datos offline               |      3       |
+| 20    | USID-23       | Analizar métricas de negocio            |      3       |
+| 21    | USID-27       | Implementar sistema de quizzes          |      3       |
+| 22    | USID-03       | Mostrar video demostrativo              |      3       |
+| 23    | USID-05       | Mostrar testimonios y casos de éxito    |      3       |
+| 24    | USID-07       | Crear formulario de contacto            |      3       |
+| 25    | USID-08       | Mostrar FAQ interactiva                 |      3       |
+| 26    | USID-17       | Asignar insignias mediante logros       |      2       |
+| 27    | USID-10       | Publicar política de privacidad         |      2       |
+| 28    | USID-09       | Mostrar página del equipo               |      1       |
+| 29    | USID-11       | Diseñar footer completo                 |      1       |
 
 <br>
 <br>
 
-| Orden | TS-ID  | Título                         | Story Points |
-|-------|--------|--------------------------------|-------------|
-| 1     | TS-01  | API de Autenticación           | 8           |
-| 2     | TS-02  | API de Gestión de Grupos       | 5           |
-| 3     | TS-04  | API de Gestión de Recursos     | 5           |
-| 4     | TS-03  | API de chat                    | 5           |
-| 5     | TS-06  | API de Perfil de Docente       | 5           |
-| 6     | TS-05  | API de Quizzes                 | 3           |
-| 7     | TS-07  | Sistema de Notificaciones Push | 3           |
+| Orden | TS-ID  | Título                                     | Story Points |
+|-------|--------|--------------------------------------------|--------------|
+| 1     | TS-01  | Desarrollar API de autenticación           |       8      |
+| 2     | TS-02  | Desarrollar API de gestión de grupos       |       5      |
+| 3     | TS-04  | Desarrollar API de gestión de recursos     |       5      |
+| 4     | TS-03  | Desarrollar API de chat                    |       5      |
+| 5     | TS-06  | Desarrollar API de perfil de docente       |       5      |
+| 6     | TS-05  | Implementar API de quizzes                 |       3      |
+| 7     | TS-07  | Implementar sistema de notificaciones push |       3      |
 
 <br>
 <br>
@@ -2945,6 +2945,48 @@ El siguiente se muestra la sección de llamadas, donde los usuarios pueden inici
 
 
 #### 5.1.4.4. Mobile Applications User Flow Diagrams
+
+##### **User Goal 1: Registrarse en la plataforma**
+
+Como usuario nuevo, quiero registrarme en la plataforma para acceder a los grupos de estudio y funciones personalizadas.
+
+<div align="center">
+<img src="assets\images\user_flow_diagrams\GOAL 01.png">
+</div>
+
+##### **User Goal 2: Buscar grupos de estudio**
+
+Como estudiante, quiero buscar grupos de estudio según mi materia o nivel educativo para unirme a aquellos que coincidan con mis intereses.
+
+<div align="center">
+<img src="assets\images\user_flow_diagrams\GOAL 2.png">
+</div>
+
+##### **User Goal 3: Crear grupo de estudio**
+
+Como docente o estudiante avanzado, quiero crear un grupo de estudio para organizar sesiones y compartir recursos con otros usuarios.
+
+<div align="center">
+<img src="assets\images\user_flow_diagrams\GOAL 2.png">
+</div>
+
+##### **User Goal 4: Participar en chat grupal**
+
+Como miembro de un grupo, quiero enviar y recibir mensajes en el chat grupal para comunicarme en tiempo real con otros participantes.
+
+<div align="center">
+<img src="assets\images\user_flow_diagrams\GOAL 4.png">
+</div>
+
+##### **User Goal 5: Compartir y acceder a recursos**
+
+Como estudiante o docente, quiero subir y descargar materiales en los grupos de estudio para compartir recursos de aprendizaje con los demás.
+
+<div align="center">
+<img src="assets\images\user_flow_diagrams\GOAL 5.png">
+</div>
+
+----
 
 #### **Segmento 1: Estudiantes de educación superior**
 
