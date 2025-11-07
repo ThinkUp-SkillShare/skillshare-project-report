@@ -21,6 +21,8 @@
 <div align="center"> <strong>Producto:</strong> <strong>SkillShare</strong>  </div><div align="center"></div>
 
 <br>
+<div align="center"> <strong>Integrantes:</strong></div>
+
 <div align="center">U20231D978 - Argomedo Camacho, Jhosep Jamil</div>
 <div align="center">U202020230 - González Custodio, Carlos Alberto</div>
 <div align="center">U202121579 - Julca Cruz, Renso Anthony</div>
