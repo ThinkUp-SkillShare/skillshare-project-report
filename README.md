@@ -4674,10 +4674,6 @@ A continuación, se detalla la tabla de control de estado para el Sprint 1:
 
 He aquí la sección "Development Evidence for Sprint Review" con una presentación de los avances y un ejemplo de commit, siguiendo la estructura solicitada.
 
----
-
-### **3.2. Development Evidence for Sprint Review**
-
 Esta sección documenta la evidencia tangible de los avances de implementación logrados durante el Sprint 1. Los principales avances incluyen la finalización de una Landing Page completamente funcional y receptiva que presenta los servicios de SkillShare, la implementación de los endpoints críticos del backend para la autenticación de usuarios (IAM) y la gestión de grupos, y el desarrollo de las pantallas móviles core para el segmento docente, incluyendo flujos de autenticación, gestión de perfil y navegación principal. El trabajo se gestionó a través de múltiples ramas de características en los repositorios correspondientes, integrándose finalmente a la rama principal tras su revisión y aprobación.
 
 A continuación, se presenta una tabla con los commits representativos de esta implementación:
@@ -4698,10 +4694,6 @@ A continuación, se presenta una tabla con los commits representativos de esta i
 #### 6.2.1.4. Execution Evidence for Sprint Review
 
 He aquí la presentación para la sección "Execution Evidence for Sprint Review" del informe, lista para ser incluida como un capítulo.
-
----
-
-### **3.3. Execution Evidence for Sprint Review**
 
 El Sprint 1 culminó con éxito, logrando la implementación y entrega de los componentes fundamentales de la plataforma SkillShare. Se alcanzó el **Sprint Goal** al establecer una base sólida que incluye una **Landing Page completamente funcional**, el **sistema de autenticación (IAM)** en el backend y las **pantallas móviles core para el segmento docente**.
 
@@ -4858,7 +4850,7 @@ A continuación, se presentan capturas de pantalla que demuestran estos avances:
 
 <br> 
 
-#### **3.4. Services Documentation Evidence for Sprint Review**
+#### 6.2.1.5 Services Documentation Evidence for Sprint Review
 
 Durante el Sprint 1, se implementaron y documentaron los servicios web fundamentales para el funcionamiento de SkillShare, estableciendo los cimientos del sistema de autenticación, gestión de usuarios, perfiles académicos y grupos de estudio. La documentación se ha elaborado utilizando la especificación OpenAPI, proporcionando una referencia clara y estandarizada para el consumo de los servicios por parte del frontend y las aplicaciones móviles.
 
