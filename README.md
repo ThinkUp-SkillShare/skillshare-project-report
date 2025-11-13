@@ -1538,6 +1538,20 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 ## 3.1. User Stories
 
 
+### Epics
+
+| **Epic ID** | **Epic Name** |
+|--------------|----------------|
+| EP-01 | Autenticación y gestión de perfil |
+| EP-02 | Grupos de estudio y colaboración académica |
+| EP-03 | Comunicación y herramientas colaborativas |
+| EP-04 | Gamificación y experiencia para estudiantes de secundaria |
+| EP-05 | Aprendizaje autodidacta y progreso personal |
+| EP-06 | Recursos y analítica docente |
+| EP-07 | Experiencia del visitante y landing page |
+
+### User Stories
+
 | USID        | US-01               |
 |-------------|---------------------|
 | Epic ID     | EP-01               |
