@@ -157,9 +157,74 @@ A continuación, se muestran evidencias gráficas que ilustran la participación
          - [4.2.1.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
          - [4.2.1.6.2. Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
 
+## [Capítulo 5: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
+- [5.1. Product Design](#51-product-design)
+  - [5.1.1. Style Guidelines](#511-style-guidelines)
+    - [5.1.1.1. General Style Guidelines](#5111-general-style-guidelines)
+  - [5.1.2. Information Architecture](#512-information-architecture)
+    - [5.1.2.1. Organization Systems](#5121-organization-systems)
+    - [5.1.2.2. Labeling Systems](#5122-labeling-systems)
+    - [5.1.2.3. SEO Tags and Meta Tags](#5123-seo-tags-and-meta-tags)
+    - [5.1.2.4. Searching Systems](#5124-searching-systems)
+    - [5.1.2.5. Navigation Systems](#5125-navigation-systems)
+  - [5.1.3. Landing Page UI Design](#513-landing-page-ui-design)
+    - [5.1.3.1. Landing Page Wireframe](#5131-landing-page-wireframe)
+    - [5.1.3.2. Landing Page Mock-up](#5132-landing-page-mock-up)
+  - [5.1.4. Mobile Applications UX/UI Design](#514-mobile-applications-uxui-design)
+    - [5.1.4.1. Mobile Applications Wireframes](#5141-mobile-applications-wireframes)
+    - [5.1.4.2. Mobile Applications Wireflow Diagrams](#5142-mobile-applications-wireflow-diagrams)
+    - [5.1.4.3. Mobile Applications Mock-ups](#5143-mobile-applications-mock-ups)
+    - [5.1.4.4. Mobile Applications User Flow Diagrams](#5144-mobile-applications-user-flow-diagrams)
+    - [5.1.4.5. Mobile Applications Prototyping](#5145-mobile-applications-prototyping)
+
+## [Capítulo 6: Product Implementation, Validation & Deployment](#capítulo-vi-product-implementation-validation--deployment)
+- [6.1. Software Configuration Management](#61-software-configuration-management)
+  - [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
+  - [6.1.3. Source Code Style Guide & Conventions](#613-source-code-style-guide--conventions)
+  - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
+
+- [6.2. Landing Page & Mobile Application Implementation](#62-landing-page--mobile-application-implementation)
+
+  - [6.2.1. Sprint 1](#621-sprint-1)
+    - [6.2.1.1. Sprint Planning 1](#6211-sprint-planning-1)
+    - [6.2.1.2. Sprint Backlog 1](#6212-sprint-backlog-1)
+    - [6.2.1.3. Development Evidence for Sprint Review](#6213-development-evidence-for-sprint-review)
+    - [6.2.1.4. Execution Evidence for Sprint Review](#6214-execution-evidence-for-sprint-review)
+    - [6.2.1.5 Services Documentation Evidence for Sprint Review](#6215-services-documentation-evidence-for-sprint-review)
+    - [6.2.1.6. Team Collaboration Insights during Sprint](#6216-team-collaboration-insights-during-sprint)
+
+  - [6.2.2. Sprint 2](#621-sprint-2)
+    - [6.2.2.1. Sprint Planning 2](#6221-sprint-planning-2)
+    - [6.2.2.2. Sprint Backlog 2](#6222-sprint-backlog-2)
+    - [6.2.2.3. Development Evidence for Sprint Review](#6223-development-evidence-for-sprint-review)
+    - [6.2.2.4. Testing Suite Evidence for Sprint Review](#6224-testing-suite-evidence-for-sprint-review)
+    - [6.2.2.5 Execution Evidence for Sprint Review](#6225-execution-evidence-for-sprint-review)
+    - [6.2.2.6. Services Documentation Evidence for Sprint Review](#6226-services-documentation-evidence-for-sprint-review)
+    - [6.2.2.7. Software Deployment Evidence for Sprint Review](#6227-software-deployment-evidence-for-sprint-review)
+    - [6.2.2.8. Team Collaboration Insights during Sprint](#6228-team-collaboration-insights-during-sprint)
+
+  - [6.2.3. Sprint 3](#623-sprint-3)
+    - [6.2.3.1. Sprint Planning 3](#6231-sprint-planning-3)
+    - [6.2.3.2. Sprint Backlog 3](#6232-sprint-backlog-3)
+    - [6.2.3.3. Development Evidence for Sprint Review](#6233-development-evidence-for-sprint-review)
+    - [6.2.3.4. Testing Suite Evidence for Sprint Review](#6234-testing-suite-evidence-for-sprint-review)
+    - [6.2.3.5 Execution Evidence for Sprint Review](#6235-execution-evidence-for-sprint-review)
+    - [6.2.3.6. Services Documentation Evidence for Sprint Review](#6236-services-documentation-evidence-for-sprint-review)
+    - [6.2.3.7. Software Deployment Evidence for Sprint Review](#6237-software-deployment-evidence-for-sprint-review)
+    - [6.2.3.8. Team Collaboration Insights during Sprint](#6238-team-collaboration-insights-during-sprint)
+
+- [6.3. Validation Interviews](#63-validation-interviews)
+- [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
+- [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
+- [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-segun-heurísticas)
+
 ---
 
 - [Conclusiones](#conclusiones)
+- [Recomendaciones](#recomendaciones)
+- [Video App Validation](#video-app-validation)
+- [Video About the product](#video-about-the-product)
+- [Video About the team](#video-about-the-team)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
 
@@ -227,7 +292,6 @@ Con esta herramienta buscamos reducir el aislamiento académico, facilitar la pr
 | **Integrante** | **Perfil** | **Foto** |
 |----------------|------------|----------|
 | **Jhosep J. Argomedo Camacho** <br><br> **Código:** U20231D978 <br><br> **Carrera:** Ingeniería de Software <br><br> **Rol:** Líder | Soy estudiante de Ingeniería de Software en la UPC (6to ciclo) con experiencia básica en desarrollo de aplicaciones móviles utilizando Flutter. Manejo herramientas como Git, GitHub y Figma, así como lenguajes de programación como HTML, CSS, Python, JavaScript, y bases de datos SQL y NoSQL. Con conocimientos en SCRUM y en la creación de User Stories, me destaco por mi liderazgo, responsabilidad y habilidad para coordinar equipos, enfocándome en el logro de objetivos comunes. | <img src="assets/images/team/jhosep_argomedo.jpg" width="1500"> |
-| **Andrés Felipe García Salamanca** <br><br> **Código:** U202523463 <br><br> **Carrera:** Ingeniería de Software <br><br> **Rol:** Miembro | Soy estudiante de Ingeniería de Sistemas en la CUN (Colombia) y actualmente curso el 4to ciclo como parte de un programa de intercambio en la UPC. Mi formación se orienta al área de infraestructura tecnológica, con bases en redes y en la gestión de entornos digitales aplicados a la educación. Me interesa comprender cómo la tecnología puede mejorar los procesos de aprendizaje y fortalecer el trabajo colaborativo entre estudiantes. A través de este intercambio busco ampliar mi perspectiva académica, participar en proyectos que integren innovación y educación, y continuar desarrollando mis competencias profesionales en el ámbito de la ingeniería. | ![Foto Andrés](assets/images/team/andres_garcia.jpg) |
 | **Renso Anthony Julca Cruz** <br><br> **Código:** U202121579 <br><br> **Carrera:** Ingeniería de Software <br><br> **Rol:** Miembro | Estudiante de Ingeniería de Software, actualmente curso el 6to ciclo de esta carrera. Me apasiona programar y ser autodidacta para poder mejorar mis habilidades en el desarrollo de software, quisiera dedicarme a la parte de gestión bancaria. | ![Foto Renso](assets/images/team/renso_julca.jpg) |
 | **Carlos Alberto González Custodio** <br><br> **Código:** U202020230 <br><br> **Carrera:** Ingeniería de Software <br><br> **Rol:** Miembro | Soy estudiante de Ingeniería de Software, me encuentro actualmente cursando el 6to ciclo. Me encanta enriquecer mis conocimientos con nuevos desafíos y tengo un gran interés por el desarrollo web. | ![Foto Carlos](assets/images/team/carlos_gonzales.jpg) |
 | **Sebastian Ramirez Tello** <br><br> **Código:** U202316122 <br><br> **Carrera:** Ingeniería de Software <br><br> **Rol:** Miembro | Soy estudiante de 6to ciclo de la carrera de Ingeniería de Software. Me gusta mucho emplear soluciones creativas y que busquen eficiencia para poder abordar de esta forma cualquier desafío de la mejor manera.| ![Foto Sebastian](assets/images/team/sebastian_ramirez.png) |
@@ -350,7 +414,7 @@ Otra revisión comprobó que el aprendizaje colaborativo (peer-led team learning
 <br>
 <div align="center">
 
-![Comparison of failure rates and exam score improvements between traditional lecturing and active learning in STEM education](assets\images\C2\stem-learning_method_comparison.jpg)
+![Comparison of failure rates and exam score improvements between traditional lecturing and active learning in STEM education](assets/images/C2/stem-learning_method_comparison.jpg)
 
 *Comparison of failure rates and exam score improvements between traditional lecturing and active learning in STEM education*
 
@@ -1972,6 +2036,9 @@ para determinar la viabilidad técnica, librerías más adecuadas y el esfuerzo 
 <br>
 
 ## 3.4. Product Backlog
+
+**Link de Trello:** [Dar click aquí: Trello](https://trello.com/invite/b/690bdd91d282e86e007089d9/ATTI64316a1085fd5a5da7786e31540f4c205376F47A/thinkup-skillshare)
+
 | Orden | User Story ID |                Título                   | Story Points |
 |-------|---------------|-----------------------------------------|--------------|
 | 1     | USID-01       | Registrar usuario                       |      8       |
@@ -3007,6 +3074,10 @@ Como usuario, quiero poder cambiar entre el chat y las llamadas dentro de la apl
 <div align="center">
 <img src="assets\images\C5\Diagram4.png">
 </div>
+
+#### 5.1.4.5. Mobile Applications Prototyping
+
+[Texto del enlace](URL "Título opcional")
 
 <br><br><br><br><br><br>
 
@@ -5012,39 +5083,39 @@ El equipo móvil desarrolló las pantallas core para el segmento docente:
   SPRINT 2
 -->
 
-## 7.2.1. Sprint 2
-### 7.2.1.1. Sprint Planning 2
-### 7.2.1.2. Sprint Backlog 2
-### 7.2.1.3. Development Evidence for Sprint Review
-### 7.2.1.4. Testing Suite Evidence for Sprint Review
-### 7.2.1.5. Execution Evidence for Sprint Review
-### 7.2.1.6. Services Documentation Evidence for Sprint Review
-### 7.2.1.7. Software Deployment Evidence for Sprint Review
-### 7.2.1.8. Team Collaboration Insights during Sprint
+## 6.2.2. Sprint 2
+### 6.2.2.1. Sprint Planning 2
+### 6.2.2.2. Sprint Backlog 2
+### 6.2.2.3. Development Evidence for Sprint Review
+### 6.2.2.4. Testing Suite Evidence for Sprint Review
+### 6.2.2.5. Execution Evidence for Sprint Review
+### 6.2.2.6. Services Documentation Evidence for Sprint Review
+### 6.2.2.7. Software Deployment Evidence for Sprint Review
+### 6.2.2.8. Team Collaboration Insights during Sprint
 
 
 <-!----
   SPRINT 3
 -->
 
-## 7.2.1. Sprint 3
-### 7.2.1.1. Sprint Planning 3
-### 7.2.1.2. Sprint Backlog 3
-### 7.2.1.3. Development Evidence for Sprint Review
-### 7.2.1.4. Testing Suite Evidence for Sprint Review
-### 7.2.1.5. Execution Evidence for Sprint Review
-### 7.2.1.6. Services Documentation Evidence for Sprint Review
-### 7.2.1.7. Software Deployment Evidence for Sprint Review
-### 7.2.1.8. Team Collaboration Insights during Sprint
+## 6.2.3. Sprint 3
+### 6.2.3.1. Sprint Planning 3
+### 6.2.3.2. Sprint Backlog 3
+### 6.2.3.3. Development Evidence for Sprint Review
+### 6.2.3.4. Testing Suite Evidence for Sprint Review
+### 6.2.3.5. Execution Evidence for Sprint Review
+### 6.2.3.6. Services Documentation Evidence for Sprint Review
+### 6.2.3.7. Software Deployment Evidence for Sprint Review
+### 6.2.3.8. Team Collaboration Insights during Sprint
 
 <!-- 
   Interviews 
   -->
 
-8.3. Validation Interviews
-8.3.1. Diseño de Entrevistas
-8.3.2. Registro de Entrevistas
-8.3.3. Evaluaciones según heurísticas
+# 6.3. Validation Interviews
+## 6.3.1. Diseño de Entrevistas
+## 6.3.2. Registro de Entrevistas
+## 6.3.3. Evaluaciones según heurísticas
 
 
 <!--
@@ -5102,6 +5173,37 @@ La aplicación de metodologías como Lean UX, EventStorming y entrevistas estruc
 <br>
 
 <!--
+   Video App Validation
+-->
+
+# Video App Validation
+
+<br>
+<br>
+<br>
+
+<!--
+   Video About the product
+-->
+
+# Video About the product
+
+<br>
+<br>
+<br>
+
+
+<!--
+   Video About the team
+-->
+
+# Video About the team
+
+<br>
+<br>
+<br>
+
+<!--
    BIBLIOGRAFÍA
 -->
 
@@ -5129,3 +5231,4 @@ La aplicación de metodologías como Lean UX, EventStorming y entrevistas estruc
 # Anexos
 
 **Enlace Organización en GitHub:** https://github.com/ThinkUp-SkillShare
+**Enlace a nuestra Landing Page** https://thinkup-skillshare.github.io/skillshare.github.io/
