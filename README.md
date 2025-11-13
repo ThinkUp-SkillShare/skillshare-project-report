@@ -1480,8 +1480,8 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | Priority    | 8                   |
 | User        | Visitante (Cliente potencial) |
 | Title       | Registrar usuario |
-| Descripción | Como visitante quiero registrarme desde la landing page para crear mi cuenta en la plataforma SkillShare |
-| Criterios de aceptación | Given el visitante está en la landing page<br>When hace clic en el botón "Registrarse"<br>Then es redirigido al formulario de registro<br><br>Given el visitante completa el formulario con datos válidos<br>When envía el formulario<br>Then recibe confirmación de cuenta creada y un email de verificación<br><br>Given el visitante ingresa datos inválidos o incompletos<br>When intenta registrarse<br>Then recibe mensajes de error específicos por campo |
+| Descripción | Como visitante quiero registrarme desde la landing page para crear mi cuenta en la plataforma SkillShare. |
+| **Criterios de aceptación (Escenarios)** | **Escenario 01: Navegación a la creación de cuenta**<br>Dado que el visitante está en nuestra landing page<br>Cuando selecciona la opción para registrarse<br>Entonces el sistema le presenta la pantalla de creación de cuenta<br><br>**Escenario 02: Registro exitoso (Ruta principal)**<br>Dado que el visitante ha proporcionado información válida en la pantalla de creación de cuenta<br>Cuando confirma su solicitud de registro<br>Entonces el sistema debe validar la información ingresada<br>Y registrar los datos del usuario de forma segura<br>Y mostrar un mensaje de confirmación en pantalla<br>Y enviar un email de verificación a la dirección registrada<br><br>**Escenario 03: Registro fallido (Datos inválidos)**<br>Dado que el visitante está en la pantalla de creación de cuenta<br>Cuando intenta confirmar el registro con datos inválidos o incompletos<br>Entonces el sistema debe mostrar mensajes de error claros indicando los campos a corregir |
 
 <br>
 <br>
@@ -1492,8 +1492,8 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | Prioridad   | 5                   |
 | User        | Visitante (Cliente potencial) |
 | Title       | Ver banner "Cómo funciona" |
-| Descripción | Como visitante quiero ver en la landing page un resumen visual en 3 pasos de cómo usar SkillShare para entender rápidamente el flujo de la aplicación |
-| Criterios de aceptación | Given el visitante accede a la landing page<br>When ve la sección "Cómo funciona"<br>Then observa 3 pasos claramente ilustrados con íconos y texto explicativo<br><br>Given el visitante lee los 3 pasos<br>When desea más información<br>Then puede hacer clic en "Ver demo" o "Registrarse ahora"<br><br>Given el visitante está en dispositivo móvil<br>When visualiza esta sección<br>Then los pasos se adaptan correctamente a pantalla pequeña |
+| Descripción | Como visitante quiero ver en la landing page un resumen visual en 3 pasos de cómo usar SkillShare para entender rápidamente el flujo de la aplicación. |
+| **Criterios de aceptación (Escenarios)** | **Escenario 01: Visualización del resumen del proceso**<br>Dado que el visitante accede a la página principal<br>Cuando navega hasta el resumen de "Cómo funciona"<br>Entonces observa 3 pasos ilustrados con texto explicativo<br>Y tiene disponibles las opciones para "Ver demo" o "Registrarse"<br><br>**Escenario 02: Adaptación a móvil (Responsive)**<br>Dado que el visitante accede desde un dispositivo móvil<br>Cuando visualiza el resumen del proceso<br>Entonces el contenido se adapta y muestra de forma legible en la pantalla |
 
 <br>
 <br>
@@ -1504,8 +1504,8 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | Prioridad   | 3                   |
 | User        | Reproducir video demostrativo  |
 | Title       | Reproducir video demostrativo  |
-| Descripción | Como visitante quiero reproducir un video demo en la landing page para visualizar las funciones clave como grupos de estudio, chat y recursos compartidos |
-| Criterios de aceptación | Given el visitante está en la sección de video demo<br>When hace clic en el botón de reproducir<br>Then el video se reproduce correctamente sin necesidad de plugins adicionales<br><br>Given el video está reproduciéndose<br>When el visitante pausa o adelanta<br>Then los controles responden adecuadamente<br><br>Given el visitante completa el video<br>When termina la reproducción<br>Then aparecen botones de acción como "Probar gratis" o "Ver más funciones" |
+| Descripción | Como visitante quiero reproducir un video demo en la landing page para visualizar las funciones clave como grupos de estudio, chat y recursos compartidos. |
+| **Criterios de aceptación (Escenarios)** | **Escenario 01: Iniciar la reproducción del video**<br>Dado que el visitante se encuentra en el área del video demostrativo<br>Cuando inicia la reproducción del video<br>Entonces el video se carga y reproduce correctamente<br>Y no requiere la instalación de software adicional (plugins)<br><br>**Escenario 02: Interactuar con los controles del video**<br>Dado que el video está reproduciéndose<br>Cuando el visitante interactúa con los controles (pausa, adelanta, volumen)<br>Entonces el reproductor responde adecuadamente<br><br>**Escenario 03: Finalización del video**<br>Dado que el visitante completa la visualización del video<br>Cuando la reproducción termina<br>Entonces se le muestran opciones de siguiente paso (ej. "Probar gratis", "Ver más funciones") |
 
 <br>
 <br>
@@ -1516,8 +1516,8 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | Prioridad   | 5                   |
 | User        | Visitante (Cliente potencial)  |
 | Title       | Visualizar lista de funcionalidades  |
-| Descripción | Como visitante quiero ver las funcionalidades principales organizadas visualmente para evaluar si el producto satisface mis necesidades de estudio colaborativo |
-| Criterios de aceptación | Given el visitante navega por la landing page<br>When llega a la sección de funcionalidades<br>Then ve íconos y descripciones claras de chat, videollamadas, recursos y calendario<br><br>Given el visitante hace clic en una funcionalidad específica<br>When desea más detalles<br>Then se expande información adicional o muestra capturas de pantalla<br><br>Given el visitante revisa todas las funcionalidades<br>When está interesado<br>Then encuentra fácilmente el call-to-action para registrarse |
+| Descripción | Como visitante quiero ver las funcionalidades principales organizadas visualmente para evaluar si el producto satisface mis necesidades de estudio colaborativo. |
+| **Criterios de aceptación (Escenarios)** | **Escenario 01: Revisión de funcionalidades clave**<br>Dado que el visitante navega por nuestra landing page<br>Cuando llega al área de funcionalidades<br>Entonces ve descripciones claras de las funciones clave (chat, videollamadas, recursos)<br>Y encuentra una opción clara y visible para iniciar su registro<br><br>**Escenario 02: Obtener más detalles de una funcionalidad**<br>Dado que el visitante está en el área de funcionalidades<br>Cuando selecciona una funcionalidad específica para ver más detalles<br>Entonces se muestra información adicional sobre esa función (texto o capturas de pantalla) |
 
 <br>
 <br>
@@ -1528,8 +1528,8 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | Prioridad   | 3                   |
 | User        | Visitante (Cliente potencial)  |
 | Title       | Leer testimonios y casos de éxito |
-| Descripción | Como visitante quiero leer testimonios de usuarios reales y ver estadísticas de éxito para generar confianza en la efectividad de la plataforma |
-| Criterios de aceptación | Given el visitante está en la sección de testimonios<br>When lee los testimonios<br>Then ve nombres, fotos e instituciones de usuarios reales<br><br>Given el visitante revisa las estadísticas<br>When observa los números de éxito<br>Then ve métricas como "95% mejora en calificaciones" con fuentes creíbles<br><br>Given el visitante quiere verificar autenticidad<br>When hace clic en un testimonio<br>Then puede ver más detalles del caso de éxito |
+| Descripción | Como visitante quiero leer testimonios de usuarios reales y ver estadísticas de éxito para generar confianza en la efectividad de la plataforma. |
+| **Criterios de aceptación (Escenarios)** | **Escenario 01: Revisar testimonios y casos de éxito**<br>Dado que el visitante está en el área de testimonios<br>Cuando lee los testimonios<br>Entonces ve la información del usuario (nombre, foto, institución)<br>Y puede seleccionar un testimonio para ver más detalles del caso de éxito<br><br>**Escenario 02: Revisar estadísticas de éxito**<br>Dado que el visitante revisa el área de estadísticas<br>Cuando observa los datos de éxito<br>Entonces ve métricas claras (ej. "95% mejora...") con sus fuentes o contexto |
 
 <br>
 <br>
@@ -1540,8 +1540,8 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | Prioridad   | 5                   |
 | User        | Visitante (Cliente potencial)  |
 | Title       | Probar buscador |
-| Descripción | Como visitante quiero ver cómo funciona la búsqueda de compañeros y grupos para entender la facilidad de conexión en la plataforma |
-| Criterios de aceptación | Given el visitante lee la sección del buscador<br>When busca más información visual<br>Then ve una captura de pantalla o demo interactiva del buscador<br><br>Given el visitante interactúa con el demo del buscador<br>When simula una búsqueda<br>Then ve resultados de ejemplo organizados por relevancia<br><br>Given el visitante entiende la funcionalidad<br>When desea probarla realmente<br>Then encuentra un call-to-action claro para registrarse |
+| Descripción | Como visitante quiero ver cómo funciona la búsqueda de compañeros y grupos para entender la facilidad de conexión en la plataforma. |
+| **Criterios de aceptación (Escenarios)** | **Escenario 01: Visualizar la demostración del buscador**<br>Dado que el visitante navega hasta el área del buscador<br>Cuando observa la demostración visual (captura, video o demo)<br>Entonces comprende visualmente cómo funciona la búsqueda<br><br>**Escenario 02: Interactuar con la demo del buscador**<br>Dado que el visitante utiliza la demo interactiva del buscador<br>Cuando simula una búsqueda con términos de ejemplo<br>Entonces el sistema de demo muestra resultados de ejemplo relevantes<br><br>**Escenario 03: Proceder al registro desde el buscador**<br>Dado que el visitante ha entendido la funcionalidad del buscador<br>Cuando desea probar la función real<br>Entonces el sistema le ofrece una opción clara para iniciar su registro |
 
 <br>
 <br>
@@ -1552,8 +1552,8 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | Prioridad   | 3                   |
 | User        | Visitante (Cliente potencial)   |
 | Title       | Enviar formulario de contacto |
-| Descripción | Como visitante quiero usar un formulario de contacto intuitivo para enviar consultas específicas al equipo de SkillShare |
-| Criterios de aceptación | Given el visitante accede al formulario de contacto<br>When completa nombre, email y mensaje<br>Then todos los campos se validan en tiempo real<br><br>Given el visitante envía el formulario con datos válidos<br>When confirma el envío<br>Then recibe confirmación en pantalla y email automático de recepción<br><br>Given el visitante envía datos incompletos o inválidos<br>When intenta enviar<br>Then recibe mensajes de error específicos para cada campo problemático |
+| Descripción | Como visitante quiero usar un formulario de contacto intuitivo para enviar consultas específicas al equipo de SkillShare. |
+| **Criterios de aceptación (Escenarios)** | **Escenario 01: Envío exitoso de consulta**<br>Dado que el visitante ha proporcionado información válida (nombre, email, mensaje) en la pantalla de contacto<br>Cuando confirma el envío de la consulta<br>Entonces el sistema procesa la consulta<br>Y muestra un mensaje de confirmación en pantalla<br>Y envía un email automático de recepción al visitante<br><br>**Escenario 02: Envío fallido (Datos inválidos)**<br>Dado que el visitante está en la pantalla de contacto<br>Cuando intenta confirmar el envío con datos incompletos o inválidos<br>Entonces el sistema muestra mensajes de error claros indicando los campos a corregir<br><br>**Escenario 03: Validación de campos (en tiempo real)**<br>Dado que el visitante está en la pantalla de contacto<br>Cuando proporciona su nombre, email y mensaje<br>Entonces el sistema valida el formato de la información a medida que se ingresa (o al salir del campo) |
 
 <br>
 <br>
@@ -1564,8 +1564,8 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | Prioridad   | 3                   |
 | User        | Visitante (Cliente potencial)   |
 | Title       | Consultar FAQ interactiva     |
-| Descripción | Como visitante quiero acceder a preguntas frecuentes organizadas para resolver dudas comunes sin necesidad de contactar soporte |
-| Criterios de aceptación | Given el visitante abre la sección FAQ<br>When hace clic en una pregunta<br>Then la respuesta se expande suavemente mostrar información completa<br><br>Given el visitante busca una respuesta específica<br>When utiliza el buscador interno del FAQ<br>Then encuentra preguntas relevantes filtradas por palabras clave<br><br>Given el visitante no encuentra su pregunta<br>When llega al final de la lista<br>Then ve un call-to-action claro para contactar soporte |
+| Descripción | Como visitante quiero acceder a preguntas frecuentes organizadas para resolver dudas comunes sin necesidad de contactar soporte. |
+| **Criterios de aceptación (Escenarios)** | **Escenario 01: Consultar una pregunta**<br>Dado que el visitante está en el área de Preguntas Frecuentes<br>Cuando selecciona una pregunta de la lista<br>Entonces la respuesta correspondiente se muestra de forma expandida<br><br>**Escenario 02: Buscar en Preguntas Frecuentes**<br>Dado que el visitante está en el área de Preguntas Frecuentes<br>Cuando ingresa términos de búsqueda<br>Entonces la lista se filtra para mostrar solo las preguntas relevantes<br><br>**Escenario 03: Opción de contacto desde FAQ**<br>Dado que el visitante está revisando las Preguntas Frecuentes<br>Cuando no encuentra la respuesta que busca<br>Entonces el sistema le ofrece una opción visible para contactar a soporte |
 
 <br>
 <br>
@@ -1576,8 +1576,8 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | Prioridad   | 1                   |
 | User        | Visitante (Cliente potencial)   |
 | Title       | Conocer al equipo   |
-| Descripción | Como visitante quiero conocer al equipo fundador para generar confianza en las personas responsables del proyecto |
-| Criterios de aceptación | Given el visitante accede a la página "Nuestro Equipo"<br>When revisa los perfiles<br>Then ve fotos, nombres, roles y breves biografías de cada miembro<br><br>Given el visitante valora la transparencia<br>When revisa toda la información<br>Then encuentra enlaces a LinkedIn o portfolios profesionales verificables |
+| Descripción | Como visitante quiero conocer al equipo fundador para generar confianza en las personas responsables del proyecto. |
+| **Criterios de aceptación (Escenarios)** | **Escenario 01: Revisar perfiles del equipo**<br>Dado que el visitante accede al área sobre el equipo<br>Cuando revisa los perfiles de los miembros<br>Entonces ve sus fotos, nombres y roles<br>Y puede leer una breve biografía de cada uno<br>Y encuentra enlaces a sus perfiles profesionales verificables (ej. LinkedIn) |
 
 <br>
 <br>
@@ -1588,8 +1588,8 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | Prioridad   | 2                   |
 | User        | Visitante (Cliente potencial)   |
 | Title       | Revisar política de privacidad |
-| Descripción | Como visitante quiero acceder fácilmente a la política de privacidad para entender cómo se manejarán mis datos personales |
-| Criterios de aceptación | Given el visitante busca información sobre privacidad<br>When hace clic en "Política de Privacidad"<br>Then accede a un documento claro y actualizado con fecha de última modificación<br><br>Given el visitante lee la política<br>When busca información específica<br>Then encuentra secciones organizadas con índice navegable<br><br>Given el visitante tiene dudas específicas<br>When termina de leer<br>Then encuentra información de contacto para consultas sobre privacidad |
+| Descripción | Como visitante quiero acceder fácilmente a la política de privacidad para entender cómo se manejarán mis datos personales. |
+| **Criterios de aceptación (Escenarios)** | **Escenario 01: Consultar la política de privacidad**<br>Dado que el visitante desea consultar la política de privacidad<br>Cuando selecciona la opción para verla (ej. desde el pie de página)<br>Entonces accede a la información de la política, la cual muestra su fecha de última actualización<br>Y el contenido está organizado en secciones claras<br>Y dispone de un índice para navegar por dichas secciones<br>Y encuentra información de contacto para consultas sobre privacidad |
 
 <br>
 <br>
@@ -1600,8 +1600,8 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | Prioridad   | 1                   |
 | User        | Visitante (Cliente potencial)   |
 | Title       | Navegar footer completo     |
-| Descripción | Como visitante quiero un footer organizado con todos los enlaces importantes para navegar fácilmente a información relevante |
-| Criterios de aceptación | Given el visitante llega al footer de cualquier página<br>When busca enlaces importantes<br>Then encuentra organizados: términos, privacidad, contacto, redes sociales y mapa del sitio<br><br>Given el visitante hace clic en cualquier enlace del footer<br>When navega<br>Then los enlaces funcionan correctamente y abren en la ventana apropiada<br><br>Given el visitante está en dispositivo móvil<br>When ve el footer<br>Then todos los enlaces son fácilmente accesibles y están bien organizados |
+| Descripción | Como visitante quiero un footer organizado con todos los enlaces importantes para navegar fácilmente a información relevante. |
+| **Criterios de aceptación (Escenarios)** | **Escenario 01: Visualización de enlaces del pie de página**<br>Dado que el visitante está en el pie de página de cualquier página<br>Cuando revisa los enlaces disponibles<br>Entonces encuentra organizados: términos, privacidad, contacto, redes sociales y mapa del sitio<br><br>**Escenario 02: Funcionalidad de los enlaces**<br>Dado que el visitante selecciona un enlace del pie de página<br>Cuando activa el enlace<br>Entonces es dirigido al destino correcto<br>Y el enlace se abre en la ventana o pestaña apropiada<br><br>**Escenario 03: Adaptación a móvil (Responsive)**<br>Dado que el visitante accede desde un dispositivo móvil<br>Cuando visualiza el pie de página<br>Entonces todos los enlaces son legibles y fácilmente accesibles |
 
 <br>
 <br>
@@ -1612,8 +1612,8 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | Prioridad   | 8                   |
 | User        | Visitante (Cliente potencial)  |
 | Title       | Comparar precios y planes |
-| Descripción | Como visitante quiero ver claramente los diferentes planes disponibles para tomar una decisión informada sobre qué opción elegir |
-| Criterios de aceptación | Given el visitante accede a la sección de precios<br>When compara los planes<br>Then ve claramente freemium, premium e institucional con características destacadas<br><br>Given el visitante revisa un plan específico<br>When hace clic en "Ver detalles"<br>Then obtiene información completa sobre límites, funcionalidades y beneficios<br><br>Given el visitante decide elegir un plan<br>When hace clic en "Elegir plan"<br>Then es dirigido al proceso de registro o pago correspondiente |
+| Descripción | Como visitante quiero ver claramente los diferentes planes disponibles para tomar una decisión informada sobre qué opción elegir. |
+| **Criterios de aceptación (Escenarios)** | **Escenario 01: Comparación de planes**<br>Dado que el visitante está en el área de precios<br>Cuando compara los planes disponibles<br>Entonces ve claramente las opciones (ej. freemium, premium)<br>Y observa las características destacadas de cada plan<br><br>**Escenario 02: Ver detalles del plan**<br>Dado que el visitante está comparando los planes<br>Cuando solicita más detalles de un plan específico<br>Entonces obtiene información completa sobre límites, funcionalidades y beneficios<br><br>**Escenario 03: Selección de un plan**<br>Dado que el visitante ha decidido qué plan elegir<br>Cuando selecciona un plan para continuar<br>Entonces es dirigido al proceso de registro o pago correspondiente |
 
 <br>
 <br>
@@ -1624,8 +1624,8 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | Prioridad   | 5                   |
 | User        | Estudiante universitario |
 | Title       | Personalizar perfil de estudiante universitario |
-| Descripción | COMO estudiante universitario QUIERO crear y configurar mi perfil académico PARA QUE otros usuarios puedan conocer mis intereses de estudio y nivel académico |
-| Criterios de aceptación | Given el usuario accede a la sección de registro<br>When completa los campos obligatorios (nombre, universidad, carrera, semestre)<br>Then el sistema crea su perfil y lo redirige al dashboard principal<br><br>Given el usuario tiene un perfil creado<br>When accede a configuración de perfil<br>Then puede editar su información académica y preferencias de estudio |
+| Descripción | Como estudiante universitario quiero crear y configurar mi perfil académico para que otros usuarios puedan conocer mis intereses de estudio y nivel académico. |
+| **Criterios de aceptación (Escenarios)** | **Escenario 01: Creación de perfil académico (durante el registro)**<br>Dado que el usuario está en el proceso de registro<br>Cuando proporciona la información académica requerida (nombre, universidad, carrera, semestre)<br>Entonces el sistema crea su perfil<br>Y lo redirige al panel principal (dashboard)<br><br>**Escenario 02: Edición de perfil académico**<br>Dado que el usuario tiene un perfil creado<br>Cuando accede a la configuración de su perfil<br>Entonces puede editar su información académica y preferencias de estudio |
 
 <br>
 <br>
@@ -1636,8 +1636,8 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | Prioridad   | 8                   |
 | User        | Estudiante universitario |
 | Title       | Buscar grupos de estudio |
-| Descripción | COMO estudiante universitario QUIERO buscar grupos de estudio por materia y universidad PARA encontrar compañeros compatibles con mi nivel académico |
-| Criterios de aceptación | Given el usuario está en la pantalla principal<br>When utiliza los filtros de búsqueda (materia, universidad)<br>Then el sistema muestra grupos que coinciden con los criterios seleccionados<br><br>Given existen grupos disponibles<br>When el usuario selecciona un grupo<br>Then puede ver información detallada del grupo y sus miembros |
+| Descripción | Como estudiante universitario quiero buscar grupos de estudio por materia y universidad para encontrar compañeros compatibles con mi nivel académico |
+| **Criterios de aceptación (Escenarios)** | **Escenario 01: Búsqueda de grupos por filtro**<br>Dado que el usuario está en la función de búsqueda de grupos<br>Cuando aplica filtros de búsqueda (ej. materia, universidad)<br>Entonces el sistema muestra una lista de grupos que coinciden con los criterios<br><br>**Escenario 02: Ver detalles de un grupo**<br>Dado que se muestran los resultados de la búsqueda de grupos<br>Cuando el usuario selecciona un grupo de la lista<br>Entonces puede ver información detallada del grupo y sus miembros |
 
 <br>
 <br>
@@ -1648,8 +1648,8 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | Prioridad   | 8                   |
 | User        | Estudiante universitario |
 | Title       | Crear grupos de estudio |
-| Descripción | COMO estudiante universitario QUIERO crear un grupo de estudio especificando materia, objetivos y horarios PARA organizar sesiones colaborativas |
-| Criterios de aceptación | Given el usuario selecciona "Crear Grupo"<br>When completa la información requerida (nombre, materia, descripción, horarios)<br>Then el sistema crea el grupo y lo establece como administrador<br><br>Given el grupo está creado<br>When otros usuarios solicitan unirse<br>Then el creador recibe notificaciones para aprobar o rechazar solicitudes |
+| Descripción | Como estudiante universitario quiero crear un grupo de estudio especificando materia, objetivos y horarios para organizar sesiones colaborativas |
+| **Criterios de aceptación (Escenarios)** | **Escenario 01: Creación exitosa de un grupo**<br>Dado que el usuario inicia el proceso de creación de grupo<br>Cuando proporciona la información requerida (nombre, materia, descripción, horarios)<br>Entonces el sistema crea el nuevo grupo<br>Y establece al usuario creador como administrador del grupo<br><br>**Escenario 02: Gestión de solicitudes de unión**<br>Dado que el usuario es administrador de un grupo creado<br>Cuando otros usuarios solicitan unirse al grupo<br>Entonces el administrador recibe notificaciones para aprobar o rechazar dichas solicitudes |
 
 <br>
 <br>
@@ -1660,8 +1660,8 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | Prioridad   | 3                   |
 | User        | Estudiante secundaria |
 | Title       | Explorar interfaz intuitiva |
-| Descripción | COMO estudiante de secundaria QUIERO una interfaz con elementos lúdicos y coloridos PARA mantenerme motivada durante el uso de la aplicación |
-| Criterios de aceptación | Given el usuario accede a la aplicación<br>When navega por las diferentes secciones<br>Then la interfaz muestra elementos visuales atractivos con colores vibrantes y animaciones<br><br>Given el usuario completa actividades de estudio<br>When alcanza objetivos o metas<br>Then recibe badges, puntos o recompensas visuales |
+| Descripción | Como estudiante de secundaria quiero una interfaz con elementos lúdicos y coloridos para mantenerme motivada durante el uso de la aplicación |
+| **Criterios de aceptación (Escenarios)** | **Escenario 01: Navegación en interfaz lúdica**<br>Dado que el estudiante de secundaria accede a la aplicación<br>Cuando navega por las diferentes secciones<br>Entonces la interfaz muestra elementos visuales atractivos (colores vibrantes, animaciones)<br><br>**Escenario 02: Recepción de recompensas visuales**<br>Dado que el estudiante completa actividades de estudio<br>Cuando alcanza objetivos o metas predefinidas<br>Entonces recibe recompensas visuales (ej. badges, puntos) |
 
 <br>
 <br>
@@ -1673,7 +1673,7 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | User        | Estudiante secundaria |
 | Title       | Ganar badges |
 | Descripción | Como estudiante de secundaria quiero ganar badges por mi participación para sentir reconocimiento por mis contribuciones al grupo |
-| Criterios de aceptación | Given el usuario participa en actividades grupales<br>When completa tareas, asiste a sesiones o ayuda a compañeros<br>Then acumula puntos en su perfil<br><br>Given el usuario alcanza ciertos hitos<br>When cumple criterios específicos de participación<br>Then desbloquea badges especiales visibles en su perfil |
+| Criterios de aceptación | **Escenario 01: Acumulación de puntos por participación**<br>Dado que el estudiante participa en actividades grupales<br>Cuando completa tareas, asiste a sesiones o ayuda a compañeros<br>Entonces el sistema acumula puntos en su perfil<br><br>**Escenario 02: Desbloqueo de badges por hitos**<br>Dado que el estudiante ha acumulado puntos<br>Cuando cumple los criterios específicos para un hito (ej. "Colaborador Nivel 1")<br>Entonces el sistema desbloquea un badge especial<br>Y el badge se muestra visible en su perfil |
 
 <br>
 <br>
@@ -1685,7 +1685,7 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | User        | Estudiante secundaria |
 | Title       | Usar chat grupal organizado |
 | Descripción | Como estudiante de secundaria quiero un sistema de chat que separe contenido académico de social para evitar que se pierda información importante |
-| Criterios de aceptación | Given el usuario está en un grupo de estudio<br>When accede al chat grupal<br>Then puede alternar entre el canal académico y el canal social<br><br>Given un miembro envía un mensaje académico importante<br>When utiliza la función de mensaje destacado<br>Then el mensaje se fija en la parte superior del canal académico |
+| Criterios de aceptación | **Escenario 01: Separación de canales de chat**<br>Dado que el estudiante está en un grupo de estudio<br>Cuando accede al chat grupal<br>Entonces puede alternar entre el canal "Académico" y el canal "Social"<br><br>**Escenario 02: Destacar mensajes en canal académico**<br>Dado que un miembro del grupo está en el canal académico<br>Cuando envía un mensaje y utiliza la función de "destacar"<br>Entonces el mensaje se fija en la parte superior del canal académico para todos los miembros |
 
 <br>
 <br>
@@ -1697,7 +1697,7 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | User        | Estudiante autodidacta |
 | Title       | Sincronizar archivos offline |
 | Descripción | Como autodidacta quiero acceder a contenido sin conexión durante mis viajes para estudiar en cualquier momento y lugar |
-| Criterios de aceptación | Given el usuario tiene conexión a internet<br>When descarga contenido para acceso offline<br>Then el material queda disponible sin conexión<br><br>Given el usuario estudia en modo offline<br>When regresa la conexión a internet<br>Then el progreso se sincroniza automáticamente con su cuenta |
+| Criterios de aceptación | **Escenario 01: Descarga de contenido para modo offline**<br>Dado que el usuario tiene conexión a internet<br>Cuando selecciona contenido (archivos, videos) para acceso offline<br>Entonces el material queda descargado y disponible en su dispositivo sin conexión<br><br>**Escenario 02: Sincronización de progreso post-offline**<br>Dado que el usuario ha estudiado o avanzado en modo offline<br>Cuando recupera la conexión a internet<br>Entonces el progreso realizado se sincroniza automáticamente con su cuenta en la nube |
 
 <br>
 <br>
@@ -1709,7 +1709,7 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | User        | Estudiante autodidacta |
 | Title       | Visualizar métricas de progreso |
 | Descripción | Como autodidacta quiero ver métricas detalladas de mi progreso para medir tangiblemente mi desarrollo profesional |
-| Criterios de aceptación | Given el usuario ha completado actividades de aprendizaje<br>When accede a la sección de estadísticas<br>Then ve gráficos de tiempo invertido, temas completados y nivel de progreso<br><br>Given el usuario establece objetivos de aprendizaje<br>When revisa su progreso semanal<br>Then recibe recomendaciones para mantener el ritmo de estudio |
+| Criterios de aceptación | **Escenario 01: Visualización de estadísticas de progreso**<br>Dado que el usuario ha completado actividades de aprendizaje<br>Cuando accede a su panel de estadísticas<br>Entonces ve gráficos de tiempo invertido<br>Y visualiza los temas completados<br>Y observa su nivel de progreso general<br><br>**Escenario 02: Recepción de recomendaciones basadas en objetivos**<br>Dado que el usuario ha establecido objetivos de aprendizaje<br>Cuando revisa su progreso semanal<br>Entonces recibe recomendaciones para mantener o mejorar su ritmo de estudio |
 
 <br>
 <br>
@@ -1721,7 +1721,7 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | User        | Docente             |
 | Title       | Gestionar grupos pagados |
 | Descripción | Como docente quiero crear y gestionar grupos de estudio con tarifas personalizadas para monetizar mi expertise educativa |
-| Criterios de aceptación | Given el usuario tiene perfil verificado de docente<br>When crea un grupo de estudio<br>Then puede establecer precio, duración y número máximo de participantes<br><br>Given estudiantes se inscriben al grupo pagado<br>When se procesa el pago<br>Then el sistema confirma la inscripción y notifica al docente |
+| Criterios de aceptación | **Escenario 01: Creación de grupo pagado**<br>Dado que el usuario tiene un perfil verificado de docente<br>Cuando inicia la creación de un nuevo grupo de estudio<br>Entonces puede configurar el precio<br>Y la duración (si aplica)<br>Y el número máximo de participantes<br><br>**Escenario 02: Procesamiento de inscripción a grupo pagado**<br>Dado que un estudiante solicita unirse a un grupo pagado<br>Cuando el pago del estudiante es procesado exitosamente<br>Entonces el sistema confirma la inscripción al estudiante<br>Y notifica al docente sobre el nuevo miembro |
 
 <br>
 <br>
@@ -1733,7 +1733,7 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | User        | Docente             |
 | Title       | Compartir materiales educativos |
 | Descripción | Como docente quiero compartir materiales educativos y realizar sesiones en vivo para brindar valor educativo a mis estudiantes |
-| Criterios de aceptación | Given el docente está en su grupo pagado<br>When sube material educativo<br>Then todos los miembros suscritos pueden acceder al contenido<br><br>Given el docente programa una sesión en vivo<br>When inicia la videollamada<br>Then los participantes reciben una notificación y pueden unirse |
+| Criterios de aceptación | **Escenario 01: Compartir material de estudio**<br>Dado que el docente está en su grupo (pagado o gratuito)<br>Cuando comparte material educativo (ej. archivos, enlaces)<br>Entonces todos los miembros suscritos al grupo pueden acceder a ese contenido<br><br>**Escenario 02: Iniciar sesión en vivo**<br>Dado que el docente ha programado una sesión en vivo<br>Cuando inicia la sesión (videollamada)<br>Entonces los participantes del grupo reciben una notificación<br>Y pueden unirse a la sesión |
 
 <br>
 <br>
@@ -1745,7 +1745,7 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | User        | Docente             |
 | Title       | Revisar analytics de negocio |
 | Descripción | Como docente quiero ver estadísticas de mis grupos para optimizar mis servicios educativos y aumentar mis ingresos |
-| Criterios de aceptación | Given el docente tiene grupos activos<br>When accede al panel de analytics<br>Then puede ver métricas de ingresos, retención de estudiantes y satisfacción<br><br>Given ha transcurrido un período de tiempo<br>When el docente revisa los reportes mensuales<br>Then recibe insights sobre tendencias y recomendaciones de mejora |
+| Criterios de aceptación | **Escenario 01: Consulta de métricas de rendimiento**<br>Dado que el docente tiene grupos activos<br>Cuando accede al panel de analíticas<br>Entonces puede ver métricas de ingresos<br>Y métricas de retención de estudiantes<br>Y métricas de satisfacción<br><br>**Escenario 02: Revisión de reportes periódicos**<br>Dado que ha transcurrido un período de tiempo (ej. mensual)<br>Cuando el docente revisa los reportes generados<br>Entonces recibe información sobre tendencias y recomendaciones de mejora |
 
 <br>
 <br>
@@ -1757,7 +1757,7 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | User        | Usuario general     |
 | Title       | Comunicar mediante chat integrado      |
 | Descripción | Como usuario quiero comunicarme con los miembros de mi grupo a través de chat en tiempo real para coordinar actividades de estudio |
-| Criterios de aceptación | Given el usuario pertenece a un grupo<br>When accede al chat grupal<br>Then puede enviar y recibir mensajes en tiempo real<br><br>Given el usuario recibe un mensaje<br>When no está activo en la aplicación<br>Then recibe una notificación push |
+| Criterios de aceptación | **Escenario 01: Interacción en chat en tiempo real**<br>Dado que el usuario pertenece a un grupo<br>Cuando accede al chat grupal<br>Entonces puede enviar y recibir mensajes en tiempo real<br><br>**Escenario 02: Recepción de notificaciones push**<br>Dado que el usuario recibe un nuevo mensaje de chat<br>Cuando no está activo en la aplicación<br>Entonces recibe una notificación push en su dispositivo |
 
 <br>
 <br>
@@ -1769,7 +1769,7 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | User        | Usuario general     |
 | Title       | Realizar videollamadas grupales |
 | Descripción | Como usuario quiero realizar videollamadas con mi grupo de estudio para tener sesiones de aprendizaje cara a cara |
-| Criterios de aceptación | Given el usuario está en un grupo activo<br>When inicia una videollamada<br>Then los demás miembros reciben una invitación para unirse<br><br>Given varios usuarios están en una videollamada<br>When uno de ellos comparte pantalla<br>Then todos los participantes pueden ver el contenido compartido |
+| Criterios de aceptación | **Escenario 01: Iniciar videollamada grupal**<br>Dado que el usuario está en un grupo activo<br>Cuando inicia una videollamada<br>Entonces los demás miembros del grupo reciben una invitación para unirse<br><br>**Escenario 02: Compartir pantalla durante la videollamada**<br>Dado que varios usuarios están en una videollamada<br>Cuando uno de ellos comparte su pantalla<br>Entonces todos los demás participantes pueden ver el contenido compartido |
 
 <br>
 <br>
@@ -1781,7 +1781,7 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | User        | Usuario general     |
 | Title       | Compartir recursos  |
 | Descripción | Como usuario quiero subir y compartir materiales de estudio para contribuir al aprendizaje colaborativo del grupo |
-| Criterios de aceptación | Given el usuario está en un grupo<br>When selecciona compartir un archivo<br>Then puede subir documentos, imágenes o enlaces<br><br>Given un archivo ha sido compartido<br>When otros miembros acceden al archivo<br>Then pueden descargarlo o visualizar el material |
+| Criterios de aceptación | **Escenario 01: Compartir y consumir recursos**<br>Dado que el usuario está en un grupo<br>Cuando comparte un recurso (documento, imagen, enlace)<br>Entonces el recurso queda disponible para los miembros del grupo<br>Y los otros miembros pueden descargarlo o visualizarlo |
 
 <br>
 <br>
@@ -1793,7 +1793,7 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | User        | Usuario general     |
 | Title       | Crear y responder quizzes  |
 | Descripción | Como usuario quiero crear y responder quizzes sobre los temas de estudio para evaluar mi comprensión y la del grupo |
-| Criterios de aceptación | Given el usuario está en un grupo de estudio<br>When crea un quiz sobre el tema actual<br>Then otros miembros pueden responderlo y ver los resultados<br><br>Given el usuario responde un quiz<br>When completa todas las preguntas<br>Then recibe retroalimentación inmediata sobre su desempeño |
+| Criterios de aceptación | **Escenario 01: Crear y publicar un quiz**<br>Dado que el usuario está en un grupo de estudio<br>Cuando crea un quiz sobre un tema<br>Entonces los otros miembros del grupo reciben una notificación<br>Y pueden responder el quiz<br><br>**Escenario 02: Responder un quiz y recibir retroalimentación**<br>Dado que el usuario va a responder un quiz disponible<br>Cuando finaliza el quiz<br>Entonces recibe retroalimentación inmediata sobre su desempeño<br>Y puede ver sus resultados |
 
 <br>
 <br>
@@ -1805,7 +1805,7 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | User        | Usuario general     |
 | Title       | Programar calendario de sesiones |
 | Descripción | Como usuario quiero programar y gestionar sesiones de estudio para coordinar horarios con los miembros del grupo |
-| Criterios de aceptación | Given el usuario tiene grupos activos<br>When propone una sesión de estudio<br>Then otros miembros pueden confirmar su participación o sugerir horarios alternativos<br><br>Given una sesión está programada<br>When se acerca la hora de la sesión<br>Then todos los participantes reciben recordatorios de la sesión |
+| **Criterios de aceptación (Escenarios)** | **Escenario 01: Proponer y confirmar una sesión**<br>Dado que el usuario está en un grupo<br>Cuando propone una nueva sesión de estudio (con fecha y hora)<br>Entonces los otros miembros pueden confirmar su participación o sugerir horarios alternativos<br><br>**Escenario 02: Recibir recordatorios de sesión**<br>Dado que una sesión está programada y confirmada<br>Cuando se acerca la hora de inicio<br>Entonces todos los participantes confirmados reciben un recordatorio |
 
 <br>
 <br>
@@ -1817,7 +1817,7 @@ El journey de Merly Salón refleja los desafíos de los docentes emprendedores q
 | User        | Usuario general     |
 | Title       | Recibir notificaciones push |
 | Descripción | Como usuario quiero recibir notificaciones relevantes para mantenerme actualizado sobre actividades de mis grupos |
-| Criterios de aceptación | Given el usuario tiene grupos activos<br>When ocurre actividad relevante<br>Then recibe notificación push personalizada<br><br>Given el usuario configura preferencias<br>When ajusta tipos de notificaciones<br>Then solo recibe las notificaciones seleccionadas |
+| **Criterios de aceptación (Escenarios)** | **Escenario 01: Recepción de notificaciones de actividad**<br>Dado que el usuario pertenece a grupos activos<br>Cuando ocurre una actividad relevante en un grupo (ej. nuevo mensaje, próxima sesión, etc.)<br>Entonces el sistema envía una notificación push personalizada al dispositivo del usuario (siempre que las tenga activadas)<br><br>**Escenario 02: Configuración de preferencias de notificación**<br>Dado que el usuario está en la configuración de su cuenta<br>Cuando ajusta sus preferencias de notificación (ej. activa/desactiva tipos de alertas)<br>Entonces el sistema guarda sus preferencias<br>Y el usuario solo recibe las notificaciones que ha seleccionado recibir |
 
 <br>
 <br>
@@ -4606,6 +4606,57 @@ Feature: Gestión de Grupos de Estudio
 
 ### 6.1.4. Software Deployment Configuration
 
+#### Landing Page
+
+1. Se creó la organización del proyecto con el nombre ThinkUp.
+
+<div align="center">
+
+![organización](assets/images/deployment/organizacion.jpg)
+
+</div>
+
+2. Se generó un repositorio en GitHub para alojar la landing page del proyecto.
+
+<div align="center">
+
+![repositorio](assets/images/deployment/repositorio.jpg)
+
+</div>
+
+3. Se nombró el repositorio siguiendo la convención: debe finalizar en .github.io para habilitar GitHub Pages.
+
+<div align="center">
+
+![convension](assets/images/deployment/convension.jpg)
+
+</div>
+
+4. En la sección **Settings > Pages**, se configuró la rama de despliegue (Deployment Branch), y se obtuvo el enlace público para acceder a la landing page.
+
+<div align="center">
+
+![configuracion](assets/images/deployment/configuracion.jpg)
+
+</div>
+
+5. Se registraron las evidencias de los commits realizados y subidos al repositorio.
+
+<div align="center">
+
+![commits](assets/images/deployment/commits.jpg)
+
+</div>
+
+**LINK:** https://thinkup-skillshare.github.io/skillshare.github.io/
+
+#### Web Services
+
+<!-- COLOCAR DESPLIEGUE  -->
+
+#### Mobile Applications
+
+<!-- COLOCAR DESPLIEGUE  -->
 
 <br><br>
 
@@ -4957,13 +5008,50 @@ El equipo móvil desarrolló las pantallas core para el segmento docente:
 
 ![Mobile Application evidence](assets/images/C6/mobile_application-contributors.png)
 
+<-!----
+  SPRINT 2
+-->
+
+## 7.2.1. Sprint 2
+### 7.2.1.1. Sprint Planning 2
+### 7.2.1.2. Sprint Backlog 2
+### 7.2.1.3. Development Evidence for Sprint Review
+### 7.2.1.4. Testing Suite Evidence for Sprint Review
+### 7.2.1.5. Execution Evidence for Sprint Review
+### 7.2.1.6. Services Documentation Evidence for Sprint Review
+### 7.2.1.7. Software Deployment Evidence for Sprint Review
+### 7.2.1.8. Team Collaboration Insights during Sprint
+
+
+<-!----
+  SPRINT 3
+-->
+
+## 7.2.1. Sprint 3
+### 7.2.1.1. Sprint Planning 3
+### 7.2.1.2. Sprint Backlog 3
+### 7.2.1.3. Development Evidence for Sprint Review
+### 7.2.1.4. Testing Suite Evidence for Sprint Review
+### 7.2.1.5. Execution Evidence for Sprint Review
+### 7.2.1.6. Services Documentation Evidence for Sprint Review
+### 7.2.1.7. Software Deployment Evidence for Sprint Review
+### 7.2.1.8. Team Collaboration Insights during Sprint
+
+<!-- 
+  Interviews 
+  -->
+
+8.3. Validation Interviews
+8.3.1. Diseño de Entrevistas
+8.3.2. Registro de Entrevistas
+8.3.3. Evaluaciones según heurísticas
+
+
 <!--
    CONCLUSIONES
 -->
 
 # Conclusiones
-
-## Conclusiones
 
 - **Validación de la Necesidad del Mercado**
 El análisis exhaustivo realizado confirma la existencia de una necesidad real y significativa en el mercado educativo. Las entrevistas con 8 usuarios de diferentes segmentos revelaron patrones consistentes de dolor en la organización de grupos de estudio, con un 100% de los entrevistados universitarios reportando dificultades en la coordinación de horarios y el manejo de herramientas dispersas. La investigación académica citada respalda estos hallazgos, demostrando que el aprendizaje colaborativo puede mejorar las calificaciones hasta en 6 puntos porcentuales y reducir las tasas de deserción del 32% al 21%.
