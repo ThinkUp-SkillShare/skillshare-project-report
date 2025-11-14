@@ -4740,10 +4740,6 @@ Feature: Gestión de Grupos de Estudio
 
 <!-- COLOCAR DESPLIEGUE  -->
 
-#### Mobile Applications
-
-<!-- COLOCAR DESPLIEGUE  -->
-
 <br><br>
 
 ## 6.2. Landing Page & Mobile Application Implementation
@@ -5197,6 +5193,57 @@ A continuación, se describen las principales entregas logradas durante el sprin
 
 
 ### 6.2.2.7. Software Deployment Evidence for Sprint Review
+
+#### Landing Page
+
+1. Se creó la organización del proyecto con el nombre ThinkUp.
+
+<div align="center">
+
+![organización](assets/images/deployment/organizacion.jpg)
+
+</div>
+
+2. Se generó un repositorio en GitHub para alojar la landing page del proyecto.
+
+<div align="center">
+
+![repositorio](assets/images/deployment/repositorio.jpg)
+
+</div>
+
+3. Se nombró el repositorio siguiendo la convención: debe finalizar en .github.io para habilitar GitHub Pages.
+
+<div align="center">
+
+![convension](assets/images/deployment/convension.jpg)
+
+</div>
+
+4. En la sección **Settings > Pages**, se configuró la rama de despliegue (Deployment Branch), y se obtuvo el enlace público para acceder a la landing page.
+
+<div align="center">
+
+![configuracion](assets/images/deployment/configuracion.jpg)
+
+</div>
+
+5. Se registraron las evidencias de los commits realizados y subidos al repositorio.
+
+<div align="center">
+
+![commits](assets/images/deployment/commits.jpg)
+
+</div>
+
+**LINK:** https://thinkup-skillshare.github.io/skillshare.github.io/
+
+
+#### Web Services
+
+
+
+#### Mobile Application
 
 
 
