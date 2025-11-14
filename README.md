@@ -5145,7 +5145,6 @@ A continuación, se presenta una tabla con los commits representativos de esta i
 | https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend | main | c1c9095 | feat: add the first version of the backend for the Flutter application | --- | 14-11-25 |
 | https://github.com/ThinkUp-SkillShare/flutter-mobile-application | main | 80629f3 | feat: adding the first version of the student app to Flutter | --- | 14-11-25 |
 
-### 6.2.2.4. Testing Suite Evidence for Sprint Review
 ### 6.2.2.5. Execution Evidence for Sprint Review
 
 El Sprint culminó satisfactoriamente, logrando el desarrollo y entrega de las funcionalidades planificadas tanto a nivel de frontend, backend como experiencia de usuario. Se alcanzó el Sprint Goal, centrado en avanzar las capacidades esenciales de la plataforma SkillShare relacionadas con exploración de grupos, creación de perfiles, gestión académica, funcionalidades colaborativas y el conjunto de APIs base que soportan el ecosistema completo.
