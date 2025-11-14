@@ -5109,27 +5109,152 @@ El equipo móvil desarrolló las pantallas core para el segmento docente:
 | **Sprint 2 - 1 Review Summary** | Durante el Sprint Review 1, el equipo presentó los avances alcanzados, destacando la implementación completa de la landing page con diseño responsive, la integración del sistema de autenticación (IAM) y el avance significativo en la aplicación móvil del segmento docente, incluyendo pantallas de Login, Registro, Perfil, Grupos y Chat. Se demostró el funcionamiento de los endpoints de registro y login conectados a la base de datos, así como la estructura base para la gestión de usuarios y grupos. Los stakeholders validaron que los entregables cumplen con el objetivo del sprint y aportan valor directo al producto, resaltando la solidez del avance y la coherencia con la visión del proyecto. |
 | **Sprint 2 - 1 Retrospective Summary** | En la retrospectiva del Sprint 1, el equipo identificó como principales fortalezas la comunicación fluida, la colaboración constante entre frontend, backend y mobile, y el uso disciplinado de herramientas como GitHub y Trello, lo cual facilitó la integración de funcionalidades clave. Sin embargo, también se reconocieron oportunidades de mejora, como la subestimación del esfuerzo inicial para configurar el backend y la necesidad de estandarizar estilos de código y aumentar la frecuencia de commits para evitar conflictos. Como acciones concretas para el siguiente sprint, se acordó mejorar la precisión en las estimaciones, definir una guía de buenas prácticas y mantener una mayor cadencia en la integración del código. |
 | **Sprint Goal & User Stories** |
-| **Sprint 2 Goal** |  |
+| **Sprint 2 Goal** | En este sprint nos enfocamos en habilitar funcionalidades clave orientadas a que estudiantes, docentes y visitantes puedan interactuar de forma más completa con la plataforma. Nuestro objetivo fue implementar características que permitan personalizar perfiles, buscar y crear grupos de estudio, explorar la interfaz y acceder a una demostración del buscador, fortaleciendo así la experiencia inicial de los usuarios dentro del sistema. <br> Creemos que la incorporación de estas funcionalidades incrementa significativamente el valor percibido del producto. Los estudiantes ahora pueden configurar su perfil académico, explorar e inscribirse en grupos de estudio, crear sus propios espacios colaborativos y programar sesiones en el calendario. Los docentes, por su parte, pueden gestionar grupos pagados, mientras que los visitantes tienen acceso a una demostración interactiva del buscador que facilita su transición hacia el registro. <br> Esto se confirmará cuando los usuarios logren navegar la aplicación de forma intuitiva, personalizar su perfil, interactuar con los grupos de estudio, acceder a las funciones principales del sistema y utilizar las APIs de soporte implementadas durante este sprint, validando que la plataforma avanza hacia un ecosistema más funcional y cohesionado. |
 | **Sprint Velocity** |  |
 | **Sum of Story Points** |  |
 
 ### 6.2.2.2. Sprint Backlog 2
 
+Durante el Sprint 2, el objetivo principal fue completar las funcionalidades definidas en las US y TS priorizadas, garantizando que cada módulo avanzara de forma ordenada según el alcance planificado. El equipo se enfocó en cumplir con los entregables técnicos y funcionales establecidos, asegurando que cada tarea pasara por su flujo correspondiente: To-do, In-Process, To-Review y Done. Como resultado, se logró consolidar el progreso del sprint y obtener una visión clara del estado de cada historia y tarea, permitiendo mantener el control del avance y la calidad de las entregas.
+
 A continuación, se detalla la tabla de control de estado para el Sprint 2:
 
-
+| User Story ID | Task ID | Title | Description | Estimation (Hours) | Assigned To | Status |
+|--------------|---------|--------|-------------|---------------------|-------------|--------|
+| US-06 | **T-118** | Probar buscador | Como visitante quiero ver cómo funciona la búsqueda de compañeros y grupos para entender la facilidad de conexión en la plataforma. | 3 | Mobile Dev | **Done** |
+| US-13 | **T-119** | Personalizar perfil de estudiante universitario | Como estudiante universitario quiero crear y configurar mi perfil académico para que otros usuarios puedan conocer mis intereses y nivel académico. | 3 | Mobile Dev | **Done** |
+| US-14 | **T-120** | Buscar grupos de estudio | Como estudiante universitario quiero buscar grupos por materia y universidad para encontrar compañeros compatibles. | 2 | Mobile Dev | **Done** |
+| US-15 | **T-121** | Crear grupos de estudio | Como estudiante universitario quiero crear un grupo de estudio especificando materia, objetivos y horarios. | 5 | Mobile Dev | **Done** |
+| US-16 | **T-122** | Explorar interfaz intuitiva | Como estudiante secundaria quiero una interfaz con elementos lúdicos y coloridos para mantenerme motivada. | 3 | Mobile Dev | **Done** |
+| US-21 | **T-123** | Gestionar grupos pagados | Como docente quiero crear y gestionar grupos pagados con tarifas personalizadas. | 4 | Mobile Dev | **Done** |
+| US-28 | **T-124** | Programar calendario de sesiones | Como usuario quiero programar y gestionar sesiones de estudio dentro de cada grupo. | 2 | Mobile Dev | **Done** |
+| TS-01 | **T-125** | API de Autenticación | Implementar endpoints de autenticación (login, JWT) para gestionar sesiones de usuario. | 4 | Backend Dev | **Done** |
+| TS-02 | **T-126** | API de Gestión de Grupos | Endpoints CRUD para grupos de estudio, incluyendo filtros y paginación. | 4 | Backend Dev | **Done** |
+| TS-03 | **T-127** | API de Chat | Endpoint WebSocket para enviar y recibir mensajes en tiempo real. | 5 | Backend Dev | **Done** |
+| TS-04 | **T-128** | API de Gestión de Recursos | Endpoints para subir, listar y descargar archivos dentro de los grupos. | 5 | Backend Dev | **Done** |
+| TS-06 | **T-129** | API de Perfil y Verificación de Docente | Endpoints para registro, verificación y reseñas de docentes. | 5 | Backend Dev | **Done** |
 
 ### 6.2.2.3. Development Evidence for Sprint Review
+
+He aquí la sección "Development Evidence for Sprint Review" con una presentación de los avances y un ejemplo de commit, siguiendo la estructura solicitada.
+
+A continuación, se presenta una tabla con los commits representativos de esta implementación:
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend | main | c1c9095 | feat: add the first version of the backend for the Flutter application | --- | 14-11-25 |
+| https://github.com/ThinkUp-SkillShare/flutter-mobile-application | main | 80629f3 | feat: adding the first version of the student app to Flutter | --- | 14-11-25 |
+
 ### 6.2.2.4. Testing Suite Evidence for Sprint Review
 ### 6.2.2.5. Execution Evidence for Sprint Review
+
+El Sprint culminó satisfactoriamente, logrando el desarrollo y entrega de las funcionalidades planificadas tanto a nivel de frontend, backend como experiencia de usuario. Se alcanzó el Sprint Goal, centrado en avanzar las capacidades esenciales de la plataforma SkillShare relacionadas con exploración de grupos, creación de perfiles, gestión académica, funcionalidades colaborativas y el conjunto de APIs base que soportan el ecosistema completo.
+
+Durante este sprint, se implementaron las principales vistas, flujos y servicios críticos que permiten a los usuarios —visitantes, estudiantes, docentes y miembros de grupos— interactuar con la plataforma de manera fluida. Además, se construyeron las APIs fundamentales que sostienen las operaciones del sistema, incluyendo autenticación, gestión de grupos, chat, recursos y perfiles de docentes.
+
+A continuación, se describen las principales entregas logradas durante el sprint:
+
+* **Interacción del Visitante:** Se desarrolló la funcionalidad de demostración de búsqueda (US-06), permitiendo al visitante visualizar y probar cómo funciona la conexión con compañeros y grupos antes de registrarse.
+* **Gestión del Perfil del Estudiante:** Se implementó la creación y edición del perfil académico del estudiante universitario (US-13), facilitando la personalización del perfil dentro de la plataforma.
+* **Búsqueda y Creación de Grupos:**Se desarrollaron las funciones para buscar grupos mediante filtros (US-14), así como la creación de grupos de estudio con control administrativo y manejo de solicitudes (US-15).
+* **Interfaz para Estudiantes de Secundaria:** Se entregaron componentes visuales y elementos lúdicos destinados a mejorar la motivación y navegabilidad de estudiantes más jóvenes (US-16).
+* **Gestión de Grupos Pagados para Docentes:** Se implementó la capacidad para que los docentes creen y administren grupos con tarifas personalizadas (US-21), incluyendo configuración de precios e inscripción mediante pago.
+* **Calendario y Programación de Sesiones:** Se habilitó la funcionalidad para programar sesiones de estudio, proponer horarios y enviar recordatorios a los miembros del grupo (US-28).
+
+* **APIs Base del Sistema:**
+  * **Autenticación de Usuarios (TS-01):** Endpoints de login con validación y emisión de tokens JWT.
+  * **Gestión de Grupos (TS-02):** CRUD completo con creación, filtros y paginación.
+  * **Chat en Tiempo Real (TS-03):** Implementación de WebSocket para mensajería instantánea.
+  * **Gestión de Recursos (TS-04):** Subida, listado y descarga de archivos dentro de los grupos.
+  * **Verificación de Docentes (TS-06):** Registro, envío de documentación y acceso a reseñas y calificaciones.
+
+
+**Mobile Application - Interacción del Visitante:**
+
+![Visitante](assets/images/C7/visitante.png)
+
+**Mobile Application - Gestión del Perfil del Estudiante:**
+
+![Perfil Estudiante](assets/images/C7/perfil.png)
+
+**Mobile Application - Búsqueda y Creación de Grupos:**
+
+![Grupos](assets/images/C7/grupos.png)
+
+**Mobile Application - Interfaz para Estudiantes de Secundaria:**
+
+![Interfaz](assets/images/C7/interfaz.png)
+
+**Mobile Application - Gestión de Grupos Pagados para Docentes:**
+
+![Docentes](assets/images/C7/docente.png)
+
+**Mobile Application - Calendario y Programación de Sesiones:**
+
+![Calendario](assets/images/C7/sesiones.png)
+
 ### 6.2.2.6. Services Documentation Evidence for Sprint Review
 ### 6.2.2.7. Software Deployment Evidence for Sprint Review
 ### 6.2.2.8. Team Collaboration Insights during Sprint
 
+Durante el Sprint, el equipo trabajó de forma organizada y colaborativa para implementar los módulos centrales de SkillShare, abarcando el diseño, desarrollo y validación de funcionalidades tanto del frontend web, backend y la aplicación móvil. El uso de GitHub permitió mantener un flujo de trabajo ordenado, aplicando branches por feature, buenas prácticas de integración continua y revisiones de código mediante pull requests, garantizando calidad y consistencia entre los entregables. Las actividades se coordinaron en base a las User Stories y Technical Stories priorizadas, enfocándose en experiencia de usuario, seguridad, gestión de información académica y soporte a los flujos de docentes y estudiantes dentro de la plataforma.
 
-<-!----
-  SPRINT 3
--->
+### **Backend**
+
+- **API de Autenticación** con endpoints de Login, Registro y manejo seguro de sesiones.
+
+- **Gestión de Perfiles** para estudiantes y docentes, con operaciones de consulta y actualización.
+
+- **Módulo de Grupos de Estudio**, permitiendo crear, listar y gestionar grupos académicos.
+
+- **Servicios de Archivos y Recursos**, incluyendo carga, visualización y administración.
+
+- **Documentación OpenAPI (Swagger)** para facilitar la integración con frontend y mobile.
+
+### **Mobile Application**
+
+- **Gestión de Perfil del Docente**, permitiendo editar información personal.
+
+- **Dashboard de Grupos Académicos**, donde se muestran los grupos asignados.
+
+- **Vista de Detalle del Grupo**, con acceso a alumnos, archivos y actividades.
+
+- **Integración del Chat**, basada en las US asociadas al flujo de comunicación.
+
+
+<br>
+
+## **Analítica de Colaboración en GitHub:**
+
+### Backend
+
+**Comits**
+
+![Backend evidence](assets/images/C7/colaboradores.png)
+
+**Colaboradores**
+
+![Backend evidence](assets/images/C7/commits.png)
+
+### Kotlin Mobile Application
+
+**Comits**
+
+![Mobile Application evidence](assets/images/C7/ktlin_commit.png)
+
+**Colaboradores**
+
+![Mobile Application evidence](assets/images/C7/ktlin_colaboration.png)
+
+### Flutter Mobile Application
+
+**Comits**
+
+![Mobile Application evidence](assets/images/C7/commits-flutter.png)
+
+**Colaboradores**
+
+![Mobile Application evidence](assets/images/C7/colaboration.png)
 
 ## 6.2.3. Sprint 3
 ### 6.2.3.1. Sprint Planning 3
@@ -5285,16 +5410,16 @@ A continuación, se detalla la tabla de control de estado para el Sprint 2:
 
 | **Campo** | **Detalle** |
 | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Entrevista 2](assets/images/C2/validation-interviews/) | Enlace: [Video]()  |
-| **Entrevistado(a)**      |  |
-| **Edad**              |  |
-| **Rubro**             |  |
-| **Ubicación**         |  |
-| **Medio**             |  |
+| ![Entrevista 2](assets/images/C2/validation-interviews/argomedo.png) | Enlace: [Video]()  |
+| **Entrevistado(a)**      | Luis Diaz |
+| **Edad**              | 19 años |
+| **Rubro**             | Estudiante |
+| **Ubicación**         | San Isidro |
+| **Medio**             | Google Meet |
 | **Entrevistador**     | Argomedo Camacho, Jhosep Jamil |
-| **Instante inicio**   |  |
-| **Duración**          |  |
-| **Resumen**           |  |
+| **Instante inicio**   | 00:00:05 |
+| **Duración**          | 09 min 22 seg |
+| **Resumen**           | Durante la demostración se presenta una nueva aplicación llamada Skill Short, enfocada en el aprendizaje colaborativo mediante grupos de estudio. El usuario navega por la página de inicio, donde observa secciones como funciones, precios, testimonios e información de contacto. También recorre las opciones para unirse a grupos, visualizar documentos compartidos y realizar un seguimiento del progreso dentro de la comunidad de aprendizaje. Además, revisa la navegación general de la aplicación, evaluando la limpieza del diseño y la organización visual de cada apartado. En el recorrido se muestran las herramientas principales, como la posibilidad de acceder a grupos existentes, participar en conversaciones y consultar el historial de contribuciones. También se describen las funciones destinadas al aprendizaje colectivo, incluyendo el intercambio de recursos y la interacción entre miembros. Durante la experiencia, el usuario identifica áreas de mejora y señala que, aunque la interfaz es atractiva, sería conveniente optimizar la paleta de colores para mejorar la accesibilidad de personas con dificultades visuales. En general, el usuario considera que la aplicación ofrece información suficiente para comprender su funcionamiento y evaluar la utilidad de cada sección. Sin embargo, sugiere reforzar los aspectos de accesibilidad para garantizar una experiencia inclusiva y cómoda para todo tipo de usuarios. |
 
 ### Segmento 3: Estudiantes Autodidactas
 
