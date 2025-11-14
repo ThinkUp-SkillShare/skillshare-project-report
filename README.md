@@ -47,7 +47,9 @@
 
 | **Versión** | **Fecha**   | **Autor**  | **Descripción de modificación**    |
 |-------------|-------------|---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| TB1         | 1809/25     | Argomedo, Jhosep; <br> García, Andrés; <br> González, Carlos; <br> Julca, Renso; <br> Ramírez, Sebastian. | Adición de secciones: <br> **Capítulo I:** Presentación <br> **Capítulo II:** Requirements Development and Software Solution Design |
+| TB1         | 18/09/25     | Argomedo, Jhosep; <br> González, Carlos; <br> Julca, Renso; <br> Ramírez, Sebastian. | Adición de secciones: <br> **Capítulo I:** Presentación <br> **Capítulo II:** Requirements Development and Software Solution Design |
+| TP1         | 18/09/25     | Argomedo, Jhosep; <br> González, Carlos; <br> Julca, Renso; <br> Ramírez, Sebastian. | Adición de secciones: <br> **Capítulo III:** Requirements Specification <br> **Capítulo IV:** Solution Software Design |
+| TB2         | 14/11/25     | Argomedo, Jhosep; <br> González, Carlos; <br> Julca, Renso; <br> Ramírez, Sebastian. | Adición de secciones: <br> **Capítulo V:** Solution UI/UX Design <br> **Capítulo VI:** Product Implementation, Validation & Deployment |
 
 <br>
 <br>
@@ -184,7 +186,6 @@ A continuación, se muestran evidencias gráficas que ilustran la participación
   - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
 
 - [6.2. Landing Page & Mobile Application Implementation](#62-landing-page--mobile-application-implementation)
-
   - [6.2.1. Sprint 1](#621-sprint-1)
     - [6.2.1.1. Sprint Planning 1](#6211-sprint-planning-1)
     - [6.2.1.2. Sprint Backlog 1](#6212-sprint-backlog-1)
@@ -5099,7 +5100,45 @@ El equipo móvil desarrolló las pantallas core para el segmento docente:
 
 ## 6.2.2. Sprint 2
 ### 6.2.2.1. Sprint Planning 2
+
+| **Sprint #** | Sprint 2 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| **Date** | 2025-11-24 |
+| **Hour** | 10:30 p. m. |
+| **Location** | Virtual |
+| **Prepared By** | Jhosep Jamil Argomedo Camacho |
+| **Attendees (to planning meeting)** | Jhosep Jamil Argomedo Camacho, Carlos Alberto González Custodio, Renso Anthony Julca Cruz, Sebastian Ramirez Tello |
+| **Sprint 2 - 1 Review Summary** | Durante el Sprint Review 1, el equipo presentó los avances alcanzados, destacando la implementación completa de la landing page con diseño responsive, la integración del sistema de autenticación (IAM) y el avance significativo en la aplicación móvil del segmento docente, incluyendo pantallas de Login, Registro, Perfil, Grupos y Chat. Se demostró el funcionamiento de los endpoints de registro y login conectados a la base de datos, así como la estructura base para la gestión de usuarios y grupos. Los stakeholders validaron que los entregables cumplen con el objetivo del sprint y aportan valor directo al producto, resaltando la solidez del avance y la coherencia con la visión del proyecto. |
+| **Sprint 2 - 1 Retrospective Summary** | En la retrospectiva del Sprint 1, el equipo identificó como principales fortalezas la comunicación fluida, la colaboración constante entre frontend, backend y mobile, y el uso disciplinado de herramientas como GitHub y Trello, lo cual facilitó la integración de funcionalidades clave. Sin embargo, también se reconocieron oportunidades de mejora, como la subestimación del esfuerzo inicial para configurar el backend y la necesidad de estandarizar estilos de código y aumentar la frecuencia de commits para evitar conflictos. Como acciones concretas para el siguiente sprint, se acordó mejorar la precisión en las estimaciones, definir una guía de buenas prácticas y mantener una mayor cadencia en la integración del código. |
+| **Sprint Goal & User Stories** |
+| **Sprint 2 Goal** |  |
+| **Sprint Velocity** |  |
+| **Sum of Story Points** |  |
+
 ### 6.2.2.2. Sprint Backlog 2
+
+A continuación, se detalla la tabla de control de estado para el Sprint 2:
+
+| User Story ID | Id | Title | Description | Estimation (Hours) | Assigned To | Status (To-do / In-Process / To-Review / Done) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **US-01** | **T-101** | **Desarrollar Formulario de Registro Frontend** | Implementar la interfaz de usuario del formulario de registro en la Landing Page con validaciones en tiempo real. | 5 | Frontend Dev | **Done** |
+| | **T-102** | **Implementar Endpoint de Registro Backend** | Crear el endpoint POST `/api/auth/register` para recibir y validar datos del usuario, y crear la cuenta en la base de datos. | 6 | Backend Dev | **Done** |
+| **US-02** | **T-104** | **Maquetar Sección "Cómo Funciona"** | Crear la estructura HTML y CSS para la sección con 3 pasos ilustrados, asegurando que sea responsive. | 4 | UX/UI Designer | **Done** |
+| **US-04** | **T-105** | **Implementar Sección de Funcionalidades** | Desarrollar la sección que muestra íconos y descripciones de las funcionalidades principales (chat, videollamadas, etc.). | 5 | Frontend Dev | **Done** |
+| **US-07** | **T-106** | **Desarrollar Formulario de Contacto** | Implementar el formulario de contacto frontend con validación y el endpoint backend para el envío de emails. | 4 | Full-Stack Dev | **Done** |
+| **US-12** | **T-107** | **Construir Sección de Planes y Precios** | Maquetar y desarrollar la sección de precios con los planes Freemium, Premium e Institucional. | 6 | Frontend Dev | **Done** |
+| **US-11** | **T-108** | **Implementar Footer Completo** | Desarrollar el footer con todos los enlaces organizados (Términos, Privacidad, Contacto, Redes Sociales). | 3 | Frontend Dev | **Done** |
+| **EP-01 (Backend)** | **T-109** | **Modelar e Implementar Entidad 'User'** | Diseñar el esquema de base de datos y crear el modelo para la entidad 'User' (docente/estudiante). | 4 | Backend Dev | **Done** |
+| | **T-110** | **Implementar Endpoint de Login** | Crear el endpoint POST `/api/auth/login` para autenticar usuarios y generar un token JWT. | 5 | Backend Dev | **Done** |
+| | **T-111** | **Modelar e Implementar Entidad 'Group'** | Diseñar el esquema y crear el modelo para la entidad 'Group', incluyendo sus relaciones. | 5 | Backend Dev | **Done** |
+| **US-21** | **T-112** | **Desarrollar Pantalla de Login (Móvil Docente)** | Implementar la pantalla de inicio de sesión para la app móvil del segmento docente. | 4 | Mobile Dev | **Done** |
+| | **T-113** | **Desarrollar Pantalla de Registro (Móvil Docente)** | Implementar la pantalla de registro para la app móvil del segmento docente. | 5 | Mobile Dev | **Done** |
+| **US-13** | **T-114** | **Desarrollar Pantalla de Perfil (Móvil Docente)** | Crear la pantalla donde el docente puede ver y editar la información de su perfil. | 6 | Mobile Dev | **Done** |
+| **US-14** | **T-115** | **Desarrollar Pantalla de Lista de Grupos (Móvil Docente)** | Implementar la pantalla principal que lista los grupos a los que pertenece el docente. | 5 | Mobile Dev | **Done** |
+| **US-15** | **T-116** | **Desarrollar Pantalla de Detalles de Grupo (Móvil Docente)** | Crear la pantalla que muestra la información detallada de un grupo específico y sus miembros. | 7 | Mobile Dev | **Done** |
+| **US-24** | **T-117** | **Desarrollar Pantalla de Chat (Móvil Docente)** | Implementar la interfaz del chat integrado para que los docentes se comuniquen con sus grupos. | 8 | Mobile Dev | **Done** |
+
 ### 6.2.2.3. Development Evidence for Sprint Review
 ### 6.2.2.4. Testing Suite Evidence for Sprint Review
 ### 6.2.2.5. Execution Evidence for Sprint Review
@@ -5128,7 +5167,155 @@ El equipo móvil desarrolló las pantallas core para el segmento docente:
 
 # 6.3. Validation Interviews
 ## 6.3.1. Diseño de Entrevistas
+
+### Segmento 1: Estudiantes de Secundaria/Preparatoria
+**Objetivo:** Validar que la propuesta de valor es clara y atractiva, y que la navegación es intuitiva y segura para un público joven.
+
+#### Tareas y Preguntas de Evaluación:
+
+1. **Landing Page**
+   - **Tarea:** “Mira esta página web de SkillShare.”
+   - **Preguntas clave:**  
+     - “Sin scrollear mucho, ¿puedes decirme qué crees que podrías hacer en esta app?”  
+     - “¿Qué te llama más la atención?”  
+     - “¿La descargarías? ¿Por qué sí o por qué no?”
+
+2. **Onboarding y Descubrimiento (Home/Explorer)**
+   - **Tarea:** “Regístrate/entra en la app y explora la pantalla de inicio y la sección de ‘Explorar’.”
+   - **Preguntas clave:**  
+     - “¿El diseño te parece aburrido o interesante?”  
+     - “¿Encuentras fácilmente grupos de tus materias (Matemáticas, Historia)?”  
+     - “¿Ves alguna diferencia entre un grupo ‘destacado’ y uno normal?”
+
+3. **Unión y Gestión de Grupos**
+   - **Tarea:** “Ve a la sección de ‘Mis Grupos’.”
+   - **Preguntas clave:**  
+     - “Antes de ingresar, ¿la información del grupo te dio confianza?”  
+     - “Al verlo en ‘Mis Grupos’, ¿queda claro que ya eres miembro?”  
+     - “¿Qué esperarías encontrar dentro del grupo ahora?”
+
+
+### Segmento 2: Estudiantes Universitarios
+**Objetivo:** Validar la eficiencia para encontrar grupos especializados y la utilidad para gestionar el aprendizaje autónomo.
+
+#### Tareas y Preguntas de Evaluación:
+
+1. **Landing Page**
+   - **Tarea:** “Evalúa la página de inicio de SkillShare.”
+   - **Preguntas clave:**  
+     - “¿Logra comunicar que es una herramienta útil a nivel universitario?”  
+     - “¿En qué se diferencia esto de un foro tradicional o un grupo de WhatsApp?”
+
+2. **Búsqueda Eficiente (Explorer)**
+   - **Tarea:** “Usa la app para buscar un grupo específico para una asignatura de tu carrera.”
+   - **Preguntas clave:**  
+     - “¿Los resultados son relevantes?”  
+     - “¿Los filtros o categorías son útiles para afinar tu búsqueda?”  
+     - “¿La información de cada grupo (miembros, descripción) es suficiente para evaluar su calidad?”
+
+3. **Perfil y Organización**
+   - **Tarea:** “Ingresa a ‘Tu perfil’.”
+   - **Preguntas clave:**  
+     - “¿Tu perfil refleja bien tu actividad de aprendizaje?”  
+     - “Desde ‘Mis Grupos’, ¿es rápido acceder a los grupos a los que te uniste?”  
+     - “¿Echas en falta alguna forma de organizar o priorizar tus grupos?”
+
+### Segmento 3: Autodidactas
+**Objetivo:** Validar la capacidad de la app para conectar intereses diversos y fomentar el descubrimiento de habilidades fuera del ámbito académico formal.
+
+#### Tareas y Preguntas de Evaluación:
+
+1. **Landing Page**
+   - **Tarea:** “Como alguien que aprende por su cuenta, ¿esta página te motiva a probar SkillShare?”
+   - **Preguntas clave:**  
+     - “¿Ves reflejados tus intereses en cuanto a grupos de estudio?”  
+     - “¿Sientes que es un lugar para gente como tú?”
+
+2. **Descubrimiento e Intereses (Home/Explorer)**
+   - **Tarea:** “Explora la app sin buscar algo en específico. Simplemente descubre qué hay.”
+   - **Preguntas clave:**  
+     - “¿Las ‘categorías populares’ se alinean con tus intereses?”  
+     - “¿Encuentras grupos sobre temas que no esperabas?”  
+     - “¿El sistema te ayuda a descubrir nuevas habilidades?”
+
+3. **Identidad y Pertenencia (Perfil/Mis Grupos)**
+   - **Duración estimada:** 6 min
+   - **Tarea:** “Ingresar a un par de grupos a los que pertenezcas.”
+   - **Preguntas clave:**  
+     - “¿Te gusta cómo tu perfil muestra tus intereses de aprendizaje?”  
+     - “Al ver ‘Mis Grupos’, ¿sientes que formas parte de una comunidad?”
+
+
 ## 6.3.2. Registro de Entrevistas
+
+### Segmento 1: Estudiantes de Educación Superior
+
+#### Entrevista
+
+| **Campo** | **Detalle** |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Entrevista 1](assets/images/C2/validation-interviews/allison_validation.png) | Enlace: [Video](https://www.youtube.com/watch?v=mYfaAI4ii-8)  |
+| **Entrevistado(a)**      | Rivera Quispe, Allison Milagros |
+| **Edad**              | 21 años  |
+| **Rubro**             | Estudiante de Administración de Empresas |
+| **Ubicación**         | Lima, San Martín de Porres |
+| **Medio**             | Discord  |
+| **Entrevistador**     | Julca Cruz, Renso Anthony  |
+| **Instante inicio**   | 00:00:05   |
+| **Duración**          | 03 min 44 seg |
+| **Resumen**           | Durante la entrevista se muestra la demostración de una aplicación de grupos de estudio. La entrevistada visualiza los grupos a los que pertenece, los cursos populares y la opción de crear nuevos grupos asignando nombre, curso, descripción e imagen. También se exploran grupos mediante buscador y filtros, revisando los populares, en tendencia y recién creados. Se explica la sección de archivos, donde se pueden ver y subir documentos compartidos. En el perfil se observa la actividad del usuario, grupos unidos, documentos compartidos y amigos. Al revisar un grupo específico, se muestra información de miembros, chat, archivos, quizzes, llamadas, compartir grupo y notificaciones. La entrevistada considera suficiente la información disponible para evaluar los grupos, aunque sugiere incluir calificaciones de calidad y la opción de ordenar o priorizar grupos según favoritos o nivel de interacción. |
+
+### Segmento 2: Estudiantes de Secundaria
+
+#### Entrevista
+
+| **Campo** | **Detalle** |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Entrevista 2](assets/images/C2/validation-interviews/) | Enlace: [Video]()  |
+| **Entrevistado(a)**      |  |
+| **Edad**              |  |
+| **Rubro**             |  |
+| **Ubicación**         |  |
+| **Medio**             |  |
+| **Entrevistador**     | Argomedo Camacho, Jhosep Jamil |
+| **Instante inicio**   |  |
+| **Duración**          |  |
+| **Resumen**           |  |
+
+### Segmento 3: Estudiantes Autodidactas
+
+#### Entrevista
+
+| **Campo** | **Detalle** |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Entrevista 3](assets/images/C2/validation-interviews/) | Enlace: [Video]()  |
+| **Entrevistado(a)**      |  |
+| **Edad**              |  |
+| **Rubro**             |  |
+| **Ubicación**         |  |
+| **Medio**             |  |
+| **Entrevistador**     | Ramírez Tello, Sebastián |
+| **Instante inicio**   |  |
+| **Duración**          |  |
+| **Resumen**           |  |
+
+### Segmento 4: Docentes
+
+#### Entrevista 1
+
+| **Campo** | **Detalle** |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Entrevista 4](assets/images/C2/validation-interviews/) | Enlace: [Video]()  |
+| **Entrevistado(a)**      |  |
+| **Edad**              |  |
+| **Rubro**             |  |
+| **Ubicación**         |  |
+| **Medio**             |  |
+| **Entrevistador**     | González Custodio, Carlos Alberto |
+| **Instante inicio**   |  |
+| **Duración**          |  |
+| **Resumen**           |  |
+
 ## 6.3.3. Evaluaciones según heurísticas
 
 
@@ -5153,6 +5340,8 @@ El modelo freemium propuesto se alinea con las expectativas y capacidad de pago 
 - **Proceso de Desarrollo Fundamentado**
 La aplicación de metodologías como Lean UX, EventStorming y entrevistas estructuradas proporcionó una base empírica sólida para las decisiones de diseño. Las 29 User Stories identificadas cubren comprehensivamente las necesidades de los usuarios, priorizadas según impacto en el negocio y esfuerzo de desarrollo.
 
+- **Alineamiento Estratégico del Producto con las Épicas Identificadas**
+El conjunto de 7 épicas definidas garantiza una cobertura integral del ecosistema de SkillShare. Cada epic aborda un aspecto esencial del ciclo de aprendizaje colaborativo —desde la adquisición de usuarios (Landing Page) hasta la evaluación del progreso (Evaluaciones y Analítica Docente)— asegurando coherencia entre la visión del producto, las funcionalidades implementadas y la experiencia del usuario final.
 ## Recomendaciones
 
 - **Estrategia de Lanzamiento Gradual**
@@ -5180,6 +5369,16 @@ La aplicación de metodologías como Lean UX, EventStorming y entrevistas estruc
     - Tiempo promedio de permanencia en grupos de estudio
     - Tasa de conversión freemium a premium
 
+- **Enfoque en la Experiencia del Usuario y Retención Temprana**
+  - Recomendación: Implementar mejoras continuas en la interfaz y experiencia de usuario basadas en retroalimentación real obtenida durante las pruebas del MVP.
+
+  - Una interfaz intuitiva y fluida es determinante para que los usuarios perciban valor desde el primer uso. Las pruebas iniciales de usabilidad pueden revelar puntos de fricción que afecten la retención y el engagement en las primeras semanas de lanzamiento.
+  
+  - Implementación:
+    - Realizar pruebas de usabilidad con al menos 10 estudiantes por iteración.
+    - Incorporar herramientas de analítica (como Firebase Analytics) para medir flujos y abandonos.
+    - Refinar la navegación, tiempos de carga y accesibilidad visual del MVP.
+    - Diseñar mejoras basadas en métricas de retención (por ejemplo, mantener un 60% de usuarios activos durante la primera semana).
 
 <br>
 <br>
