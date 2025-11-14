@@ -5094,9 +5094,6 @@ El equipo móvil desarrolló las pantallas core para el segmento docente:
 
 ![Mobile Application evidence](assets/images/C6/mobile_application-contributors.png)
 
-<-!----
-  SPRINT 2
--->
 
 ## 6.2.2. Sprint 2
 ### 6.2.2.1. Sprint Planning 2
@@ -5120,24 +5117,7 @@ El equipo móvil desarrolló las pantallas core para el segmento docente:
 
 A continuación, se detalla la tabla de control de estado para el Sprint 2:
 
-| User Story ID | Id | Title | Description | Estimation (Hours) | Assigned To | Status (To-do / In-Process / To-Review / Done) |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **US-01** | **T-101** | **Desarrollar Formulario de Registro Frontend** | Implementar la interfaz de usuario del formulario de registro en la Landing Page con validaciones en tiempo real. | 5 | Frontend Dev | **Done** |
-| | **T-102** | **Implementar Endpoint de Registro Backend** | Crear el endpoint POST `/api/auth/register` para recibir y validar datos del usuario, y crear la cuenta en la base de datos. | 6 | Backend Dev | **Done** |
-| **US-02** | **T-104** | **Maquetar Sección "Cómo Funciona"** | Crear la estructura HTML y CSS para la sección con 3 pasos ilustrados, asegurando que sea responsive. | 4 | UX/UI Designer | **Done** |
-| **US-04** | **T-105** | **Implementar Sección de Funcionalidades** | Desarrollar la sección que muestra íconos y descripciones de las funcionalidades principales (chat, videollamadas, etc.). | 5 | Frontend Dev | **Done** |
-| **US-07** | **T-106** | **Desarrollar Formulario de Contacto** | Implementar el formulario de contacto frontend con validación y el endpoint backend para el envío de emails. | 4 | Full-Stack Dev | **Done** |
-| **US-12** | **T-107** | **Construir Sección de Planes y Precios** | Maquetar y desarrollar la sección de precios con los planes Freemium, Premium e Institucional. | 6 | Frontend Dev | **Done** |
-| **US-11** | **T-108** | **Implementar Footer Completo** | Desarrollar el footer con todos los enlaces organizados (Términos, Privacidad, Contacto, Redes Sociales). | 3 | Frontend Dev | **Done** |
-| **EP-01 (Backend)** | **T-109** | **Modelar e Implementar Entidad 'User'** | Diseñar el esquema de base de datos y crear el modelo para la entidad 'User' (docente/estudiante). | 4 | Backend Dev | **Done** |
-| | **T-110** | **Implementar Endpoint de Login** | Crear el endpoint POST `/api/auth/login` para autenticar usuarios y generar un token JWT. | 5 | Backend Dev | **Done** |
-| | **T-111** | **Modelar e Implementar Entidad 'Group'** | Diseñar el esquema y crear el modelo para la entidad 'Group', incluyendo sus relaciones. | 5 | Backend Dev | **Done** |
-| **US-21** | **T-112** | **Desarrollar Pantalla de Login (Móvil Docente)** | Implementar la pantalla de inicio de sesión para la app móvil del segmento docente. | 4 | Mobile Dev | **Done** |
-| | **T-113** | **Desarrollar Pantalla de Registro (Móvil Docente)** | Implementar la pantalla de registro para la app móvil del segmento docente. | 5 | Mobile Dev | **Done** |
-| **US-13** | **T-114** | **Desarrollar Pantalla de Perfil (Móvil Docente)** | Crear la pantalla donde el docente puede ver y editar la información de su perfil. | 6 | Mobile Dev | **Done** |
-| **US-14** | **T-115** | **Desarrollar Pantalla de Lista de Grupos (Móvil Docente)** | Implementar la pantalla principal que lista los grupos a los que pertenece el docente. | 5 | Mobile Dev | **Done** |
-| **US-15** | **T-116** | **Desarrollar Pantalla de Detalles de Grupo (Móvil Docente)** | Crear la pantalla que muestra la información detallada de un grupo específico y sus miembros. | 7 | Mobile Dev | **Done** |
-| **US-24** | **T-117** | **Desarrollar Pantalla de Chat (Móvil Docente)** | Implementar la interfaz del chat integrado para que los docentes se comuniquen con sus grupos. | 8 | Mobile Dev | **Done** |
+
 
 ### 6.2.2.3. Development Evidence for Sprint Review
 ### 6.2.2.4. Testing Suite Evidence for Sprint Review
@@ -5245,6 +5225,40 @@ A continuación, se detalla la tabla de control de estado para el Sprint 2:
      - “¿Te gusta cómo tu perfil muestra tus intereses de aprendizaje?”  
      - “Al ver ‘Mis Grupos’, ¿sientes que formas parte de una comunidad?”
 
+### Segmento 4: Docentes
+**Objetivo:** Validar la percepción de los docentes sobre la utilidad de SkillShare para sus estudiantes y la claridad de la interfaz para la gestión académica.
+
+#### Tareas y Preguntas de Evaluación:
+
+1. **Impresión general**
+   - **Tarea:** “Después de ver esta demostración de SkillShare, comparta su primera impresión sobre la aplicación y el concepto de una red social enfocada en el estudio.”
+   - **Preguntas clave:**  
+     - “¿Cuál es su impresión general sobre SkillShare?”  
+     - “¿Cree que el concepto de red social enfocada en el estudio es atractivo y útil?”
+
+2. **Navegación**
+   - **Tarea:** “Explore la aplicación, prestando atención a la barra inferior (Inicio, Grupos, Archivos, Calendario, Perfil).”
+   - **Preguntas clave:**  
+     - “¿Qué tan fácil o difícil le resultó navegar por la app?”  
+     - “¿Los íconos y su orden le parecen claros y lógicos?”
+
+3. **Diseño de los grupos**
+   - **Tarea:** “Revise las tarjetas de cada grupo en la sección ‘Grupos’.”
+   - **Preguntas clave:**  
+     - “¿Qué le parece el diseño de las tarjetas?”  
+     - “¿La información mostrada es suficiente, o considera que falta o sobra algo?”
+
+4. **Funcionalidad de calendario**
+   - **Tarea:** “Observe la función de agregar eventos manualmente al calendario.”
+   - **Preguntas clave:**  
+     - “¿Cree que esta función manual es útil?”  
+     - “¿Considera que los estudiantes solo la usarían si se sincronizara automáticamente con sus calendarios universitarios?”
+
+5. **Diseño visual**
+   - **Tarea:** “Analice el diseño general de la aplicación (colores, tipografía, espacios).”
+   - **Preguntas clave:**  
+     - “¿El diseño le transmite un ambiente profesional y enfocado en el estudio?”  
+     - “¿Le parece demasiado simple o, por el contrario, sobrecargado?”
 
 ## 6.3.2. Registro de Entrevistas
 
@@ -5305,16 +5319,16 @@ A continuación, se detalla la tabla de control de estado para el Sprint 2:
 
 | **Campo** | **Detalle** |
 | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Entrevista 4](assets/images/C2/validation-interviews/) | Enlace: [Video]()  |
-| **Entrevistado(a)**      |  |
-| **Edad**              |  |
-| **Rubro**             |  |
-| **Ubicación**         |  |
-| **Medio**             |  |
+| ![Entrevista 4](assets/images/C2/validation-interviews/carlos_validaton.png) | Enlace: [Video](https://www.youtube.com/watch?v=y-plup-XcXE&feature=youtu.be)  |
+| **Entrevistado(a)**      | Merly Salon |
+| **Edad**              | 25 años |
+| **Rubro**             | Docente de Secundaria |
+| **Ubicación**         | San Martin de Porres |
+| **Medio**             | Google Meet |
 | **Entrevistador**     | González Custodio, Carlos Alberto |
-| **Instante inicio**   |  |
-| **Duración**          |  |
-| **Resumen**           |  |
+| **Instante inicio**   | 00:00:05 |
+| **Duración**          | 09 min 29 seg |
+| **Resumen**           | Durante la entrevista se muestra la demostración de una aplicación académica orientada a la organización entre docentes y estudiantes. La entrevistada observa la pantalla de inicio, donde aparecen asignaturas populares, grupos sugeridos y la opción de crear nuevos grupos ingresando nombre, asignatura y una breve descripción. También se presentan secciones para explorar grupos disponibles, programar eventos y visualizar un calendario con actividades académicas. Se explica además la sección de archivos, donde el docente puede revisar materiales organizados por cursos, identificar el tipo de archivo y subir nuevos documentos o notas. En el perfil se muestran estadísticas del usuario, los grupos a los que pertenece, reseñas recibidas y configuraciones como idioma, tema visual y notificaciones. Al ingresar a un grupo específico, se visualiza información sobre sus miembros, el chat, los archivos disponibles, los quizzes programados y las opciones para compartir el grupo o ajustar notificaciones. La entrevistada considera que la idea de una red social enfocada en estudios es adecuada y necesaria, valorando la navegación intuitiva y la organización de las secciones. Sugiere incluir indicadores de mensajes no leídos en las tarjetas de grupos y resalta que la función de eventos sería más útil si se sincronizara automáticamente con el calendario universitario. Finalmente, destaca que el diseño es moderno y profesional, aunque menciona que las insignias del perfil pueden percibirse como un elemento más social o lúdico. |
 
 ## 6.3.3. Evaluaciones según heurísticas
 
