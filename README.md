@@ -80,10 +80,10 @@ Una vez completadas todas las secciones, el informe se revisó en conjunto antes
 A continuación, se muestran evidencias gráficas que ilustran la participación de cada miembro:
 
 ### Captura de Commits:
-![Commits grupales](assets/images/team/contributors.jpg)
+![Commits grupales](assets/images/team/contributors.png)
 <br>
 <br>
-![Commits grupales](assets/images/team/commits.jpg)
+![Commits grupales](assets/images/team/commits.png)
 
 <br>
 <br>
@@ -5190,6 +5190,59 @@ A continuación, se describen las principales entregas logradas durante el sprin
 
 ### 6.2.2.6. Services Documentation Evidence for Sprint Review
 
+#### Endpoints de Autenticación (Auth)
+
+| Endpoint                                   | Acción            | Verbo HTTP | Sintaxis                  | Parámetros | Request Body                                                            | Response                            | Explicación                         |
+| ------------------------------------------ | ----------------- | ---------- | ------------------------- | ---------- | ----------------------------------------------------------------------- | ----------------------------------- | ----------------------------------- |
+| `/api/Auth/login`                          | Iniciar sesión    | POST       | `POST /api/Auth/login`    | Ninguno    | `{ "email": "string", "password": "string" }`                           | `{ success, message, token, user }` | Autenticación del usuario vía JWT   |
+| `/api/Auth/register` *(si lo implementas)* | Registrar usuario | POST       | `POST /api/Auth/register` | Ninguno    | `{ "email": "string", "password": "string", "profileImage": "string" }` | `200 OK`                            | Crea un usuario en la tabla `users` |
+
+#### Endpoints de Perfiles (Students)
+
+| Endpoint            | Acción                        | Verbo HTTP | Sintaxis                   | Parámetros | Request Body                                           | Response                                 | Explicación                          |
+| ------------------- | ----------------------------- | ---------- | -------------------------- | ---------- | ------------------------------------------------------ | ---------------------------------------- | ------------------------------------ |
+| `/api/Student`      | Obtener todos los estudiantes | GET        | `GET /api/Student`         | Ninguno    | -                                                      | `[{ "id": 0, "firstName": "...", ... }]` | Lista perfiles de estudiantes        |
+| `/api/Student/{id}` | Obtener perfil de estudiante  | GET        | `GET /api/Student/{id}`    | `id` (int) | -                                                      | `{ "id": 0, "firstName": "...", ... }`   | Obtiene un perfil específico         |
+| `/api/Student`      | Crear perfil estudiante       | POST       | `POST /api/Student`        | Ninguno    | `{ "firstName": "string", "lastName": "string", ... }` | `{ "id": 0, ... }`                       | Crea un perfil en la tabla `student` |
+| `/api/Student/{id}` | Actualizar perfil             | PUT        | `PUT /api/Student/{id}`    | `id` (int) | `{ "firstName": "...", "country": "...", ... }`        | `200 OK`                                 | Actualiza datos de estudiante        |
+| `/api/Student/{id}` | Eliminar perfil               | DELETE     | `DELETE /api/Student/{id}` | `id` (int) | -                                                      | `200 OK`                                 | Elimina un estudiante                |
+
+
+#### Endpoints de Materias (Subjects)
+
+| Endpoint            | Acción             | Verbo HTTP | Sintaxis                   | Parámetros | Request Body           | Response                          | Explicación         |
+| ------------------- | ------------------ | ---------- | -------------------------- | ---------- | ---------------------- | --------------------------------- | ------------------- |
+| `/api/Subject`      | Listar materias    | GET        | `GET /api/Subject`         | Ninguno    | -                      | `[{ "id": 0, "name": "string" }]` | Lista materias      |
+| `/api/Subject/{id}` | Obtener materia    | GET        | `GET /api/Subject/{id}`    | `id` (int) | -                      | `{ "id": 0, "name": "string" }`   | Obtiene una materia |
+| `/api/Subject`      | Crear materia      | POST       | `POST /api/Subject`        | Ninguno    | `{ "name": "string" }` | `{ "id": 0, "name": "string" }`   | Crea una materia    |
+| `/api/Subject/{id}` | Actualizar materia | PUT        | `PUT /api/Subject/{id}`    | `id` (int) | `{ "name": "string" }` | `200 OK`                          | Edita una materia   |
+| `/api/Subject/{id}` | Eliminar materia   | DELETE     | `DELETE /api/Subject/{id}` | `id` (int) | -                      | `200 OK`                          | Elimina una materia |
+
+
+#### Endpoints de Grupos de Estudio (Study Groups)
+
+| Endpoint                            | Acción           | Verbo HTTP | Sintaxis                                | Parámetros | Request Body                                              | Response                               | Explicación                |
+| ----------------------------------- | ---------------- | ---------- | --------------------------------------- | ---------- | --------------------------------------------------------- | -------------------------------------- | -------------------------- |
+| `/api/StudyGroup`                   | Obtener grupos   | GET        | `GET /api/StudyGroup`                   | Ninguno    | -                                                         | `[{ "id": 0, "name": "string", ... }]` | Lista grupos               |
+| `/api/StudyGroup/{id}`              | Detalle de grupo | GET        | `GET /api/StudyGroup/{id}`              | `id` (int) | -                                                         | `{ "id": 0, "name": "string", ... }`   | Obtiene un grupo           |
+| `/api/StudyGroup`                   | Crear grupo      | POST       | `POST /api/StudyGroup`                  | Ninguno    | `{ "name": "...", "description": "...", "subjectId": 1 }` | `{ "id": 0, ... }`                     | Crea un grupo              |
+| `/api/StudyGroup/{id}`              | Actualizar grupo | PUT        | `PUT /api/StudyGroup/{id}`              | `id` (int) | `{ "name": "...", "coverImage": "..."} `                  | `200 OK`                               | Actualiza un grupo         |
+| `/api/StudyGroup/{id}`              | Eliminar grupo   | DELETE     | `DELETE /api/StudyGroup/{id}`           | `id` (int) | -                                                         | `200 OK`                               | Elimina un grupo           |
+| `/api/StudyGroup/join`              | Unirse a grupo   | POST       | `POST /api/StudyGroup/join`             | Ninguno    | `{ "groupId": int }`                                      | `200 OK`                               | Añade usuario como miembro |
+| `/api/StudyGroup/{groupId}/members` | Listar miembros  | GET        | `GET /api/StudyGroup/{groupId}/members` | `groupId`  | -                                                         | `[{ "userId": 0, "role": "member" }]`  | Lista miembros             |
+
+
+#### Endpoints de Mensajes en Grupos (Group Messages)
+
+| Endpoint                           | Acción            | Verbo HTTP | Sintaxis                                  | Parámetros | Request Body                                           | Response                               | Explicación                  |
+| ---------------------------------- | ----------------- | ---------- | ----------------------------------------- | ---------- | ------------------------------------------------------ | -------------------------------------- | ---------------------------- |
+| `/api/GroupMessage/{groupId}`      | Listar mensajes   | GET        | `GET /api/GroupMessage/{groupId}`         | `groupId`  | -                                                      | `[{ "id": 0, "content": "...", ... }]` | Mensajes del grupo           |
+| `/api/GroupMessage`                | Enviar mensaje    | POST       | `POST /api/GroupMessage`                  | Ninguno    | `{ "groupId": 1, "content": "...", "fileUrl": "..." }` | `{ "id": 0, ... }`                     | Enviar mensaje               |
+| `/api/GroupMessage/{id}`           | Editar mensaje    | PUT        | `PUT /api/GroupMessage/{id}`              | `id`       | `{ "content": "nuevo texto" }`                         | `200 OK`                               | Actualiza un mensaje         |
+| `/api/GroupMessage/{id}`           | Eliminar mensaje  | DELETE     | `DELETE /api/GroupMessage/{id}`           | `id`       | -                                                      | `200 OK`                               | Marca mensaje como eliminado |
+| `/api/GroupMessage/{id}/reactions` | Agregar reacción  | POST       | `POST /api/GroupMessage/{id}/reactions`   | `id`       | `{ "reaction": "👍" }`                                 | `200 OK`                               | Añade reacción               |
+| `/api/GroupMessage/{id}/reactions` | Eliminar reacción | DELETE     | `DELETE /api/GroupMessage/{id}/reactions` | `id`       | -                                                      | `200 OK`                               | Quita reacción               |
+| `/api/GroupMessage/{id}/read`      | Marcar como leído | POST       | `POST /api/GroupMessage/{id}/read`        | `id`       | -                                                      | `200 OK`                               | Marca lectura de mensaje     |
 
 
 ### 6.2.2.7. Software Deployment Evidence for Sprint Review
@@ -5595,3 +5648,4 @@ El conjunto de 7 épicas definidas garantiza una cobertura integral del ecosiste
 
 **Enlace Organización en GitHub:** https://github.com/ThinkUp-SkillShare
 **Enlace a nuestra Landing Page** https://thinkup-skillshare.github.io/skillshare.github.io/
+**Enlace a nuestra Mobile Application** https://flutter-mobile-application-backend.onrender.com/swagger
