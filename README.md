@@ -5097,7 +5097,7 @@ El equipo móvil desarrolló las pantallas core para el segmento docente:
 | **Sprint #** | Sprint 2 |
 | :--- | :--- |
 | **Sprint Planning Background** | |
-| **Date** | 2025-11-24 |
+| **Date** | 2025-11-08 |
 | **Hour** | 10:30 p. m. |
 | **Location** | Virtual |
 | **Prepared By** | Jhosep Jamil Argomedo Camacho |
@@ -5151,7 +5151,7 @@ A continuación, se describen las principales entregas logradas durante el sprin
 
 * **Interacción del Visitante:** Se desarrolló la funcionalidad de demostración de búsqueda (US-06), permitiendo al visitante visualizar y probar cómo funciona la conexión con compañeros y grupos antes de registrarse.
 * **Gestión del Perfil del Estudiante:** Se implementó la creación y edición del perfil académico del estudiante universitario (US-13), facilitando la personalización del perfil dentro de la plataforma.
-* **Búsqueda y Creación de Grupos:**Se desarrollaron las funciones para buscar grupos mediante filtros (US-14), así como la creación de grupos de estudio con control administrativo y manejo de solicitudes (US-15).
+* **Búsqueda y Creación de Grupos:** Se desarrollaron las funciones para buscar grupos mediante filtros (US-14), así como la creación de grupos de estudio con control administrativo y manejo de solicitudes (US-15).
 * **Interfaz para Estudiantes de Secundaria:** Se entregaron componentes visuales y elementos lúdicos destinados a mejorar la motivación y navegabilidad de estudiantes más jóvenes (US-16).
 * **Gestión de Grupos Pagados para Docentes:** Se implementó la capacidad para que los docentes creen y administren grupos con tarifas personalizadas (US-21), incluyendo configuración de precios e inscripción mediante pago.
 * **Calendario y Programación de Sesiones:** Se habilitó la funcionalidad para programar sesiones de estudio, proponer horarios y enviar recordatorios a los miembros del grupo (US-28).
@@ -5363,10 +5363,79 @@ Durante el Sprint, el equipo trabajó de forma organizada y colaborativa para im
 
 ## 6.2.3. Sprint 3
 ### 6.2.3.1. Sprint Planning 3
+
+| **Sprint #** | Sprint 2 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| **Date** | 2025-11-22 |
+| **Hour** | 10:30 p. m. |
+| **Location** | Virtual |
+| **Prepared By** | Jhosep Jamil Argomedo Camacho |
+| **Attendees (to planning meeting)** | Jhosep Jamil Argomedo Camacho, Carlos Alberto González Custodio, Renso Anthony Julca Cruz, Sebastian Ramirez Tello |
+| **Sprint 3 - 1 Review Summary** | Durante el Sprint Review 2, el equipo presentó los avances desarrollados en el Sprint 2, destacando la implementación completa de las funcionalidades orientadas a mejorar la interacción del usuario con la plataforma. Se demostró la personalización del perfil académico, la búsqueda e inscripción en grupos de estudio, la creación de grupos propios, la programación inicial de sesiones y la demostración interactiva del buscador para visitantes. Además, se validaron las APIs de soporte, la navegación general y la integración entre los módulos, mostrando una experiencia más fluida y coherente para estudiantes, docentes y visitantes. |
+| **Sprint 3 - 1 Retrospective Summary** | En la retrospectiva del Sprint 2, el equipo identificó fortalezas claras como la mejora en la organización del trabajo, el incremento en la precisión de las estimaciones y el uso más disciplinado del control de versiones, lo que redujo conflictos y facilitó la integración. También se destacó la comunicación más activa entre los subequipos. Sin embargo, se detectaron áreas de mejora relacionadas con la documentación técnica, la necesidad de adelantar pruebas de usabilidad y la gestión del tiempo en tareas críticas. Como acciones para este sprint, se acordó optimizar la documentación desde el inicio, aumentar la cobertura en pruebas funcionales y mantener checkpoints internos para asegurar la calidad del código. |
+| **Sprint Goal & User Stories** |
+| **Sprint 3 Goal** | En este sprint nos enfocamos en consolidar las funcionalidades avanzadas del sistema, orientadas a activar la interacción profunda entre usuarios y reforzar la escalabilidad del producto. Nuestro objetivo es implementar características que permitan gestionar sesiones de estudio, integrar sistemas de comunicación, habilitar herramientas colaborativas y optimizar la estructura de datos para un mayor desempeño. <br> Con estas funcionalidades, los estudiantes podrán participar activamente en sesiones programadas, enviar mensajes dentro de sus grupos, acceder a recursos compartidos y navegar con mayor fluidez. Los docentes podrán gestionar calendarios, materiales y coordinaciones grupales. De igual manera, se fortalecerán los componentes técnicos del backend, preparando la plataforma para etapas de mayor complejidad. <br> Esto se validará cuando los usuarios puedan participar en sesiones, comunicarse dentro de los grupos, acceder a los nuevos recursos habilitados y utilizar los módulos avanzados sin fricciones, comprobando que la plataforma está lista para la siguiente fase de expansión funcional. |
+| **Sprint Velocity** |  |
+| **Sum of Story Points** |  |
+
 ### 6.2.3.2. Sprint Backlog 3
+
+Durante el Sprint 3, el objetivo principal fue desarrollar y consolidar las funcionalidades avanzadas definidas para esta iteración, garantizando que cada User Story y Task priorizada avanzara conforme al flujo establecido: To-do → In-Process → To-Review → Done. El equipo se enfocó en fortalecer módulos críticos como sesiones de estudio, comunicación interna, recursos compartidos y optimización de APIs, manteniendo un control riguroso del avance técnico y funcional.
+
+A continuación, se presenta la tabla de control de estado del Sprint 3:
+
+| User Story ID | Task ID | Title | Description | Estimation (Hours) | Assigned To | Status |
+|--------------|---------|--------|-------------|---------------------|-------------|--------|
+| US-01 | **T-130** | Registrar usuario | Como visitante quiero registrarme desde la landing page para crear mi cuenta en la plataforma SkillShare. | 3 | Mobile Dev | **Done** |
+| US-03 | **T-131** | Reproducir video demostrativo | Como visitante quiero reproducir un video demo en la landing page para visualizar las funciones clave como grupos de estudio, chat y recursos compartidos. | 4 | Mobile Dev | **Done** |
+| US-17 | **T-132** | Ganar badges |Como estudiante de secundaria quiero ganar badges por mi participación para sentir reconocimiento por mis contribuciones al grupo. | 3 | Mobile Dev | **Done** |
+| US-18 | **T-133** | Usar chat grupal organizado | Como estudiante de secundaria quiero un sistema de chat que separe contenido académico de social para evitar que se pierda información importante. | 5 | Mobile Dev | **Done** |
+| US-19 | **T-134** | Sincronizar archivos offline | Como autodidacta quiero acceder a contenido sin conexión durante mis viajes para estudiar en cualquier momento y lugar. | 3 | Mobile Dev | **Done** |
+| US-20 | **T-135** | Visualizar métricas de progreso | Como autodidacta quiero ver métricas detalladas de mi progreso para medir tangiblemente mi desarrollo profesional | 4 | Mobile Dev | **Done** |
+| US-22 | **T-136** | Compartir materiales educativos | Como docente quiero compartir materiales educativos y realizar sesiones en vivo para brindar valor educativo a mis estudiantes | 4 | Mobile Dev | **Done** |
+| US-23 | **T-137** | Revisar analytics de negocio | Como docente quiero ver estadísticas de mis grupos para optimizar mis servicios educativos y aumentar mis ingresos. | 3 | Mobile Dev | **Done** |
+| US-24 | **T-138** | Comunicar mediante chat integrado | Como usuario quiero comunicarme con los miembros de mi grupo a través de chat en tiempo real para coordinar actividades de estudio. | 8 | Mobile Dev | **Done** |
+| US-25 | **T-139** | Realizar videollamadas grupales | Como usuario quiero realizar videollamadas con mi grupo de estudio para tener sesiones de aprendizaje cara a cara. | 8 | Mobile Dev | **Done** |
+| US-26 | **T-140** | Compartir recursos | Como usuario quiero subir y compartir materiales de estudio para contribuir al aprendizaje colaborativo del grupo. | 4 | Mobile Dev | **Done** |
+| US-27 | **T-141** | Crear y responder quizzes | Como usuario quiero crear y responder quizzes sobre los temas de estudio para evaluar mi comprensión y la del grupo. | 4 | Mobile Dev | **Done** |
+| US-29 | **T-142** | Recibir notificaciones push | Como usuario quiero recibir notificaciones relevantes para mantenerme actualizado sobre actividades de mis grupos | 3 | Mobile Dev | **Done** |
+| TS-05 | **T-143** | API de Quizzes | Como developer necesito endpoints RESTful para crear quizzes, responderlos y calcular resultados | 5 | Backend Dev | **Done** |
+| TS-07 | **T-144** | Sistema de Notificaciones Push | Como developer necesito un servicio de notificaciones push para avisar a los usuarios sobre nuevos mensajes, recursos, o eventos. | 4 | Mobile Dev | **Done** |
+
 ### 6.2.3.3. Development Evidence for Sprint Review
-### 6.2.3.4. Testing Suite Evidence for Sprint Review
+
+He aquí la sección "Development Evidence for Sprint Review" con una presentación de los avances y un ejemplo de commit, siguiendo la estructura solicitada.
+
+A continuación, se presenta una tabla con los commits representativos de esta implementación:
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+|  |  |  |  | --- |  |
+|  |  |  |  | --- |  |
+
 ### 6.2.3.5. Execution Evidence for Sprint Review
+
+El Sprint culminó satisfactoriamente, logrando el desarrollo y entrega de todas las funcionalidades planificadas a nivel de frontend, backend y experiencia de usuario. Se alcanzó el Sprint Goal, centrado en fortalecer las capacidades colaborativas y comunicacionales de la plataforma SkillShare, incorporando herramientas de interacción en tiempo real, visualización de contenido, registro de nuevos usuarios y mecanismos de gamificación. Estas mejoras consolidan una experiencia más completa, dinámica y alineada con las necesidades de estudiantes, docentes y visitantes que interactúan con el ecosistema.
+
+Durante este sprint, se implementaron vistas, flujos y servicios críticos que permiten una interacción más profunda dentro de los grupos de estudio, así como herramientas multimedia y de participación que enriquecen el proceso de aprendizaje. Además, se desarrollaron APIs y servicios backend que habilitan funcionalidades clave como quizzes, notificaciones push, videollamadas y gestión de badges, garantizando una arquitectura escalable y coherente con el crecimiento esperado de la plataforma.
+
+A continuación, se detallan las principales entregas logradas durante el sprint:
+
+* **Registro desde Landing Page (US-01):** Se habilitó el registro directo desde la página principal, permitiendo crear cuentas de forma rápida y simplificada.
+* **Visualización de Video Demostrativo (US-03):** Integración de un video explicativo que muestra cómo funciona la plataforma y sus beneficios principales.
+* **Chat por Canales (US-18):** Implementación de una interfaz de mensajería con canales diferenciados para comunicación académica, anuncios y temas generales.
+* **Videollamadas Grupales (US-25):** Integración de videollamadas para sesiones de estudio, presentaciones o reuniones entre miembros de un grupo.
+* **Gestión de Contenido Offline (US-19):** Descarga de recursos educativos y sincronización de progreso cuando el usuario recupera conexión.
+* **Sistema de Badges Gamificados (US-17):** Otorgamiento de insignias por participación, asistencia, aportes y logros dentro del grupo.
+* **Métricas y Progreso del Estudiante (US-20):** Visualización de estadísticas de aprendizaje, participación y progreso dentro de cada grupo.
+* **Notificaciones en Tiempo Real (US-29):** Sistema de alertas push para mensajes, sesiones programadas, avances y actividades relevantes.
+* **Quizzes y Evaluaciones (US-27):** Creación, envío y resolución de quizzes, incluyendo calificación automática y revisión de intentos.
+
+* **Servicios Backend del Sprint:**
+  * **API de Quizzes (TS-05):** Endpoints para creación, almacenamiento, resolución y evaluación de quizzes.
+  * **Sistema de Notificaciones Push (TS-07):** Implementación de un servicio centralizado para enviar notificaciones en tiempo real a los usuarios.
+
 ### 6.2.3.6. Services Documentation Evidence for Sprint Review
 ### 6.2.3.7. Software Deployment Evidence for Sprint Review
 ### 6.2.3.8. Team Collaboration Insights during Sprint
@@ -5646,6 +5715,6 @@ El conjunto de 7 épicas definidas garantiza una cobertura integral del ecosiste
 
 # Anexos
 
-**Enlace Organización en GitHub:** https://github.com/ThinkUp-SkillShare
-**Enlace a nuestra Landing Page** https://thinkup-skillshare.github.io/skillshare.github.io/
+**Enlace Organización en GitHub:** https://github.com/ThinkUp-SkillShare <br>
+**Enlace a nuestra Landing Page** https://thinkup-skillshare.github.io/skillshare.github.io/ <br>
 **Enlace a nuestra Mobile Application** https://flutter-mobile-application-backend.onrender.com/swagger
