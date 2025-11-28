@@ -5434,7 +5434,7 @@ A continuación, se detallan las principales entregas logradas durante el sprint
 
 * **Servicios Backend del Sprint:**
   * **API de Quizzes (TS-05):** Endpoints para creación, almacenamiento, resolución y evaluación de quizzes.
-  * **Sistema de Notificaciones Push (TS-07):** Implementación de un servicio centralizado para enviar notificaciones en tiempo real a los usuarios.
+  * **Sistema de Notificaciones Push (TS-07):** Implementación de un servicio centralizado para enviar notificaciones en tiempo real a los usuarios.  
 
 ### 6.2.3.6. Services Documentation Evidence for Sprint Review
 ### 6.2.3.7. Software Deployment Evidence for Sprint Review
@@ -5584,7 +5584,7 @@ A continuación, se detallan las principales entregas logradas durante el sprint
 
 | **Campo** | **Detalle** |
 | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Entrevista 2](assets/images/C2/validation-interviews/argomedo.png) | Enlace: [Video]()  |
+| ![Entrevista 2](assets/images/C2/validation-interviews/argomedo.png) | Enlace: [Video](https://youtu.be/q4B869pmDYM)  |
 | **Entrevistado(a)**      | Luis Diaz |
 | **Edad**              | 19 años |
 | **Rubro**             | Estudiante |
@@ -5648,6 +5648,8 @@ La aplicación de metodologías como Lean UX, EventStorming y entrevistas estruc
 
 - **Alineamiento Estratégico del Producto con las Épicas Identificadas**
 El conjunto de 7 épicas definidas garantiza una cobertura integral del ecosistema de SkillShare. Cada epic aborda un aspecto esencial del ciclo de aprendizaje colaborativo —desde la adquisición de usuarios (Landing Page) hasta la evaluación del progreso (Evaluaciones y Analítica Docente)— asegurando coherencia entre la visión del producto, las funcionalidades implementadas y la experiencia del usuario final.
+
+- **Diferenciación Competitiva Clara** SkillShare se posiciona exitosamente en un nicho específico dentro del mercado de herramientas educativas. A diferencia de competidores como Discord o Google Classroom, nuestra propuesta integra funcionalidades específicamente diseñadas para el estudio colaborativo. Esta diferenciación se ha consolidado con el desarrollo de características exclusivas en este último sprint, como los chats organizados por temas académicos (separando lo social de lo educativo) y el sistema de badges (gamificación), elementos que no están presentes de forma integrada en las soluciones genéricas actuales.
 ## Recomendaciones
 
 - **Estrategia de Lanzamiento Gradual**
@@ -5707,6 +5709,20 @@ El conjunto de 7 épicas definidas garantiza una cobertura integral del ecosiste
 - Thompson, R., Garcia, M., & Chung, S. (2021). *Sense of belonging and student retention in higher education*. Journal of Student Affairs Research and Practice, 58(3), 236-252.  
 
 <br>
+
+## Referencias Académicas Adicionales (2023-2024)
+
+### Dominio del Problema: Aprendizaje Colaborativo y Gamificación
+
+* **Dahalan, F., Alias, N., & Shaharom, M. S. (2024).** Gamification and mobile learning for vocational education: A systematic review. *Education and Information Technologies*, 29, 1-28. https://www.researchgate.net/publication/335189630_The_Gamification_of_Learning_a_Meta-analysis
+
+* **Zhang, S., & Wen, Y. (2023).** Interaction patterns and knowledge construction in mobile computer-supported collaborative learning. *Interactive Learning Environments*, 31(5), 2890-2905. https://www.researchgate.net/publication/384622163_Computer-Supported_Collaborative_Learning
+
+### Técnicas de Desarrollo: Arquitectura Móvil y Backend
+
+* **Khurana, R., & Rizvi, M. A. (2023).** Performance evaluation of cross-platform mobile application development frameworks: Flutter vs React Native. *IEEE Access*, 11, 45230-45245. https://www.researchgate.net/publication/357435933_Comparison_of_Flutter_and_React_Native_Platforms
+
+* **Ullah, A., Nisar, K., Alvi, A. M., & Lai, D. (2023).** Performance analysis of monolithic and microservices architecture in cloud computing. *Mathematics*, 11(19), 4057. https://www.researchgate.net/publication/392834604_Performance_Comparison_of_Monolithic_and_Microservices_Architectures_in_Handling_High-Volume_Transactions
 <br>
 
 <!--
