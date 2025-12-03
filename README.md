@@ -30,7 +30,7 @@
 
 <br>
 <br>
-<div align="center"> <strong>Noviembre, 2025</strong> </div>
+<div align="center"> <strong>Diciembre, 2025</strong> </div>
 
 <br>
 <br>
@@ -50,6 +50,7 @@
 | TB1         | 18/09/25     | Argomedo, Jhosep; <br> González, Carlos; <br> Julca, Renso; <br> Ramírez, Sebastian. | Adición de secciones: <br> **Capítulo I:** Presentación <br> **Capítulo II:** Requirements Development and Software Solution Design |
 | TP1         | 18/09/25     | Argomedo, Jhosep; <br> González, Carlos; <br> Julca, Renso; <br> Ramírez, Sebastian. | Adición de secciones: <br> **Capítulo III:** Requirements Specification <br> **Capítulo IV:** Solution Software Design |
 | TB2         | 14/11/25     | Argomedo, Jhosep; <br> González, Carlos; <br> Julca, Renso; <br> Ramírez, Sebastian. | Adición de secciones: <br> **Capítulo V:** Solution UI/UX Design <br> **Capítulo VI:** Product Implementation, Validation & Deployment |
+| TF         | 02/12/25     | Argomedo, Jhosep; <br> González, Carlos; <br> Julca, Renso; <br> Ramírez, Sebastian. | Adición de secciones: <br> **Capítulo VI:** Product Implementation, Validation & Deployment - Sprint 03 |
 
 <br>
 <br>
@@ -5291,15 +5292,6 @@ A continuación, se describen las principales entregas logradas durante el sprin
 
 **LINK:** https://thinkup-skillshare.github.io/skillshare.github.io/
 
-
-#### Web Services
-
-
-
-#### Mobile Application
-
-
-
 ### 6.2.2.8. Team Collaboration Insights during Sprint
 
 Durante el Sprint, el equipo trabajó de forma organizada y colaborativa para implementar los módulos centrales de SkillShare, abarcando el diseño, desarrollo y validación de funcionalidades tanto del frontend web, backend y la aplicación móvil. El uso de GitHub permitió mantener un flujo de trabajo ordenado, aplicando branches por feature, buenas prácticas de integración continua y revisiones de código mediante pull requests, garantizando calidad y consistencia entre los entregables. Las actividades se coordinaron en base a las User Stories y Technical Stories priorizadas, enfocándose en experiencia de usuario, seguridad, gestión de información académica y soporte a los flujos de docentes y estudiantes dentro de la plataforma.
@@ -5409,10 +5401,74 @@ He aquí la sección "Development Evidence for Sprint Review" con una presentaci
 
 A continuación, se presenta una tabla con los commits representativos de esta implementación:
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-|  |  |  |  | --- |  |
-|  |  |  |  | --- |  |
+**Flutter Mobile Application**
+
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+|----------------|------------|---------------|--------------------|-----------------------|-------------------------|
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | 7037ca1 | chore: format videocalls module | Format videocalls module | 02/12/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | 8c65bb1 | feature: add new endpoints to api_constants.dart | Add new endpoints to api_constants.dart | 02/12/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | 17b5106 | chore(android): fix MainActivity package and AndroidManifest configuration | Fix MainActivity package and AndroidManifest configuration | 02/12/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | d2ec21b | chore: update domain | Update domain | 02/12/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | dc155cc | chore(code-cleanup): remove unused signup view and format group chat & api constants | Remove unused signup view and format group chat & api constants | 02/12/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | 8c2f801 | chore: delete unused files | Delete unused files | 02/12/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | d4708dc | chore: format api_constants.dart | Format api_constants.dart | 02/12/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | dbbd8cb | feat(documents-module): add document upload flow and integrate into UI | Add document upload flow and integrate into UI | 02/12/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | 029c6cd | feat(group-chat): implement message sending flow and audio processing | Implement message sending flow and audio processing | 02/12/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | 74f459a | refactor(chat): reorganize chat folder structure and update imports | Reorganize chat folder structure and update imports | 30/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | 30ad78a | feat(video-calls): improve UI and add video call statistics | Improve UI and add video call statistics | 30/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | 304d52f | chore: format video_call_screen.dart | Format video_call_screen.dart | 29/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | c4527bd | feat(video-calls): implement video call service and update related UI | Implement video call service and update related UI | 29/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | c8b86db | chore: format group_service.dart | Format group_service.dart | 28/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | 7eacec1 | chore(auth): clean LoginScreen and modularize widgets | Clean LoginScreen and modularize widgets | 28/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | 624bbc2 | chore: format auth_repository_impl.dart | Format auth_repository_impl.dart | 28/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | a0d6691 | chore: format user_model.dart | Format user_model.dart | 28/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | 1604234 | chore: format auth_remote_data_impl.dart | Format auth_remote_data_impl.dart | 28/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | 6509c89 | chore: format auth_remote_data_source.dart | Format auth_remote_data_source.dart | 28/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | ae44bc8 | chore: format register_use_case.dart | Format register_use_case.dart | 28/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | b496c58 | chore: format login_use_case.dart | Format login_use_case.dart | 28/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | d7a1906 | chore: format auth_repository.dart | Format auth_repository.dart | 28/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | 3a2f0f8 | chore: format user_entity.dart | Format user_entity.dart | 28/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | daeacc1 | chore: format auth_service.dart | Format auth_service.dart | 28/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | ffb1f7d | refactor(files): move files_screen to views folder | Move files_screen to views folder | 27/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | 25a53e0 | feat(groups): add group video call functionality | Add group video call functionality | 27/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | 72bc264 | feat(groups): enhance group creation and management flow across UI and services | Enhance group creation and management flow across UI and services | 26/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | 7b81b76 | feat(group-management): add service, update screens and constants | Add service, update screens and constants | 26/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | 9baa3ea | feat(my-groups): implement My Groups screen with cards and ad support | Implement My Groups screen with cards and ad support | 26/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | c395a84 | feat(home): add home screen widgets and improve view model | Add home screen widgets and improve view model | 25/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | 9394184 | feat: add second version of the student application developed in Flutter | Add second version of the student application developed in Flutter | 25/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application](https://github.com/ThinkUp-SkillShare/flutter-mobile-application) | main | 80629f3 | feat: adding the first version of the student app to Flutter | Adding the first version of the student app to Flutter | 14/11/2025 |
+
+**Flutter Mobile Application Backend**
+
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+|----------------|------------|---------------|--------------------|-----------------------|-------------------------|
+| [thinkup-skillshare/flutter-mobile-application-backend](https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend) | main | a52e630 | Simplify Swagger setup and add root endpoint | Simplify Swagger setup and add root endpoint | 02/12/2025 |
+| [thinkup-skillshare/flutter-mobile-application-backend](https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend) | main | 137e05e | Comment out HTTPS redirection | Comment out HTTPS redirection | 02/12/2025 |
+| [thinkup-skillshare/flutter-mobile-application-backend](https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend) | main | a7d3e2b | feat: update configuration | Update configuration | 02/12/2025 |
+| [thinkup-skillshare/flutter-mobile-application-backend](https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend) | main | 9a2517d | feat(documents-module): update document controller and refresh stored files | Update document controller and refresh stored files | 02/12/2025 |
+| [thinkup-skillshare/flutter-mobile-application-backend](https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend) | main | 386cffc | feat(group-chat-backend): add websocket handler and file storage support | Add websocket handler and file storage support | 02/12/2025 |
+| [thinkup-skillshare/flutter-mobile-application-backend](https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend) | main | 741a36b | feat(video-calls): add backend services and API updates for group video calls | Add backend services and API updates for group video calls | 29/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application-backend](https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend) | main | 32f2ed6 | chore: format CallController.cs | Format CallController.cs | 28/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application-backend](https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend) | main | 3d7cefc | chore: format IAuthService.cs | Format IAuthService.cs | 28/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application-backend](https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend) | main | a3db327 | chore: format AuthService.cs | Format AuthService.cs | 28/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application-backend](https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend) | main | c6cf362 | chore: format LoginResponseDto.cs | Format LoginResponseDto.cs | 28/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application-backend](https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend) | main | aa35999 | LoginRequestDto.cs | LoginRequestDto.cs | 28/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application-backend](https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend) | main | 9e238e0 | chore: format AuthController.cs | Format AuthController.cs | 28/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application-backend](https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend) | main | b40f3c0 | update files | Update files | 28/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application-backend](https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend) | main | b7131e1 | feat(documents): implement upload and document management module | Implement upload and document management module | 27/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application-backend](https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend) | main | 0062161 | feat(calls): implement backend support for group video calls | Implement backend support for group video calls | 27/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application-backend](https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend) | main | b951a2b | feat(groups): improve backend flow for group creation, permissions, and authentication | Improve backend flow for group creation, permissions, and authentication | 27/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application-backend](https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend) | main | 8171da2 | feat: update Program.cs - registration of new services | Update Program.cs - registration of new services | 26/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application-backend](https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend) | main | 1790d60 | feat(group-management): implement service, DTOs, models, and controller logic | Implement service, DTOs, models, and controller logic | 26/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application-backend](https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend) | main | 03bf3c4 | chore(ide): update JetBrains IDE configuration files | Update JetBrains IDE configuration files | 26/11/2025 |
+| [thinkup-skillshare/flutter-mobile-application-backend](https://github.com/ThinkUp-SkillShare/flutter-mobile-application-backend) | main | 20748b6 | feat: update drivers and services for study groups and students | Update drivers and services for study groups and students | 25/11/2025 |
+
+**Kotlin Mobile Application**
+
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+|----------------|------------|---------------|--------------------|-----------------------|-------------------------|
+| [thinkup-skillshare/kotlin-mobile-application](https://github.com/ThinkUp-SkillShare/kotlin-mobile-application) | main | db0ec95 | Feat: Pantalla de Editar Perfil completa con traducción y modo oscuro | Feat: Pantalla de Editar Perfil completa con traducción y modo oscuro | 02/12/2025 |
+| [thinkup-skillshare/kotlin-mobile-application](https://github.com/ThinkUp-SkillShare/kotlin-mobile-application) | main | e3952e5 | Refactor: Nuevo Dashboard Home, Calendario editable y limpieza de módulos | Refactor: Nuevo Dashboard Home, Calendario editable y limpieza de módulos | 29/11/2025 |
 
 ### 6.2.3.5. Execution Evidence for Sprint Review
 
@@ -5437,8 +5493,232 @@ A continuación, se detallan las principales entregas logradas durante el sprint
   * **Sistema de Notificaciones Push (TS-07):** Implementación de un servicio centralizado para enviar notificaciones en tiempo real a los usuarios.  
 
 ### 6.2.3.6. Services Documentation Evidence for Sprint Review
+
+#### Endpoints de Videollamadas (Calls)
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis | Parámetros | Request Body | Response | Explicación |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/Calls/create-room` | Crear sala de llamada | POST | `POST /api/Calls/create-room` | Ninguno | `{ "groupId": 0 }` | `200 OK` | Inicializa una nueva sala de videollamada para un grupo |
+| `/api/Calls/join-call` | Unirse a llamada | POST | `POST /api/Calls/join-call` | Ninguno | `{ "groupId": 0 }` | `200 OK` | Permite a un usuario unirse a una llamada en curso |
+| `/api/Calls/active-call/{groupId}` | Verificar llamada activa | GET | `GET /api/Calls/active-call/{groupId}` | `groupId` (int) | - | `200 OK` | Consulta si existe una llamada en curso en el grupo |
+| `/api/Calls/end-call` | Finalizar llamada | POST | `POST /api/Calls/end-call` | Ninguno | `{ "groupId": 0 }` | `200 OK` | Termina la sesión de videollamada del grupo |
+| `/api/Calls/call-stats/{groupId}` | Estadísticas del grupo | GET | `GET /api/Calls/call-stats/{groupId}` | `groupId` (int) | - | `200 OK` | Obtiene métricas y estadísticas de llamadas del grupo |
+| `/api/Calls/user-stats` | Estadísticas del usuario | GET | `GET /api/Calls/user-stats` | Ninguno | - | `200 OK` | Obtiene estadísticas de llamadas del usuario autenticado |
+
+#### Endpoints de Documentos (Document)
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis | Parámetros | Request Body | Response | Explicación |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/Document/statistics/global` | Estadísticas globales | GET | `GET /api/Document/statistics/global` | Ninguno | - | `200 OK` | Obtiene métricas globales de todos los documentos en la plataforma |
+| `/api/Document/group/{groupId}` | Documentos del grupo | GET | `GET /api/Document/group/{groupId}` | `groupId` (int) | - | `[{ "id": 0, "fileName": "...", "fileUrl": "...", ... }]` | Lista todos los documentos subidos a un grupo específico |
+| `/api/Document/user` | Mis documentos | GET | `GET /api/Document/user` | Ninguno | - | `[{ "id": 0, "fileName": "...", ... }]` | Lista los documentos subidos por el usuario autenticado |
+| `/api/Document/{id}` | Detalle de documento | GET | `GET /api/Document/{id}` | `id` (int) | - | `{ "id": 0, "fileName": "...", "fileUrl": "...", ... }` | Obtiene la información detallada de un archivo específico |
+| `/api/Document/{id}` | Editar documento | PUT | `PUT /api/Document/{id}` | `id` (int) | `{ "title": "...", "description": "...", "subjectId": 0 }` | `200 OK` | Actualiza título, descripción o materia de un documento |
+| `/api/Document/{id}` | Eliminar documento | DELETE | `DELETE /api/Document/{id}` | `id` (int) | - | `200 OK` | Elimina un documento del sistema |
+| `/api/Document/upload` | Subir archivo | POST | `POST /api/Document/upload` | Ninguno | `multipart/form-data` (`GroupId`, `Title`, `Description`, `SubjectId`, `File`) | `{ "id": 0, "fileUrl": "...", ... }` | Sube un archivo y crea el registro del documento asociado a un grupo |
+| `/api/Document/{id}/download` | Descargar documento | POST | `POST /api/Document/{id}/download` | `id` (int) | - | `200 OK` | Registra/Inicia la descarga de un documento específico |
+| `/api/Document/statistics/group/{groupId}` | Estadísticas del grupo | GET | `GET /api/Document/statistics/group/{groupId}` | `groupId` (int) | - | `{ "totalDocuments": 0, "totalSize": 0, "pdfCount": 0, ... }` | Obtiene conteo y métricas de archivos dentro de un grupo |
+| `/api/Document/subjects/popular` | Materias populares | GET | `GET /api/Document/subjects/popular` | Ninguno | - | `["Materia1", "Materia2"]` | Lista las materias con más documentos o actividad |
+
 ### 6.2.3.7. Software Deployment Evidence for Sprint Review
+
+#### Web Services
+
+1. Creacion del Web Service
+
+<div align="center">
+
+![creacion](assets/images/deploy/web-services/creacion.jpg)
+
+</div>
+
+2. Creacion del cluster para la Base de Datos
+
+<div align="center">
+
+![cluster](assets/images/deploy/web-services/cluster.jpg)
+
+</div>
+
+3. Hacer la conexion con Mysql para importar las tablas
+
+<div align="center">
+
+![conexion](assets/images/deploy/web-services/conexion.jpg)
+
+</div>
+
+4. Verificar la creacion de las tablas
+
+<div align="center">
+
+![verificacion](assets/images/deploy/web-services/verificacion.jpg)
+
+</div>
+
+5. Se establecen las variables de entorno
+
+<div align="center">
+
+![variables-entorno](assets/images/deploy/web-services/variables-entorno.jpg)
+
+</div>
+
+6. Se hace el deploy en render
+
+<div align="center">
+
+![deploy](assets/images/deploy/web-services/deploy.jpg)
+
+</div>
+
+7. Deploy del backend
+
+<div align="center">
+
+![deploy-backend](assets/images/deploy/web-services/deploy-backend.jpg)
+
+</div>
+
+#### Mobile Application
+
+1. Crear cuenta en Firebase
+
+<div align="center">
+
+![cuenta](assets/images/deploy/mobile-app/cuenta.jpg)
+
+</div>
+
+2. Creación del proyecto
+
+<div align="center">
+
+![proyecto](assets/images/deploy/mobile-app/proyecto.jpg)
+
+</div>
+
+3. Configuración del proyecto
+
+<div align="center">
+
+![configuracion-proyecto](assets/images/deploy/mobile-app/configuracion-proyecto.jpg)
+![configuracion-proyecto2](assets/images/deploy/mobile-app/configuracion-proyecto2.jpg)
+
+</div>
+
+4. Registro de la app
+
+<div align="center">
+
+![registro](assets/images/deploy/mobile-app/registro.jpg)
+
+</div>
+
+5. Descargar Google-services.json
+
+<div align="center">
+
+![services](assets/images/deploy/mobile-app/services.jpg)
+
+</div>
+
+6. Se agrega al proyecto
+
+<div align="center">
+
+![agregar](assets/images/deploy/mobile-app/agregar.jpg)
+
+</div>
+
+7. Agregue la dependencia para el complemento Gradle de servicios de Google
+
+<div align="center">
+
+![dependencias](assets/images/deploy/mobile-app/dependencias.jpg)
+
+</div>
+
+8. Añade el complemento Gradle de los servicios de Google. Importa la lista de materiales de Firebase. Añade las dependencias de los productos de Firebase que quieras usar.
+
+<div align="center">
+
+![gradle](assets/images/deploy/mobile-app/gradle.jpg)
+
+</div>
+
+9. Generación del APK
+
+<div align="center">
+
+![apk](assets/images/deploy/mobile-app/apk.jpg)
+
+</div>
+
+10. Subir el archivo APK y agregar a los testers
+
+<div align="center">
+
+![testers](assets/images/deploy/mobile-app/testers.jpg)
+
+</div>
+
+
 ### 6.2.3.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 3, el equipo elevó el nivel de complejidad técnica y colaboración para integrar funcionalidades de tiempo real y alta interactividad en SkillShare. Se consolidó el flujo de trabajo en GitHub, gestionando ramas complejas para características críticas como videollamadas y sincronización offline, asegurando una integración fluida mediante revisiones de código exhaustivas. El esfuerzo se centró en transformar la plataforma de un sistema de gestión a un ecosistema colaborativo vivo, desplegando exitosamente la arquitectura en servicios en la nube (Render) y distribuyendo la aplicación móvil mediante Firebase para pruebas ampliadas. La coordinación entre backend y mobile fue vital para la implementación de WebSockets y servicios de notificaciones push.
+
+### **Backend**
+
+- **Servicios de Comunicación en Tiempo Real**, implementando WebSockets para el chat y endpoints para la orquestación de salas de videollamadas.
+
+- **Módulo de Evaluaciones y Gamificación**, desarrollando la lógica para la creación de quizzes y la asignación automática de badges según el rendimiento.
+
+- **Analítica y Gestión Documental**, con endpoints optimizados para estadísticas globales, métricas de usuario y administración avanzada de archivos.
+
+- **Infraestructura y Despliegue**, configurando el entorno de producción en Render, clústeres de base de datos y seguridad HTTPS.
+
+### **Mobile Application**
+
+- **Interacción Multimedia Avanzada**, integrando flujos completos de videollamadas grupales y mensajería con soporte de audio y adjuntos.
+
+- **Experiencia Offline y Sincronización**, permitiendo el acceso a contenidos sin conexión y actualizando el progreso al recuperar la red.
+
+- **Visualización de Progreso y Reconocimiento**, implementando interfaces para métricas de aprendizaje, resolución de quizzes y visualización de logros (badges).
+
+<br>
+
+## **Analítica de Colaboración en GitHub:**
+
+### Backend
+
+**Comits**
+
+![Backend evidence](assets/images/C8/colaboradores.png)
+
+**Colaboradores**
+
+![Backend evidence](assets/images/C8/commits.png)
+
+### Kotlin Mobile Application
+
+**Comits**
+
+![Mobile Application evidence](assets/images/C8/ktlin_commit.png)
+
+**Colaboradores**
+
+![Mobile Application evidence](assets/images/C8/ktlin_colaboration.png)
+
+### Flutter Mobile Application
+
+**Comits**
+
+![Mobile Application evidence](assets/images/C8/commits-flutter.png)
+
+**Colaboradores**
+
+![Mobile Application evidence](assets/images/C8/colaboration.png)
 
 <!-- 
   Interviews 
@@ -5693,6 +5973,20 @@ El conjunto de 7 épicas definidas garantiza una cobertura integral del ecosiste
 <br>
 <br>
 
+# Video App Validation
+En este video se demuestra la validación funcional de la aplicación, recorriendo los principales flujos de usuario implementados y verificando el cumplimiento de los criterios de aceptación definidos.
+
+[Link]
+
+# Video About the product
+Presentación general de la plataforma SkillShare, donde se expone la propuesta de valor, las funcionalidades clave desarrolladas y el impacto que la solución busca generar en la experiencia educativa de estudiantes y docentes.
+
+[Link]
+
+# Video About the team
+Introducción a los miembros del equipo de desarrollo, destacando los roles técnicos y de gestión desempeñados, así como la dinámica de colaboración para alcanzar los objetivos del proyecto.
+
+[Link]
 
 # Bibliografía
 
@@ -5733,4 +6027,6 @@ El conjunto de 7 épicas definidas garantiza una cobertura integral del ecosiste
 
 **Enlace Organización en GitHub:** https://github.com/ThinkUp-SkillShare <br>
 **Enlace a nuestra Landing Page** https://thinkup-skillshare.github.io/skillshare.github.io/ <br>
+**Enlace a nuestro Web Services** https://skillshare-flutter-backend.onrender.com/swagger/index.html <br>
 **Enlace a nuestra Mobile Application** https://flutter-mobile-application-backend.onrender.com/swagger
+**Enlace a nuestra Flutter Mobile Application** https://appdistribution.firebase.google.com/testerapps/1:647786466720:android:9b8dbb6c4c40e6053f28c5/releases/3hd6q5lfc2n8g?utm_source=firebase-console
