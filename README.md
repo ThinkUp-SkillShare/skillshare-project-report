@@ -5909,6 +5909,76 @@ Durante el Sprint 3, el equipo elevó el nivel de complejidad técnica y colabor
 | **Duración**          | 09 min 29 seg |
 | **Resumen**           | Durante la entrevista se muestra la demostración de una aplicación académica orientada a la organización entre docentes y estudiantes. La entrevistada observa la pantalla de inicio, donde aparecen asignaturas populares, grupos sugeridos y la opción de crear nuevos grupos ingresando nombre, asignatura y una breve descripción. También se presentan secciones para explorar grupos disponibles, programar eventos y visualizar un calendario con actividades académicas. Se explica además la sección de archivos, donde el docente puede revisar materiales organizados por cursos, identificar el tipo de archivo y subir nuevos documentos o notas. En el perfil se muestran estadísticas del usuario, los grupos a los que pertenece, reseñas recibidas y configuraciones como idioma, tema visual y notificaciones. Al ingresar a un grupo específico, se visualiza información sobre sus miembros, el chat, los archivos disponibles, los quizzes programados y las opciones para compartir el grupo o ajustar notificaciones. La entrevistada considera que la idea de una red social enfocada en estudios es adecuada y necesaria, valorando la navegación intuitiva y la organización de las secciones. Sugiere incluir indicadores de mensajes no leídos en las tarjetas de grupos y resalta que la función de eventos sería más útil si se sincronizara automáticamente con el calendario universitario. Finalmente, destaca que el diseño es moderno y profesional, aunque menciona que las insignias del perfil pueden percibirse como un elemento más social o lúdico. |
 
+## Entrevistas App Validation Finalizadas
+
+### Segmento 1: Estudiantes de Educación Superior
+
+#### Entrevista
+
+| **Campo** | **Detalle** |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Entrevista 1](assets/images/C3/validation-interviews/renso.png) | Enlace: [Video](https://youtu.be/M7LTLaXx-60)  |
+| **Entrevistado(a)**      | Rivera Quispe, Allison Milagros |
+| **Edad**              | 21 años  |
+| **Rubro**             | Estudiante de Administración de Empresas |
+| **Ubicación**         | Lima, San Martín de Porres |
+| **Medio**             | Discord  |
+| **Entrevistador**     | Julca Cruz, Renso Anthony  |
+| **Instante inicio**   | 00:00:00   |
+| **Duración**          | 05 min 52 seg |
+| **Resumen**           | La entrevista se desarrolló con una usuaria universitaria con el propósito de evaluar la usabilidad y funcionalidades principales de la aplicación Skills. Durante la validación guiada, la usuaria exploró las secciones principales: creación de perfil, visualización del inicio, exploración de cursos, búsqueda y unión a grupos de estudio, revisión de archivos compartidos y opciones de comunicación dentro de los grupos. La entrevistada inició creando su cuenta y navegó por el Home, donde pudo visualizar los cursos disponibles. Luego exploró la sección Groups, comprobando que inicialmente no aparecían grupos hasta unirse a uno. A través de la función Explorer, identificó la lista completa de grupos disponibles, observó datos generales como número de miembros y decidió unirse al grupo “Matemáticas Universitarias”. Tras unirse, pudo visualizar a los miembros, acceder al chat del grupo y revisar las secciones de archivos, llamadas y otras opciones colaborativas. También revisó su perfil, donde la aplicación muestra el número de grupos y archivos asociados al usuario. En la etapa de preguntas, la usuaria indicó que acceder a las videollamadas fue simple, pues el botón de unión era claro y la calidad del audio y video fue adecuada. Sobre el chat y los mensajes de voz, mencionó que su uso es intuitivo y similar a aplicaciones conocidas como WhatsApp, con mensajes que se envían y reciben de inmediato. Consideró que la aplicación es en general intuitiva, aunque la interfaz podría mejorarse. Como propuestas adicionales, sugirió incluir filtros para organizar las conversaciones y un apartado que permita visualizar los grupos con los que más interactúa. |
+
+### Segmento 2: Estudiantes de Secundaria
+
+#### Entrevista
+
+| **Campo** | **Detalle** |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Entrevista 2](assets/images/C3/validation-interviews/argomedo.png) | Enlace: [Video]()  |
+| **Entrevistado(a)**      | Luis Diaz |
+| **Edad**              | 19 años |
+| **Rubro**             | Estudiante |
+| **Ubicación**         | San Isidro |
+| **Medio**             | Google Meet |
+| **Entrevistador**     | Argomedo Camacho, Jhosep Jamil |
+| **Instante inicio**   | 00:00:05 |
+| **Duración**          | 09 min 22 seg |
+| **Resumen**           |  |
+
+### Segmento 3: Estudiantes Autodidactas
+
+#### Entrevista
+
+| **Campo** | **Detalle** |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Entrevista 3](assets/images/C3/validation-interviews/ramirez.png) | Enlace: [Video]()  |
+| **Entrevistado(a)**      | Keynner Hanco |
+| **Edad**              | 20 |
+| **Rubro**             | Estudiantes Autodidacta |
+| **Ubicación**         | Lima |
+| **Medio**             | Zoom |
+| **Entrevistador**     | Ramírez Tello, Sebastián |
+| **Instante inicio**   | 00:00:05 |
+| **Duración**          | 07 min 55 seg |
+| **Resumen**           |  |
+
+### Segmento 4: Docentes
+
+#### Entrevista 1
+
+| **Campo** | **Detalle** |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Entrevista 4](assets/images/C3/validation-interviews/carlos.png) | Enlace: [Video](https://www.youtube.com/watch?v=bHAjJ7oMCwo)  |
+| **Entrevistado(a)**      | Jose Manuel Villareal |
+| **Edad**              | 27 años |
+| **Rubro**             | Docente de Secundaria |
+| **Ubicación**         | Monsefu, Lambayeque |
+| **Medio**             | Google Meet |
+| **Entrevistador**     | González Custodio, Carlos Alberto |
+| **Instante inicio**   | 00:00:00 |
+| **Duración**          | 03 min 52 seg |
+| **Resumen**           | La entrevista se realizó a un usuario con el fin de conocer su percepción sobre la aplicación educativa Skills. En general, el entrevistado expresó una impresión positiva, resaltando que la plataforma está bien organizada y enfocada en facilitar el estudio colaborativo. Consideró adecuada la integración de recursos, grupos y calendarios en un solo espacio, así como la idea de una red social orientada al aprendizaje, ya que este formato puede motivar la participación y mejorar la organización académica. En cuanto a la experiencia de navegación, mencionó que es sencilla e intuitiva debido a la buena estructura de la interfaz y a la clara diferenciación de secciones. También afirmó que los íconos son comprensibles y están ordenados de manera lógica. Respecto al diseño de los grupos, destacó que las tarjetas presentan la información de forma clara, limpia y sin sobrecarga visual, aunque sugirió añadir indicadores como actividad reciente o número de miembros. Sobre el calendario, señaló que la función manual es útil, pero que una sincronización automática con calendarios institucionales aumentaría significativamente su uso entre estudiantes. Finalmente, evaluó el diseño visual como profesional y equilibrado, con colores y tipografía que transmiten un ambiente académico sin resultar ni básico ni sobrecargado, lo que facilita la concentración en el contenido. |
+
 # Conclusiones
 
 - **Validación de la Necesidad del Mercado**
@@ -5976,17 +6046,17 @@ El conjunto de 7 épicas definidas garantiza una cobertura integral del ecosiste
 # Video App Validation
 En este video se demuestra la validación funcional de la aplicación, recorriendo los principales flujos de usuario implementados y verificando el cumplimiento de los criterios de aceptación definidos.
 
-[Link]
+[Enlace al video]()
 
 # Video About the product
 Presentación general de la plataforma SkillShare, donde se expone la propuesta de valor, las funcionalidades clave desarrolladas y el impacto que la solución busca generar en la experiencia educativa de estudiantes y docentes.
 
-[Link]
+[Enlace al video]()
 
 # Video About the team
 Introducción a los miembros del equipo de desarrollo, destacando los roles técnicos y de gestión desempeñados, así como la dinámica de colaboración para alcanzar los objetivos del proyecto.
 
-[Link]
+[Enlace al video](https://educorpperu-my.sharepoint.com/personal/david_quevedo_upc_pe/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fdavid%5Fquevedo%5Fupc%5Fpe%2FDocuments%2FMov%20202520%20Expos%20%281acc0238%20Moviles%29%2F12614%2FTP%2FEq%203&viewid=d4567ced%2D25ac%2D494b%2D9096%2Dd00fd4c519a8&ga=1)
 
 # Bibliografía
 
